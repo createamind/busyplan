@@ -98,6 +98,11 @@ ref   https://mp.weixin.qq.com/s?__biz=MzA5MDMwMTIyNQ==&mid=2649291640&idx=1&sn=
 
 仿真环境模拟器： 
 5 gazebo https://github.com/osrf/car_demo  各种硬件传感器可模拟
+7 仿真介绍：  https://mp.weixin.qq.com/s?__biz=MjM5ODY2MzIyMQ==&mid=2652429659&idx=1&sn=25d83a513fc19997726aa0d5319af1ff&chksm
+
+
+
+
 
 视觉认知构建思路分析：
 6  语义学习-通用智能的切入点-实现路径v0.01
