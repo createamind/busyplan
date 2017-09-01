@@ -8,19 +8,26 @@ plan
 
 行业生态  技术环节   应用场景  车厂合作
 
+商业应用探索：
 应用场景的探索及商业模式的开拓我们跟进各个自动驾驶公司，百度 驭势等，以当前的资源和市场能力我们还没有探索商业应用场景的能力，但是我们做好自动驾驶技术是完全有价值的。做地图我们比不过千寻，做其他技术难度低有市场的产品但是比我们资源多，人力多，经验多的公司太多了，我们比不过这些公司。我们人员经验少，做最难的，没有思路限制，大胆试错才是我们的出路。改进或突破自动驾驶技术是一条无人走过的新路。挑战很大，需要我们踏实快速试错。
 
+为什么提高算法智能：
 自动驾驶要想部分替代人的功能，需要与人部分相当的智能，当前自动驾驶的问题：  智能算法智能程度不够：比如对环境的感知非常初级，表现：不能像人一样教他学习及处理相关问题。 1 智能不够，学习速度慢，不能举一反三，必然训练时间过长，依赖大数据进行训练，2 智能不够，识别环境不精准，所以不够安全。很多公司改进fasterrcnn等算法离程序用视觉理解世界还差比较远，需要更好的进展。当然fasterrcnn很有参考学习价值。
 
 学的快：1 特征学习更准确和完整及更抽象的高层次特征 2 人分析驾驶任务相对简单是因为人对周围环境的认知非常抽象准确，是在低纬度的空间进行运算分析，如 路 角度 速度等等。
 
+生态定位：
 自动驾驶生态：虽然有高校，但是缺少算法合作伙伴；我们在生态中的定位：最接近生物智能的视觉解决方案。 CreateAMind，服务自动驾驶的视觉系统，而非自动驾驶任务特定的视觉解决方案。现阶段定位为技术公司，为自动驾驶的普及做好感知基础。  技术如何在某一点，超越baidu 谷歌
 
+方向和切入点：
 在自动驾驶整个技术框架中，我选择的切入点是perception感知和决策。视觉的精准感知，视觉输入即可精准的感知（准确的认知）其他非视觉属性，如触觉属性、压力、深度、速度等可以通过视觉感知到，训练阶段会结合多传感器进行训练。
 
+短期目标：
 短期目标 9-11月  真车完成前的adas软件功能准备，使用gazebo及torcs等仿真端对端的方式。用深度学习视觉和强化学习。
 
-仿真环境便于我们快速验证，方便更改各种环境条件
+why
+
+仿真环境便于我们快速验证，方便更改各种环境条件,我们作为自动驾驶新人，具体实现从辅助驾驶的基本功能我们逐步去实现。
 
 目标相关性！
 仿真的价值：
@@ -50,21 +57,36 @@ plan
 进展参考baidu开源，在baidu开放的场景上面，我们的感知超过baidu开源的感知即可，todo 测试对比标准
 
 参考：
+
+抽象特征学习：
 1 beta vae 论文 ，学习独立视觉特征  https://mp.weixin.qq.com/s?__biz=MzA5MDMwMTIyNQ==&mid=2649291563&idx=1&sn=52517fba9fc521c430a025a59b318937&chksm=8811e
 Abstract: Learning an interpretable factorised representation of the independent data generative factors of the world without supervision 
 is an important precursor for the development of artificial intelligence that is able to learn and reason in the same way that humans do. 
 We introduce beta-VAE, a new state-of-the-art framework for automated discovery of interpretable factorised latent representations from raw image data in a completely unsupervised manner.   详细参考论文
-2 pix2pix 视觉特征映射转换  cyclegan  https://mp.weixin.qq.com/s?__biz=MzA5MDMwMTIyNQ==&mid=2649291376&idx=1&sn=c4b4b567b144731781d5c2955286c1eb&chks 
+
+2 video-gan 场景理解，背景 运动物体的学习。 https://mp.weixin.qq.com/s?__biz=MzA5MDMwMTIyNQ==&mid=2649286943&idx=1&sn=26d0978fb432f831dca4b67d51dee109&m
+TGAN
+
+3 commaai的场景预测学习。https://mp.weixin.qq.com/s?__biz=MzA5MDMwMTIyNQ==&mid=2649285914&idx=1&sn=0b3a8088a6f6c0932bcb4aebe247bdda
+https://github.com/commaai/research/
+
+7 运动vae
+
+
+视觉认知：多传感器特征互相感知
+1 pix2pix 视觉特征映射转换  cyclegan  https://mp.weixin.qq.com/s?__biz=MzA5MDMwMTIyNQ==&mid=2649291376&idx=1&sn=c4b4b567b144731781d5c2955286c1eb&chks 
 ref   https://mp.weixin.qq.com/s?__biz=MzA5MDMwMTIyNQ==&mid=2649291640&idx=1&sn=8feacad9cde0f813296dc33825110717&chksm=
 不同感官的联想，不同维度信息的区分。
-3 video-gan 场景理解，背景 运动物体的学习。 https://mp.weixin.qq.com/s?__biz=MzA5MDMwMTIyNQ==&mid=2649286943&idx=1&sn=26d0978fb432f831dca4b67d51dee109&m
-TGAN
-4 commaai的场景预测学习。https://mp.weixin.qq.com/s?__biz=MzA5MDMwMTIyNQ==&mid=2649285914&idx=1&sn=0b3a8088a6f6c0932bcb4aebe247bdda
-https://github.com/commaai/research/
+
+
+
+仿真环境模拟器： 
 5 gazebo https://github.com/osrf/car_demo  各种硬件传感器可模拟
+
+思路分析：
 6  语义学习-通用智能的切入点-实现路径v0.01
  https://mp.weixin.qq.com/s?__biz=MzA5MDMwMTIyNQ==&mid=2649290721&idx=3&sn=c2acecd52b6526973a283ef730925b26&chk 
-7 运动vae
+
 
 
 
