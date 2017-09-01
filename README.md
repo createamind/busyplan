@@ -1,10 +1,9 @@
 # busyplan
 
 
-# 什么更重要？？ 为什么？？  更多牛人-
-找到正确的发展路径，行业认知！人员成长！
-当前最重要的是什么？为什么？   
-自动驾驶当前迅速发展的环节是哪个？
+# 什么更重要？？ 为什么是这个？？  更多牛人- 清晰的目标
+找到正确的发展路径！行业认知！人员成长！当前最重要的是什么？为什么？   自动驾驶当前迅速发展的环节是哪个？    做哪个是可以快速发展的
+
 
 
 
@@ -24,16 +23,15 @@
 #生态定位：
 自动驾驶生态：虽然有高校，但是缺少算法合作伙伴；我们在生态中的定位：最接近生物智能的视觉解决方案。 CreateAMind，服务自动驾驶的视觉系统，而非自动驾驶任务特定的视觉解决方案。现阶段定位为技术公司，为自动驾驶的普及做好感知基础。  技术如何在某一点，超越baidu 谷歌
 
-#方向和切入点：
+#方向和中期目标：
 在自动驾驶整个技术框架中，我选择的切入点是perception感知和决策。视觉的精准感知，视觉输入即可精准的感知（准确的认知）其他非视觉属性，如触觉属性、压力、深度、速度等可以通过视觉感知到，训练阶段会结合多传感器进行训练。
 
 #短期目标：
-短期目标 9-11月  真车完成前的adas软件功能准备，使用gazebo及torcs等仿真端对端的方式。用深度学习视觉和强化学习。
+短期目标 9-11月  真车完成前的adas软件功能准备，使用gazebo及torcs等仿真端对端的方式。用深度学习"视觉"和强化学习。
+仿真环境便于我们快速验证，方便更改各种环境条件,我们作为自动驾驶新人，具体实现从辅助驾驶的基本功能我们逐步去实现。
+没有特斯拉的条件就用仿真环境？？仿真环境是做事情的基础，算法训练，快速训练，强化学习训练。
 
 #why
-
-仿真环境便于我们快速验证，方便更改各种环境条件,我们作为自动驾驶新人，具体实现从辅助驾驶的基本功能我们逐步去实现。
-
 目标相关性！
 仿真的价值：
 角色
@@ -58,12 +56,9 @@
 决策切入点是用强化学习及rl-teacher 等；acktr a3c
 	决策突破点  决策学习 rlteacher 强化学习等技术。mobileeye也有决策技术分享可以参考 todo 1。
 
-
-进展参考baidu开源，在baidu开放的场景上面，我们的感知超过baidu开源的感知即可，todo 测试对比标准
-
 参考：
 
-抽象特征学习：
+概念抽象特征等学习：
 1 beta vae 论文 ，学习独立视觉特征  https://mp.weixin.qq.com/s?__biz=MzA5MDMwMTIyNQ==&mid=2649291563&idx=1&sn=52517fba9fc521c430a025a59b318937&chksm=8811e
 Abstract: Learning an interpretable factorised representation of the independent data generative factors of the world without supervision 
 is an important precursor for the development of artificial intelligence that is able to learn and reason in the same way that humans do. 
@@ -96,7 +91,7 @@ ref   https://mp.weixin.qq.com/s?__biz=MzA5MDMwMTIyNQ==&mid=2649291640&idx=1&sn=
 
 
 
-
+进展参考baidu开源，在baidu开放的场景上面，我们的感知超过baidu开源的感知即可，todo 测试对比标准
 
 
 认可这个思路，且有推进能力，欢迎一起推动，也欢迎成为我们的竞争伙伴。
