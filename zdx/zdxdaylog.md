@@ -1,15 +1,24 @@
 计划 总结 日记 反思； 最重要！  明确的！
-推进慢-缺少数学方面高手，做出东西吸引。 速度！云服务器远程桌面！
+推进慢-缺少数学方面高手，做出东西吸引。 速度！云服务器远程桌面！ qq 群
 
 gan车道线，pix2pix; cardemo-autoware
 
 传感器工控机  
 
 
-今天最重要的目标计划：？？
+5年  1年  1月 1周 今天  现在
+今天最重要的目标计划：？？ 
 
 
-10.11 如何提高数据下载和使用的速度？ aws 
+10.11 如何提高数据下载和使用的速度？ aws 桌面； cyclegan
+
+语言到图像的gan生成，语言图像可以互相学习，那么声音和图像，图像和雷达，等等。
+
+http://www.k4ai.com/depth/index.html  Monocular Depth Perception with cGAN
+
+cyclegan： --gpu_ids 0,1,2 for multi-GPU  pytorch
+
+
 
 10.10 plan：内部sample；   账物！  传感器！
 10.10  上午沟通：视觉增加很多非视觉属性，  确定gan cyclegan训练 深度信息和图像的互相转换，联想。;中午下午  账物梳理及报销有发票的
@@ -23,7 +32,13 @@ https://mp.weixin.qq.com/s?src=11&timestamp=1507627964&ver=444&signature=xx3suuO
 https://mp.weixin.qq.com/s?src=11&timestamp=1507627964&ver=444&signature=xx3suuOkPwr4eRj9SHukjSBPAnBrNbopdbTFvBvPhU0zbBptKvTJZxlAGtc9eeSnKZzBJD89CjXp81IXTjMh496*iF6vasL9fL*ClmZ3kBdyCINnrKSO2T-B0XGti9RG&new=1
 专栏 | CVPR 2017论文解读：基于视频的无监督深度和车辆运动估计 2017-07-27 机器之心
 
+Paper Reading | VINet 深度神经网络架构
+https://github.com/createamind/SfMLearner
+
 kitti ref dataset  http://make3d.cs.cornell.edu/data.html
+NYU RGB-D Dataset: Indoor dataset captured with a Microsoft Kinect that provides semantic labels.
+TUM RGB-D Dataset: Indoor dataset captured with Microsoft Kinect and high-accuracy motion capturing.
+
 
 车展仿真环境效果！ 
 10.9 上午王一舒沟通，下午，材料配合小王，工作沟通自动驾驶autoware cluster视频；  专注最重要一件书的学习；6：30看宝宝，锻炼10：00，改模型runceleba 11点20
