@@ -1,7 +1,10 @@
 计划 总结 日记 反思； 最重要！  明确的！
-推进慢-缺少数学方面高手，做出东西吸引。 速度！云服务器远程桌面！ qq 群
+推进慢-缺少数学方面高手，做出东西吸引。  qq 群
 
-gan车道线，pix2pix; cardemo-autoware
+cardemo-autoware；
+vide GAN
+gan车道线，
+pix2pix;  深度到seg；3d；
 
 传感器工控机  
 
@@ -10,17 +13,53 @@ gan车道线，pix2pix; cardemo-autoware
 今天最重要的目标计划：？？ 
 
 
-10.11 如何提高数据下载和使用的速度？ aws 桌面； cyclegan
+
+采访的ppt！！
+盛大商业计划书，车的测试场地开出去。
+机械臂
+
+
+
+think
+plan
+log
+
+
+
+
+10.14
+
+
+10.13
+think
+plan  1 chanal 参数，看代码已经确认ok； 2 test 视频一个看看深度的生成效果， 3 
+改进  1 用pix2pix  2  代码熟悉   3数据量大  epoch大
+log
+
+
+
+
+
+10.12 think videogan videovae  ；  paper: implicit  generator
+
+cyclegan 直接输入数据， 2  1ch 变 3ch  gan后 3ch 1 ch  3  gan网络直接用1ch    4 pix2pix  
+
+周四 cyclegan代码及深度图片的训练改进， 效果可以
+
+
+tensorflow pytorch 比较：https://mp.weixin.qq.com/s/y5LLraGWuYUbOted9N-GWQ https://mp.weixin.qq.com/s/u1aaOxPA_-nGwKD7AQZ7Bw https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2650726576&idx=3&sn=4140ee7afc67928333e971062d042c59  https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2650723769&idx=1&sn=17565e650771699ceddabb214d485626
+结论  PyTorch更有利于研究人员、爱好者、小规模项目等快速搞出原型。而TensorFlow更适合大规模部署，特别是需要跨平台和嵌入式部署时。
+10.11 周三 如何提高数据下载和使用的速度？ aws 桌面； cyclegan
 
 语言到图像的gan生成，语言图像可以互相学习，那么声音和图像，图像和雷达，等等。
 
-http://www.k4ai.com/depth/index.html  Monocular Depth Perception with cGAN
+http://www.k4ai.com/depth/index.html  Monocular Depth Perception with cGAN  两个小数据集
 
-cyclegan： --gpu_ids 0,1,2 for multi-GPU  pytorch
+cyclegan： --gpu_ids 0,1,2 for multi-GPU  pytorch  应该凌晨跑完一次。
 
+发票拍照仔细，时间久肯定忘，生物记忆不可靠。
 
-
-10.10 plan：内部sample；   账物！  传感器！
+10.10  周二 plan：内部sample；   账物！  传感器！
 10.10  上午沟通：视觉增加很多非视觉属性，  确定gan cyclegan训练 深度信息和图像的互相转换，联想。;中午下午  账物梳理及报销有发票的
 
 https://mp.weixin.qq.com/s?src=11&timestamp=1507627964&ver=444&signature=YcEj5vp8T24jw3P0gWbBzga8x2aN4gDrmrrGzIw3NvYVmv2kLTq6cFLAz8OzCaWsa0RwmyBemrv0uD*ZK4YmvJcsdL*o86ZxkJucc3X5HgftBqWas-mxsRp7U88Ngi4v&new=1
