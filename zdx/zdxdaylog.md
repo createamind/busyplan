@@ -2,27 +2,19 @@
 推进慢-缺少数学方面高手，做出东西吸引。  qq 群
 
 cardemo-autoware；
-vide GAN
-gan车道线，
-pix2pix;  深度到seg；3d；
+vide GAN; gan车道线，pix2pix;  深度到seg；3d；
 
 传感器工控机  
 
+5年  1年  1月 1周 今天  现在  今天最重要的目标计划：？？ 
 
-5年  1年  1月 1周 今天  现在
-今天最重要的目标计划：？？ 
+采访的ppt！！盛大商业计划书，车的测试场地开出去。  机械臂
 
 
-
-采访的ppt！！
-盛大商业计划书，车的测试场地开出去。
-机械臂
+think; plan; log
 
 
 
-think
-plan
-log
 
 
 
@@ -37,15 +29,11 @@ plan  1 chanal 参数，看代码已经确认ok； 2 test 视频一个看看深�
 log
 
 
-
-
-
 10.12 think videogan videovae  ；  paper: implicit  generator
 
 cyclegan 直接输入数据， 2  1ch 变 3ch  gan后 3ch 1 ch  3  gan网络直接用1ch    4 pix2pix  
 
 周四 cyclegan代码及深度图片的训练改进， 效果可以
-
 
 tensorflow pytorch 比较：https://mp.weixin.qq.com/s/y5LLraGWuYUbOted9N-GWQ https://mp.weixin.qq.com/s/u1aaOxPA_-nGwKD7AQZ7Bw https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2650726576&idx=3&sn=4140ee7afc67928333e971062d042c59  https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2650723769&idx=1&sn=17565e650771699ceddabb214d485626
 结论  PyTorch更有利于研究人员、爱好者、小规模项目等快速搞出原型。而TensorFlow更适合大规模部署，特别是需要跨平台和嵌入式部署时。
