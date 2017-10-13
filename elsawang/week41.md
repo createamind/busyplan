@@ -1,5 +1,22 @@
 ***Week 41 of 2017***
 
+
+### 13.10 Fri
+
+**Schedule**
+
+[] run video with Cycle-Gan-Depth-Model
+
+[] deploy text2img env
+
+[] familiar code and structure
+
+[] find research of GAN image segmenation, organise state-of-art tech in semantic image segmentation
+
+[] read [char-CNN-RNN](./pages/1605.05395.pdf)
+
+---
+
 ### 12.10 Thu
 
 **Schedule**
