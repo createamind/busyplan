@@ -17,17 +17,19 @@ think; plan; log
 
 
 
+10.15
+深度：室外，室内； 双目视差、雷达、物体的摆放前后逻辑-视线阻挡。
+cyclegan视频，单帧or 连续 ； 深度以外的cyclegan学习。
+pix2pix  到 sound2video  
 
 
-10.14
-
+10.14 休息看小孩
 
 10.13
-think
+think: 今天焦点不集中！
 plan  1 chanal 参数，看代码已经确认ok； 2 test 视频一个看看深度的生成效果， 3 
 改进  1 用pix2pix  2  代码熟悉   3数据量大  epoch大
-log
-
+log  代码； 测试，数据集！ 
 
 10.12 think videogan videovae  ；  paper: implicit  generator
 
@@ -37,6 +39,7 @@ cyclegan 直接输入数据， 2  1ch 变 3ch  gan后 3ch 1 ch  3  gan网络直�
 
 tensorflow pytorch 比较：https://mp.weixin.qq.com/s/y5LLraGWuYUbOted9N-GWQ https://mp.weixin.qq.com/s/u1aaOxPA_-nGwKD7AQZ7Bw https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2650726576&idx=3&sn=4140ee7afc67928333e971062d042c59  https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2650723769&idx=1&sn=17565e650771699ceddabb214d485626
 结论  PyTorch更有利于研究人员、爱好者、小规模项目等快速搞出原型。而TensorFlow更适合大规模部署，特别是需要跨平台和嵌入式部署时。
+
 10.11 周三 如何提高数据下载和使用的速度？ aws 桌面； cyclegan
 
 语言到图像的gan生成，语言图像可以互相学习，那么声音和图像，图像和雷达，等等。
