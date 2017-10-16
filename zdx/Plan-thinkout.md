@@ -1,14 +1,43 @@
 
+-----------------------------
+Plan   正式的：
+记 反思； 最重要！  明确的！
+
+
+更好智能：1更多的维度-加时间监督 videogan；2更多传感器，视听闻触等。
+cardemo-autoware；
+vide GAN; gan车道线，pix2pix;  深度到seg；3d；
+
+传感器工控机  
+
+5年  1年  1月 1周 今天  现在  今天最重要的目标计划：？？ 
+
+采访的ppt！！盛大商业计划书，车的测试场地开出去。  机械臂
+
+
+两个推进思路： 1  自动驾驶真车使用的需求   2 通用智能的构建思路推进。
+
 
 -----------------------------
 即时思考记录
+10.15  16
+深度：室外，室内； 双目视差、雷达、物体的摆放前后逻辑-视线阻挡。
+cyclegan视频，单帧or 连续 ； 深度以外的cyclegan学习。  
+cyclegan是成对的学习，或成对的数据集，pix2pix是成对的数据；能否不用成对数据集，直接从数据集中学习各种属性，遇到其他数据集继续类似cyclegan学习对应数据集的对应属性变化？？
+或图灵机自己选择某些数据组成成对的数据集。
+
+语言到图像：
+
+pix2pix  到 sound2video  （have text to image 这个的相关介绍 ） 
+Ambient Sound Provides Supervision for Visual Learning  https://arxiv.org/pdf/1608.07017.pdf
+
+深度到rgb： Self-Paced Cross-Modality Transfer Learning for Efficient Road Segmentation. In ICRA2017
 
 
+video 视频的context信息，声音和图像的对应关系也有。 ego-motion
 
+通用智能的构建思路： 1 运动（参考生物视觉发展），  videgan(avb?)     1.1 我不动，周围运动，1.2自我运动的检测。   
 
-
------------------------------
-Plan   正式的：
 
 
 

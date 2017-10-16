@@ -16,22 +16,28 @@ think; plan; log
 
 
 
-
-10.15
-深度：室外，室内； 双目视差、雷达、物体的摆放前后逻辑-视线阻挡。
-cyclegan视频，单帧or 连续 ； 深度以外的cyclegan学习。
-pix2pix  到 sound2video  
+10.16 周一  视频无监督调研； 自监督ppt扩展开来， 
+探索深度广度
 
 
+
+
+
+
+10.15  
+上午 自监督 ，下午体验特斯拉-面试李亮亮。  https://arxiv.org/pdf/1608.07017.pdf ; 云服务器网络谷歌学术折腾1.5小时，自己网站恢复耽误1小时。
+log png16位格式深度 or 32深度？
+分享： text2image 
+
+深度图对比效果做出来了。
 10.14 休息看小孩
-
-10.13
+10.13  周五
 think: 今天焦点不集中！
 plan  1 chanal 参数，看代码已经确认ok； 2 test 视频一个看看深度的生成效果， 3 
 改进  1 用pix2pix  2  代码熟悉   3数据量大  epoch大
 log  代码； 测试，数据集！ 
 
-10.12 think videogan videovae  ；  paper: implicit  generator
+10.12  周四   think videogan videovae  ；  paper: implicit  generator
 
 cyclegan 直接输入数据， 2  1ch 变 3ch  gan后 3ch 1 ch  3  gan网络直接用1ch    4 pix2pix  
 
