@@ -1,19 +1,38 @@
 计划 总结 日记 反思； 最重要！  明确的！
 推进慢-缺少数学方面高手，做出东西吸引。  qq 群
 
+<<<<<<< HEAD
 cardemo-autoware；
 vide GAN
 gan车道线，
 pix2pix;  深度到seg；3d；
+||||||| merged common ancestors
+gan车道线，pix2pix; cardemo-autoware
+=======
+cardemo-autoware；
+vide GAN; gan车道线，pix2pix;  深度到seg；3d；
+>>>>>>> 9a92635df27bdb831662ed027e6323840283c679
 
 传感器工控机  
 
+5年  1年  1月 1周 今天  现在  今天最重要的目标计划：？？ 
 
-5年  1年  1月 1周 今天  现在
-今天最重要的目标计划：？？ 
+采访的ppt！！盛大商业计划书，车的测试场地开出去。  机械臂
+
+
+think; plan; log
 
 
 
+
+10.16 周一  视频无监督调研； 自监督ppt扩展开来， 
+探索深度广度
+
+
+
+
+
+<<<<<<< HEAD
 采访的ppt！！
 盛大商业计划书，车的测试场地开出去。
 机械臂
@@ -35,11 +54,54 @@ think
 plan  1 chanal 参数，看代码已经确认ok； 2 test 视频一个看看深度的生成效果， 3 
 改进  1 用pix2pix  2  代码熟悉   3数据量大  epoch大
 log
+||||||| merged common ancestors
+语言到图像的gan生成，语言图像可以互相学习，那么声音和图像，图像和雷达，等等。
+=======
+>>>>>>> 9a92635df27bdb831662ed027e6323840283c679
 
+<<<<<<< HEAD
+||||||| merged common ancestors
+http://www.k4ai.com/depth/index.html  Monocular Depth Perception with cGAN
+=======
+10.15  
+上午 自监督 ，下午体验特斯拉-面试李亮亮。  https://arxiv.org/pdf/1608.07017.pdf ; 云服务器网络谷歌学术折腾1.5小时，自己网站恢复耽误1小时。
+log png16位格式深度 or 32深度？
+分享： text2image 
 
+深度图对比效果做出来了。
+10.14 休息看小孩
+10.13  周五
+think: 今天焦点不集中！
+plan  1 chanal 参数，看代码已经确认ok； 2 test 视频一个看看深度的生成效果， 3 
+改进  1 用pix2pix  2  代码熟悉   3数据量大  epoch大
+log  代码； 测试，数据集！ 
 
+10.12  周四   think videogan videovae  ；  paper: implicit  generator
 
+cyclegan 直接输入数据， 2  1ch 变 3ch  gan后 3ch 1 ch  3  gan网络直接用1ch    4 pix2pix  
 
+周四 cyclegan代码及深度图片的训练改进， 效果可以
+
+tensorflow pytorch 比较：https://mp.weixin.qq.com/s/y5LLraGWuYUbOted9N-GWQ https://mp.weixin.qq.com/s/u1aaOxPA_-nGwKD7AQZ7Bw https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2650726576&idx=3&sn=4140ee7afc67928333e971062d042c59  https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2650723769&idx=1&sn=17565e650771699ceddabb214d485626
+结论  PyTorch更有利于研究人员、爱好者、小规模项目等快速搞出原型。而TensorFlow更适合大规模部署，特别是需要跨平台和嵌入式部署时。
+
+10.11 周三 如何提高数据下载和使用的速度？ aws 桌面； cyclegan
+
+语言到图像的gan生成，语言图像可以互相学习，那么声音和图像，图像和雷达，等等。
+>>>>>>> 9a92635df27bdb831662ed027e6323840283c679
+
+<<<<<<< HEAD
+||||||| merged common ancestors
+cyclegan： --gpu_ids 0,1,2 for multi-GPU  pytorch
+=======
+http://www.k4ai.com/depth/index.html  Monocular Depth Perception with cGAN  两个小数据集
+>>>>>>> 9a92635df27bdb831662ed027e6323840283c679
+
+cyclegan： --gpu_ids 0,1,2 for multi-GPU  pytorch  应该凌晨跑完一次。
+
+发票拍照仔细，时间久肯定忘，生物记忆不可靠。
+
+<<<<<<< HEAD
 10.12 think videogan videovae  ；  paper: implicit  generator
 
 cyclegan 直接输入数据， 2  1ch 变 3ch  gan后 3ch 1 ch  3  gan网络直接用1ch    4 pix2pix  
@@ -60,6 +122,11 @@ cyclegan： --gpu_ids 0,1,2 for multi-GPU  pytorch  应该凌晨跑完一次。
 发票拍照仔细，时间久肯定忘，生物记忆不可靠。
 
 10.10  周二 plan：内部sample；   账物！  传感器！
+||||||| merged common ancestors
+10.10 plan：内部sample；   账物！  传感器！
+=======
+10.10  周二 plan：内部sample；   账物！  传感器！
+>>>>>>> 9a92635df27bdb831662ed027e6323840283c679
 10.10  上午沟通：视觉增加很多非视觉属性，  确定gan cyclegan训练 深度信息和图像的互相转换，联想。;中午下午  账物梳理及报销有发票的
 
 https://mp.weixin.qq.com/s?src=11&timestamp=1507627964&ver=444&signature=YcEj5vp8T24jw3P0gWbBzga8x2aN4gDrmrrGzIw3NvYVmv2kLTq6cFLAz8OzCaWsa0RwmyBemrv0uD*ZK4YmvJcsdL*o86ZxkJucc3X5HgftBqWas-mxsRp7U88Ngi4v&new=1
