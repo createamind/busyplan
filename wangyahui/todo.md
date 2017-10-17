@@ -26,6 +26,8 @@ github invite to createamind
 信息论
 概率统计
 视觉书
+思想本质
+
 
 重新定义公司
 联盟

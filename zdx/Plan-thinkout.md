@@ -4,7 +4,12 @@ Plan   正式的：
 记 反思； 最重要！  明确的！
 
 
-更好智能：1更多的维度-加时间监督 videogan；2更多传感器，视听闻触等。
+更好智能：1更多的维度-加时间监督 videogan；2更多传感器，视听闻触等。 
+
+
+
+
+
 cardemo-autoware；
 vide GAN; gan车道线，pix2pix;  深度到seg；3d；
 
@@ -16,6 +21,16 @@ vide GAN; gan车道线，pix2pix;  深度到seg；3d；
 
 
 两个推进思路： 1  自动驾驶真车使用的需求   2 通用智能的构建思路推进。
+
+
+
+
+
+
+
+
+
+
 
 
 -----------------------------
@@ -34,10 +49,14 @@ Ambient Sound Provides Supervision for Visual Learning  https://arxiv.org/pdf/16
 深度到rgb： Self-Paced Cross-Modality Transfer Learning for Efficient Road Segmentation. In ICRA2017
 
 
-video 视频的context信息，声音和图像的对应关系也有。 ego-motion
+video 视频的context信息，声音和图像的对应关系也有。 ego-motion   3D重建？
 
 通用智能的构建思路： 1 运动（参考生物视觉发展），  videgan(avb?)     1.1 我不动，周围运动，1.2自我运动的检测。   
 
+
+
+如何表示一个物体的很多属性？？？不同传感器的属性，不同的硬度，导热，高低，亮度等等。
+liyanran160pptGAN,domain transfer:吧隐变量的几个结构进行了更改，其他属性或维度保持不变。
 
 
 
