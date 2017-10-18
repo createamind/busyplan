@@ -3,6 +3,13 @@
 **The ONE thing of this week** : 熟悉现有分割的方法和技术 
 
 
+### 18.10 Tue
+**Schedule**
+
+[x] 阅读 tgan， mocoGAN
+
+由预设变量生成视频，和原定视频生成学习隐变量不符，考虑研究VAE+video
+
 ### 17.10 Tue
 **Schedule**
 
