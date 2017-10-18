@@ -16,8 +16,9 @@ A uniform distribution is used to sample z0.
 - Background Stream 2D convolutions,从一维向量z0反卷积生成，2维的静态背景图像
 - 将静态动态合成一个视频序列
 
-
-
-
-3.应用：Video Representation Learning
+应用：Video Representation Learning
 视频表示学习，利用训练好的判别器，输入视频序列，取出最后一个全连接层作为输出的特征。在这基础上fine-tune 一个回归或者分类模型，预测方向盘转角或者其他。
+
+3.Learning to Generate Time-Lapse Videos Using Multi-Stage Dynamic Generative Adversarial Networks
+
+generate plausible, long-term, and high-quality future frames given one starting frame.
