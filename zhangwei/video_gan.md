@@ -8,3 +8,12 @@ A uniform distribution is used to sample z0.
 - 真实的video序列可表示为[x1,x2,....xt]
 - 判别器spatio-temporal 3D convolu- tional layers，判别两个视频序列的真假
 
+2.Generating Videos with Scene Dynamics
+
+从随机采样的z0生成整个视频序列
+- 引入了静态的背景和动态的前景的先验知识，用于对物体动作跟踪问题的建模
+
+
+
+3.应用：Video Representation Learning
+视频表示学习，利用训练好的判别器，输入视频序列，取出最后一个全连接层作为输出的特征。在这基础上fine-tune 一个回归或者分类模型，预测方向盘转角或者其他。
