@@ -12,6 +12,10 @@ A uniform distribution is used to sample z0.
 
 从随机采样的z0生成整个视频序列
 - 引入了静态的背景和动态的前景的先验知识，用于对物体动作跟踪问题的建模
+- Foreground Stream 3D convolution,从一维向量z0反卷积生成，3维的动态前景图像序列
+- Background Stream 2D convolutions,从一维向量z0反卷积生成，2维的静态背景图像
+- 将静态动态合成一个视频序列
+
 
 
 
