@@ -21,4 +21,10 @@ A uniform distribution is used to sample z0.
 
 3.Learning to Generate Time-Lapse Videos Using Multi-Stage Dynamic Generative Adversarial Networks
 
-generate plausible, long-term, and high-quality future frames given one starting frame.
+给定一张静态图像，生成视频序列
+
+- 两个Gan叠加，第一个Base Gan生成粗糙/模糊的图像，第二个REfine Gan在第一个的基础上进行精细化
+- Base Gan，输入的是初始图像复制叠加形成的图像序列X，输出图像序列Y1。生成器采用Unet结构，损失函数是判别器的loss和L1 loss
+- Refine net输入Base Gan输出的图像序列Y1，输出图像序列Y2。生成器取消Unet中的skip connection，损失函数为判别器的loss和L1 loss，加上Gram matrix loss ，根据Y，Y1，Y2在判别器某一层输出计算的Gram matrix。采用Gram matrix loss的目的是避免Y2只是简单的逼近Y1。
+
+
