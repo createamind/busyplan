@@ -1,3 +1,4 @@
+server
 1. install ss
 ````
 wget --no-check-certificate -O shadowsocks.sh https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocks.sh
@@ -53,3 +54,7 @@ nano /etc/shadowsocks.json
 ```
 5.重启
 ```/etc/init.d/shadowsocks restart```
+
+
+client
+https://github.com/shadowsocks/ShadowsocksX-NG/releases/
