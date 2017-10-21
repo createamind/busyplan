@@ -19,6 +19,8 @@ github invite to createamind
 护膝
 小米电脑
 
+零食。杯子，衣架
+
 书：
 
 书架
