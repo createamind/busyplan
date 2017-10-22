@@ -15,6 +15,31 @@ think; plan; log
 
 
 
+
+
+
+
+10.20 宋总 无人驾驶资料邮件查看；加群内容回复（最重要？？？）
+1 传统和深度学习的本质区别。
+2 是否是与众不同，
+3 真正追求的是什么？
+4 实现目标的方法，途径，是最合适的吗？
+
+
+
+10.19 沟通,同意人工智能思路，实现通用智能的思路分享，分析，梳理，表达自己的实现思路，问题是存在很大解释不清楚的点，大家依然对实现路径不清晰，无法自我驱动前进。上午到下午4点。 传感器配置； 公众号
+
+
+10.18 周三：videogan： 时空卷积结构
+paper16 videogan: principles in mind. Firstly, we want the network to be invariant to translations in both space and time. Secondly, we want a low-dimensional z to be able to produce a high-dimensional output (video). Thirdly, we want to assume a stationary camera and take advantage of the the property that usually only objects move.
+摄像头移动和背景的变化是一致的。 摄像头移动跟踪物体移动
+TGAN：address this problem by decomposing it into background generation and foreground generation, this approach has a drawback that it cannot generate a scene with dynamic background due to the static background assumption [44]. To the best of our knowledge, there is no study that tackles video generation without such assumption and generates diversified videos like natural videos.
+We believe that the nature of time dimension is essentially different from the spatial dimensions in the case of videos so that such approach has difficulty on the video generation problem. The relevance of this assumption has been also discussed in some recent studies [33, 24, 46] that have shown good performance on the video recognition task.
+contributions are summarized as follows. (i) The generative model that can efficiently capture the latent space of the time dimension in videos. It also enables a natural extension to an application such as frame interpolation. (ii) The alternative parameter clipping method for WGAN that significantly stabilizes the training of the networks that have advanced structure.
+
+mocogan
+
+
 10.17 周二：  log 上午访谈，下午沟通工作思路。 
 
 计划： gan video  两周 第一1周 熟悉已有论文，跑效果，
