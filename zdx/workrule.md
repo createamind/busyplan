@@ -6,12 +6,19 @@ smart Specific、Measurable、Attainable、Relevant、Time－based
 ！！日记！计划  总结！
 
 日记，工作计划和总结，必须写！
-9：00之前工作计划，自己写好都行： 包括我自己！！！
+上班时间9点，周六10点。晚到提前通知。
+9：00之前工作计划，建议前一天睡前自己写好：每个人。 ！
 9：05 我检查计划情况，
 
 
 
-每次讨论时间及讨论的必要性
+周六周三下午每次讨论，平时讨论时间限制及讨论的必要性，及记录下来。GEEK生产力图！氛围沉闷。
+
+wills 公司的次卡
+
+
+
+
 
 
 
@@ -20,6 +27,8 @@ smart Specific、Measurable、Attainable、Relevant、Time－based
 规范：
 
 数据集可以下载到云服务器。速度！云服务器远程桌面！
+
+测试程序：  ~/github/
 
 数据放  /data/dataset/depthdata/
 

@@ -13,12 +13,17 @@ vide GAN; gan车道线，pix2pix;  深度到seg；3d；
 
 think; plan; log
 
+短期、近期任务：videogan
 
 
+10.23 周一  plan: 我和亮亮做车道线， nvida  博客文章 公众号；torcs之前截取视频的方法，及训练模型用avb？或之前的 commaai research基础都行。
+之前训练的模型的人脸实验，或直接车辆场景的信息抽取。
 
-
-
-10.23 周一  plan: 我和亮亮做车道线， nvida  博客文章 公众号；torcs之前截取视频的方法，及训练模型用avb？？
+1 torcs数据，之前记录torcs数据的程序
+2 之前跑的模型，跑commaai simu torcs的程序 or avb?
+3 如何跑起来，train and test
+4 数据整理出相关用于提前特征的图片
+5 测试去特征后叠加的效果。
 
 
 
@@ -32,7 +37,7 @@ think; plan; log
 3 真正追求的是什么？
 4 实现目标的方法，途径，是最合适的吗？
 
-10.19 沟通,同意人工智能思路，实现通用智能的思路分享，分析，梳理，表达自己的实现思路，问题是存在很大解释不清楚的点，大家依然对实现路径不清晰，无法自我驱动前进。上午到下午4点。 传感器配置； 公众号
+10.19 周四几乎一天沟通,通用人工智能思路，实现通用智能的思路分享，分析，梳理，表达自己的实现思路，问题是存在很大解释不清楚的点，大家依然对实现路径不清晰，无法自我驱动前进。上午到下午4点。 传感器配置； 公众号
 
 10.18 周三：videogan： 时空卷积结构
 paper16 videogan: principles in mind. Firstly, we want the network to be invariant to translations in both space and time. Secondly, we want a low-dimensional z to be able to produce a high-dimensional output (video). Thirdly, we want to assume a stationary camera and take advantage of the the property that usually only objects move.
