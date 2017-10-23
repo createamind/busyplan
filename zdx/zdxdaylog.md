@@ -10,10 +10,18 @@ vide GAN; gan车道线，pix2pix;  深度到seg；3d；
 
 采访的ppt！！盛大商业计划书，车的测试场地开出去。  机械臂
 
-
 think; plan; log
-
 短期、近期任务：videogan
+
+
+
+
+
+
+
+
+
+
 
 
 10.23 周一  plan: 我和亮亮做车道线， nvida  博客文章 公众号；torcs之前截取视频的方法，及训练模型用avb？或之前的 commaai research基础都行。

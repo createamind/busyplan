@@ -37,16 +37,9 @@ wills 公司的次卡
 /var/lib/docker/fs  做软连接 减少固态硬盘的占用。
 /var/lib/nvidia-docker 做软连接
 
-
 python环境：默认conda 3.6环境：其他特殊要求再建立新环境
 
-
-
-
-
 git 版本管理
-
- 
 
 cuda安装：  https://developer.nvidia.com/cuda-downloads   网络安装方式： apt-get install cuda
 
