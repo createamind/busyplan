@@ -30,7 +30,7 @@ wills 公司的次卡
 
 测试程序：  ~/github/
 
-数据放  /data/dataset/depthdata/
+数据放  /data/dataset/depthdata/   软连接配置其他程序进行使用。
 
 代码更改：fork后在此基础上继续用git管理。
 

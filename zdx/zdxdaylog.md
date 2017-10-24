@@ -19,7 +19,7 @@ think; plan; log
 
 
 
-
+24 周二 计划：模型的向量提取，avb的训练是不是23晚上跑跑？？
 
 
 
@@ -27,8 +27,12 @@ think; plan; log
 10.23 周一  plan: 我和亮亮做车道线， nvida  博客文章 公众号；torcs之前截取视频的方法，及训练模型用avb？或之前的 commaai research基础都行。
 之前训练的模型的人脸实验，或直接车辆场景的信息抽取。
 
-1 torcs数据，之前记录torcs数据的程序
+1 torcs数据，之前记录torcs数据的程序  torcs 生成视频，是否保持为图片？ 查看avb是否图片？？
 2 之前跑的模型，跑commaai simu torcs的程序 or avb?
+之前torcs 训练结果？？   avb跑一个结果
+
+avb数据输入方式：
+
 3 如何跑起来，train and test
 4 数据整理出相关用于提前特征的图片
 5 测试去特征后叠加的效果。
