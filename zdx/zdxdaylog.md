@@ -18,7 +18,49 @@ think; plan; log
 
 
 
-25 电线杆预测不连续的解决办法是？？
+
+
+25 周三：
+改进
+1 数据集 找更好的
+1.1 udaciyt baidu是高速路
+1.2 torcs 新数据集
+
+现有模型
+2 现有数据集找合适的图片集  左前  右前 分布10张图片
+3 图片集 interpolation 看效果
+4  2 3 分别是  research  和  avb  两个模型的测试
+
+
+
+
+24 log
+ 
+电线杆预测不连续的解决办法是？？
+todo  1 avb结构优化，训练车道更合适   2  research 的特征提取使用！  选一个！！！！
+3 数据集 val test  需要认真选择 ！
+
+Allowing GPU memory growth
+
+By default, TensorFlow maps nearly all of the GPU memory of all GPUs (subject to CUDA_VISIBLE_DEVICES) visible to the process. This is done to more efficiently use the relatively precious GPU memory resources on the devices by reducing memory fragmentation.
+
+In some cases it is desirable for the process to only allocate a subset of the available memory, or to only grow the memory usage as is needed by the process. TensorFlow provides two Config options on the Session to control this.
+
+The first is the allow_growth option, which attempts to allocate only as much GPU memory based on runtime allocations: it starts out allocating very little memory, and as Sessions get run and more GPU memory is needed, we extend the GPU memory region needed by the TensorFlow process. Note that we do not release memory, since that can lead to even worse memory fragmentation. To turn this option on, set the option in the ConfigProto by:
+
+config = tf.ConfigProto()
+config.gpu_options.allow_growth = True
+session = tf.Session(config=config, ...)
+The second method is the per_process_gpu_memory_fraction option, which determines the fraction of the overall amount of memory that each visible GPU should be allocated. For example, you can tell TensorFlow to only allocate 40% of the total memory of each GPU by:
+
+config = tf.ConfigProto()
+config.gpu_options.per_process_gpu_memory_fraction = 0.4
+session = tf.Session(config=config, ...)
+This is useful if you want to truly bound the amount of GPU memory available to the TensorFlow process.
+
+CUDA_VISIBLE_DEVICES=  这个可以设置tensorflow使用的GPU；
+
+
 
 
 24 周二 计划：模型的向量提取，avb的训练是不是23晚上跑跑？？
