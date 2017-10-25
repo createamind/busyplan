@@ -8,7 +8,7 @@ vide GAN; gan车道线，pix2pix;  深度到seg；3d；
 
 5年  1年  1月 1周 今天  现在  今天最重要的目标计划：？？ 
 
-采访的ppt！！盛大商业计划书，车的测试场地开出去。  机械臂
+盛大商业计划书，车的测试场地开出去。  机械臂
 
 think; plan; log
 短期、近期任务：videogan
@@ -20,7 +20,17 @@ think; plan; log
 
 
 
-25 周三：
+
+
+
+26 周四：  图片的特征向量生成，特征向量的分析，特征向量的加减做道路偏向的变化。 分解
+
+
+
+25 周三：  知道  做到   锻炼，用非当前紧急任务锻炼，任务分解后的子任务锻炼，python基础知识资料分享。
+当前需要完成的任务：  
+
+
 改进
 1 数据集 找更好的
 1.1 udaciyt baidu是高速路
@@ -31,8 +41,7 @@ think; plan; log
 3 图片集 interpolation 看效果
 4  2 3 分别是  research  和  avb  两个模型的测试
 
-
-
+中午见刘自良
 
 24 log
  
@@ -61,11 +70,8 @@ This is useful if you want to truly bound the amount of GPU memory available to 
 CUDA_VISIBLE_DEVICES=  这个可以设置tensorflow使用的GPU；
 
 
-
-
 24 周二 计划：模型的向量提取，avb的训练是不是23晚上跑跑？？
 commaai训练新的数据G 失败，
-
 
 
 10.23 周一  plan: 我和亮亮做车道线， nvida  博客文章 公众号；torcs之前截取视频的方法，及训练模型用avb？或之前的 commaai research基础都行。
