@@ -2,6 +2,34 @@
 
 **The ONE thing** : 
 
+### 24.10 Tue
+**Tomorrow TODO**
+
+**Reflection**
+
+**Summary**
+
+
+### 25.10 Tue
+**Tomorrow TODO**
+
+- 继续关于深度的研究，找数据集，确认点云转换
+- 跟进GAN道路生成的研究
+
+**Reflection**
+
+- vkitti数据集的深度是由z-buffer生成，直接存储深度z。前方有遮挡的情况下z-buffer会将后面的信息hidden。近处深度预测较好，远处深度误差较大。我们的3Dreconstruction近距离曲面话的问题可能是由于近处估值太近，调整y轴有所改善。深度预测方法还有w-buffer。因为并非真实世界深度图，暂时不继续研究。
+
+**Summary**
+
+- 盛大孵化器
+- 断网期间复习了下numpy (⊙﹏⊙)b
+- 看了下vkitti深度估算方法z-buffer
+- 寻找合适数据集，暂定kitti
+	- 弯道明显/路的界限清晰
+	- 尽量没有车辆等过于复杂的干扰（我的考虑）
+- 今日网络情况堪忧
+
 
 ### 24.10 Tue
 **Tomorrow TODO**
