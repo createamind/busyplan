@@ -24,6 +24,9 @@ think; plan; log
 
 
 26 周四：  图片的特征向量生成，特征向量的分析，特征向量的加减做道路偏向的变化。 分解
+1 reload weight；   checkpoint  for  1 interpolation 2  特征提取  
+2 看论文
+3 跟进度。
 
 
 
@@ -42,6 +45,7 @@ think; plan; log
 4  2 3 分别是  research  和  avb  两个模型的测试
 
 中午见刘自良
+
 
 24 log
  
