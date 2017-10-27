@@ -1,5 +1,5 @@
 计划 总结 日记 反思； 最重要！  明确的！
-推进慢-缺少数学方面高手，做出东西吸引。  qq 群
+推进慢-缺少数学程序方面高手，做出东西吸引。  qq 群
 
 cardemo-autoware；
 vide GAN; gan车道线，pix2pix;  深度到seg；3d；
@@ -11,28 +11,29 @@ vide GAN; gan车道线，pix2pix;  深度到seg；3d；
 盛大商业计划书，车的测试场地开出去。  机械臂
 
 think; plan; log
-短期、近期任务：videogan
+短期、近期任务：videogan+vae进行编码
 
 
 
 
 
-
-
-
-
+27  周五   评审准备； load 后图片生成问题；  统一的思路改进。
 
 
 26 周四：  图片的特征向量生成，特征向量的分析，特征向量的加减做道路偏向的变化。 分解
-1 reload weight；   checkpoint  for  1 interpolation 2  特征提取  
+1 reload weight； 文档，参考代码过一下；  checkpoint reload；  for  1 interpolation 2  特征提取  nvidia blog 过一遍
+1.1  网络比较，commaai 图像大，avb图像小，网络结构优化
+
+找图片，reload weight，生成图片向量，找向量里面道路相关特征的维度，此特征维度变化后生成图片的变化。
+
 2 看论文
 3 跟进度。
 
+中午盛大天地苗圃，回来跟进各个问题处理。load weight memory growth；图片/255; 前天图片显示，今天不显示；代码变化过？？代码管理！！
 
 
 25 周三：  知道  做到   锻炼，用非当前紧急任务锻炼，任务分解后的子任务锻炼，python基础知识资料分享。
 当前需要完成的任务：  
-
 
 改进
 1 数据集 找更好的
