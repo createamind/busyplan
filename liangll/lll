@@ -21,3 +21,9 @@
 2）张总ppt讨论
 3）道路图片挑选
 4）道路差值图片文件名正则化和排序程序编写测试成功
+
+11/2 工作内容：
+1）PGgan模型下载，train.py无法正常启动，提示cudnn.h无法找到,将cudnn.h文件复制到对应的include文件夹中依然找不到；
+  关闭cuda使用后，依然出现lasagne无法导入downsample,怀疑lasagne版本和theano没有很好兼容，尝试多次重新安装，问题依然存在
+ 2）PGgan的pytorch版本有一个inference model 没有train.py文件，只可以调用已经训练好的权重进行图片测试，体验模型训练后的效果
+ 并有一个插值模型，可以生成10副连续插值图像进行对比
