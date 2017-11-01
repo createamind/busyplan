@@ -25,6 +25,12 @@ github invite to createamind
 
 书架
 
+会议方法
+未来简史
+奇点创业
+创业无畏
+
+
 
 深度学习 3 
 信息论
