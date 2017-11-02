@@ -2,6 +2,34 @@
 
 #### Week 44 of 2017
 
+02/11 Mon
+
+主要工作：安装配置DIGITS_GAN
+完成情况：完成
+工作记录：
+安装解决方案，下载其他人修改好的docker
+image 地址
+https://hub.docker.com/r/ai4sig/digits6mod/
+
+使用说明
+https://ai4sig.org/docs/get-modified-digits-docker/
+
+本地安装DIGITS， caffe仍然有compile问题
+
+其他进展：
+
+根据post作者[教程](https://github.com/gheinrich/DIGITS-GAN/tree/master/examples/gan#handwritten-digits)学习使用DIGITS
+DIGITS MNIST数据集分裂网络成功
+
+MNIST GAN visualise 出现问题：
+分析原因[code](https://github.com/gheinrich/DIGITS-GAN/blob/master/examples/gan/network-mnist.py)和digits使用的是TensorFlow 0.12， 版本叫老，`tf.concat` 命令顺序不同
+
+明日计划安排：
+1. 明天尝试按照 https://stackoverflow.com/questions/41813665/tensorflow-slim-typeerror-expected-int32-got-list-containing-tensors-of-type 或 https://github.com/carpedm20/DCGAN-tensorflow/issues/99 改code
+2. 争取完成celeA教程
+
+---
+
 01/11 Mon
 
 主要工作：安装Nvidia DIGITS
