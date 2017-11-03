@@ -2,6 +2,21 @@
 
 #### Week 44 of 2017
 
+03/11 Tue
+
+!!*张总：* 如果CeleA GAN 训练完成的话，请先 commit 保存docker， 然后按照issues中提到的教程训练 CeleA Encoder
+
+
+主要工作：完成 DIGITS 中 MNIST GAN and Encoder 复现，训练 CeleA GAN
+完成情况：完成
+工作记录：
+很顺利，代码问题根据昨天找到的解决方案解决。
+
+明日计划安排：
+完成 CeleA Encoder 训练
+复现 CeleA Inference
+
+
 02/11 Mon
 
 主要工作：安装配置DIGITS_GAN
