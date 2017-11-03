@@ -22,3 +22,20 @@ test 模式：    /home/sdc/waxz/research/outputs/results_autoencoder/autoencode
 avb 有test模块。
 log 生产的图片地址：
 
+
+
+
+数据集：存放位置： /data/dataset/
+
+
+celeba
+virtual kitti ; 
+torcs 自己截取的训练数据
+
+
+
+
+kitti之前下载过  server2 d盘
+
+滴滴比赛数据集 server2 d盘不知道什么位置
+
