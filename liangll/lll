@@ -27,3 +27,10 @@
   关闭cuda使用后，依然出现lasagne无法导入downsample,怀疑lasagne版本和theano没有很好兼容，尝试多次重新安装，问题依然存在
  2）PGgan的pytorch版本有一个inference model 没有train.py文件，只可以调用已经训练好的权重进行图片测试，体验模型训练后的效果
  并有一个插值模型，可以生成10副连续插值图像进行对比
+
+11/3 工作内容：
+1）台式电脑ubuntu系统安装，gtx 1070 cuda 安装
+2）linux系统指令学习
+3）caffe2架构安装学习
+4）pggan的模型lasagne无法导入downsample查找，从github导入最新的模型后，并在terminal运行，该错误消失，可能与IDE集成环境报错有关，建议以后
+尽量用terminal运行程序
