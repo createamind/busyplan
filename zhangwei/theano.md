@@ -25,7 +25,7 @@ algo_bwd_filter = deterministic
 algo_bwd_data = deterministic
 
 [cuda]
-root=/usr/local/cuda-8.0
+root=/usr/local/cuda-9.0
 
 [lib]
 cnmem=0.3
