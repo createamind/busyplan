@@ -8,7 +8,7 @@ vide GAN; gan车道线，pix2pix;  深度到seg；3d；
 
 5年  1年  1月 1周 今天  现在  今天最重要的目标计划：？？ 
 
-盛大商业计划书，车的测试场地开出去。  机械臂
+
 
 think; plan; log
 短期、近期任务：videogan+vae进行编码
