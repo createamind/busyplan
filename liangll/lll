@@ -36,7 +36,7 @@
 尽量用terminal运行程序
 
 11/4工作内容：
-1）cuda在ubuntu14上的安装方法和cuda toolkit的下载链接
+1）cuda在ubuntu14上的安装方法和cuda 8.0 toolkit的下载链接
 http://blog.csdn.net/yanncywang/article/details/52872473
 2）显卡驱动安装指令链接
 http://blog.csdn.net/iotlpf/article/details/54175064
@@ -44,3 +44,11 @@ http://blog.csdn.net/iotlpf/article/details/54175064
 http://www.jianshu.com/p/d45434f28ca0
 4）ubuntu安装教程链接
 https://jingyan.baidu.com/article/0bc808fc6326ca1bd485b9e6.html
+5)ssh远程登陆电脑
+http://www.ruanyifeng.com/blog/2011/12/ssh_remote_login.html
+6）Linux开启ssh服务
+http://www.cnblogs.com/fengbeihong/p/3307575.html
+7)ssh链接远程服务器，如果遇到这样的错误：ECDSA host key "ip地址" for  has changed and you have requested strict checking，请参考
+http://blog.csdn.net/ausboyue/article/details/52775281
+8)nvidia cuda linux安装知道官方网站(建议严格按照官网步骤，其他途径可以作为参考）
+http://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html
