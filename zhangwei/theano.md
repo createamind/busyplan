@@ -13,7 +13,9 @@ or add a [cuda] section to your .theanorc file containing the option root = /pat
 ```
 
 2.conda install pygpu==0.7
+
 3.pip install  --user --no-deps  git+https://github.com/Theano/Theano.git#egg=Theano
+
 4.edit ~/.theanorc
 ```
 [global]  
@@ -34,4 +36,5 @@ cnmem=0.3
 fastmath = True
 optimizer_including=cudnn
 ```
+
 5.conda install Lasagne
