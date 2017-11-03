@@ -34,3 +34,13 @@
 3）caffe2架构安装学习
 4）pggan的模型lasagne无法导入downsample查找，从github导入最新的模型后，并在terminal运行，该错误消失，可能与IDE集成环境报错有关，建议以后
 尽量用terminal运行程序
+
+11/4工作内容：
+1）cuda在ubuntu14上的安装方法和cuda toolkit的下载链接
+http://blog.csdn.net/yanncywang/article/details/52872473
+2）显卡驱动安装指令链接
+http://blog.csdn.net/iotlpf/article/details/54175064
+3）ubuntu14系统循环登陆问题解决方法（显卡驱动不匹配导致，需要卸载掉旧的驱动）
+http://www.jianshu.com/p/d45434f28ca0
+4）ubuntu安装教程链接
+https://jingyan.baidu.com/article/0bc808fc6326ca1bd485b9e6.html
