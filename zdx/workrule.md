@@ -26,6 +26,8 @@ wills 公司的次卡
 
 规范：
 
+1 代码： git 版本管理
+
 训练结果的备份，输出文件保留时间戳
 
 系统：统一ubuntu用户，下面建自己的个人目录  zdx wazx 等等。
@@ -44,7 +46,7 @@ wills 公司的次卡
 
 python环境：默认conda 3.6环境：其他特殊要求再建立新环境
 
-git 版本管理
+
 
 cuda安装：  https://developer.nvidia.com/cuda-downloads   网络安装方式： apt-get install cuda
 
