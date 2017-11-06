@@ -34,3 +34,26 @@
 3）caffe2架构安装学习
 4）pggan的模型lasagne无法导入downsample查找，从github导入最新的模型后，并在terminal运行，该错误消失，可能与IDE集成环境报错有关，建议以后
 尽量用terminal运行程序
+
+11/4工作内容：
+1）cuda在ubuntu14上的安装方法和cuda 8.0 toolkit的下载链接（方法失败）
+http://blog.csdn.net/yanncywang/article/details/52872473
+2）显卡驱动安装指令链接（方法失败）
+http://blog.csdn.net/iotlpf/article/details/54175064
+3）ubuntu14系统循环登陆问题解决方法（显卡驱动不匹配导致，需要卸载掉旧的驱动）
+http://www.jianshu.com/p/35c7fde85968(强烈建议采用该链接进行安装操作！！！！！！！）
+
+如果安装后重启电脑，还是出现循环登陆，那么请尝试以下方法（方法失败）
+http://www.binarytides.com/install-nvidia-drivers-ubuntu-14-04/
+官网查找显卡驱动的版本，可能会有几个版本，建议一个个尝试
+https://www.geforce.cn/drivers
+4）ubuntu安装教程链接
+https://jingyan.baidu.com/article/0bc808fc6326ca1bd485b9e6.html
+5)ssh远程登陆电脑
+http://www.ruanyifeng.com/blog/2011/12/ssh_remote_login.html
+6）Linux开启ssh服务
+http://www.cnblogs.com/fengbeihong/p/3307575.html
+7)ssh链接远程服务器，如果遇到这样的错误：ECDSA host key "ip地址" for  has changed and you have requested strict checking，请参考
+http://blog.csdn.net/ausboyue/article/details/52775281
+8)nvidia cuda linux安装知道官方网站(建议严格按照官网步骤，其他途径可以作为参考，方法失败）
+http://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html
