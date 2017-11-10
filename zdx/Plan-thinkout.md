@@ -2,7 +2,7 @@
 -----------------------------
 Plan   正式的：  日记 反思； 最重要！  明确的！具体！！！具体！！！
 
-更好智能：1更多的维度-加时间监督 videogan；2更多传感器，视听闻触等。   3 Progressive Growing of GANs  4capsnet  5beta-vae distangle
+更好智能：1更多的维度-加时间监督 videogan；2更多传感器，视听闻触等。   3 Progressive Growing of GANs  4capsnet  5beta-vae distangle:bayesgan
 
 
 cardemo-autoware；   vide GAN; gan车道线，pix2pix;  深度到seg；3d；
@@ -50,6 +50,7 @@ https://arxiv.org/abs/1706.08033 from mocogan ref to this to encode vidoe, 视�
 cyclegan视频，单帧or 连续 ； 深度以外的cyclegan学习。  
 cyclegan是成对的学习，或成对的数据集，pix2pix是成对的数据；能否不用成对数据集，直接从数据集中学习各种属性，遇到其他数据集继续类似cyclegan学习对应数据集的对应属性变化？？
 或图灵机自己选择某些数据组成成对的数据集。
+
 
 语言到图像：
 
