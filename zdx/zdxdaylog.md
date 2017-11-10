@@ -15,10 +15,17 @@ think; plan; log
 
 
 
+avb大图片
 
 
+avb run mnist
 
+commaai  z interpolations
+avb-betavae  代码改进。   beta 默认是多少？
 
+5 1024 preotrain interpolation
+
+cyclegan 预测  视频，cyclegan 有车情况，无车情况。
 
 
 
@@ -57,9 +64,12 @@ gpu可以启用
 11.1 周三： pggans 论文；同事问题跟进；
 
 
+
+
+
 31  新数据集训练 avb； 图片隐变量。   数据多样性不够？？
 
-周二：练习ppt；下午bp及公司头脑风暴  ；晚上锻炼；celbea 1024；
+周二：练习ppt；下午盛大 bp及公司头脑风暴  ；晚上锻炼；celbea 1024；
 
 
 30 周一  插值看中间图片生成效果；提取特征向量+——图片看效果
@@ -205,6 +215,10 @@ mocogan
 todo 视频相关论文代码
 
 探索深度广度
+
+
+
+
 
 10.15  
 上午 自监督 ，下午体验特斯拉-面试李亮亮。  https://arxiv.org/pdf/1608.07017.pdf ; 云服务器网络谷歌学术折腾1.5小时，自己网站恢复耽误1小时。

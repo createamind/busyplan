@@ -24,6 +24,9 @@ github invite to createamind
 书：
 会议方法
 技术领导，程序员心理
+穷查理宝典
+
+
 
 
 书架
