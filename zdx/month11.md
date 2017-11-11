@@ -66,10 +66,18 @@ log: 工作沟通； 论文；工作思路反思，z问题，等等
 周六 11：
 1   1024 interpolation  2 vid2vid  
 
+vid2vid
+
+mocogan - 2个D ，一个D ->3d convolution 视频，2个D-image 1frame
+G 直接生成视频，还是先生成图片，再生成视频？  大概是直接输入z；
+
+pix2pix  扩展 vid2vid 
+
+pix2pix d 输入是两张图片，  扩展为输入两个视频片段，
 
 
 
-
+12
 
 
 
@@ -77,5 +85,5 @@ log: 工作沟通； 论文；工作思路反思，z问题，等等
 
 第三周
 
-
+11.13 周一  计划： vid2vid？  2  1024 interpolation
 
