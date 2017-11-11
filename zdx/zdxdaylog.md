@@ -1,4 +1,4 @@
-计划 总结 日记 反思； 最重要！  明确的！
+计划 总结 日记 反思； 最重要！ 目标   明确的！
 推进慢-缺少数学、程序、深度学习、方面高手，做出东西吸引。  qq 群
 
 cardemo-autoware；
@@ -12,20 +12,16 @@ vide GAN; gan车道线，pix2pix;  深度到seg；3d；
 think; plan; log
 短期、近期任务：videogan+vae进行编码
 
+
+
+
 cyclegan 预测  视频，cyclegan 有车情况，无车情况。
-
-
-
-
 
 avb大图片； beta vae avb running  
 
 commaai  z interpolations   z1-z2差值的应用？？？
 
 5 1024 preotrain interpolation
-
-
-
 
 run bayesgan????
 
