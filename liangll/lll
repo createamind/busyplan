@@ -64,7 +64,8 @@ https://github.com/createamind/busyplan/issues/10
 11-11工作内容参考以下链接
 https://github.com/createamind/busyplan/issues/10
 
-11-14=3工作内容记录：
+
+11-14日 工作内容记录：
 1）查找了pix2pix／viedeogan／mocogan/3D-U-NET／C3D的框架代码，具体代码链接在issue的predict videio中
 这些代码可以为后续进行视频生成提供素材和思路
 2）详细阅读了mocogan和videogan的论文以及框架思路
