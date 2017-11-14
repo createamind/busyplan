@@ -117,6 +117,9 @@ We trained MoCoGANs using ADAM. We set the learning rate to 0.0002 and momentums
 数据集中如果有运动相关的标注的话，可以和content vector或motion vector一起输入类似于conditional gan。
 
 
+11-14日工作内容：
+1）详细查看了pix2pix和3d-U-NET的结构代码，将3d-u-net的架构结合pix2pix的tendorflow代码，改写成了keras版本的pix2pix的3维生成器；
+2）pix2pix的3维生成器改写成keras版本，但似乎好像不大对，明天继续修改
 
 
 
