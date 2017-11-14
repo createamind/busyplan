@@ -67,23 +67,65 @@ log: 工作沟通； 论文；工作思路反思，z问题，等等
 1   1024 interpolation  2 vid2vid  
 
 vid2vid
-
 mocogan - 2个D ，一个D ->3d convolution 视频，2个D-image 1frame
 G 直接生成视频，还是先生成图片，再生成视频？  大概是直接输入z；
-
 pix2pix  扩展 vid2vid 
-
 pix2pix d 输入是两张图片，  扩展为输入两个视频片段，
 
 
 
-12
-
+12  上午见李政 康宁。下午休息，晚上看电影， 失眠是因为不累？
 
 
 
 
 第三周
 
-11.13 周一  计划： vid2vid？  2  1024 interpolation
+周一 11.13   计划： vid2vid？思路分解，张炜配合测试。  2  1024 interpolation  3 avb infer
+vid2vid
+mocogan - 2个D ，一个D ->3d convolution 视频，2个D-image 1frame
+G 直接生成视频，还是先生成图片，再生成视频？  大概是直接输入z；
+pix2pix  扩展 vid2vid 
+pix2pix d 输入是两张图片，  扩展为输入两个视频片段，
+
+简单的可以用conv3d or upsample3d
+视频生成参考mocogan；mocogan图片生成可以用cyclegan混合训练。
+pix2pix的d是否可以使用mocogan的视频判别D。   mocogan的rnn没有理解。
+
+log pix2pix concatrealAfakeA； 3d 文章看。 下午代码等吧
+
+周二 14
+pix2pix 的G结构，论文；prednet； 文献google；视频综述。
+下午：  A Survey on Deep Video Prediction  论文   time contrast; prednet
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

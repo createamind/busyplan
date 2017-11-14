@@ -3,6 +3,7 @@
 Plan   正式的：  日记 反思； 最重要！  明确的！具体！！！具体！！！
 
 更好智能：1更多的维度-加时间监督 videogan；2更多传感器，视听闻触等。   3 Progressive Growing of GANs  4capsnet  5beta-vae distangle:bayesgan
+混合pix2pix vid2vid 视频预测和cyclegan 视频预测
 
 
 cardemo-autoware；   vide GAN; gan车道线，pix2pix;  深度到seg；3d；

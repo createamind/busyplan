@@ -25,7 +25,7 @@ github invite to createamind
 会议方法
 技术领导，程序员心理
 穷查理宝典
-
+干法 活法
 
 
 
