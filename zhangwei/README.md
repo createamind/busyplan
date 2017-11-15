@@ -26,3 +26,6 @@ theano 环境配置 https://github.com/createamind/busyplan/blob/master/zhangwei
 inference实验代码  https://github.com/createamind/busyplan/blob/master/zhangwei/inference-avb.ipynb
 
 latent space 分析https://github.com/createamind/busyplan/blob/master/zhangwei/explore_latent_space.md
+
+11月15号
+阅读3dcnn相关论文及实现代码，跟上大家的思路
