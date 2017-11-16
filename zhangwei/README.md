@@ -26,3 +26,9 @@ theano 环境配置 https://github.com/createamind/busyplan/blob/master/zhangwei
 inference实验代码  https://github.com/createamind/busyplan/blob/master/zhangwei/inference-avb.ipynb
 
 latent space 分析https://github.com/createamind/busyplan/blob/master/zhangwei/explore_latent_space.md
+
+11月15号
+计划；阅读3dcnn相关论文及实现代码，跟上大家的思路
+结果：1.3d cnn的实现可调用tensorflow或者pytorch实现
+2.关键在于进行数据预处理，将图像连接成连续帧，保存和读取传入网络
+3.数据量过小可能导致过拟合，如何构建成对数据需要考虑
