@@ -94,23 +94,25 @@ pix2pix的d是否可以使用mocogan的视频判别D。   mocogan的rnn没有理
 
 log pix2pix concatrealAfakeA； 3d 文章看。 下午代码等吧
 
-周二 14
+周二 14  pix2pix  除unet还有renset的结构
 pix2pix 的G结构，论文；prednet； 文献google；视频综述。
 下午：  A Survey on Deep Video Prediction  论文   time contrast; prednet
 4点半锻炼到6点多
 
-？结果导向吗？环境搞坏了，不恢复好就下班了？而且时间还不到6点半就下班了，环境仍那里也不能继续训练？
+？结果导向吗？环境搞坏了，不恢复好就下班了？而且时间还不到6点半，环境仍那里也不能继续训练？至少主动说一下。
 先pip uninstall 再pip install 就好了。
 
 晚上：paper继续，小孟沟通， 视频预测思路继续看论文
+video_pred_survey 觉得收获不大，是我们做的看的更往前吧，论文最新的gan视频就一篇。 time contrast ; prednet; self-supervised;
 
 
+周三  15 杂事，展会，沟通智能孟晓宇；公众号；亮亮终止合作。
 
+conda install --channel https://conda.anaconda.org/menpo opencv3
 
+不同beta参数的model weight。
 
-
-
-
+周四：16 todo 1  张炜 mnist mode weithigt测试；
 
 
 
