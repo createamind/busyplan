@@ -62,7 +62,6 @@ pix2pix 2 bigan 比较？？？
 
 log: 工作沟通； 论文；工作思路反思，z问题，等等
 
-
 周六 11：
 1   1024 interpolation  2 vid2vid  
 
@@ -72,11 +71,7 @@ G 直接生成视频，还是先生成图片，再生成视频？  大概是直�
 pix2pix  扩展 vid2vid 
 pix2pix d 输入是两张图片，  扩展为输入两个视频片段，
 
-
-
 12  上午见李政 康宁。下午休息，晚上看电影， 失眠是因为不累？
-
-
 
 
 第三周
@@ -107,12 +102,15 @@ video_pred_survey 觉得收获不大，是我们做的看的更往前吧，论�
 
 
 周三  15 杂事，展会，沟通智能孟晓宇；公众号；亮亮终止合作。
-
 conda install --channel https://conda.anaconda.org/menpo opencv3
-
 不同beta参数的model weight。
 
 周四：16 todo 1  张炜 mnist mode weithigt测试；
+vid2vid 计划：
+
+log1 工作事情思考，得到李笑来文章；2 betavae 继续看效果 训练beta 400； 3 宝宝视频。4 跟进v2v;5 v2v问题跟进。
+
+周五 17 
 
 
 
