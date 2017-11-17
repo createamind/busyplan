@@ -32,3 +32,7 @@ latent space 分析https://github.com/createamind/busyplan/blob/master/zhangwei/
 结果：1.3d cnn的实现可调用tensorflow或者pytorch实现
 2.关键在于进行数据预处理，将图像连接成连续帧，保存和读取传入网络
 3.数据量过小可能导致过拟合，如何构建成对数据需要考虑
+11月16号
+数据处理完成
+数据读取接口完成
+下一步，调试网络参数

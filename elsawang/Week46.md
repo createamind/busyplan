@@ -1,5 +1,22 @@
 ## Work Diary Week 46
 
+
+### 
+
+- 更换3D卷积API接口
+- 理清数据流
+- 明天任务：解决下面显示的bug
+- 调整3D卷积 kernel size，确保输出图像拥有frames
+
+```
+RuntimeError: Need input.size[1] == 3 but got 7 instead.
+```
+
+```
+Conv3d(16, 33, (3, 5, 2)
+```
+
+
 ### 15/11 Wed
 - 熟悉 pytorch 框架
 - 仔细阅读 pix2pix pytorch 代码，确定 3D API 代码位置
