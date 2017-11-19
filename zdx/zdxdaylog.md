@@ -16,6 +16,7 @@ think; plan; log
 
 
 cyclegan 预测  视频，cyclegan 有车情况，无车情况。
+视频预测想到的是，关注点更少，可以在更少的数据或不同的小方面简历语义关联。类人的注意力模型。
 
 avb大图片； beta vae avb running  
 
@@ -26,6 +27,23 @@ commaai  z interpolations   z1-z2差值的应用？？？
 run bayesgan????
 
 vid2vid？思路分解，张炜配合测试。
+1，长视频 2 优化效果-ref mocogan   3 保存视频结果。 4 wgan or  bayesgan 改进。
+
+
+prefnet：  model’s learned representation in this setting supports decoding of the current steering angle.
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -38,7 +56,8 @@ vid2vid？思路分解，张炜配合测试。
 
 安装正常情况进行计划，意外困难遇到了在家时间，不能预估了困难的时间，然后做的时候用顺利的思路去使用时间。
 
-必须回答的问题写给我。不回答问题就不能做事那就沟通，要不就把问题写下了回答沟通。大方向的讨论以做出具体进展来争取机会。
+必须回答的问题写给我。不回答问题就不能做事那就沟通，要不就把问题写下了回答沟通。大方向的讨论以做出具体进展来争取机会。周末可以讨论，平时做事无大方向讨论。
+！！沟通大方向的前提是什么？？需要什么基础来沟通？
 
 没听懂自己也努力想，我也要学习学习；没听懂自己努力学。
 

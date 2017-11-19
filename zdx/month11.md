@@ -107,17 +107,29 @@ conda install --channel https://conda.anaconda.org/menpo opencv3
 
 周四：16 todo 1  张炜 mnist mode weithigt测试；
 vid2vid 计划：
-
 log1 工作事情思考，得到李笑来文章；2 betavae 继续看效果 训练beta 400； 3 宝宝视频。4 跟进v2v;5 v2v问题跟进。
 
-周五 17 
 
 
+周五 17  张炜问题解决，
+todo：1，长视频 2 优化效果-ref mocogan   3 保存为视频结果 ok。。 4 wgan or  bayesgan 改进。
 
+不同数据集效果及程序
 
+想了很久的想法，想法的独占，放下开始做。
+prednet： model’s learned representation in this setting supports decoding of the current steering angle.
+ 
+周六 18  Time-Contrastive Networks  继续周五任务。
+写论文：？？  
+  
+todo: 
+1 优化效果 dual motion papere; mocogan  bayesgan; beta-vae处理抽象特征；图片是否独立生成然后增加图片的Dis；
 
+2 视频预处理放到程序里面，可以自动设置训练预测的间隔。
+3 训练不要抽取中间帧，训练帧数加大比如16帧；
+4 多传感器的属性学习---导致理解背景路 树木 电线杆等 不动，车动。不同物体不同属性不同运动属性。
 
-
+5 beta vae avb训练时候就自动间隔输出每个维度的图片，即手动运行的结果自动输出。
 
 
 
