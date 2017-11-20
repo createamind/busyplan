@@ -29,7 +29,6 @@ run bayesgan????
 vid2vid？思路分解，张炜配合测试。
 1，长视频 2 优化效果-ref mocogan   3 保存视频结果。 4 wgan or  bayesgan 改进。
 
-
 prefnet：  model’s learned representation in this setting supports decoding of the current steering angle.
 
 
@@ -37,7 +36,20 @@ prefnet：  model’s learned representation in this setting supports decoding o
 
 
 
+todo: 
+1 优化效果 dual motion papere; mocogan  bayesgan; beta-vae处理抽象特征；图片是否独立生成然后增加图片的Dis；
+几篇论文需要看看 dual motion；
 
+2 视频预处理放到程序里面，可以自动设置训练预测的间隔。； 输出图片拼接正常和生成的，或转为视频发公众号。
+3 训练不要抽取中间帧，训练帧数加大比如16帧；
+4 多传感器的属性学习---导致理解背景路 树木 电线杆等 不动，车动。不同物体不同属性不同运动属性。
+
+5 beta vae avb训练时候就自动间隔输出每个维度的图片，即手动运行的结果自动输出。  
+从总数据集里面随机找一张进行处理。range也在一个范围随机，20张插值。
+取值写到文件名上
+
+todo：公众号文章 思路 等等。
+老熊的论文。
 
 
 
