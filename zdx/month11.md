@@ -172,7 +172,14 @@ nvidia端对端训练驾驶和视频预测驾驶+动作  区别？
 周五 细节： convolution 3d kernel  时间是否还必须是1 ？？     
 plan todo !!   论文dual； fader network   bayesgan 中文翻译代码等。
 我的思路介绍。
+现在我们预测学习的不足和缺陷？
+是学习或记忆？语义记忆如何实现？？
 
+!!日报
+周六周日休息；发公众号，出去转转
+
+周一 11.27  todo 1 betavae ;深度图片。
+视频vid2vid action reward ?? 声音到图像？ time contrast 跟 vid2vid 的关系？？
 
 
 

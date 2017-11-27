@@ -12,6 +12,13 @@ vide GAN; gan车道线，pix2pix;  深度到seg；3d；
 think; plan; log
 短期、近期任务：videogan+vae进行编码
 
+视频vid2vid action reward ?? 声音到图像？ time contrast 跟 vid2vid 的关系？？
+
+
+
+
+
+
 
 
 
