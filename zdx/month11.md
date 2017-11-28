@@ -56,7 +56,7 @@ pix2pix 2 bigan 比较？？？
 
 周五 10： 
 我可以随时问工作进展；日报必须写，
-我说我现在没能力做出最好的选择，选择最重要的事情。，现在没有足够更好的能力，不是我一直都是个屁。  我话一出就是：没能力找人啊，找更强的人啊，这就是前置过滤。言之有据，不是张嘴就来。
+我说我现在没能力做出最好的选择，选择最重要的事情。，现在没有足够更好的能力，不是我一直都是个..。  我话一出就是：没能力找人啊，找更强的人啊，这就是前置过滤。言之有据，不是张嘴就来。
 
 刚才讨论 videogan不做了，你们说 是你们认为找不到z，所有不做了，不是我要求不做的，另外中间插入了改装车传感器事情，插入了bp事情。
 
@@ -99,6 +99,9 @@ pix2pix 的G结构，论文；prednet； 文献google；视频综述。
 
 晚上：paper继续，小孟沟通， 视频预测思路继续看论文
 video_pred_survey 觉得收获不大，是我们做的看的更往前吧，论文最新的gan视频就一篇。 time contrast ; prednet; self-supervised;
+
+However, other experiments have shown that incorporating model-based search techniques can achieve breakthroughs in domains where purely model-free methods would have little success [19] [48] [54]. Having an accurate action-conditional video prediction module would enable RL agents to explore new strategies based on whether it would lead to novel outcomes [20] [40] [51], perform long term planning [14] [65], and determine visual regions that are contingent on the agent’s actions [1] [40].
+
 
 
 周三  15 杂事，展会，沟通智能孟晓宇；公众号；亮亮终止合作。
@@ -170,7 +173,8 @@ nvidia端对端训练驾驶和视频预测驾驶+动作  区别？
 
 
 周五 细节： convolution 3d kernel  时间是否还必须是1 ？？     
-plan todo !!   论文dual； fader network   bayesgan 中文翻译代码等。
+plan todo !!   论文dual； fader network  ；  bayesgan 中文翻译代码等。
+multi sclae  16 lecun paper； prednet；  paper
 我的思路介绍。
 现在我们预测学习的不足和缺陷？
 是学习或记忆？语义记忆如何实现？？
@@ -179,7 +183,10 @@ plan todo !!   论文dual； fader network   bayesgan 中文翻译代码等。
 周六周日休息；发公众号，出去转转
 
 周一 11.27  todo 1 betavae ;深度图片。
-视频vid2vid action reward ?? 声音到图像？ time contrast 跟 vid2vid 的关系？？
+视频vid2vid action reward ?? 声音到图像？ time contrast paper读-- 跟 vid2vid 的关系？？
 
 
+周二： time contrast paper; imitation paper;
+
+空挡 自己学习还是看前沿论文。
 
