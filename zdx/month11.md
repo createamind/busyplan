@@ -190,3 +190,11 @@ multi sclae  16 lecun paper； prednet；  paper
 
 空挡 自己学习还是看前沿论文。
 
+周三： 日报？？要求不合理？
+torcs 录制下来都有哪些信息？ 多任务； 动作到视频？unet就不行了，网络结构？？！声音到视频？？
+
+memory：视频重放-存储z？多感知维度--倒水后杯子轻-重力感知-声音感知-
+
+condtion action pred video！
+
+

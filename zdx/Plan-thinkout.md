@@ -6,7 +6,9 @@ Plan   正式的：  日记 反思； 最重要！  明确的！具体！！！�
 混合pix2pix vid2vid 视频预测和cyclegan 视频预测-------------短期记忆！！！
 视频vid2vid action reward ?Direct Future Prediction rl? 声音到图像？ time contrast 跟 vid2vid 的关系？？
 Time Contrastive Networks
-
+内在的多种任务-视觉求索朱松纯
+memory：视频重放-存储z？多感知维度--倒水后杯子轻-重力感知-声音感知-
+action condition video pred！
 
 
 
