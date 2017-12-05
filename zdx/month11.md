@@ -155,6 +155,8 @@ plan todo：
 
 plan：  论文 dual；         展会准备。 公众号 微信扫一扫。 createamind。 展会的文章准备。
 
+
+
 周二周三 去常熟车站，中间跟进了视频生成的事情
 周四：plan：
 细节1：  左侧还是两个A吧，A 前后都对比！   2  帧数24？？好像不是啊！   3 MORE GPU MORE !!
@@ -181,6 +183,15 @@ multi sclae  16 lecun paper； prednet；  paper
 
 !!日报
 周六周日休息；发公众号，出去转转
+
+
+
+
+
+
+
+
+
 
 周一 11.27  todo 1 betavae ;深度图片。
 视频vid2vid action reward ?? 声音到图像？ time contrast paper读-- 跟 vid2vid 的关系？？
