@@ -174,12 +174,15 @@ nvidia端对端训练驾驶和视频预测驾驶+动作  区别？
 加入深度信息和动作信息的视频预测！！
 
 
-周五 细节： convolution 3d kernel  时间是否还必须是1 ？？     
+周五11.24   细节： convolution 3d kernel  时间是否还必须是1 ？？     
 plan todo !!   论文dual； fader network  ；  bayesgan 中文翻译代码等。
 multi sclae  16 lecun paper； prednet；  paper
 我的思路介绍。
 现在我们预测学习的不足和缺陷？
 是学习或记忆？语义记忆如何实现？？
+
+预测加入深度信息。
+
 
 !!日报
 周六周日休息；发公众号，出去转转

@@ -1,4 +1,4 @@
-
+ 人
 -----------------------------
 Plan   正式的：  日记 反思； 最重要！  明确的！具体！！！具体！！！
 
@@ -9,7 +9,7 @@ Plan   正式的：  日记 反思； 最重要！  明确的！具体！！！�
 
 视频vid2vid action reward ?Direct Future Prediction rl? 声音到图像？ time contrast 跟 vid2vid 的关系？？
 
-Time Contrastive Networks
+Time Contrastive Networks    https://sites.google.com/site/imitationfromobservation/
 内在的多种任务-视觉求索朱松纯
 
 memory：视频重放-存储z？多感知维度--倒水后杯子轻-重力感知-声音感知-
@@ -20,7 +20,7 @@ action condition video pred！
 cardemo-autoware；   vide GAN; gan车道线，pix2pix;  深度到seg；3d；
 5年  1年  1月 1周 今天  现在  今天最重要的目标计划：？？ 
 两个推进思路： 1  自动驾驶真车使用的需求   2 通用智能的构建思路推进。  videogan+vae
-
+机械臂？？？
 
 
 

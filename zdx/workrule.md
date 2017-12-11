@@ -1,3 +1,23 @@
+
+
+入职：
+入职前确认好工作计划
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 smart Specific、Measurable、Attainable、Relevant、Time－based
 基础认知不一致的解决办法：日常任务： 公众号每天看3篇？
 
@@ -15,6 +35,7 @@ smart Specific、Measurable、Attainable、Relevant、Time－based
 周六周三下午每次讨论，平时讨论时间限制及讨论的必要性，及记录下来。GEEK生产力图！氛围沉闷。
 
 wills 公司的次卡
+
 
 
 
