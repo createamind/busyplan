@@ -5,7 +5,7 @@ Plan   正式的：  日记 反思； 最重要！  明确的！具体！！！�
 更好智能：1更多的维度-加时间监督 videogan；2更多传感器，视听触等, 压力的感知和 reward 动作的感知学习。   
 3 Progressive Growing of GANs  4 conditon gan；条件生成  5 more and more highway  
 
-4capsnet  5beta-vae distangle:bayesgan
+4capsnet 胶囊 (Capsule) 是一个包含多个神经元的载体，每个神经元表示了图像中出现的特定实体的各种属性 多属性表示。  5beta-vae distangle:bayesgan
 
 混合pix2pix vid2vid 视频预测和cyclegan 视频预测-------------短期记忆！！！
 
