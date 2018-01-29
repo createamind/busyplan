@@ -2,10 +2,21 @@
 -----------------------------
 Plan   正式的：  日记 反思； 最重要！  明确的！具体！！！具体！！！
 
-更好智能：1更多的维度-空间(2d到3d)加时间监督 videogan；2更多传感器，视听触等, 压力的感知和 reward 动作的感知学习。   
-3 Progressive Growing of GANs 智力的成长发展，2分类或3分类进行简单功能的精准实现。  4 conditon gan；条件生成 外界环境的特定条件下的特定反应。  5 more and more highway for 概念关联。 
+更好智能：
+1更多的维度-空间(2d到3d)加时间监督 videogan；
+2更多传感器，视听触等, 压力的感知和 reward 动作的感知学习。   
+3 Progressive Growing of GANs 智力的成长发展，2分类或3分类进行简单功能的精准实现  --7-- 上下左右，前后远近 先离散后联系回归。。  
+4 conditon gan；条件生成 外界环境的特定条件下的特定反应。  
+5 more and more highway for 概念关联。 
 
-4capsnet 胶囊 (Capsule) 是一个包含多个神经元的载体，每个神经元表示了图像中出现的特定实体的各种属性 多属性表示。  5beta-vae distangle:bayesgan
+6capsnet 胶囊 (Capsule) 是一个包含多个神经元的载体，每个神经元表示了图像中出现的特定实体的各种属性 多属性表示。 
+7极低的特征空间维度  beta-vae distangle:bayesgan   https://github.com/ermongroup/Variational-Ladder-Autoencoder； 这些都是图像。
+动作也可以很低，上下左右，前后远近，
+8  cnn filter  reinforcement learning 选择特定filter进行处理。  or densenet？
+9 DFP   Human certainly possess the innate ability to switch goals based on different circumstances  -----联系 4 
+
+
+
 
 动作！！
 
@@ -21,7 +32,8 @@ Plan   正式的：  日记 反思； 最重要！  明确的！具体！！！�
 
 
 
-3学习开始可以从简单开始，就像progressive growing gans 图像越来越清晰，分类或其他功能的准确度也可以越来越精确，先从2分类或3分类开始训练即可。将特征空间压缩到非常低的维度，比如大小，上下，高低，胖瘦。
+3学习开始可以从简单开始，就像progressive growing gans 图像越来越清晰，分类或其他功能的准确度也可以越来越精确，先从2分类或3分类开始训练即可。
+将特征空间压缩到非常低的维度，比如高低，胖瘦，大小，快慢，前后，左右，上下，
 
 这个功能也需要大家一起来实现完善。
 
@@ -43,6 +55,22 @@ Plan   正式的：  日记 反思； 最重要！  明确的！具体！！！�
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+结合强化学习的注意力的任务相关特征抽取的独立网络
+
+多个生成模型的生成效果叠加为一个完整视频效果，还是独立的一个大网络一起训练？ 自动分化出子网络
 
 
 
