@@ -5,7 +5,8 @@ Plan   正式的：  日记 反思； 最重要！  明确的！具体！！！�
 更好智能的各个维度： 下面所列方法均有开源代码。
 
 0 《人工智能的未来》（On Intelligence）一书，是由杰夫•霍金斯介绍了大脑的智能属性之一是预测， prediciton（预测的各个角度：4d时空预测，DFP多传感器相互的属性等信息预测-6表示方法，
-发展progressive着提高预测的精度，cGAN各种条件下的预测）；监督学习的标签预测，特定环境的特定行动的特定结果的一致性cGAN， Curiosity-driven Exploration by Self-supervised Prediction 熟悉环境的预训练。
+发展progressive着提高预测的精度，cGAN各种条件下的预测）；监督学习的标签预测，特定环境的特定行动的特定结果的一致性cGAN， 
+Curiosity-driven Exploration by Self-supervised Prediction 熟悉环境的预训练。https://github.com/pathak22/noreward-rl
 
 1更多的维度-空间(2d到3d)加时间监督 videogan；
 1我们生活在四维的时空中，真正的智能必须感知这四个维度，3维空间和时间，所有接受的信息应该是视频形式，视频是非常好的输入素材。只通过图片训练的智能有其先天缺陷。
@@ -26,15 +27,19 @@ Plan   正式的：  日记 反思； 最重要！  明确的！具体！！！�
 
 4 conditon gan；条件生成 外界环境的特定条件下的特定反应。  最新的cGAN 论文。https://github.com/pfnet-research/sngan_projection
 condition：不同时间，不同空间，不同条件，不同的传感器属性，不同物体属性。
+cGAN是标签条件监督可以用在传感器监督，标签监督，更细致的监督开源参考pix2pix-两幅图像大小一致的情况
 
 生物各种不同情况的反应就是各种condition GAN的 动作输出。语言的很多限定词都是conditon，无人驾驶的红绿灯，各种异常情况都是各种conditonGAN。
 
 5 人脑发育到一定阶段神经元增长不多，增加的是神经元的链接，通过不同区域神经网络的链接的增加，实现了不同的关系属性及概念的互相链接。这个可以对应进行神经网络的highway的不断增加。
 5 more and more highway for 概念关联。 
 
-
-
 6capsnet 胶囊 (Capsule) 是一个包含多个神经元的载体，每个神经元表示了图像中出现的特定实体的各种属性 多属性表示。 
+
+code: 
+cGAN https://github.com/pfnet-research/sngan_projection,
+Curiosity https://github.com/pathak22/noreward-rl,
+vid2vid，
 
 7极低的特征空间维度  beta-vae distangle:bayesgan   https://github.com/ermongroup/Variational-Ladder-Autoencoder； 这些都是图像。
 动作也可以很低，上下左右，前后远近，
