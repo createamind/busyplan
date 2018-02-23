@@ -2,11 +2,14 @@
 -----------------------------
 Plan   正式的：  日记 反思； 最重要！  明确的！具体！！！具体！！！
 
+梳理一个实现AGI的简单框架
+
 更好智能的各个维度： 下面所列方法均有开源代码。
 
 0 《人工智能的未来》（On Intelligence）一书，是由杰夫•霍金斯介绍了大脑的智能属性之一是预测， prediciton（预测的各个角度：4d时空预测，DFP多传感器相互的属性等信息预测-6表示方法，
 发展progressive着提高预测的精度，cGAN各种条件下的预测）；监督学习的标签预测，特定环境的特定行动的特定结果的一致性cGAN， 
-Curiosity-driven Exploration by Self-supervised Prediction 熟悉环境的预训练。https://github.com/pathak22/noreward-rl
+Curiosity-driven Exploration by Self-supervised Prediction http://mp.weixin.qq.com/s/A3pYqzakPCYn68wcQfDtCQ AGI:我与世界的互动是不是如我所愿。动作条件CycleGAN好奇心探索，
+熟悉环境的预训练。https://github.com/pathak22/noreward-rl
 
 1更多的维度-空间(2d到3d)加时间监督 videogan；
 1我们生活在四维的时空中，真正的智能必须感知这四个维度，3维空间和时间，所有接受的信息应该是视频形式，视频是非常好的输入素材。只通过图片训练的智能有其先天缺陷。
@@ -41,6 +44,7 @@ cGAN https://github.com/pfnet-research/sngan_projection,
 Curiosity https://github.com/pathak22/noreward-rl,
 vid2vid，
 
+下面是相对重复的一些关键点。
 7极低的特征空间维度  beta-vae distangle:bayesgan   https://github.com/ermongroup/Variational-Ladder-Autoencoder； 这些都是图像。
 动作也可以很低，上下左右，前后远近，
 
@@ -50,9 +54,11 @@ imitation carla； Curiosity-driven
 
 10 vid2vid prediction  https://github.com/createamind/vid2vid  ;   Curiosity-driven
 
+动作与环境互动及强化学习所探索的，！！ 11  imitation meta-learning。 https://zhuanlan.zhihu.com/p/33789604
 
+欢迎大家批评留言交流，提出不同的智能点的各种方法的实现思路想法，
 
-动作！！
+持续完善阅读原文  https://github.com/createamind/busyplan/blob/master/zdx/Plan-thinkout.md
 
 
 
