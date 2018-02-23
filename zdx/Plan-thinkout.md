@@ -2,43 +2,54 @@
 -----------------------------
 Plan   正式的：  日记 反思； 最重要！  明确的！具体！！！具体！！！
 
-更好智能：
-0 预测 prediciton； Curiosity-driven Exploration by Self-supervised Prediction
+更好智能的各个维度： 下面所列方法均有开源代码。
+
+0 《人工智能的未来》（On Intelligence）一书，是由杰夫•霍金斯介绍了大脑的智能属性之一是预测， prediciton（预测的各个角度：4d时空预测，DFP多传感器相互的属性等信息预测-6表示方法，
+发展progressive着提高预测的精度，cGAN各种条件下的预测）；监督学习的标签预测，特定环境的特定行动的特定结果的一致性cGAN， Curiosity-driven Exploration by Self-supervised Prediction 熟悉环境的预训练。
+
 1更多的维度-空间(2d到3d)加时间监督 videogan；
-2更多传感器，视听触等, 压力的感知和 reward 动作的感知学习。   
-3 Progressive Growing of GANs 智力的成长发展，2分类或3分类进行简单功能的精准实现  --7-- 上下左右，前后远近 先离散后联系回归。。  
-4 conditon gan；条件生成 外界环境的特定条件下的特定反应。  
+1我们生活在四维的时空中，真正的智能必须感知这四个维度，3维空间和时间，所有接受的信息应该是视频形式，视频是非常好的输入素材。只通过图片训练的智能有其先天缺陷。
+基于四维时空的预测学习或记忆学习。所以我们依据做了基于视频的预测。
+
+
+
+2更多传感器，视听触等, 压力的感知和 reward 动作的感知学习。   宽泛将就是多维度的信息，比如虚拟环境各种指标信息--DFP，不同传感器互相监督即cGAN；
+2但是视频的信息从像素出发维度太高，而且视频中很多内容是完全不同的，区分视频中的不同物体应该不仅仅是从视觉区分（使用的时候是从视觉来区分，但是训练的时候是不同传感器直接区分的。），
+本质是其他物体的属性的区分，视觉调研其他感知内容来区分。从视觉中区分出不同远近，不同软硬的物体，不同用途的物体，不同冷热危险的物体。现在只做了深度的学习，其他属性还未开始训练学习。
+
+
+3 Progressive Growing of GANs 智力的成长发展，2分类或3分类进行简单功能的精准实现  --7-- 上下左右，前后远近 先离散后联系回归。
+3学习开始可以从简单开始，就像progressive growing gans 图像越来越清晰，分类或其他功能的准确度也可以越来越精确，先从2分类或3分类开始训练即可。
+将特征空间压缩到非常低的维度，比如高低，胖瘦，大小，快慢，前后，左右，上下，
+
+
+
+4 conditon gan；条件生成 外界环境的特定条件下的特定反应。  最新的cGAN 论文。https://github.com/pfnet-research/sngan_projection
+condition：不同时间，不同空间，不同条件，不同的传感器属性，不同物体属性。
+
+生物各种不同情况的反应就是各种condition GAN的 动作输出。语言的很多限定词都是conditon，无人驾驶的红绿灯，各种异常情况都是各种conditonGAN。
+
+5 人脑发育到一定阶段神经元增长不多，增加的是神经元的链接，通过不同区域神经网络的链接的增加，实现了不同的关系属性及概念的互相链接。这个可以对应进行神经网络的highway的不断增加。
 5 more and more highway for 概念关联。 
 
+
+
 6capsnet 胶囊 (Capsule) 是一个包含多个神经元的载体，每个神经元表示了图像中出现的特定实体的各种属性 多属性表示。 
+
 7极低的特征空间维度  beta-vae distangle:bayesgan   https://github.com/ermongroup/Variational-Ladder-Autoencoder； 这些都是图像。
 动作也可以很低，上下左右，前后远近，
+
 8  cnn filter  reinforcement learning 选择特定filter进行处理。  or densenet？
 9 DFP   Human certainly possess the innate ability to switch goals based on different circumstances  -----联系 4 
 imitation carla； Curiosity-driven
-10 vid2vid prediction; 
+
+10 vid2vid prediction  https://github.com/createamind/vid2vid  ;   Curiosity-driven
 
 
 
 动作！！
 
 
-
-1我们生活在四维的时空中，真正的智能必须感知这四个维度，3维空间和时间，所有接受的信息视频是非常好的输入素材。只通过图片训练的智能有其先天缺陷。基于四维时空的预测学习或记忆学习。所有我们依据做了基于视频的预测。
-
-2但是视频的信息从像素出发维度太高，而且视频中很多内容是完全不同的，区分视频中的不同物体应该不仅仅是从视觉区分（使用的时候是从视觉来区分，但是训练的时候是不同传感器直接区分的。），本质是其他物体的属性的区分，视觉调研其他感知内容来区分。
-从视觉中区分出不同远近，不同软硬的物体，不同用途的物体，不同冷热危险的物体。现在只做了深度的学习，其他属性还未开始训练学习。
-
-3学习开始可以从简单开始，就像progressive growing gans 图像越来越清晰，分类或其他功能的准确度也可以越来越精确，先从2分类或3分类开始训练即可。
-将特征空间压缩到非常低的维度，比如高低，胖瘦，大小，快慢，前后，左右，上下，
-
-这个功能也需要大家一起来实现完善。
-
-4 然后各种condition gan 的实现的稳定性可以参考 https://github.com/minhnhat93/tf-SNDCGAN 可以训练1000类 https://mp.weixin.qq.com/s/cI4xZOw6eL0w9sz9Q2mSCw
-
-生物各种不同情况的反应就是各种condition GAN的 动作输出。语言的很多限定词都是conditon，无人驾驶的红绿灯，各种异常情况都是各种conditonGAN。
-
-5 人脑发育到一定阶段神经元增长不多，增加的是神经元的链接，通过不同区域神经网络的链接的增加，实现了不同的关系属性及概念的互相链接。这个可以对应进行神经网络的highway的不断增加。
 
 
 
