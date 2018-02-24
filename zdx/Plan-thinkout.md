@@ -4,7 +4,7 @@ Plan   正式的：  日记 反思； 最重要！  明确的！具体！！！�
 
 梳理一个实现AGI的简单框架
 
-更好智能的各个维度： 下面所列方法均有开源代码。
+更好智能的各个维度： 下面所列方法均有开源代码。  思想思路：
 
 0 《人工智能的未来》（On Intelligence）一书，是由杰夫•霍金斯介绍了大脑的智能属性之一是预测， prediciton（预测的各个角度：4d时空预测，DFP多传感器相互的属性等信息预测-6表示方法，
 发展progressive着提高预测的精度，cGAN各种条件下的预测）；监督学习的标签预测，特定环境的特定行动的特定结果的一致性cGAN， 
@@ -17,12 +17,12 @@ Curiosity-driven Exploration by Self-supervised Prediction http://mp.weixin.qq.c
 
 
 
-2更多传感器，视听触等, 压力的感知和 reward 动作的感知学习。   宽泛将就是多维度的信息，比如虚拟环境各种指标信息--DFP，不同传感器互相监督即cGAN；
-2但是视频的信息从像素出发维度太高，而且视频中很多内容是完全不同的，区分视频中的不同物体应该不仅仅是从视觉区分（使用的时候是从视觉来区分，但是训练的时候是不同传感器直接区分的。），
-本质是其他物体的属性的区分，视觉调研其他感知内容来区分。从视觉中区分出不同远近，不同软硬的物体，不同用途的物体，不同冷热危险的物体。现在只做了深度的学习，其他属性还未开始训练学习。
+2更多传感器，视听触等, 压力的感知和 reward 动作的感知学习。   宽泛讲就是多维度的信息，比如虚拟环境各种指标信息--DFP，不同传感器互相监督即cGAN；
+2视频的信息从像素出发维度太高，而且视频中很多内容是完全不同的，区分视频中的不同物体应该不仅仅是从视觉区分（使用的时候是从视觉来区分，但是训练的时候是不同传感器直接区分的）
+视频中不同物体的本质是物体的不同属性的区分，通过视觉联想其他感知信息的内容来区分。从视觉中区分出不同远近，不同软硬的物体，不同用途的物体，不同冷热危险的物体。现在只做了深度的学习，其他属性还未开始训练学习。
 
 
-3 Progressive Growing of GANs 智力的成长发展，2分类或3分类进行简单功能的精准实现  --7-- 上下左右，前后远近 先离散后联系回归。
+3 Progressive Growing of GANs 智力的成长发展，2分类或3分类进行简单功能的精准实现  --7-- 上下左右，前后远近 先离散后回归。
 3学习开始可以从简单开始，就像progressive growing gans 图像越来越清晰，分类或其他功能的准确度也可以越来越精确，先从2分类或3分类开始训练即可。
 将特征空间压缩到非常低的维度，比如高低，胖瘦，大小，快慢，前后，左右，上下，
 
@@ -30,19 +30,17 @@ Curiosity-driven Exploration by Self-supervised Prediction http://mp.weixin.qq.c
 
 4 conditon gan；条件生成 外界环境的特定条件下的特定反应。  最新的cGAN 论文。https://github.com/pfnet-research/sngan_projection
 condition：不同时间，不同空间，不同条件，不同的传感器属性，不同物体属性。
-cGAN是标签条件监督可以用在传感器监督，标签监督，更细致的监督开源参考pix2pix-两幅图像大小一致的情况
+cGAN 各种不同的条件就是标签，条件监督可以用在传感器监督，标签监督，更细致的监督可以参考pix2pix-vid2vid-两幅图像大小一致的情况, vectro2vector 
 
 生物各种不同情况的反应就是各种condition GAN的 动作输出。语言的很多限定词都是conditon，无人驾驶的红绿灯，各种异常情况都是各种conditonGAN。
+因果推理和cGAN的预测也是相关的。
 
 5 人脑发育到一定阶段神经元增长不多，增加的是神经元的链接，通过不同区域神经网络的链接的增加，实现了不同的关系属性及概念的互相链接。这个可以对应进行神经网络的highway的不断增加。
 5 more and more highway for 概念关联。 
 
 6capsnet 胶囊 (Capsule) 是一个包含多个神经元的载体，每个神经元表示了图像中出现的特定实体的各种属性 多属性表示。 
 
-code: 
-cGAN https://github.com/pfnet-research/sngan_projection,
-Curiosity https://github.com/pathak22/noreward-rl,
-vid2vid，
+
 
 下面是相对重复的一些关键点。
 7极低的特征空间维度  beta-vae distangle:bayesgan   https://github.com/ermongroup/Variational-Ladder-Autoencoder； 这些都是图像。
@@ -54,16 +52,41 @@ imitation carla； Curiosity-driven
 
 10 vid2vid prediction  https://github.com/createamind/vid2vid  ;   Curiosity-driven
 
-动作与环境互动及强化学习所探索的，！！ 11  imitation meta-learning。 https://zhuanlan.zhihu.com/p/33789604
+动作与环境互动及强化学习所探索的！ 11  imitation meta-learning。 https://zhuanlan.zhihu.com/p/33789604
 
 欢迎大家批评留言交流，提出不同的智能点的各种方法的实现思路想法，
+
 
 持续完善阅读原文  https://github.com/createamind/busyplan/blob/master/zdx/Plan-thinkout.md
 
 
+code: 
+cGAN https://github.com/pfnet-research/sngan_projection,
+Curiosity https://github.com/pathak22/noreward-rl,
+vid2vid，
+carla imitation  https://github.com/mvpcom/carlaILTrainer
 
 
 
+架构：
+carla + Curiosity A3c + 数据存储replay memory（神经网络压缩图像）+ 后台的rgb2depth + beta-vae + 多属性。
+
+
+
+底层技术扩展：
+强化学习的可扩展框架
+
+
+
+
+模拟环境： carla
+
+模仿开源：
+https://sites.google.com/site/imitationfromobservation/
+https://sermanet.github.io/imitation/  tcn
+
+https://github.com/tianheyu927/mil
+https://sites.google.com/view/daml
 
 
 
@@ -97,7 +120,7 @@ imitation carla； Curiosity-driven
 Time Contrastive Networks    https://sites.google.com/site/imitationfromobservation/
 内在的多种任务-视觉求索朱松纯
 
-memory：视频重放-存储z？多感知维度--倒水后杯子轻-重力感知-声音感知-
+memory：视频重放，深度学习对图片压缩的相关谷歌工作，哈希也是智能的一部分的文章。存储z？多感知维度--倒水后杯子轻-重力感知-声音感知-
 action condition video pred！
 
 
