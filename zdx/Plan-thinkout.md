@@ -27,6 +27,7 @@ Curiosity-driven Exploration by Self-supervised Prediction http://mp.weixin.qq.c
 多属性和注意力的关系：注意力就是讲有明显特点属性的物体快速提取进行更细致的认识，有一个粗略的网络进行比如危险属性的识别，然后有专门网络进行特定属性的特定处理，比如跟踪，准确的识别认识，或逃跑。
 
 2.1 强化学习学习disentangeling factor，通过动作互动，动作也是感知方式之一， 二维平面学习图片中的disentangleing feature先天缺陷，深度学习，及不同触觉信息都进行了多维度的属性拆解。
+betavae等仅仅通过视觉已经非常厉害了，扩展方式应该是多属性及动作对属性的探测。
 
 
 3 Progressive Growing of GANs 智力的成长发展，2分类或3分类进行简单功能的精准实现  --7-- 上下左右，前后远近 先离散后回归。
@@ -45,13 +46,15 @@ cGAN 各种不同的条件就是标签，条件监督可以用在传感器监督
 5 人脑发育到一定阶段神经元增长不多，增加的是神经元的链接，通过不同区域神经网络的链接的增加，实现了不同的关系属性及概念的互相链接。这个可以对应进行神经网络的highway的不断增加。
 5 more and more highway for 概念关联。 
 
+densenet！！入职培训提到的densenet多层连接。
+
 6capsnet 胶囊 (Capsule) 是一个包含多个神经元的载体，每个神经元表示了图像中出现的特定实体的各种属性 多属性表示。 
 
 
 
 下面是相对重复的一些关键点。
 7极低的特征空间维度  beta-vae distangle:bayesgan   https://github.com/ermongroup/Variational-Ladder-Autoencoder； 这些都是图像。
-动作也可以很低，上下左右，前后远近，
+动作也可以很低，上下左右，前后远近，   ref 2.1
 
 8  cnn filter  reinforcement learning 选择特定filter进行处理。  or densenet？
 9 DFP   Human certainly possess the innate ability to switch goals based on different circumstances  -----联系 4 
@@ -66,7 +69,7 @@ imitation carla； Curiosity-driven
 
 
 动作与环境互动及强化学习所探索的！ 
-11  imitation meta-learning。 https://zhuanlan.zhihu.com/p/33789604
+11  imitation  meta-learning。 https://zhuanlan.zhihu.com/p/33789604
 模仿学习是从视觉推断动作的学习，而好奇心探索就是动作产生的环境变化的互动开始学习，好奇心是可以作为模仿学习的预训练的。
 
 oneshot--学习通用的架构结构-可以快速泛化。
