@@ -76,6 +76,7 @@ oneshot--学习通用的架构结构-可以快速泛化。
 
 欢迎大家批评留言交流，提出不同的智能点的各种方法的实现思路想法，
 
+12 生成模型做分类，先能生成再进行分类。
 
 持续完善阅读原文  https://github.com/createamind/busyplan/blob/master/zdx/Plan-thinkout.md
 
