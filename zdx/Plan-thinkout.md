@@ -29,6 +29,7 @@ Curiosity-driven Exploration by Self-supervised Prediction http://mp.weixin.qq.c
 2.1 强化学习学习disentangeling factor，通过动作互动，动作也是感知方式之一， 二维平面学习图片中的disentangleing feature先天缺陷，深度学习，及不同触觉信息都进行了多维度的属性拆解。
 betavae等仅仅通过视觉已经非常厉害了，扩展方式应该是多属性及动作对属性的探测。
 
+2.2 动态跟踪物体的移动；深度学习跟踪已经有不错的项目。
 
 3 Progressive Growing of GANs 智力的成长发展，2分类或3分类进行简单功能的精准实现  --7-- 上下左右，前后远近 先离散后回归。
 3学习开始可以从简单开始，就像progressive growing gans 图像越来越清晰，分类或其他功能的准确度也可以越来越精确，先从2分类或3分类开始训练即可。
