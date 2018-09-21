@@ -35,7 +35,7 @@ disentangling跟 从图片中抽取抽象信息，抽取关键相关信息的关
 
 俯视图就是多深度的多传感器，3d 3d深度？
 3d的GQN？？ 3dVAE？ 现在有3d的vae-gan； 2d disentangling到 3d 到 time 4d 的disentangling； 
-视角关系：   切换视角 自己在场景中移动
+视角关系：   切换视角 自己在场景中移动   cyclegan是否可以学习俯视图和平时图再家30度视角图？？？
 视角变化的disentangling；先学习视角变化再学习方向变化的规律？ 还是结合动作及互信息进行到道路牙子的动作修正？
 
 
