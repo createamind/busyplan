@@ -19,7 +19,7 @@ cpc的思路：实际训练可能不是下面的fake  real 方式。
 绿灯的流量视频预测自身是real；如果更视频中的灯颜色为红灯则为fake；
 包括自身在视频中的运动，是否能学习到红绿灯和自身运动控制的关系规则？
 
-cpc应用到自动学习区分不同reward的场景状态--how ？  cpc lable和样本 xy的互信息，MI in 信息瓶颈？？
+cpc应用到自动学习区分不同reward的场景状态--how ？  cpc lable和样本 xy的互信息，MI in 信息瓶颈？？https://github.com/djstrouse/information-bottleneck  MINE：https://github.com/rdevon/DIM
 
 cpc的负样本，正样本，强化学习中，跟高 reward相关的时刻的state 场景动作 
 就可以跟reward 建立‘高reward’的正样本。调整其他为是负样本，及其他普通reward的样本。 
