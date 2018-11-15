@@ -1,24 +1,25 @@
 
-核心：泛化能力，不同道路的泛化能力。认识道路的泛化能力，及车在路上跑的泛化能力；看其他车在路上跑的视频学习？
-互信息能否吧关注信息的范围给缩小？注意力 memory；
+核心：泛化能力，不同道路的泛化能力。认识道路的泛化能力，及车在路上跑的泛化能力；看其他车在路上跑的视频学习？互信息能否吧关注信息的范围给缩小？
+
+cpc mine dim disentangling-factorvae memory attention
+
+互信息：  x y；  z y；  c x；   reward - stat-action；   因果的互信息； 
+
+我和博士已经做的实验的介绍；
+视频预测中，红灯环境流量，自我运动规律，我车道车辆运行规律，其他道路车辆运动变化信息，绿灯自我及周边车辆的运动规律； 
+学习规则的判断，红绿灯和运动的规则？ 学习到红绿灯及动作控制的关系。红灯的流量视频如果换成绿灯则fake；绿灯的流量视频预测自身是real；如果改为红灯则为fake；
+数据生成：生成模型可以控制任意filter or dimension，控制生成红灯或绿灯的图片或视频。先训练一个GAN去生成需要的红灯或绿灯？？
+
 
 当前状态stat 期望结果reward 实现需要的动作cation
 当前的stat有多条可行路径，每条都是不同的reward，每条对应不同的动作序列：根据高reward选择要实现目标的动作; 
 stat action reward 之间的互信息
 
-我和博士已经做的实验的介绍；
-视频预测中，红灯环境流量，自我运动规律，我车道车辆运行规律，其他道路车辆运动变化信息，绿灯自我及周边车辆的运动规律；学习规则？ 学习到红绿灯及动作控制的关系。
-红灯时候的环境流量规律，及自我运动规律（什么绿灯我可以动，什么红灯我不能动），我所在车道车辆运行规律，其他道路车辆运动变化信息，绿灯自我及周边车辆的运动规律；学习规则的判断，红绿灯和运动的规则？ 学习到红绿灯及动作控制的关系。
-数据生成：生成模型可以控制任意filter or dimension，控制生成红灯或绿灯的图片或视频。先训练一个GAN去生成需要的红灯或绿灯？？
+stat-action,reward的paire 训练判断reward？ stat-action,stat paire训练forward模型,训练动作影响环境的model base模型的判断能力。
+cpc-hrl paper；
 
-
-
-cpc的思路：实际训练可能不是下面的fake  real 方式。
-红灯的流量视频如果换成绿灯则fake；
-绿灯的流量视频预测自身是real；如果更视频中的灯颜色为红灯则为fake；
-包括自身在视频中的运动，是否能学习到红绿灯和自身运动控制的关系规则？
-
-cpc应用到自动学习区分不同reward的场景状态--how ？  cpc lable和样本 xy的互信息，MI in 信息瓶颈？？https://github.com/djstrouse/information-bottleneck  MINE：https://github.com/rdevon/DIM
+cpc应用到自动学习区分不同reward的场景状态--how，每一个技能都需要刻苦训练，就是训练学习reward的判断能力。  
+cpc lable和样本 xy的互信息，MI in 信息瓶颈？？https://github.com/djstrouse/information-bottleneck  MINE：https://github.com/rdevon/DIM
 
 cpc的负样本，正样本，强化学习中，跟高 reward相关的时刻的state 场景动作 
 就可以跟reward 建立‘高reward’的正样本。调整其他为是负样本，及其他普通reward的样本。 
