@@ -1,7 +1,7 @@
 
 0 核心：泛化能力，不同道路的泛化能力。认识道路的泛化能力，及车在路上跑的泛化能力；看其他车在路上跑的视频学习？互信息能否吧关注信息的范围给缩小？
 
-1 cpc mine dim disentangling-factorvae memory attention infomation-curious   cpc-vae
+1 cpc mine dim disentangling-factorvae memory attention infomation-curious   cpc-vae(bayes)
 
 2 互信息：  x y；  z y；  c x z；   reward <> stat-action；   因果的互信息---需要自动的场景切分　ｈｏｗ？？　
 
@@ -9,12 +9,14 @@
 不同长度视频场景的编码需要非固定长度input的cnn架构pyramid 及其他改进，高层抽象的合并？
 
 我和博士已经做的实验的介绍；
+
 4 视频预测中，红灯环境流量，自我运动规律，我车道车辆运行规律，其他道路车辆运动变化信息，绿灯自我及周边车辆的运动规律； 
 学习规则的判断，红绿灯和运动的规则？ 学习到红绿灯及动作控制的关系。红灯的流量视频如果换成绿灯则fake；绿灯的流量视频预测自身是real；如果改为红灯则为fake；
+
 5 数据生成：生成模型可以控制任意filter or dimension，控制生成红灯或绿灯的图片或视频。先训练一个GAN去生成需要的红灯或绿灯？？
 
 
-6  goal 目标 
+6  goal 目标 预测--（预测的精度，cpc预测数字可以很精确，预测图片就不必，预测一个模糊的分类，比如大小  多少 的比较。）
 stat action reward 之间的互信息；当前状态stat 期望结果reward 实现需要的动作action
 当前的stat有多条可行路径，每条都是不同的reward，每条对应不同的动作序列：根据高reward选择要实现目标的动作; 
 
@@ -42,7 +44,7 @@ bengio 互信息的ppt部分 cpc--world coherence -张嘉伟提到的  cpc 学�
 
 7 
 cpc原论文的vision实验视觉图片，是不是就是hierarchical？整体世界所有类别的图片进来的第一次分类激活神经元的处理？每一类的激活神经元再扩展进行下一次的细分的处理？
-及最近的所有视频的cpc训练，难样本，容易样本；从容易样本学习普遍的规律，不能消失，不能时空转变world coherence，cpc训练ucf  vkitty等； https://github.com/TengdaHan/cpc_video
+及最近的所有视频的cpc训练，难样本，容易样本；从容易样本学习普遍的规律，不能消失，不能时空转变world coherence，cpc训练ucf  vkitty等； https://github.com/TengdaHan/cpc_video(难样本，容易样本)
 先预训练简单样本进行普遍规律的学习，再进行难样本进行精细的特定任务的学习。
 每一类的任务相关信息的抽取？每一类都有这一类相关的或动作或注意力分布，即跟这一类视觉图像最相关的其他信息？
 
