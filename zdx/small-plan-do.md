@@ -22,7 +22,7 @@ stat action reward 之间的互信息；当前状态stat 期望结果reward 实�
 
 stat-action,reward的paire 训练判断reward？  =====视频+动作=视频 ；视频+动作=reward；
 stat-action,stat的paire训练forward模型,训练动作影响环境的model-base模型的判断能力。
-cpc-hrl paper；
+cpc-hrl paper； https://sites.google.com/view/representation-hrl
 
 cpc应用到自动学习区分不同reward的场景状态--how，每一个技能都需要刻苦训练，就是训练区分reward的判断能力。
 cpc lable和样本 xy的互信息，MI in 信息瓶颈？？https://github.com/djstrouse/information-bottleneck  MINE：https://github.com/rdevon/DIM
@@ -62,6 +62,8 @@ gqn cpc；
 视角图片和位置信息替换后即为fake；
 
 
+
+Formal Limitations on the Measurement of Mutual Information
 
 
 --------------------------------------------
