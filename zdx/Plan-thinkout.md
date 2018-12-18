@@ -4,6 +4,8 @@ Plan   正式的：  日记 反思； 最重要！  明确的！具体！！！�
 
 梳理一个实现AGI的简单框架
 
+互信息 熵 信息熵；
+
 更好智能的各个维度： 下面所列方法均有开源代码。  思想思路：
 
 0 《人工智能的未来》（On Intelligence）一书，是由杰夫•霍金斯介绍了大脑的智能属性之一是预测， prediciton（预测的各个角度：4d时空预测，DFP多传感器相互的属性等信息预测-6表示方法，
@@ -79,6 +81,50 @@ imitation carla； Curiosity-driven
 
 
 动作与环境互动及强化学习所探索的！ 
+model-base EMI  互信息的
+
+
+
+手把手教---有动作的直接学习动作的模仿学习
+只看就学 ---  无动作的模仿学习或     强化学习：
+信息瓶颈相关scholar论文！  知乎上的信息瓶颈文章作者。
+
+信息熵 最大 or 最小
+
+vdb
+互信息用在编码控制上面，有编码的都可以进行控制？？应用vdb的bottleneck进行信息控制 编码控制？+  EMI ？
+互信息最大   empower EMI  动作控制影响 互信息最大。   ++ vdb？？
+互信息最小  vdb   信息瓶颈？？  y z; x z  决策信息最小最关键，信息瓶颈 最大动作相关信息？？
+
+Inverse reinforcement learning for video games   https://github.com/HumanCompatibleAI/atari-irl   加上vdb互信息的约束试试  +EMI + empower
+
+EMI ：  互信息的embedding  forward model; backwordk model; model-base in mutual information;  替换之前的vae 模型 扩展到 mode base；and chap5 reward ；  code？好奇心代码？？改造？？
+empower 的 code；  https://github.com/navneet-nmk/pytorch-rl  and tf version    动作跟stat的互信息；  https://navneet-nmk.github.io/2018-08-26-empowerment/
+
+UNSUPERVISED CONTROL THROUGH NON-PARAMETRIC DISCRIMINATIVE REWARDS
+
+
+
+
+概念学习 能量函数。Concept Learning with Energy-Based Models
+
+SAC
+
+好奇心：；RND
+RL:  her
+
+multimodel: cycle(video audio language )  cycle-sensor-motor
+Multimodal Densenet  https://arxiv.org/pdf/1811.07407.pdf
+
+
+
+语言：
+动作描述---动作的语言之前的模型语言模型文章语言论文互信息 IB；Efficient human-like semantic representations via the Information Bottleneck principle
+
+Unsupervised perceptual rewards for imitation learning .   gan .  vae .  自动学习视频的分割--------苏剑林 自动的vae 聚类   3dvae聚类，
+
+
+
 11  imitation  meta-learning。 https://zhuanlan.zhihu.com/p/33789604
 模仿学习是从视觉推断动作的学习，而好奇心探索就是动作产生的环境变化的互动开始学习，好奇心是可以作为模仿学习的预训练的。
 
@@ -89,6 +135,18 @@ oneshot--学习通用的架构结构-可以快速泛化。
 12 生成模型做分类，先能生成再进行分类。
 
 持续完善阅读原文  https://github.com/createamind/busyplan/blob/master/zdx/Plan-thinkout.md
+
+
+
+actionable
+https://github.com/VinF/deer
+mine
+DIM
+cpc
+cpc-action
+norl near 最优表示的强化学习
+
+
 
 
 code: 
