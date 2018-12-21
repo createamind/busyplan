@@ -1,0 +1,98 @@
+paper: sac
+two major challenges: very high sample complexity and brittle convergence properties, which necessi- tate meticulous hyperparameter tuning
+
+soft actor-critic, an off- policy actor-critic deep RL algorithm based on the maximum entropy reinforcement learning frame- work.
+
+actor aims to maxi- mize expected reward while also maximizing en- tropy. That is, to succeed at the task while acting as randomly as possible.
+
+combining off-policy updates with a stable stochastic actor-critic
+
+two major challenges. First, model-free deep RL meth- ods are notoriously expensive in terms of their sample com- plexity. Even relatively simple tasks can require millions of steps of data collection, and complex behaviors with high- dimensional observations might need substantially more. Second, these methods are often brittle with respect to their hyperparameters: learning rates, exploration constants, and other settings must be set carefully for different problem settings to achieve good results.
+One cause for the poor sample efficiency of deep RL meth- ods is on-policy learning: some of the most commonly used deep RL algorithms, such as TRPO (Schulman et al., 2015), PPO (Schulman et al., 2017b) or A3C (Mnih et al., 2016), require new samples
+Unfortunately, the combina- tion of off-policy learning and high-dimensional, nonlinear function approximation with neural networks presents a ma- jor challenge for stability and convergence
+importantly, the maximum entropy formulation provides a substantial improvement in exploration and robustness
+three key in- gredients: an actor-critic architecture with separate policy and value function networks, an off-policy formulation that enables reuse of previously collected data for efficiency, and entropy maximization to enable stability and exploration.
+Actor-critic algorithms are typically derived starting from policy iteration, which alternates between pol- icy evaluation—computing the value function for a policy—
+and policy improvement—using the value function to obtain a better policy
+policy is referred to as the actor, and the value function as the critic.
+ddpg  method can be viewed both as a determinis- tic actor-critic algorithm and an approximate Q-learning
+ difficult to stabilize and brittle to hyperpa- rameter settings
+Our method instead combines off-policy actor- critic training with a stochastic actor, and further aims to maximize the entropy of this actor with an entropy maxi- mization objective.
+Maximum entropy reinforcement learning optimizes poli- cies to maximize both the expected return and the ex- pected entropy of the policy.
+3.1
+ ρπ(st) and ρπ(st,at) to denote the state and state-action marginals of the trajectory distribution induced by a policy π(at|st).
+J(π) = 􏰐 E(st,at)∼ρπ [r(st, at) + αH(π( · |st))] . (1)
+t=0
+The temperature parameter α determines
+This objective has a number of conceptual and practical advantages. First, the policy is incentivized to explore more widely, while giving up on clearly unpromising avenues. Second,the policy can capture multiple modes of near- optimal behavior
+multiple ac- tions seem equally attractive, the policy will commit equal probability mass to those actions
+4
+4.1. Derivation of Soft Policy Iteration
+learning optimal maximum entropy policies that alternates between policy evaluation and policy improve- ment in the maximum entropy framework.
+show that soft policy iteration converges to the optimal policy within a set of policies which might correspond, for instance, to a set of parameterized densities
+policy evaluation step of soft policy iteration, we wish to compute the value of a policy π according to the maximum entropy objective in Equation 1.
+For a fixed policy, the soft Q-value can be computed iteratively, starting from any function Q : S × A → R and repeatedly applying a modified Bellman backup operator T π given by
+Lemma 1 (Soft Policy Evaluation). Consider the soft Bell- man backup operator T π in Equation 2 and a mapping Q0 :S×A→Rwith|A|<∞,anddefineQk+1 =TπQk. Then the sequence Qk will converge to the soft Q-value of π as k → ∞.
+
+policy improvement step, we update the policy to- wards the exponential of the new Q-function.
+in the policy improvement step, for each state, we update the policy according to
+
+paper sac2
+
+chapter 5:
+
+
+------
+
+paper: polo
+
+abs：
+between local model-based control, global value function learning, and exploration.
+local trajectory optimization can cope with approximation errors in the value function, and can stabilize and accelerate value function learning
+approximate value functions can help reduce the planning horizon and allow for better policies beyond local solutions
+trajec- tory optimization can be used to perform temporally coordinated exploration in conjunction with estimating uncertainty in value function approximation
+exploration is critical for fast and stable learning of the value function.
+2.2Value Function Approximation
+The core structure of fitted value iteration considers a collection of states (or a sampling distribution ν), and a parametric value function approximator Vˆθ. Inspired by value iteration, fitted value iteration updates the parameters as:
+success of this overall procedure depends critically on at least two components: the capacity of the function approximator and the sampling distribution ν.
+lemma 1
+performance of πˆ degrades with a dependence on effective problem horizon determined by γ.
+understood as the policy paying a price of ε at every timestep.
+arg max operation in πˆ could inadvertently exploit approximation errors to produce a poor policy.
+performance of fitted value iteration based methods also rely critically on the sampling distribu- tion to propagate global information
+specify good sampling distributions using apriori knowledge of where the op- timal policy should visit (e.g. based on demonstration data). However, in the setting where an agent is dropped into a new world or task, automatically generating such sampling distributions may be difficult, and is analogous to the problem of exploration.
+2.3
+MPC looks forward
+1In this work, we use the terms trajectory optimization and MPC interchangeably 3
+only H steps, it is ultimately a local method unless coupled with a value function that propagates global information. In addition, we also provide intuitions for why MPC may help accelerate the learning of value functions.
+Impact of approximation errors in the value function
+Lemma 2. For all MDPs and β, the performance of the MPC policy eq. (3) can be bounded as:
+This suggests that MPC (H > 1) is less susceptible to approximation errors than greedy action selection
+MPC can benifit from broad knowledge of which parts of the state space are more favorable.
+Accelerating convergence of the value function
+MPC can also enable faster con- vergence of the value function approximation. To motivate this, consider the H-step Bellman opera-
+tor: Intuitively, BH allows for propagation of global information for H steps, thereby accelerating the convergence due to faster mixing.
+Note that one way to realize BH is to simply apply B H times, with each step providing a contraction by γ
+MPC based on local dynamic programming methods [14, 15] provide an efficient way to approximately realize BH , which can be used to accelerate and stabilize value function learning.
+2.4 planning to explore
+explore the relevant parts of the state space is critical for the convergence of many RL algorithms
+by using MPC, the agent can explore in the space of trajectories. The agent can consider a hypothesis of potential reward regions in the state space, and then execute the optimal trajectory conditioned on this belief, resulting in a temporally coordinated sequence of actions. By executing such coordinated actions, the agent can cover the state space more rapidly and intentionally, and avoid back and forth wandering that can slow down the learning. We demonstrate this effect empirically in Section 3.1.
+
+
+
+
+
+
+
+------
+
+paper: IMPROVING MODEL-BASED CONTROL AND ACTIVE EXPLORATION WITH RECONSTRUCTION UNCERTAINTY OPTIMIZATION
+
+2.1
+A widely used model-based control algorithm is Model Predictive Control. It consists of sampling a series of possible
+future actions sequences, predicting the cumulative reward of each based on the model, choosing the trajectory with the highest predicted reward and then executing only the first action.
+
+
+---
+Randomized Prior Functions for Deep Reinforcement Learning
+

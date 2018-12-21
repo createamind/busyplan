@@ -98,22 +98,25 @@ vdb
 
 Inverse reinforcement learning for video games   https://github.com/HumanCompatibleAI/atari-irl   加上vdb互信息的约束试试  +EMI + empower
 
+model base --  world model
 EMI ：  互信息的embedding  forward model; backwordk model; model-base in mutual information;  替换之前的vae 模型 扩展到 mode base；and chap5 reward ；  code？好奇心代码？？改造？？
 empower 的 code；  https://github.com/navneet-nmk/pytorch-rl  and tf version    动作跟stat的互信息；  https://navneet-nmk.github.io/2018-08-26-empowerment/
 
 UNSUPERVISED CONTROL THROUGH NON-PARAMETRIC DISCRIMINATIVE REWARDS
 
 
-
-
 概念学习 能量函数。Concept Learning with Energy-Based Models
 
-SAC
+SAC-----
+Plan Online, Learn Offline: Efficient Learning and Exploration via Model-Based Control   
+https://bair.berkeley.edu/blog/2018/11/30/visual-rl/
+
+
 
 好奇心：；RND
 RL:  her
 
-multimodel: cycle(video audio language )  cycle-sensor-motor
+multimodel: cycle(video audio language )  cycle-sensor-motor     gan-qp 苏剑林
 Multimodal Densenet  https://arxiv.org/pdf/1811.07407.pdf
 
 
@@ -133,6 +136,19 @@ oneshot--学习通用的架构结构-可以快速泛化。
 欢迎大家批评留言交流，提出不同的智能点的各种方法的实现思路想法，
 
 12 生成模型做分类，先能生成再进行分类。
+
+13   小数据  大任务； 多任务；  
+：：：：：多任务 多loss ？？ what loss：  
+13.1
+13.2
+.3
+.4
+.5
+各种loss 列举出来！！！！ 数据需要什么样的？？？？
+
+
+
+
 
 持续完善阅读原文  https://github.com/createamind/busyplan/blob/master/zdx/Plan-thinkout.md
 
