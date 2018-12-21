@@ -79,6 +79,11 @@ explore the relevant parts of the state space is critical for the convergence of
 by using MPC, the agent can explore in the space of trajectories. The agent can consider a hypothesis of potential reward regions in the state space, and then execute the optimal trajectory conditioned on this belief, resulting in a temporally coordinated sequence of actions. By executing such coordinated actions, the agent can cover the state space more rapidly and intentionally, and avoid back and forth wandering that can slow down the learning. We demonstrate this effect empirically in Section 3.1.
 
 
+??
+??
+??
+
+2.5
 
 
 
@@ -95,4 +100,19 @@ future actions sequences, predicting the cumulative reward of each based on the 
 
 ---
 Randomized Prior Functions for Deep Reinforcement Learning
+highlight why this can be a crucial shortcoming and propose a simple remedy through addition of a randomized untrainable ‘prior’ network to each ensemble member. We prove that this approach is efficient with linear representations, provide simple illustrations of its efficacy with nonlinear representations and show that this approach scales to large-scale problems far better than previous attempts.
+1
+elementary decision theory shows that the only admissible decision rules are Bayesian [12, 71]. Colloquially, this means that any decision rule that is not Bayesian can be improved (or even exploited) by some Bayesian alternative
+In this paper we highlight the surprising fact that many of these well-cited and popular methods for uncertainty estimation in deep learning can be poor choices for sequential decision problems
+serious shortcoming that can lead to arbitrarily poor performance. We support our claims by a series of simple lemmas for simple environments, together with experimental evidence in more complex settings.
+However, these ensemble-based approaches to uncertainty quantification approximate a ‘posterior’ without an effective methodology to inject a ‘prior’. This can be a crucial shortcoming in sequential decision problems.
+
+initialized together with a random but fixed prior function.
+Learning/optimization is performed so that this sum (network plus prior) minimizes training loss
+However, in regions of the space with little or no training data, their predictions will be determined by the generalization of their networks and priors.
+Surprisingly, we show that this approach is equivalent to exact Bayesian inference for the special case of Gaussian linear models. Following on from this ‘sanity check’, we present a series of simple experiments designed to extend this intuition to deep learning.
+We show that many of the most popular approaches for uncertainty estimation in deep RL do not pass these sanity checks, and crystallize these shortcomings in a series of lemmas and small examples. We demonstrate that our simple modification can facilitate aspiration in difficult tasks where previous approaches for deep RL fail. We believe that this work presents a simple and practical approach to encoding prior knowledge with deep reinforcement learning.
+2
+
+
 

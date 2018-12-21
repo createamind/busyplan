@@ -119,6 +119,11 @@ RL:  her
 multimodel: cycle(video audio language )  cycle-sensor-motor     gan-qp 苏剑林
 Multimodal Densenet  https://arxiv.org/pdf/1811.07407.pdf
 
+cnn的特征使用的改进！
+darla model base ; world model; darla vae densenet;
+densenet的vae！！
+unet的vae；
+unet的video prediction；
 
 
 语言：
