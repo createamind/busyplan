@@ -113,6 +113,15 @@ However, in regions of the space with little or no training data, their predicti
 Surprisingly, we show that this approach is equivalent to exact Bayesian inference for the special case of Gaussian linear models. Following on from this ‘sanity check’, we present a series of simple experiments designed to extend this intuition to deep learning.
 We show that many of the most popular approaches for uncertainty estimation in deep RL do not pass these sanity checks, and crystallize these shortcomings in a series of lemmas and small examples. We demonstrate that our simple modification can facilitate aspiration in difficult tasks where previous approaches for deep RL fail. We believe that this work presents a simple and practical approach to encoding prior knowledge with deep reinforcement learning.
 2
+scale and scope of problems that might be approached through deep RL is vast, but there are three key aspects an efficient (and general) agent must address [63]:
+1. Generalization: be able to learn from data it collects.
+2. Exploration: prioritize the best experiences to learn from.
+3. Long-term consequences: consider external effects beyond a single time step.
+this paper we focus on the importance of some form of ‘prior’ mechanism for efficient exploration
+If an agent has never seen a reward then it is essential that some other form of aspiration, motivation, drive or curiosity direct its learning.
+We call this type of drive a ‘prior’ effect, since it does not come from the observed data, but are ambivalent as to whether this effect is philosophically ‘Bayesian’. Agents that do not have this prior drive will be left floundering aimlessly and thus may require exponentially large amounts of data in order to learn even simple problems [27].
+A collection of definitions of intelligence. Frontiers in
+Artificial Intelligence and applications, 157:17, 2007.
 
 
 
