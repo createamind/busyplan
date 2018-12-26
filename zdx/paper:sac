@@ -99,7 +99,9 @@ future actions sequences, predicting the cumulative reward of each based on the 
 
 
 ---
+
 Randomized Prior Functions for Deep Reinforcement Learning
+
 highlight why this can be a crucial shortcoming and propose a simple remedy through addition of a randomized untrainable ‘prior’ network to each ensemble member. We prove that this approach is efficient with linear representations, provide simple illustrations of its efficacy with nonlinear representations and show that this approach scales to large-scale problems far better than previous attempts.
 1
 elementary decision theory shows that the only admissible decision rules are Bayesian [12, 71]. Colloquially, this means that any decision rule that is not Bayesian can be improved (or even exploited) by some Bayesian alternative

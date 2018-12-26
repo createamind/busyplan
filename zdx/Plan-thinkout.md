@@ -100,7 +100,7 @@ Plan Online, Learn Offline: Efficient Learning and Exploration via Model-Based C
 https://bair.berkeley.edu/blog/2018/11/30/visual-rl/
 
 
-framework and key paper  code;
+智能 framework and key paper  code;
 --------------------------
 0 slow  deeper; go most deeper;
 
@@ -108,7 +108,7 @@ framework and key paper  code;
 bayes；certain uncertain；   polo探索部分引用了prior ref by rnd and rnd have openai code。好奇心：；RND
 exploration
 curiosity 
-
+paper:polo 三个应用说明背后的方法是一样的通用的。 mpc，global value； explorer
 
 2表示学习； 概念学习  gan-qp
 2.1 生成模型做分类，先能生成再进行分类。
@@ -136,10 +136,16 @@ unet的vae；
 unet的video prediction；
 
 10 
-语言：
+语言： 交流沟通 通信编码
 动作描述---动作的语言之前的模型语言模型文章语言论文互信息 IB；Efficient human-like semantic representations via the Information Bottleneck principle
 
 Unsupervised perceptual rewards for imitation learning .   gan .  vae .  自动学习视频的分割--------苏剑林 自动的vae 聚类   3dvae聚类，
+
+Mutual alignment transfer learning， and ref it paper；  自动分段  ； Ddco: Discovery of deep continuous options for robot learning from demonstrations
+
+TACO: Learning Task Decomposition via Temporal Alignment for Control
+
+Variational Option Discovery Algorithms
 
 
 11  学习方式；自己学  学别人
@@ -150,14 +156,18 @@ vdb 互信息
 模仿学习是从视觉推断动作的学习，而好奇心探索就是动作产生的环境变化的互动开始学习，好奇心是可以作为模仿学习的预训练的。
 
 oneshot--学习通用的架构结构-可以快速泛化。
+Deep Meta-Learning: Learning to Learn in the Concept Space
 
 Inverse reinforcement learning for video games   https://github.com/HumanCompatibleAI/atari-irl   加上vdb互信息的约束试试  +EMI + empower
 
+Automata Guided Reinforcement Learning With Demonstrations， HER
+
+
+A Simple Neural Attentive Meta-Learner
 
 
 
 12 env： carla ； real world
-
 
 
 13   小数据  大任务； 多任务；  
@@ -170,13 +180,6 @@ Inverse reinforcement learning for video games   https://github.com/HumanCompati
 各种loss 列举出来！！！！ 数据需要什么样的？？？？
 
 
-
-
-
-持续完善阅读原文  https://github.com/createamind/busyplan/blob/master/zdx/Plan-thinkout.md
-
-
-
 actionable
 https://github.com/VinF/deer
 mine
@@ -184,6 +187,13 @@ DIM
 cpc
 cpc-action
 norl near 最优表示的强化学习
+
+
+
+
+欢迎大家批评留言交流，提出不同的智能点的各种方法的实现思路想法，
+
+持续完善阅读原文  https://github.com/createamind/busyplan/blob/master/zdx/Plan-thinkout.md
 
 
 
@@ -201,14 +211,6 @@ carla + Curiosity A3c + 数据存储replay memory（神经网络压缩图像）+
 
 
 
-底层技术扩展：
-强化学习的可扩展框架
-
-
-
-
-模拟环境： carla
-
 模仿开源：
 https://sites.google.com/site/imitationfromobservation/
 https://sermanet.github.io/imitation/  tcn
@@ -217,35 +219,13 @@ https://github.com/tianheyu927/mil
 https://sites.google.com/view/daml  数据泛化！ 只有视频和
 
 
-欢迎大家批评留言交流，提出不同的智能点的各种方法的实现思路想法，
 
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+--------------------------------------------------------------------------------------
 
 
 结合强化学习的注意力的任务相关特征抽取的独立网络
