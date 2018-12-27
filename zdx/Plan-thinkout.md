@@ -137,6 +137,7 @@ goal 是车道线  是红绿灯  是 其他异常情况，其他行人 其他的
 需要对车道线  红绿灯进行概念的学习；
 概念学习------------  概念是一个conditon的goal key；
 
+or  模仿学习； inverse rl  不学习概念，示范来做。后面升级到概念的语言沟通来做。
 
 
 8model base planning-- pred  predictonve ，mpc

@@ -38,7 +38,7 @@ Lemma 1 (Soft Policy Evaluation). Consider the soft Bell- man backup operator T 
 policy improvement step, we update the policy to- wards the exponential of the new Q-function.
 in the policy improvement step, for each state, we update the policy according to
 
-paper sac2
+paper sac2  https://bair.berkeley.edu/blog/2018/12/14/sac/
 
 chapter 5:
 
