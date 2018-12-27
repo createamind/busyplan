@@ -105,7 +105,7 @@ https://bair.berkeley.edu/blog/2018/11/30/visual-rl/
 0 slow  deeper; go most deeper;
 
 1
-bayes；certain uncertain；   polo探索部分引用了prior ref by rnd and rnd have openai code。好奇心：；RND
+bayes；certain uncertain；   polo探索部分引用了prior ref by rnd and rnd have openai code。好奇心：；RND code
 exploration
 curiosity 
 paper:polo 三个应用说明背后的方法是一样的通用的。 mpc，global value； explorer
@@ -123,9 +123,20 @@ vdb
 5memory： data reuse；  her
 
 6control；   
+
+
 7熵-互信息； 信息熵 最大 or 最小
 互信息最大   empower EMI  动作控制影响 互信息最大。   ++ vdb？？
 互信息最小  vdb   信息瓶颈？？  y z; x z  决策信息最小最关键，信息瓶颈 最大动作相关信息？？
+
+红绿灯时一种cnoditon的的动作，比如  论文 deepmind 互信息压缩很多技能在一个网络里面。
+stat 决定的action；   stat + goal的  conditon 动作；   
+
+goal conditon 的  model base ； 
+goal 是车道线  是红绿灯  是 其他异常情况，其他行人 其他的 车 其他的自行车灯
+需要对车道线  红绿灯进行概念的学习；
+概念学习------------  概念是一个conditon的goal key；
+
 
 
 8model base planning-- pred  predictonve ，mpc
