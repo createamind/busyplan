@@ -1,4 +1,5 @@
 paper: sac
+
 two major challenges: very high sample complexity and brittle convergence properties, which necessi- tate meticulous hyperparameter tuning
 
 soft actor-critic, an off- policy actor-critic deep RL algorithm based on the maximum entropy reinforcement learning frame- work.
@@ -82,8 +83,20 @@ by using MPC, the agent can explore in the space of trajectories. The agent can 
 ??
 ??
 ??
+2.4 Planning to Explore
+The ability of an agent to explore the relevant parts of the state space is critical for the convergence of many RL algorithms. Typical exploration strategies like ε-greedy and Boltzmann take exploratory actions with some probability on a per time-step basis. Instead, by using MPC, the agent can explore in the space of trajectories. The agent can consider a hypothesis of potential reward regions in the state space, and then execute the optimal trajectory conditioned on this belief, resulting in a temporally coordinated sequence of actions. By executing such coordinated actions, the agent can cover the state space more rapidly and intentionally, and avoid back and forth wandering that can slow down the learning. We demonstrate this effect empirically in Section 3.1.
+To generate the hypothesis of potentially rewarding regions, we take a Bayesian view and approxi- mately track a posterior over value functions. Consider a motivating setting of regression, where we have a parametric function approximator fθ with prior P(θ). The dataset consists of input-output pairs: D = (xi, yi)ni=1, and we wish to approximate P(θ|D). In the Bayesian linear regression set- ting with Gaussian prior and noise models, the solution to the following problem generates samples from the posterior [16]:
+σ2
+argmin||y ̃i −fθ ̃(xi)−fθ(xi)||2 + ||θ||2 (5)
+where y ̃i ∼ N(yi,σ2) is a noisy version of the target and θ ̃ ∼ P(θ) is a sample from the prior. Based on this, Osband et al. [16] demonstrate the benefits of uncertainty estimation for exploration. Similarly, we use this procedure to obtain samples from the posterior for value function approxima- tion, and utilize them for temporally coordinated action selection using MPC. We consider K value function approximators Vˆθ with parameters θ1, θ2, . . . θK independently trained based on eq. (5). We consider the softmax of the different samples as the value at a state:
+􏰍K􏰎
+Vˆ(s)=log 􏰁exp􏰆κVˆθk(s)􏰇 . (6) k=1
+Since the log-sum-exp function approximates mean + variance for small κ > 0, this procedure encourages the agent to additionally explore parts of the state space where the disagreement between the function approximators is large. This corresponds to the broad notion of optimism in the face of uncertainty [17] which has been successful in a number of applications [18, 19].
 
-2.5
+
+
+2.5  Final Algorithm
+ To summarize, POLO utilizes a global value function approximation scheme, a local trajectory optimization subroutine, and an optimistic exploration scheme. POLO operates as follows: when acting in the world, the agent uses the internal model and always picks the optimal action suggested by MPC. Exploration is implicitly handled by tracking the value function uncertainties and the optimistic evaluation, as specified in eq. (5) and (6). All the experience (visited states) from the world are stored into a replay buffer D, with old experiences discarded if the buffer becomes full. After every Z steps of acting in the world and collecting experience, the value functions are updated by: (a) constructing the targets according to eq. (7); (b) performing regression using the randomized prior scheme using eq. (5) where fθ corresponds to the value function approximator. For state si in the buffer and value network k with parameters θk, the targets are constructed as:
 
 
 
@@ -124,6 +137,17 @@ If an agent has never seen a reward then it is essential that some other form of
 We call this type of drive a ‘prior’ effect, since it does not come from the observed data, but are ambivalent as to whether this effect is philosophically ‘Bayesian’. Agents that do not have this prior drive will be left floundering aimlessly and thus may require exponentially large amounts of data in order to learn even simple problems [27].
 A collection of definitions of intelligence. Frontiers in
 Artificial Intelligence and applications, 157:17, 2007.
+
+公众号截图发文章了
+
+
+The scale and scope of problems that might be approached through deep RL is vast, but there are three key aspects an efficient (and general) agent must address [63]:
+1. Generalization: be able to learn from data it collects.
+2. Exploration: prioritize the best experiences to learn from.
+3. Long-term consequences: consider external effects beyond a single time step.
+In this paper we focus on the importance of some form of ‘prior’ mechanism for efficient exploration. As a motivating example we consider a sparse reward task where random actions are very unlikely to ever see a reward. If an agent has never seen a reward then it is essential that some other form of aspiration, motivation, drive or curiosity direct its learning. We call this type of drive a ‘prior’ effect, since it does not come from the observed data, but are ambivalent as to whether this effect is philosophically ‘Bayesian’. Agents that do not have this prior drive will be left floundering aimlessly and thus may require exponentially large amounts of data in order to learn even simple problems [27].
+To solve a specific task, it can be possible to attain superhuman performance without significant prior mechanism [42, 41]. However, if our goal is artificial general intelligence, then it is disconcerting that our best agents can perform very poorly even in simple problems [33, 39]. One potentially general approach to decision making is given by the Thompson sampling heuristic1: ‘randomly take action according to the probability you believe it is the optimal action’ [68].
+
 
 
 

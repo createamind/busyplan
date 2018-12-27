@@ -116,6 +116,8 @@ vdb
 互信息用在编码控制上面，有编码的都可以进行控制？？应用vdb的bottleneck进行信息控制 编码控制？+  EMI ？
 
 3progressive grow；  pg
+环境的reward 需要动态变化，不同阶段学习不同的重点能力，比如先站，再跑，在目标跑，再避障，再。。。。。
+
 4 4d space time
 
 5memory： data reuse；  her
