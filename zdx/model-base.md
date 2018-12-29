@@ -57,8 +57,8 @@ This can accelerate the process of discovering skills for downstream tasks and c
 
 In our analogy, a policy acts as an encoder, translating contexts from a noise distribution into trajectories; a decoder attempts to recover the contexts from the trajectories, and rewards the policies for making contexts easy to distinguish. Contexts are random vectors which have no intrinsic meaning prior to training, but they become associated with trajectories as a result of training; each context vector thus corresponds to a distinct option. Therefore this approach learns a set of options which are as diverse as possible, in the sense of being as easy to distinguish from each other as possible. We show that Variational Intrinsic Control (VIC) (Gregor et al. [2016]) and the recently-proposed Diversity is All You Need (DIAYN) (Eysenbach et al. [2018]) are specific instances of this template which decode from states instead of complete trajectories.
 We make two main algorithmic contributions:
-1 .The idea is to encourage learning dynamical modes instead of goal-attaining modes, e.g. ‘move in a circle’ instead of ‘go to X’.
-2. We propose a curriculum learning approach where the number of contexts seen by the agent increases whenever the agent’s performance is strong enough (as measured by the decoder) on the current set of contexts.
+ 1 .The idea is to encourage learning dynamical modes instead of goal-attaining modes, e.g. ‘move in a circle’ instead of ‘go to X’.
+ 2. We propose a curriculum learning approach where the number of contexts seen by the agent increases whenever the agent’s performance is strong enough (as measured by the decoder) on the current set of contexts.
 
 show that, to the extent that our metrics can measure, all three of them perform similarly, except that VALOR can attain qualitatively different behavior because of its trajectory-centric approach, and DIAYN learns more quickly because of its denser reward signal. We show that our curriculum trick stabilizes and speeds up learning for all three methods, and can allow a single agent to learn up to hundreds of modes. Beyond our core comparison, we also explore applications of variational option discovery in two interesting spotlight environments: a simulated robot hand and a simulated humanoid. Variational option discovery finds naturalistic finger-flexing behaviors in the hand environment, but performs poorly on the humanoid, in the sense that it does not discover natural crawling or walking gaits. We consider this evidence that pure information-theoretic objectives can do a poor job of capturing human priors on useful behavior in complex environments
 using a (particularly good) pretrained VALOR policy as the lower level of a hierarchy. In this experiment, we find that the VALOR policy is more useful than a random network as a lower level, and equivalently as useful as learning a lower level from scratch in the environment.
@@ -66,8 +66,18 @@ using a (particularly good) pretrained VALOR policy as the lower level of a hier
 2
 option Discovery
 Several approaches for option discovery are primarily information-theoretic: Gregor et al. [2016], Eysenbach et al. [2018], and Florensa et al. [2017] train policies to maximize mutual information between options and states or quantities derived from states; by contrast, we maximize information between options and whole trajectories
-Universal Policies
 
+Universal Policies
+Universal Policies: Variational option discovery algorithms learn universal policies (goal- or instruction- conditioned policies)
+By contrast, variational option discovery is unsupervised and finds its own instruction space.
+
+Intrinsic Motivation:
+However, none of these approaches were combined with learning universal policies, and so suffer from a problem of knowledge fade
+Variational Autoencoders
+
+Novelty Search:
+
+3 Variational Option Discovery Algorithms
 
 
 
@@ -130,13 +140,41 @@ the aim of the unsupervised stage is to learn skills that eventually will make i
 be used for many different tasks.
 3.1
  
+3.1 HOW IT WORKS
+Our method for unsupervised skill discovery, DIAYN (“Diversity is All You Need”), builds off of three ideas. First, for skills to be useful, we want the skill to dictate the states that the agent visits. Different skills should visit different states, and hence be distinguishable. Second, we want to use states, not actions, to distinguish skills, because actions that do not affect the environment are not visible to an outside observer. For example, an outside observer cannot tell how much force a robotic arm applies when grasping a cup if the cup does not move. Finally, we encourage exploration and incentivize the skills to be as diverse as possible by learning skills that act as randomly as possible. Skills with high entropy that remain discriminable must explore a part of the state space far away from other skills, lest the randomness in its actions lead it to states where it cannot be distinguished.
+
+公式看论文吧。
+
+4 EXPERIMENTS
+4.1 ANALYSIS OF LEARNED SKILLS
+Question 1. What skills does DIAYN learn?
+Question 2. How does the distribution of skills change during training?
+Question 3. Does discriminating on single states restrict DIAYN to learn skills that visit disjoint sets of states?
+Our discriminator operates at the level of states, not trajectories.   ref Variational Option Discovery Algorithms
+Question 4. How does DIAYN differ from Variational Intrinsic Control (VIC)
+ In contrast, DIAYN fixes the distribution over skills, which allows us to discover more diverse skills.
+4.2 HARNESSING LEARNED SKILLS
+ Three less obvious applications are adapting skills to maximize a reward, hierarchical RL, and imitation learning.
+4.2.1 ACCELERATING LEARNING WITH POLICY INITIALIZATION
+we propose that DIAYN can serve as unsupervised pre-training for more sample-efficient finetuning of task-specific policies.
+Question 5. Can we use learned skills to directly maximize the task reward?
+
+4.2.2 USING SKILLS FOR HIERARCHICAL RL
+In theory, hierarchical RL should decompose a complex task into motion primitives, which may be reused for multiple tasks. In practice, algorithms for hierarchical RL can encounter many problems: (1) each motion primitive reduces to a single action (Bacon et al., 2017), (2) the hierarchical policy only samples a single motion primitive (Gregor et al., 2016), or (3) all motion primitives attempt to do the entire task. In contrast, DIAYN discovers diverse, task-agnostic skills, which hold the promise of acting as a building block for hierarchical RL.
+
+Question 6. Are skills discovered by DIAYN useful for hierarchical RL?
+To use the discovered skills for hierarchical RL, we learn a meta-controller whose actions are to choose which skill to execute for the next k steps (100 for ant navigation, 10 for cheetah hurdle). The meta-controller has the same observation space as the skills.
+VIME attempts to learn a single policy that visits many states.
+Figure 7: DIAYN for Hierarchical RL: By learning a meta-controller to compose skills learned by DIAYN, cheetah quickly learns to jump over hurdles and ant solves a sparse-reward navigation task.
+
+Question 7. How can DIAYN leverage prior knowledge about what skills will be useful?
+4.2.3 IMITATING AN EXPERT
+Question 8. Can we use learned skills to imitate an expert?
 
 
 
-
-
-
-
+5 CONCLUSION
+In this paper, we present DIAYN, a method for learning skills without reward functions. We show that DIAYN learns diverse skills for complex tasks, often solving benchmark tasks with one of the learned skills without actually receiving any task reward. We further proposed methods for using the learned skills (1) to quickly adapt to a new task, (2) to solve complex tasks via hierarchical RL, and (3) to imitate an expert. As a rule of thumb, DIAYN may make learning a task easier by replacing the task’s complex action space with a set of useful skills. DIAYN could be combined with methods for augmenting the observation space and reward function. Using the common language of information theory, a joint objective can likely be derived. DIAYN may also more efficiently learn from human preferences by having humans select among learned skills. Finally, the skills produced by DIAYN might be used by game designers to allow players to control complex robots and by artists to animate characters.
 
 
 
@@ -164,5 +202,33 @@ If we specialize the regression targets yi to be zero, then the optimization pro
 
 
 Other methods of exploration include adversarial self-play (Sukhbaatar et al., 2018), maximizing empowerment (Gregor et al., 2017), parameter noise (Plappert et al., 2017; Fortunato et al., 2017), identifying diverse policies (Eysenbach et al., 2018; Achiam et al., 2018), and using ensembles of value functions (Osband et al., 2018; 2016; Chen et al., 2017).
+
+
+
+
+
+
+
+
+
+
+
+
+-----------------------
+EMI：
+
+2.2
+
+VIME (Houthooft et al. (2016)) approximates the environment dynamics, uses the information gain of the learned dynamics model as intrinsic rewards, and showed encouraging results on robotic locomotion problems. However, the method needs to update the dynamics model per each observation and is unlikely to be scalable for complex tasks with high dimensional states such as Atari games.
+
+
+
+
+
+
+
+
+
+
 
 

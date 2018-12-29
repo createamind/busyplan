@@ -196,6 +196,8 @@ A Simple Neural Attentive Meta-Learner
 .5
 各种loss 列举出来！！！！ 数据需要什么样的？？？？
 
+14 多算法，多方法方法训练。
+
 
 actionable
 https://github.com/VinF/deer

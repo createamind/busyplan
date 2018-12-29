@@ -43,6 +43,28 @@ paper sac2  https://bair.berkeley.edu/blog/2018/12/14/sac/
 chapter 5:
 
 
+paper: sac in real world ;  https://bair.berkeley.edu/blog/2018/12/14/sac/
+
+Desired Features for Deep RL for Real Robots
+What makes an ideal deep RL algorithm for real-world systems? Real-world experimentation brings additional challenges, such as constant interruptions in the data stream, requirement for a low-latency inference and smooth exploration to avoid mechanical wear and tear on the robot, which set additional requirement for both the algorithm and also the implementation of the algorithm.
+
+Regarding the algorithm, several properties are desirable:
+
+Sample Efficiency. Learning skills in the real world can take a substantial amount of time. Prototyping a new task takes several trials, and the total time required to learn a new skill quickly adds up. Thus good sample complexity is the first prerequisite for successful skill acquisition.
+No Sensitive Hyperparameters. In the real world, we want to avoid parameter tuning for the obvious reason. Maximum entropy RL provides a robust framework that minimizes the need for hyperparameter tuning.
+Off-Policy Learning. An algorithm is off-policy if we can reuse data collected for another task. In a typical scenario, we need to adjust parameters and shape the reward function when prototyping a new task, and use of an off-policy algorithm allows reusing the already collected data.
+Soft actor-critic (SAC), described below, is an off-policy model-free deep RL algorithm that is well aligned with these requirements. In particular, we show that it is sample efficient enough to solve real-world robot tasks in only a handful of hours, robust to hyperparameters and works on a variety of simulated environments with a single set of hyperparameters.
+
+In addition to the desired algorithmic properties, experimentation in the real-world sets additional requirements for the implementation. Our release supports many of these features that we have found crucial when learning with real robots, perhaps the most importantly:
+
+Asynchronous Sampling. Inference needs to be fast to minimize delay in the control loop, and we typically want to keep training during the environment resets too. Therefore, data sampling and training should run in independent threads or processes.
+Stop / Resume Training. When working with real hardware, whatever can go wrong, will go wrong. We should expect constant interruptions in the data stream.
+Action smoothing. Typical Gaussian exploration makes the actuators jitter at high frequency, potentially damaging the hardware. Thus temporally correlating the exploration is important.
+
+
+
+
+
 ------
 
 paper: polo
@@ -97,6 +119,13 @@ Since the log-sum-exp function approximates mean + variance for small κ > 0, th
 
 2.5  Final Algorithm
  To summarize, POLO utilizes a global value function approximation scheme, a local trajectory optimization subroutine, and an optimistic exploration scheme. POLO operates as follows: when acting in the world, the agent uses the internal model and always picks the optimal action suggested by MPC. Exploration is implicitly handled by tracking the value function uncertainties and the optimistic evaluation, as specified in eq. (5) and (6). All the experience (visited states) from the world are stored into a replay buffer D, with old experiences discarded if the buffer becomes full. After every Z steps of acting in the world and collecting experience, the value functions are updated by: (a) constructing the targets according to eq. (7); (b) performing regression using the randomized prior scheme using eq. (5) where fθ corresponds to the value function approximator. For state si in the buffer and value network k with parameters θk, the targets are constructed as:
+
+
+
+
+4.2
+However, such approaches critically do not have the element of planning to explore; thus the agent may not actually reach regions of high predicted reward because it does not know how to get there. Our work is perhaps closest to the E3 framework of Kearns & Singh [50], which considers altered MDPs with different reward functions, and executes the optimal action under that MDP. However solving these altered MDPs is expensive and their solution is quickly discarded. MPC on the other hand can quickly solve for local instance- specific solutions in these MDPs.
+
 
 
 
