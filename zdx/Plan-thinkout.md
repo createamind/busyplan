@@ -183,6 +183,7 @@ Automata Guided Reinforcement Learning With Demonstrations， HER
 A Simple Neural Attentive Meta-Learner
 
 
+Model-Based Reinforcement Learning via Meta-Policy Optimization+ 实时反馈 -- mpc？？
 
 12 env： carla ； real world
 

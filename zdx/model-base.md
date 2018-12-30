@@ -1,6 +1,38 @@
 
 
+
+
+
+
+
+
+
+
+
 MODEL-ENSEMBLE TRUST-REGION POLICY OPTIMIZATION
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -217,10 +249,16 @@ Other methods of exploration include adversarial self-play (Sukhbaatar et al., 2
 -----------------------
 EMI：
 
+2 RELATED WORKS
+Our work is related to the following strands of active research:
+Unsupervised representation learning via mutual information estimation
+cpc mine DIM 。。。
+
 2.2
 
 VIME (Houthooft et al. (2016)) approximates the environment dynamics, uses the information gain of the learned dynamics model as intrinsic rewards, and showed encouraging results on robotic locomotion problems. However, the method needs to update the dynamics model per each observation and is unlikely to be scalable for complex tasks with high dimensional states such as Atari games.
 
+Other approaches utilize more ad-hoc measures (Pathak et al., 2017; Tang et al., 2017) that aim to approximate surprise. ICM (Pathak et al. (2017)) transforms the high dimensional states to feature space and imposes cross entropy and euclidean loss so the action and the feature of the next state are predictable. However, ICM does not utilize the mutual information like VIME to directly measure the uncertainty and is limited to discrete actions. Our method (EMI) is also reminiscent of (Kohonen & Somervuo, 1998) in a sense that we seek to construct a decoder-free latent space from the high dimensional observation data with a topology in the latent space. In contrast to the prior works on exploration, we seek to construct the representation under linear topology and does not require decoding the full observation but seek to encode the essential predictive signal that can be used for guiding the exploration.
 
 
 

@@ -1,3 +1,21 @@
+
+
+
+
+https://arxiv.org/pdf/1810.05546.pdf. Uncertainty in Neural Networks: Bayesian Ensembling
+
+
+
+
+
+
+
+
+
+
+
+
+
 paper: sac
 
 two major challenges: very high sample complexity and brittle convergence properties, which necessi- tate meticulous hyperparameter tuning
@@ -121,6 +139,12 @@ Since the log-sum-exp function approximates mean + variance for small κ > 0, th
  To summarize, POLO utilizes a global value function approximation scheme, a local trajectory optimization subroutine, and an optimistic exploration scheme. POLO operates as follows: when acting in the world, the agent uses the internal model and always picks the optimal action suggested by MPC. Exploration is implicitly handled by tracking the value function uncertainties and the optimistic evaluation, as specified in eq. (5) and (6). All the experience (visited states) from the world are stored into a replay buffer D, with old experiences discarded if the buffer becomes full. After every Z steps of acting in the world and collecting experience, the value functions are updated by: (a) constructing the targets according to eq. (7); (b) performing regression using the randomized prior scheme using eq. (5) where fθ corresponds to the value function approximator. For state si in the buffer and value network k with parameters θk, the targets are constructed as:
 
 
+3 Empirical Results and Discussion
+Through empirical evaluation, we wish to answer the following questions:
+1. Does trajectory optimization in conjunction with uncertainty estimation in value function approximation result in temporally coordinated exploration strategies?
+2. Can the use of an approximate value function help reduce the planning horizon for MPC? 3. Does trajectory optimization enable faster and more stable value function learning?
+
+
 
 
 4.2
@@ -170,6 +194,7 @@ Artificial Intelligence and applications, 157:17, 2007.
 公众号截图发文章了
 
 
+2
 The scale and scope of problems that might be approached through deep RL is vast, but there are three key aspects an efficient (and general) agent must address [63]:
 1. Generalization: be able to learn from data it collects.
 2. Exploration: prioritize the best experiences to learn from.
@@ -178,5 +203,14 @@ In this paper we focus on the importance of some form of ‘prior’ mechanism f
 To solve a specific task, it can be possible to attain superhuman performance without significant prior mechanism [42, 41]. However, if our goal is artificial general intelligence, then it is disconcerting that our best agents can perform very poorly even in simple problems [33, 39]. One potentially general approach to decision making is given by the Thompson sampling heuristic1: ‘randomly take action according to the probability you believe it is the optimal action’ [68].
 
 
+
+
+5 Conclusion
+This paper highlights the importance of uncertainty estimates in deep RL, the need for an effective ‘prior’ mechanism, and its potential benefits towards efficient exploration. We present some alarming shortcomings of existing methods and suggest bootstrapped ensembles with randomized prior functions as a simple, practical alternative. We support our claims through an analysis of this method in the linear setting, together with a series of simple experiments designed to highlight the key issues. Our work leaves several open questions. What kinds of prior functions are appropriate for deep RL? Can they be optimized or ‘meta-learned’? Can we distill the ensemble process to a single network? We hope this work helps to inspire solutions to these problems, and also build connections between the theory of efficient learning and practical algorithms for deep reinforcement learning.
+C.6 Summary
+Table 1: Important issues in posterior approximations for deep reinforcement learning.
+
+https://sites.google.com/view/randomized-prior-nips-2018/
+https://colab.research.google.com/drive/1hOZeHjSdoel_-UoeLfg1aRC4uV_6gX1g
 
 
