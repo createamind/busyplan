@@ -185,6 +185,9 @@ A Simple Neural Attentive Meta-Learner
 
 Model-Based Reinforcement Learning via Meta-Policy Optimization+ 实时反馈 -- mpc？？
 
+mb-mpo +. sac 是不是会很厉害？mode base+free；
+
+
 12 env： carla ； real world
 
 
