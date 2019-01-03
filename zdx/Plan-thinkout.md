@@ -118,7 +118,7 @@ vdb
 3progressive grow；  pg
 环境的reward 需要动态变化，不同阶段学习不同的重点能力，比如先站，再跑，在目标跑，再避障，再。。。。。
 
-4 4d space time
+4 4d space time   densenet-tc A SIMPLE NEURAL ATTENTIVE META-LEARNER
 
 5memory： data reuse；  her
 
@@ -191,7 +191,8 @@ mb-mpo +. sac 是不是会很厉害？mode base+free；
 12 env： carla ； real world
 
 
-13   小数据  大任务； 多任务；  
+13   小数据  大任务； 多任务；   meta learning 是不是就是多loss，的确是，不过是一类loss； 人 ，跟基础的原则道理是跨类的任务loss。
+maml meta learning 跟表示学习的联系。  meta learning 多任务跟多任务互信息压缩到一个网络的关系？ tc softattention ref bottleneck mutual info;
 ：：：：：多任务 多loss ？？ what loss：  
 13.1
 13.2
