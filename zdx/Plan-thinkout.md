@@ -141,6 +141,7 @@ or  模仿学习； inverse rl  不学习概念，示范来做。后面升级到
 
 
 8model base planning-- pred  predictonve ，mpc
+
 9multimodel: cycle(video audio language )  cycle-sensor-motor     gan-qp 苏剑林
 Multimodal Densenet  https://arxiv.org/pdf/1811.07407.pdf
 cnn的特征使用的改进！
@@ -204,6 +205,14 @@ maml meta learning 跟表示学习的联系。  meta learning 多任务跟多任
 14 多算法，多方法方法训练。
 
 
+15 transfer learning  与多任务 meta learning 的关系。 sim to real
+
+
+
+16 模型的容量最够大。
+
+
+
 actionable
 https://github.com/VinF/deer
 mine
@@ -211,6 +220,8 @@ DIM
 cpc
 cpc-action
 norl near 最优表示的强化学习
+
+
 
 
 
