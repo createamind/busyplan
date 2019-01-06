@@ -1,6 +1,51 @@
 
 
 
+
+
+
+Imagination-Augmented Agents
+
+
+
+
+
+
+
+https://sites.google.com/view/unsupervised-via-meta codes;
+
+
+
+
+
+
+Unsupervised Meta-Learning for Reinforcement Learning
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+----------------------------------------------------
+
 paper： MODEL-ENSEMBLE TRUST-REGION POLICY OPTIMIZATION
 
 
@@ -209,17 +254,14 @@ We first demonstrate that training an agent with a goal bottleneck alone leads t
 We further demonstrate the idea of decision states in a planning goal-based navigation task that uses a combination of model-based and model-free RL. Identifying useful decision states can provide a comfortable middle ground between model-free reasoning and model-based planning. For example, imagine planning over individual decision states, while using model-free knowledge to navigate between bottlenecks: aspects of the environment that are physically complex but vary little between problem instances are handled in a model-free way (the navigation between decision points), while the particular decision points that are relevant to the task can be handled by explicitly reasoning about causality, in a more abstract representation. We demonstrate this using a similar setup as in imagination augmented agents (Weber et al., 2017). In imagination augmented agents, model free agents are augmented with imagination, such that the imagination model can be queried to make predictions about the future. We use the dynamics models to simulate imagined trajectories, which are then summarized by a neural network and this summary is provided as additional context to a policy network. Here, we use the output of the imagination module as a “goal” and we want to show that only near the decision points (i.e potential subgoals) the agent wants to make use of the information which is a result of running imagination module.
 
 
-
+5 CONCLUSION
+In this paper, we proposed to train agents to develop “default behaviours” as well as the knowledge of when to break those behaviour, using an information bottleneck between the agent’s goal and policy. We demonstrated empirically that this training procedure leads to better direct policy transfer across tasks. We also demonstrated that the states in which the agent learns to deviate from its habits, which we call ”decision states”, can be used as the basis for a learned exploration bonus that leads to more effective training than other task-agnostic exploration methods.
 
 
 
 --------------------------------
 
 
-Unsupervised Meta-Learning for Reinforcement Learning
-
-
-https://sites.google.com/view/unsupervised-via-meta codes;
  
 
 
