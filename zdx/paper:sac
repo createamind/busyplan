@@ -6,22 +6,9 @@ https://arxiv.org/pdf/1810.05546.pdf.
 Uncertainty in Neural Networks: Bayesian Ensembling
 
 
+---------------------------------------------------
 https://arxiv.org/pdf/1812.10539.pdf
 Uncertainty Autoencoders: Learning Compressed Representations via Variational Information Maximization
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -39,10 +26,21 @@ uncertainty autoencoders (UAE), a framework for representation learning via vari
 
 
 
-
+----------------------------------------------
 https://arxiv.org/pdf/1812.11971.pdf
 Mid-Level Visual Representations Improve  Generalization and Sample Efficiency for Learning Active Tasks
 code will release
+
+
+
+
+
+
+
+
+
+
+
 
 
 

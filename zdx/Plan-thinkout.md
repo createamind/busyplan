@@ -206,6 +206,17 @@ maml meta learning 跟表示学习的联系。  meta learning 多任务跟多任
 各种loss 列举出来！！！！ 数据需要什么样的？？？？
 
 
+
+
+多任务loss：meta learning；
+
+
+
+多传感器loss：
+
+
+空间loss：
+
 https://github.com/tensorflow/models/tree/master/research/vid2depth depth loss
 https://github.com/tensorflow/models/tree/master/research/struct2depth
 
@@ -217,8 +228,11 @@ uncertain vae loss
 
 双目视察 loss
 3d conv 运动信息 loss
-actionable loss？
 
+
+
+actionable loss？
+https://sites.google.com/view/actionablerepresentations
 
 
 
