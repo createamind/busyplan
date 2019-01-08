@@ -2,12 +2,17 @@
 
 
 
-https://arxiv.org/pdf/1810.05546.pdf. Uncertainty in Neural Networks: Bayesian Ensembling
+https://arxiv.org/pdf/1810.05546.pdf.
+Uncertainty in Neural Networks: Bayesian Ensembling
 
 
+https://arxiv.org/pdf/1812.10539.pdf
+Uncertainty Autoencoders: Learning Compressed Representations
+via Variational Information Maximization
 
-
-
+https://arxiv.org/pdf/1812.11971.pdf
+Mid-Level Visual Representations Improve
+Generalization and Sample Efficiency for Learning Active Tasks
 
 
 
@@ -18,7 +23,7 @@ https://arxiv.org/pdf/1810.05546.pdf. Uncertainty in Neural Networks: Bayesian E
 
 paper: sac
 
-two major challenges: very high sample complexity and brittle convergence properties, which necessi- tate meticulous hyperparameter tuning
+two major challenges: very high sample complexity and brittle convergence properties, which necessitate meticulous hyperparameter tuning
 
 soft actor-critic, an off- policy actor-critic deep RL algorithm based on the maximum entropy reinforcement learning frame- work.
 

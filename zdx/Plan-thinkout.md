@@ -110,6 +110,8 @@ exploration
 curiosity 
 paper:polo 三个应用说明背后的方法是一样的通用的。 mpc，global value； explorer
 
+反馈，信息的确认？bayes uncertain减少？互信息？
+
 2表示学习； 概念学习  gan-qp
 2.1 生成模型做分类，先能生成再进行分类。
 vdb
