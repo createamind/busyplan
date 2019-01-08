@@ -20,6 +20,9 @@ Curiosity-driven Exploration by Self-supervised Prediction http://mp.weixin.qq.c
 
 视觉的运动感知在视觉的认知发展是很早起就开始发育的-公众号菜单生物智能相关文章。
 
++BI ?
+
+
 2更多传感器，视听触等, 压力的感知和 reward 动作的感知学习。   宽泛讲就是多维度的信息，比如虚拟环境各种指标信息--DFP，不同传感器互相监督即cGAN；
 2视频的信息从像素出发维度太高，而且视频中很多内容是完全不同的，区分视频中的不同物体应该不仅仅是从视觉区分（使用的时候是从视觉来区分，但是训练的时候是不同传感器直接区分的）
 视频中不同物体的本质是物体的不同属性的区分，通过视觉联想其他感知信息的内容来区分。从视觉中区分出不同远近，不同软硬的物体，不同用途的物体，不同冷热危险的物体。现在只做了深度的学习，其他属性还未开始训练学习。
@@ -58,7 +61,9 @@ cGAN 各种不同的条件就是标签，条件监督可以用在传感器监督
 5 人脑发育到一定阶段神经元增长不多，增加的是神经元的链接，通过不同区域神经网络的链接的增加，实现了不同的关系属性及概念的互相链接。这个可以对应进行神经网络的highway的不断增加。
 5 more and more highway for 概念关联。 
 
-densenet！！入职培训提到的densenet多层连接。
+densenet！！入职培训提到的densenet多层连接。  3d unet的一半
+
+容量
 
 6capsnet 胶囊 (Capsule) 是一个包含多个神经元的载体，每个神经元表示了图像中出现的特定实体的各种属性 多属性表示。 
 
@@ -68,7 +73,7 @@ densenet！！入职培训提到的densenet多层连接。
 7极低的特征空间维度  beta-vae distangle:bayesgan   https://github.com/ermongroup/Variational-Ladder-Autoencoder； 这些都是图像。
 动作也可以很低，上下左右，前后远近，   ref 2.1
 
-8  cnn filter  reinforcement learning 选择特定filter进行处理。  or densenet？
+8  cnn filter  reinforcement learning 选择特定filter进行处理。  or densenet？ 3d unet的一半
 9 DFP   Human certainly possess the innate ability to switch goals based on different circumstances  -----联系 4 
 imitation carla； Curiosity-driven
 
@@ -79,19 +84,12 @@ imitation carla； Curiosity-driven
 无人驾驶决策是快决策、条件反射的决策，不是高层推理的决策，所以是感知和决策和执行几乎是一体的。保守的异常情况刹车处理。
 
 
-
-
-
-
-
 ----------------------------------------------------------------------
-
 
 EMI ：  互信息的embedding  forward model; backwordk model; model-base in mutual information;  替换之前的vae 模型 扩展到 mode base；and chap5 reward ；  code？好奇心代码？？改造？？
 empower 的 code；  https://github.com/navneet-nmk/pytorch-rl  and tf version    动作跟stat的互信息；  https://navneet-nmk.github.io/2018-08-26-empowerment/
 
 UNSUPERVISED CONTROL THROUGH NON-PARAMETRIC DISCRIMINATIVE REWARDS
-
 
 概念学习 能量函数。Concept Learning with Energy-Based Models
 
@@ -106,9 +104,7 @@ https://bair.berkeley.edu/blog/2018/11/30/visual-rl/
 
 1
 bayes；certain uncertain；   polo探索部分引用了prior ref by rnd and rnd have openai code。好奇心：；RND code
-exploration
-curiosity 
-paper:polo 三个应用说明背后的方法是一样的通用的。 mpc，global value； explorer
+exploration  curiosity  paper:polo 三个应用说明背后的方法是一样的通用的。 mpc，global value； explorer
 
 反馈，信息的确认？bayes uncertain减少？互信息？
 
@@ -120,7 +116,7 @@ vdb
 3progressive grow；  pg
 环境的reward 需要动态变化，不同阶段学习不同的重点能力，比如先站，再跑，在目标跑，再避障，再。。。。。
 
-4 4d space time   densenet-tc A SIMPLE NEURAL ATTENTIVE META-LEARNER
+4 4d space time   densenet-tc A SIMPLE NEURAL ATTENTIVE META-LEARNER         ； BI
 
 5memory： data reuse；  her
 
@@ -150,10 +146,10 @@ or  模仿学习； inverse rl  不学习概念，示范来做。后面升级到
 8model base planning-- pred  predictonve ，mpc
 
 9multimodel: cycle(video audio language )  cycle-sensor-motor     gan-qp 苏剑林
-Multimodal Densenet  https://arxiv.org/pdf/1811.07407.pdf
+Multimodal Densenet  https://arxiv.org/pdf/1811.07407.pdf    3d unet的一半
 cnn的特征使用的改进！
 9.1 2.1 darla model base ; world model; darla vae densenet;
-densenet的vae！！
+densenet的vae！！   
 unet的vae；
 unet的video prediction；
 
@@ -209,7 +205,27 @@ maml meta learning 跟表示学习的联系。  meta learning 多任务跟多任
 .5
 各种loss 列举出来！！！！ 数据需要什么样的？？？？
 
-14 多算法，多方法方法训练。
+
+https://github.com/tensorflow/models/tree/master/research/vid2depth depth loss
+https://github.com/tensorflow/models/tree/master/research/struct2depth
+
+uncertain vae loss
+角度 位置  gqn loss
+4d segmentation  loss
+
+4D空间 关系  重建关系位置 
+
+双目视察 loss
+3d conv 运动信息 loss
+actionable loss？
+
+
+
+
+13.0 多算法，多方法方法训练。
+
+
+14
 
 
 15 transfer learning  与多任务 meta learning 的关系。 sim to real
