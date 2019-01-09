@@ -13,13 +13,6 @@ Uncertainty Autoencoders: Learning Compressed Representations via Variational In
 
 
 
-
-
-
-
-
-
-
 7
 uncertainty autoencoders (UAE), a framework for representation learning via variational maximization of mutual information be- tween an input signal and hidden representation. We showed that UAEs are a natural candidate for sta- tistical compressive sensing,
 
@@ -32,9 +25,14 @@ Mid-Level Visual Representations Improve  Generalization and Sample Efficiency f
 code will release
 
 
+We test three core hypotheses:
+I. if mid-level vision pro- vides an advantage in terms of sample efficiency of learning an active task (answer: yes)
+II. if mid-level vision provides an advantage towards generalization to unseen spaces (an- swer: yes)
+III. if a fixed mid-level vision feature could suf- fice or a set of features would be essential to support arbi- trary active tasks (answer: a set is essential).
 
-
-
+Hypothesis I: Does mid-level vision provide an advantage in terms of sample efficiency when learning an active task?
+Hypothesis II: Can mid-level vision features generalize better to unseen spaces?
+Hypothesis III: Can a single feature support all arbitrary downstream tasks? Or is a set of features required for that?
 
 
 

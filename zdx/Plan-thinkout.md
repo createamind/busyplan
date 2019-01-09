@@ -177,6 +177,9 @@ vdb 互信息
 模仿学习是从视觉推断动作的学习，而好奇心探索就是动作产生的环境变化的互动开始学习，好奇心是可以作为模仿学习的预训练的。
 
 oneshot--学习通用的架构结构-可以快速泛化。
+
+https://sites.google.com/view/one-shot-imitation  code https://github.com/tianheyu927/mil    SFV: Reinforcement Learning of Physical Skills from Videos
+
 Deep Meta-Learning: Learning to Learn in the Concept Space
 
 Inverse reinforcement learning for video games   https://github.com/HumanCompatibleAI/atari-irl   加上vdb互信息的约束试试  +EMI + empower
@@ -231,9 +234,9 @@ uncertain vae loss
 
 
 
-actionable loss？
+tcn2  actionable loss？
 https://sites.google.com/view/actionablerepresentations
-
+actionable2 paper  LEARNING ACTIONABLE REPRESENTATIONS WITH GOAL-CONDITIONED POLICIES
 
 
 13.0 多算法，多方法方法训练。
