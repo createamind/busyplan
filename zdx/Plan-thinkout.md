@@ -42,7 +42,7 @@ betavae等仅仅通过视觉已经非常厉害了，扩展方式应该是多属�
 2.4 disentangling 学到的z的变化规律记忆下来，z在训练时候也会被覆盖掉的。  学习要适可而止，
 2.4.1  加动作或位置信息等一起多传感器进行disentangling的学习。   道路先学习转换到俯视图，然后学习俯视图的disentangling。
 
-2.5 记忆的meoey，记忆规律disentangling的z；记忆某个强化学习的技能，记忆。。。。  强化学习的经验如何自动选择记忆，记忆提取，小范围的自动disentangling的规律自动选择记忆，记忆提取机制？  这个临时记忆通过反复重复播放训练形成长期记忆。
+2.5 记忆的memory，记忆规律disentangling的z；记忆某个强化学习的技能，记忆。。。。  强化学习的经验如何自动选择记忆，记忆提取，小范围的自动disentangling的规律自动选择记忆，记忆提取机制？  这个临时记忆通过反复重复播放训练形成长期记忆。
 
 
 3 Progressive Growing of GANs 智力的成长发展，2分类或3分类进行简单功能的精准实现  --7-- 上下左右，前后远近 先离散后回归。
@@ -211,10 +211,7 @@ maml meta learning 跟表示学习的联系。  meta learning 多任务跟多任
 各种loss 列举出来！！！！ 数据需要什么样的？？？？
 
 
-
-
 多任务loss：meta learning；
-
 
 
 多传感器loss：
@@ -246,12 +243,22 @@ actionable2 paper  LEARNING ACTIONABLE REPRESENTATIONS WITH GOAL-CONDITIONED POL
 
 14
 
-
 15 transfer learning  与多任务 meta learning 的关系。 sim to real
 
-
-
 16 模型的容量最够大。
+
+
+
+
+model-base:
+
+4d:depth;position
+EMI （diversity option）   Visual Foresight
+tcn-v2  3dconv filter ;   2d densenet vae？ UNet；
+mbmpo
+infobot  action:  diversity   VDB
+diversity（一个skill的action的时间或count or其他时间参照）
+bayes  prior
 
 
 
