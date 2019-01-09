@@ -18,6 +18,43 @@ https://sites.google.com/view/unsupervised-via-meta codes;
 
 
 
+LEARNING A PRIOR OVER INTENT
+VIA META-INVERSE REINFORCEMENT LEARNING
+
+
+
+
+
+Automata Guided Reinforcement Learning With Demonstrations
+
+
+
+
+
+
+Few-Shot Goal Inference for Visuomotor Learning and Planning
+
+
+
+
+UNSUPERVISED CONTROL THROUGH NON-PARAMETRIC DISCRIMINATIVE REWARDS
+
+
+
+
+
+OFF-POLICY DEEP REINFORCEMENT LEARNING WITHOUT EXPLORATION
+
+
+
+
+
+
+
+
+
+
+
 -------------------------
 https://bair.berkeley.edu/blog/2018/11/30/visual-rl/   link to polo paper;
 

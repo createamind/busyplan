@@ -15,7 +15,7 @@ Causal Confusion in Imitation Learning
 
 
 
-
+-------------------------------------------
 PVEs: Position-Velocity Encoders for Unsupervised Learning of Structured State Representations
 
 
@@ -37,12 +37,20 @@ SE3-Pose-Nets: Structured Deep Dynamics Models for Visuomotor Planning and Contr
 
 
 
---------------
+---------------------------------------------------------
 SFV: Reinforcement Learning of Physical Skills from Videos
 
 
 
 
+-------------------------------
+TACO: Learning Task Decomposition via Temporal Alignment for Control
+
+
+
+
+
+-----------------------------------------------------
 
 Improvements on Hindsight Learning https://arxiv.org/abs/1809.06719
 
@@ -53,7 +61,7 @@ Hindsight policy gradients https://arxiv.org/abs/1711.06006
 
 
 
-
+-------------------------------------------
 The Implicit Preference Information in an Initial State  https://openreview.net/forum?id=rkevMnRqYQ
 
 Rohin Shah, Dmitrii Krasheninnikov, Jordan Alexander, Pieter Abbeel, Anca Dragan
@@ -67,12 +75,12 @@ Maximum Causal Entropy IRL
 
 
 
-
+-------------------------------------------
 VMAV-C: A Deep Attention-based Reinforcement Learning Algorithm for Model-based Control
 
 
 
-
+-------------------------------------------
 Latent-space Physics: Towards Learning the Temporal Evolution of Fluid Flow
 
 

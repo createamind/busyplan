@@ -164,6 +164,8 @@ Mutual alignment transfer learning， and ref it paper；  自动分段  ； Ddc
 TACO: Learning Task Decomposition via Temporal Alignment for Control
 
 Variational Option Discovery Algorithms -- real hierarchial --- 非常重要的预训练
+每个skill的完整性；skill的完整确认。  diversity is all you need .
+
 novel uncertain  ----- bayes prior function。
 模仿的基础是自己会，自己有基础，类似这样先学习基础后 再 demo imitation；
 
