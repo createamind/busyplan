@@ -203,19 +203,13 @@ mb-mpo +. sac 是不是会很厉害？mode base+free；
 13   小数据  大任务； 多任务；   meta learning 是不是就是多loss，的确是，不过是一类loss； 人 ，跟基础的原则道理是跨类的任务loss。
 maml meta learning 跟表示学习的联系。  meta learning 多任务跟多任务互信息压缩到一个网络的关系？ tc softattention ref bottleneck mutual info;
 ：：：：：多任务 多loss ？？ what loss：  
-13.1
-13.2
-.3
-.4
-.5
-各种loss 列举出来！！！！ 数据需要什么样的？？？？
 
+
+各种loss 列举出来！！！！ 数据需要什么样的？？？？          SRLFC paper many loss； loss 与任务的相关性，自动选择loss？？？
 
 多任务loss：meta learning；
 
-
 多传感器loss：
-
 
 空间loss：
 
@@ -253,7 +247,7 @@ actionable2 paper  LEARNING ACTIONABLE REPRESENTATIONS WITH GOAL-CONDITIONED POL
 model-base:
 
 4d:depth;position
-EMI （diversity option）   Visual Foresight
+EMI （diversity option）   Visual Foresight  State Representation Learning for Control  SRLFC  记忆事物的发展过程-有抽象的z embed space； 
 tcn-v2  3dconv filter ;   2d densenet vae？ UNet；
 mbmpo
 infobot  action:  diversity   VDB
