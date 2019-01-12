@@ -244,8 +244,8 @@ actionable2 paper  LEARNING ACTIONABLE REPRESENTATIONS WITH GOAL-CONDITIONED POL
 
 
 
-model-base:
-
+model-base:  1 只看，视觉的2d 隐变量空间上的3d 隐变量空间 再上的 4d time 隐变量空间。 比如 vae 或不需要重建，只有encoder  互信息模型？？(vae 对场景记忆也需要。) ； 2 +action 强化学习的 inverse forward model；
+抽象--IB
 4d:depth;position
 EMI （diversity option）   Visual Foresight  State Representation Learning for Control  SRLFC  记忆事物的发展过程-有抽象的z embed space； 
 tcn-v2  3dconv filter ;   2d densenet vae？ UNet；
