@@ -49,7 +49,7 @@ OFF-POLICY DEEP REINFORCEMENT LEARNING WITHOUT EXPLORATION
 
 
 
-
+maml--On First-Order Meta-Learning Algorithms
 
 
 
@@ -91,8 +91,70 @@ Prediction is often considered a fundamental component of intelligence [5]. Thro
 
 
 
+---------------------
+RND：
+
+Figure 1: RND exploration bonus over the course of the first episode where the agent picks up the torch (19-21). To do so the agent passes 17 rooms and collects gems, keys, a sword, an amulet, and opens two doors. Many of the spikes in the exploration bonus correspond to meaningful events: losing a life (2,8,10,21), narrowly escaping an enemy (3,5,6,11,12,13,14,15), passing a difficult obstacle (7,9,18), or picking up an object (20,21). The large spike at the end corresponds to a novel experience of interacting with the torch, while the smaller spikes correspond to relatively rare events that the agent has nevertheless experienced multiple times. See here for videos.
+
+blog
+unfamiliar states it’s hard to guess the output, and hence the reward is high
+
+What Do Curious Agents Do?
+We tested our agent across 50+ different environments and observed a range of competence levels from seemingly random actions to deliberately interacting with the environment. To our surprise, in some environments the agent achieved the game’s objective even though the game’s objective was not communicated to it through an extrinsic reward.
 
 
+Bowling - The agent learned to play the game better than agents trained to maximize the (clipped) extrinsic reward directly. We think this is because the agent gets attracted to the difficult-to-predict flashing of the scoreboard occurring after the strikes.
+
+Mario - The intrinsic reward is particularly well-aligned with the game’s objective of advancing through the levels. The agent is rewarded for finding new areas because the details of a newly found area are impossible to predict. As a result the agent discovers 11 levels, finds secret rooms, and even defeats bosses.
+
+
+EXPLORATION BY RANDOM NETWORK DISTILLATION
+Yuri Burda∗ Harrison Edwards∗ Amos Storkey Oleg Klimov
+OpenAI OpenAI
+Univ. of Edinburgh OpenAI
+ABSTRACT
+We introduce an exploration bonus for deep reinforcement learning methods that is easy to implement and adds minimal overhead to the computation performed. The bonus is the error of a neural network predicting features of the observations given by a fixed randomly initialized neural network. We also introduce a method to flexibly combine intrinsic and extrinsic rewards. We find that the random network distillation (RND) bonus combined with this increased flexibility enables significant progress on several hard exploration Atari games. In particular we establish state of the art performance on Montezuma’s Revenge, a game famously difficult for deep reinforcement learning methods. To the best of our knowledge, this is the first method that achieves better than average human performance on this game without using demonstrations or having access to the underlying state of the game, and occasionally completes the first level.
+1 INTRODUCTION
+
+
+2.2.1 SOURCES OF PREDICTION ERRORS
+In general, prediction errors can be attributed to a number of factors:
+1. Amount of training data. Prediction error is high where few similar examples were seen by the predictor (epistemic uncertainty).
+2. Stochasticity. Prediction error is high because the target function is stochastic (aleatoric un- certainty). Stochastic transitions are a source of such error for forward dynamics prediction.
+3. Model misspecification. Prediction error is high because necessary information is missing, or the model class is too limited to fit the complexity of the target function.
+4. Learning dynamics. Prediction error is high because the optimization process fails to find a predictor in the model class that best approximates the target function.
+
+
+
+2.2.2 RELATION TO UNCERTAINTY QUANTIFICATION
+If we specialize the regression targets yi to be zero, then the optimization problem arg minθ E(xi,yi)∼D∥fθ(xi) + fθ∗ (xi)∥2 is equivalent to distilling a randomly drawn function from the prior. Seen from this perspective, each coordinate of the output of the predictor and target net- works would correspond to a member of an ensemble (with parameter sharing amongst the ensemble), and the MSE would be an estimate of the predictive variance of the ensemble (assuming the ensemble is unbiased). In other words the distillation error could be seen as a quantification of uncertainty in predicting the constant zero function.
+
+2.3 COMBINING INTRINSIC AND EXTRINSIC RETURNS
+In preliminary experiments that used only intrinsic rewards, treating the problem as non-episodic resulted in better exploration. In that setting the return is not truncated at “game over”. We argue that this is a natural way to do exploration in simulated environments, since the agent’s intrinsic return should be related to all the novel states that it could find in the future, regardless of whether they all occur in one episode or are spread over several. It is also argued in (Burda et al., 2018) that using episodic intrinsic rewards can leak information about the task to the agent.
+
+
+内部reward  episode不截断
+
+
+3
+ Most experiments are run for 30K rollouts of length 128 per environment with 128 parallel environments, for a total of 1.97 billion frames of experience.
+ Contrary to expectations in Figure 4 recurrent policies performed worse than non-recurrent counterparts with γE = 0.99. However in Figure 6 the RNN policy with
+γE = 0.999 outperformed the CNN counterpart at each scale1. Comparison of Figures 7 and 9 shows that across multiple games the RNN policy outperforms the CNN more frequently than the other way around.
+
+4
+Other methods of exploration include adversarial self-play (Sukhbaatar et al., 2018), maximizing empowerment (Gregor et al., 2017), parameter noise (Plappert et al., 2017; Fortunato et al., 2017), identifying diverse policies (Eysenbach et al., 2018; Achiam et al., 2018), and using ensembles of value functions (Osband et al., 2018; 2016; Chen et al., 2017).
+Random features. Features of randomly initialized neural networks have been extensively studied in the context of supervised learning (Rahimi & Recht, 2008; Saxe et al., 2011; Jarrett et al., 2009; Yang et al., 2015). More recently they have been used in the context of exploration (Osband et al., 2018; Burda et al., 2018). The work Osband et al. (2018) provides motivation for random network distillation as discussed in Section 2.2.
+
+5
+However global exploration that involves coordinated decisions over long time horizons is beyond the reach of our method.
+
+
+rnd. 5 DISCUSSION 
+ To solve the first level of Montezuma’s Revenge, the agent must enter a room locked behind two doors. There are four keys and six doors spread throughout the level. Any of the four keys can open any of the six doors, but are consumed in the process. To open the final two doors the agent must therefore forego opening two of the doors that are easier to find and that would immediately reward it for opening them. 
+To incentivize this behavior the agent should receive enough intrinsic reward for saving the keys to balance the loss of extrinsic reward from using them early on. From our analysis of the RND agent’s behavior, it does not get a large enough incentive to try this strategy, and only stumbles upon it rarely. 
+Solving this and similar problems that require high level exploration is an important direction for future work.
+
+We find that the RND exploration bonus is sufficient to deal with local exploration, i.e. exploring the consequences of short-term decisions, like whether to interact with a particular object, or avoid it. However global exploration that involves coordinated decisions over long time horizons is beyond the reach of our method.
 
 
 
@@ -556,24 +618,6 @@ In this paper, we present DIAYN, a method for learning skills without reward fun
 
 
 
-
-
-
-
-
----------------------
-RND：
-
-
-2.2.2 RELATION TO UNCERTAINTY QUANTIFICATION
-
-If we specialize the regression targets yi to be zero, then the optimization problem arg minθ E(xi,yi)∼D∥fθ(xi) + fθ∗ (xi)∥2 is equivalent to distilling a randomly drawn function from the prior. Seen from this perspective, each coordinate of the output of the predictor and target net- works would correspond to a member of an ensemble (with parameter sharing amongst the ensemble), and the MSE would be an estimate of the predictive variance of the ensemble (assuming the ensemble is unbiased). In other words the distillation error could be seen as a quantification of uncertainty in predicting the constant zero function.
-
-
-4
-
-
-Other methods of exploration include adversarial self-play (Sukhbaatar et al., 2018), maximizing empowerment (Gregor et al., 2017), parameter noise (Plappert et al., 2017; Fortunato et al., 2017), identifying diverse policies (Eysenbach et al., 2018; Achiam et al., 2018), and using ensembles of value functions (Osband et al., 2018; 2016; Chen et al., 2017).
 
 
 

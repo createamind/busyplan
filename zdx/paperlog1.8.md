@@ -5,6 +5,88 @@
 
 公众号未深入看的
 
+concept learning
+
+infobot
+VALOR
+
+Imagination-Augmented Agents for Deep Reinforcement Learning
+
+UNSUPERVISED CONTROL THROUGH NON-PARAMETRIC DISCRIMINATIVE REWARDS
+
+LEARNING A PRIOR OVER INTENT VIA META-INVERSE REINFORCEMENT LEARNING
+ABSTRACT
+A significant challenge for the practical application of reinforcement learning to real world problems is the need to specify an oracle reward function that correctly defines a task. Inverse reinforcement learning (IRL) seeks to avoid this challenge by instead inferring a reward function from expert behavior. While appealing, it can be impractically expensive to collect datasets of demonstrations that cover the variation common in the real world (e.g. opening any type of door). Thus in practice, IRL must commonly be performed with only a limited set of demon- strations where it can be exceedingly difficult to unambiguously recover a reward function. In this work, we exploit the insight that demonstrations from other tasks can be used to constrain the set of possible reward functions by learning a “prior” that is specifically optimized for the ability to infer expressive reward functions from limited numbers of demonstrations. We demonstrate that our method can efficiently recover rewards from images for novel tasks and provide intuition as to how our approach is analogous to learning a prior.
+
+
+4 LEARNING TO LEARN REWARDS
+Our goal in meta-IRL is to learn how to learn reward functions across many tasks such that the model can infer the reward function for a new task using only one or a few expert demonstrations. Intuitively, we can view this problem as aiming to learn a prior over the intentions of human demon- strators, such that when given just one or a few demonstrations of a new task, we can combine the learned prior with the new data to effectively determine the human’s reward function. Such a prior is helpful in inverse reinforcement learning settings, since the space of relevant reward functions is much smaller than the space of all possible rewards definable on the raw observations.
+
+
+
+
+
+
+then ref by  Few-Shot Goal Inference for Visuomotor Learning and Planning
+
+then ref by visual foresight
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Automata Guided Reinforcement Learning With Demonstrations
+
+
+
+
+
+DEEP VARIATIONAL BAYES FILTERS: UNSUPERVISED
+LEARNING OF STATE SPACE MODELS FROM RAW
+DATA
+Maximilian Karl, Maximilian Soelch, Justin Bayer, Patrick van der Smagt
+Data Lab, Volkswagen Group, 80805, München, Germany
+zip([maximilian.karl, maximilian.soelch], [@volkswagen.de])
+ABSTRACT
+We introduce Deep Variational Bayes Filters (DVBF), a new method for unsupervised learning and identification of latent Markovian state space models. Leveraging recent advances in Stochastic Gradient Variational Bayes, DVBF can overcome
+intractable inference distributions via variational inference. Thus, it can handle
+highly nonlinear input data with temporal and spatial dependencies such as image
+sequences without domain knowledge. Our experiments show that enabling backpropagation through transitions enforces state space assumptions and significantly
+improves information content of the latent embedding. This also enables realistic
+long-term prediction.
+
+
+
+
+
+
+
+
+https://blog.openai.com/quantifying-generalization-in-reinforcement-learning/
+
+
 
 
 
@@ -29,8 +111,26 @@ UPN  https://arxiv.org/pdf/1804.00645.pdf
 
 
 
-SE3-Pose-Nets: Structured Deep Dynamics Models for Visuomotor Planning and Control
+SE3-Pose-Nets: Structured Deep Dynamics Models for Visuomotor Planning and Control  https://rse-lab.cs.washington.edu/se3-structured-deep-ctrl/
 
+
+
+
+Latent-space Physics: Towards Learning the Temporal Evolution of Fluid Flow
+https://github.com/wiewel/LatentSpacePhysics
+
+
+
+
+
+https://github.com/dazhang-cv/S3D  
+S3D: Single Shot multi-Span Detector via Fully 3D Convolutional Networks
+
+
+
+
+
+ICML 2018 深度学习论文及代码集锦(1)  微信文章
 
 
 
@@ -44,6 +144,9 @@ SFV: Reinforcement Learning of Physical Skills from Videos
 
 -------------------------------
 TACO: Learning Task Decomposition via Temporal Alignment for Control
+Abstract
+Many advanced Learning from Demonstration (LfD) methods consider the decomposition of complex, real-world tasks into simpler sub-tasks. By reusing the corresponding sub-policies within and between tasks, they provide training data for each policy from different high-level tasks and compose them to perform novel ones. However, most existing approaches to modular LfD focus either on learning a single high-level task or de- pend on domain knowledge and temporal seg- mentation. By contrast, we propose a weakly supervised, domain-agnostic approach based on task sketches, which include only the sequence of sub-tasks performed in each demonstration. Our approach simultaneously aligns the sketches with the observed demonstrations and learns the re- quired sub-policies, which improves generalisa- tion in comparison to separate optimisation proce- dures. We evaluate the approach on multiple do- mains, including a simulated 3D robot arm control task using purely image-based observations. The approach performs commensurately with fully su- pervised approaches, while requiring significantly less annotation effort, and significantly outper- forms methods which separate segmentation and imitation.
+
 
 
 
@@ -133,7 +236,12 @@ Maximum Causal Entropy IRL
 
 -------------------------------------------
 VMAV-C: A Deep Attention-based Reinforcement Learning Algorithm for Model-based Control
+Abstract
+Recent breakthroughs in Go play and strategic games have witnessed the great potential of reinforcement learning in intelligently scheduling in uncertain environment, but some bottlenecks are also encountered when we generalize this paradigm to universal complex tasks. Among them, the low efficiency of data utilization in model-free reinforcement algorithms is of great concern. In contrast, the model-based reinforcement learning algorithms can reveal underlying dynamics in learning environments and seldom suffer the data utilization problem. To address the problem, a model-based reinforcement learning algorithm with attention mechanism embedded is proposed as an extension of World Models in this paper. We learn the environment model through Mixture Density Network Recurrent Network(MDN-RNN) for agents to interact, with combinations of variational auto-encoder(VAE) and attention incorporated in state value estimates during the process of learning policy. In this way, agent can learn optimal policies through less interactions with actual environment, and final experiments demonstrate the effectiveness of our model in control problem.
 
+
+
+ta
 
 
 
@@ -208,6 +316,18 @@ We introduce Deep Variational Bayes Filters (DVBF), a new method for unsupervise
 
 
 
+Variational Encoding of Complex Dynamics  https://arxiv.org/abs/1711.08576
+Carlos X. Hernández, Hannah K. Wayment-Steele, Mohammad M. Sultan, Brooke E. Husic, Vijay S. Pande
+(Submitted on 23 Nov 2017 (v1), last revised 2 Dec 2017 (this version, v2))
+Often the analysis of time-dependent chemical and biophysical systems produces high-dimensional time-series data for which it can be difficult to interpret which individual features are most salient. While recent work from our group and others has demonstrated the utility of time-lagged co-variate models to study such systems, linearity assumptions can limit the compression of inherently nonlinear dynamics into just a few characteristic components. Recent work in the field of deep learning has led to the development of variational autoencoders (VAE), which are able to compress complex datasets into simpler manifolds. We present the use of a time-lagged VAE, or variational dynamics encoder (VDE), to reduce complex, nonlinear processes to a single embedding with high fidelity to the underlying dynamics. We demonstrate how the VDE is able to capture nontrivial dynamics in a variety of examples, including Brownian dynamics and atomistic protein folding. Additionally, we demonstrate a method for analyzing the VDE model, inspired by saliency mapping, to determine what features are selected by the VDE model to describe dynamics. The VDE presents an important step in applying techniques from deep learning to more accurately model and interpret complex biophysics.
+
+
+
+
+
+
+
+
 
 
 
@@ -220,14 +340,6 @@ Marco Fraccaro, Simon Kamronn, Ulrich Paquet, Ole Winther
 This paper takes a step towards temporal reasoning in a dynamically changing video, not in the pixel space that constitutes its frames, but in a latent space that describes the non-linear dynamics of the objects in its world. We introduce the Kalman variational auto-encoder, a framework for unsupervised learning of sequential data that disentangles two latent representations: an object's representation, coming from a recognition model, and a latent state describing its dynamics. As a result, the evolution of the world can be imagined and missing data imputed, both without the need to generate high dimensional frames at each time step. The model is trained end-to-end on videos of a variety of simulated physical systems, and outperforms competing methods in generative and missing data imputation tasks.
 
 two latent representations: an object's representation, coming from a recognition model, and a latent state describing its dynamics. 
-
-
-
-
-
-
-
-
 
 
 
@@ -293,9 +405,9 @@ We first detail a set of models that through an auxiliary objective function, he
 
 
 
-State Abstraction as Compression in Apprenticeship Learning        https://github.com/david-abel/rl_info_theory             refd infobot；
+State Abstraction as Compression in Apprenticeship Learning        https://github.com/david-abel/rl_info_theory             ref infobot；
 
-
+State Abstractions for Lifelong Reinforcement Learnin  https://david-abel.github.io/papers/lifelong_sa_icml_18.pdf
 
 
 

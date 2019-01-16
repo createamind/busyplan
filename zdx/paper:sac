@@ -2,6 +2,23 @@
 
 
 
+
+
+
+
+OFF-POLICY DEEP REINFORCEMENT LEARNING WITHOUT EXPLORATION
+
+
+
+
+
+
+
+
+
+
+
+
 https://arxiv.org/pdf/1810.05546.pdf.
 Uncertainty in Neural Networks: Bayesian Ensembling
 
@@ -33,18 +50,6 @@ III. if a fixed mid-level vision feature could suf- fice or a set of features wo
 Hypothesis I: Does mid-level vision provide an advantage in terms of sample efficiency when learning an active task?
 Hypothesis II: Can mid-level vision features generalize better to unseen spaces?
 Hypothesis III: Can a single feature support all arbitrary downstream tasks? Or is a set of features required for that?
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
