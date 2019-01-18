@@ -1,6 +1,7 @@
 
 
 
+https://scholar.google.com/citations?hl=en&user=8R35rCwAAAAJ&view_op=list_works&sortby=pubdate
 
 
 公众号未深入看的
@@ -14,14 +15,52 @@ Imagination-Augmented Agents for Deep Reinforcement Learning
 
 UNSUPERVISED CONTROL THROUGH NON-PARAMETRIC DISCRIMINATIVE REWARDS
 
+
+
+
+
+
+
 LEARNING A PRIOR OVER INTENT VIA META-INVERSE REINFORCEMENT LEARNING
 ABSTRACT
 A significant challenge for the practical application of reinforcement learning to real world problems is the need to specify an oracle reward function that correctly defines a task. Inverse reinforcement learning (IRL) seeks to avoid this challenge by instead inferring a reward function from expert behavior. While appealing, it can be impractically expensive to collect datasets of demonstrations that cover the variation common in the real world (e.g. opening any type of door). Thus in practice, IRL must commonly be performed with only a limited set of demon- strations where it can be exceedingly difficult to unambiguously recover a reward function. In this work, we exploit the insight that demonstrations from other tasks can be used to constrain the set of possible reward functions by learning a “prior” that is specifically optimized for the ability to infer expressive reward functions from limited numbers of demonstrations. We demonstrate that our method can efficiently recover rewards from images for novel tasks and provide intuition as to how our approach is analogous to learning a prior.
+
+1
+Our approach relies on the key observation that related tasks share common structure that we can leverage when learning new tasks. To illustrate, considering a robot navigating through a home.
+While the exact reward function we provide to the robot may differ depending on the task, there is a structure amid the space of useful behaviours, such as navigating to a series of landmarks, and there are certain behaviors we always want to encourage or discourage, such as avoiding obstacles or staying a reasonable distance from humans. This notion agrees with our understanding of why humans can easily infer the intents and goals (i.e., reward functions) of even abstract agents from just one or a few demonstrations Baker et al. (2007), as humans have access to strong priors about how other humans accomplish similar tasks accrued over many years. Similarly, our objective is to discover the common structure among different tasks, and encode the structure in a way that can be used to infer reward functions from a few demonstrations.
+
+
+
+3.1
+Learning in general energy-based models of this form is common in many applications such as structured prediction. However, in contrast to applications where learning can be supervised by millions of labels (e.g. semantic segmentation), the learning problem in Eq. 3 must typically be performed with a relatively small number of example demonstrations. In this work, we seek to address this issue in IRL by providing a way to integrate information from prior tasks to constrain the optimization in Eq. 3 in the regime of limited demonstrations.
 
 
 4 LEARNING TO LEARN REWARDS
 Our goal in meta-IRL is to learn how to learn reward functions across many tasks such that the model can infer the reward function for a new task using only one or a few expert demonstrations. Intuitively, we can view this problem as aiming to learn a prior over the intentions of human demon- strators, such that when given just one or a few demonstrations of a new task, we can combine the learned prior with the new data to effectively determine the human’s reward function. Such a prior is helpful in inverse reinforcement learning settings, since the space of relevant reward functions is much smaller than the space of all possible rewards definable on the raw observations.
 
+Erin Grant, Chelsea Finn, Sergey Levine, Trevor Darrell, and Thomas Griffiths. Recasting gradient- based meta-learning as hierarchical bayes. International Conference on Learning Representations (ICLR), 2018.
+
+4.2 INTERPRETATION AS LEARNING A PRIOR OVER INTENT
+The objective in Eq. 6 optimizes for parameters that enable that reward function to adapt and gener- alize efficiently on a wide range of tasks. Intuitively, constraining the space of reward functions to lie within a few steps of gradient descent can be interpreted as expressing a “locality” prior over reward function parameters. This intuition can be made more concrete with the following analysis.
+By viewing IRL as maximum likelihood estimation, we
+can take the perspective of Grant et al. (2018) who
+showed that for a linear model, fast adaptation via a few
+steps of gradient descent in MAML is performing MAP
+inference over φ, under a Gaussian prior with the mean
+θ and a covariance that depends on the step size, num-
+ber of steps and curvature of the loss. This is based on
+the connection between early stopping and regularization
+previously discussed in Santos (1996), which we refer
+the readers to for a more detailed discussion. The in-
+terpretation of MAML as imposing a Gaussian prior on
+the parameters is exact in the case of a likelihood that is
+quadratic in the parameters (such as the log-likelihood of
+a Gaussian in terms of its mean). For any non-quadratic
+likelihood, this is an approximation in a local neighbor-
+hood around θ (i.e. up to convex quadratic approxima-
+tion). In the case of very complex parameterizations, such
+as deep function approximators, this is a coarse approximation and unlikely to be the mode of a pos- terior. However, we can still frame the effect of early stopping and initialization as serving as a prior in a similar way as prior work (Sjo ̈berg & Ljung, 1995; Duvenaud et al., 2016; Grant et al., 2018).
+More importantly, this interpretation hints at future extensions to our approach that could benefit from employing more fully Bayesian approaches to reward and goal inference.
 
 
 
@@ -45,6 +84,46 @@ then ref by visual foresight
 
 
 
+Meta-Reinforcement Learning of Structured Exploration Strategies  https://www.arxiv-vanity.com/papers/1802.07245/
+Abstract
+Exploration is a fundamental challenge in reinforcement learning (RL). Many of the current exploration methods for deep RL use task-agnostic objectives, such as information gain or bonuses based on state visitation. However, many practical applications of RL involve learning more than a single task, and prior tasks can be used to inform how exploration should be performed in new tasks. In this work, we explore how prior tasks can inform an agent about how to explore effectively in new situations. We introduce a novel gradient-based fast adaptation algorithm – model agnostic exploration with structured noise (MAESN) – to learn exploration strategies from prior experience. The prior experience is used both to initialize a policy and to acquire a latent exploration space that can inject structured stochasticity into a policy, producing exploration strategies that are informed by prior knowledge and are more effective than random action-space noise. We show that MAESN is more effective at learning exploration strategies when compared to prior meta-RL methods, RL without learned exploration strategies, and task-agnostic exploration methods. We evaluate our method on a variety of simulated tasks: locomotion with a wheeled robot, locomotion with a quadrupedal walker, and object manipulation.
+
+
+
+
+
+Solar: Deep structured latent representations for model-based reinforcement learning
+Authors
+Marvin Zhang, Sharad Vikram, Laura Smith, Pieter Abbeel, Matthew J Johnson, Sergey Levine
+Publication date
+2018/8/28
+Journal
+arXiv preprint arXiv:1808.09105
+Description
+Model-based reinforcement learning (RL) methods can be broadly categorized as global model methods, which depend on learning models that provide sensible predictions in a wide range of states, or local model methods, which iteratively refit simple models that are used for policy improvement. While predicting future states that will result from the current actions is difficult, local model methods only attempt to understand system dynamics in the neighborhood of the current policy, making it possible to produce local improvements without ever learning to predict accurately far into the future. The main idea in this paper is that we can learn representations that make it easy to retrospectively infer simple dynamics given the data from the current policy, thus enabling local models to be used for policy learning in complex systems. To that end, we focus on learning representations with probabilistic graphical model (PGM) structure, which allows us to devise an efficient local model method that infers dynamics from real-world rollouts with the PGM as a global prior. We compare our method to other model-based and model-free RL methods on a suite of robotics tasks, including manipulation tasks on a real Sawyer robotic arm directly from camera images. Videos of our results are available at this https URL
+
+
+
+
+
+
+https://arxiv.org/pdf/1812.10157.pdf
+Motion Selective Prediction for Video Frame Synthesis
+Veronique Prinet ´
+The Hebrew University of Jerusalem
+vprinet@gmail.com
+Abstract
+Existing conditional video prediction approaches train a
+network from large databases and generalise to previously
+unseen data. We take the opposite stance, and introduce a
+model that learns from the first frames of a given video and
+extends its content and motion, to, e.g., double its length.
+To this end, we propose a dual network that can use in a
+flexible way both dynamic and static convolutional motion
+kernels, to predict future frames. The construct of our model
+gives us the the means to efficiently analyse its functioning
+and interpret its output. We demonstrate experimentally the
+robustness of our approach on challenging videos in-thewild and show that it is competitive w.r.t. related baselines
 
 
 
