@@ -285,7 +285,7 @@ The framework of reinforcement learning or optimal control provides a mathematic
 
 
 
-Advances in Variational Inference Cheng Zhang Judith Bu ̈tepage Hedvig Kjellstro ̈m Stephan Mandt
+Advances in Variational Inference                Cheng Zhang Judith Bu ̈tepage Hedvig Kjellstro ̈m Stephan Mandt
 Abstract—Many modern unsupervised or semi-supervised machine learning algorithms rely on Bayesian probabilistic models. These models are usually intractable and thus require approximate inference. Variational inference (VI) lets us approximate a high-dimensional Bayesian posterior with a simpler variational distribution by solving an optimization problem. This approach has been successfully used in various models and large-scale applications. In this review, we give an overview of recent trends in variational inference. We first introduce standard mean field variational inference, then review recent advances focusing on the following aspects: (a) scalable VI, which includes stochastic approximations, (b) generic VI, which extends the applicability of VI to a large class of otherwise intractable models, such as non-conjugate models, (c) accurate VI, which includes variational models beyond the mean field approximation or with atypical divergences, and (d) amortized VI, which implements the inference over local latent variables with inference networks. Finally, we provide a summary of promising future research directions.
 
 
@@ -309,6 +309,27 @@ Keywords: Preference learning, Inverse reinforcement learning, Inverse optimal s
 TL;DR: When a robot is deployed in an environment that humans have been acting in, the state of the environment is already optimized for what humans want, and we can use this to infer human preferences.
 
 Maximum Causal Entropy IRL
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -425,6 +446,11 @@ two latent representations: an object's representation, coming from a recognitio
 
 
 
+
+Episodic Curiosity through Reachability
+Nikolay Savinov, Anton Raichuk, Raphaël Marinier, Damien Vincent, Marc Pollefeys, Timothy Lillicrap, Sylvain Gelly
+(Submitted on 4 Oct 2018 (v1), last revised 1 Dec 2018 (this version, v2))
+Rewards are sparse in the real world and most today's reinforcement learning algorithms struggle with such sparsity. One solution to this problem is to allow the agent to create rewards for itself - thus making rewards dense and more suitable for learning. In particular, inspired by curious behaviour in animals, observing something novel could be rewarded with a bonus. Such bonus is summed up with the real task reward - making it possible for RL algorithms to learn from the combined reward. We propose a new curiosity method which uses episodic memory to form the novelty bonus. To determine the bonus, the current observation is compared with the observations in memory. Crucially, the comparison is done based on how many environment steps it takes to reach the current observation from those in memory - which incorporates rich information about environment dynamics. This allows us to overcome the known "couch-potato" issues of prior work - when the agent finds a way to instantly gratify itself by exploiting actions which lead to hardly predictable consequences. We test 
 
 
 
