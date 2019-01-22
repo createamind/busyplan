@@ -145,6 +145,15 @@ or  模仿学习； inverse rl  不学习概念，示范来做。后面升级到
 
 8model base planning-- pred  predictonve ，mpc
 
+novelty dynamic predction exploration --（valor option； infobot； decision state ; rnd; rpf）
+dynamic predction ok then novelty small; exploration 需求就小。
+
+goal： her； infobot；Unsupervised Meta-Learning for Reinforcement Learning
+
+
+
+
+
 9multimodel: cycle(video audio language )  cycle-sensor-motor     gan-qp 苏剑林
 Multimodal Densenet  https://arxiv.org/pdf/1811.07407.pdf    3d unet的一半
 cnn的特征使用的改进！
