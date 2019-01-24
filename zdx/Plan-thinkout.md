@@ -150,9 +150,12 @@ dynamic predction ok then novelty small; exploration 需求就小。
 
 goal： her； infobot；Unsupervised Meta-Learning for Reinforcement Learning
 
+rnd：carla vs atari 复仇？ AIE；  sac+rnd；SIL 
+infobot -goal --recall trace---SIL 高reward；也可以是好奇心的rnd的高reward。rnd--meaning events ；rnd 高reward是否可以作为infobot的goal？and her！ Unsupervised Meta-Learning for Reinforcement Learning
 
 
 
+meta-irl --intent paper; subgoal skill subgoal ::: stat action stat ;;
 
 9multimodel: cycle(video audio language )  cycle-sensor-motor     gan-qp 苏剑林
 Multimodal Densenet  https://arxiv.org/pdf/1811.07407.pdf    3d unet的一半
