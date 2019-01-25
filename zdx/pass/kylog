@@ -1,0 +1,6218 @@
+    1  vim ~/.zshrc
+    2  exit
+    3  ls
+    4  df -ah
+    5  ls
+    6  mkdir project
+    7  cd project
+    8  ls
+    9  exit
+   10  cd project
+   11  ls
+   12  proxychains
+   13  proxychains wget https://drive.google.com/open?id=1ZtVt1AqdyGxgyTm69nzuwrOYoPUn_Dsm
+   14  proxychains wget "https://drive.google.com/open?id=1ZtVt1AqdyGxgyTm69nzuwrOYoPUn_Dsm"
+   15  ls
+   16  exit
+   17  ls
+   18  rm -r project
+   19  mkdir projects
+   20  cd ~/.ssh/
+   21  mkdir ~/.ssh
+   22  vim ~/.ssh/authorized_keys
+   23  ls
+   24  cd projects/j
+   25  cd projects
+   26  ls
+   27  extract CARLA_0.8.2.tar.gz
+   28  ls
+   29  ./CarlaUE4 -windowed -ResX=800 -ResY=600 -carla-server
+   30  ./CarlaUE4.sh -windowed -ResX=800 -ResY=600 -carla-server
+   31  exit
+   32  z carla
+   33  cd projects/CarlaUE4
+   34  ls
+   35  cd ..
+   36  ls
+   37  cd ..
+   38  cd projects
+   39  ls
+   40  mkdir carla
+   41  mv * carla/
+   42  ls
+   43  cd carla
+   44  ls
+   45  rm CARLA_0.8.2.tar.gz
+   46  ls
+   47  ./CarlaUE4.sh -windowed -ResX=800 -ResY=600 -carla-server
+   48  ls
+   49  tmux ls
+   50  tmux new -s carla-server
+   51  cd projects
+   52  ls
+   53  cd carla
+   54  ls
+   55  ./CarlaUE4.sh -windowed -ResX=800 -ResY=600 -carla-server
+   56  exit
+   57  ls
+   58  cd ~\\n
+   59  ls
+   60  cd projects
+   61  ls
+   62  cd carla
+   63  ls
+   64  ./CarlaUE4.sh -windowed -ResX=800 -ResY=600 -carla-server
+   65  tmux ls
+   66  tmux a -t carla-server
+   67  exit
+   68  tmux ls
+   69  tmux a -t carla-server
+   70  ./CarlaUE4.sh -windowed -ResX=800 -ResY=600 -carla-server -benchmark -fps5
+   71  ./CarlaUE4.sh -h
+   72  ./CarlaUE4.sh -windowed -ResX=800 -ResY=600 -carla-server -benchmark -fps=5
+   73  ls
+   74  cd por
+   75  cd projects
+   76  ls
+   77  cd ..
+   78  ls
+   79  cd projects
+   80  ls
+   81  cd carla
+   82  ls
+   83  cd PythonClient
+   84  ls
+   85  cd ..
+   86  ls
+   87  cd ..
+   88  ls
+   89  mkdir pyenvs
+   90  cd pyenvs
+   91  virtualenv tensorflow -p python3.5
+   92  pip list
+   93  sudo pip install virtualenv
+   94  virtualenv tensorflow -p python3.5
+   95  source ~/pyenvs/tensr
+   96  source ~/pyenvs/tensorflow/bin/activate
+   97  ls
+   98  cd ..
+   99  ls
+  100  cd projects/j
+  101  cd projects
+  102  ls
+  103  cd carla
+  104  ls
+  105  cd PythonClient
+  106  pip install -e .
+  107  pip install tensorflow-gpu
+  108  pip install tensorflow-gpu -i https://pypi.tuna.tsinghua.edu.cn/simple some-package
+  109  ls
+  110  cd ..
+  111  ls
+  112  tmux ls
+  113  tmux a -t carla-server
+  114  ./CarlaUE4.sh -windowed -ResX=800 -ResY=600 -carla-server -benchmark -fps=10
+  115  cd ..
+  116  ls
+  117  cd candy
+  118  ls
+  119  python main.py -m Town01 -l
+  120  pip install pygame
+  121  pip install pygame -i https://pypi.tuna.tsinghua.edu.cn/simple some-package
+  122  pip install pygame
+  123  python main.py -m Town01 -l
+  124  pip install pillow -i https://pypi.tuna.tsinghua.edu.cn/simple some-package
+  125  python main.py -m Town01 -l
+  126  pip install cv2
+  127  pip install opencv -i https://pypi.tuna.tsinghua.edu.cn/simple some-package
+  128  pip install opencv-python -i https://pypi.tuna.tsinghua.edu.cn/simple some-package
+  129  python main.py -m Town01 -l
+  130  pip install yaml -i https://pypi.tuna.tsinghua.edu.cn/simple some-package
+  131  pip install pyyaml -i https://pypi.tuna.tsinghua.edu.cn/simple some-package
+  132  python main.py -m Town01 -l
+  133  nvidia-smi
+  134  source ~/pyenvs/tensorflow/bin/activate
+  135  cd projects/
+  136  ls
+  137  cd candy
+  138  ls
+  139  cd save
+  140  ls
+  141  cd ..
+  142  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+  143  nvidia-smi
+  144  tmux ls
+  145  tmux a -t carla-server
+  146  nvidia-smi
+  147  cd save
+  148  ls
+  149  ll
+  150  vim main.py
+  151  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+  152  tmux ls
+  153  tmux new -s candy
+  154  source ~/pyenvs/tensorflow/bin/activate
+  155  ls
+  156  python main.py -m Town01 -l
+  157  tmux new -s tensorboard
+  158  ls
+  159  cd ..
+  160  ls
+  161  cd logs
+  162  ls
+  163  cd ..
+  164  ls
+  165  rm checkpoint
+  166  cd save
+  167  ls
+  168  cd ..
+  169  ls
+  170  cd logs
+  171  ls
+  172  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+  173  ls
+  174  rm *.ubuntu-Def
+  175  rm *.ubuntu-Def*
+  176  ls
+  177  ps -aux | grep python
+  178  ls
+  179  cd save
+  180  ls
+  181  rm *.meta
+  182  cd ..
+  183  ls
+  184  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+  185  ls
+  186  nvidia-smi
+  187  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+  188  nvidia-smi
+  189  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+  190  ls
+  191  cd ..
+  192  ls
+  193  cd sa
+  194  cd save
+  195  ls
+  196  ll
+  197  nvidia-smi
+  198  cd ..
+  199  ls
+  200  cd logs
+  201  ls
+  202  ll
+  203  cd ..
+  204  ls
+  205  cd logs
+  206  ls
+  207  cd ...
+  208  cd candy
+  209  tensorboard -logdir=./logs
+  210  ls
+  211  cd projects
+  212  lcd
+  213  cd candy
+  214  ls
+  215  cd save
+  216  ll
+  217  ls
+  218  cd save
+  219  ls
+  220  ll
+  221  cd ..
+  222  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+  223  pip install tqdm
+  224  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+  225  ls
+  226  du -ah
+  227  af -ah
+  228  df -ah
+  229  ls
+  230  ll
+  231  atop
+  232  sudo atop
+  233  htop
+  234  ls
+  235  z candy
+  236  ls
+  237  cd save
+  238  ls
+  239  ll
+  240  vim raw_image.meta
+  241  atop
+  242  sudo atop
+  243  sudo htop
+  244  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+  245  ls
+  246  rm *.meta
+  247  ls
+  248  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+  249  ls
+  250  cd save
+  251  ls
+  252  ll
+  253  rm policy.meta
+  254  cd ..
+  255  ls | grep meta
+  256  cd save
+  257  ls | grep meta
+  258  cd ..
+  259  ls
+  260  python main.py -m Town01 -l
+  261  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+  262  rm save/policy.meta
+  263  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+  264  rm save/policy.meta
+  265  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+  266  ls
+  267  cd save
+  268  ls
+  269  rm *.meta
+  270  ls
+  271  cd ..
+  272  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+  273  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+  274  cd ..
+  275  ls
+  276  cd logs
+  277  ls
+  278  rm -r 2018-07-09_11*
+  279  rm -r 2018-07-09_12*
+  280  rm -r 2018-07-09_15*
+  281  rm -r 2018-07-09_16-0*
+  282  rm -r 2018-07-09_16-1*
+  283  rm -r 2018-07-09_16-2*
+  284  ls
+  285  rm events.out.tfevents.1531106*
+  286  ls
+  287  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+  288  ls
+  289  cd save
+  290  ls
+  291  rm *.meta
+  292  cd ..
+  293  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+  294  rm save/*.meta
+  295  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+  296  tmux ls
+  297  tmux a -t carla-server
+  298  ls
+  299  vim Example.CarlaSettings.ini
+  300  ./CarlaUE4.sh -windowed -ResX=800 -ResY=600 -carla-server -benchmark -fps=10
+  301  rm save/*.meta
+  302  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+  303  rm save/*.meta
+  304  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+  305  rm save/*.meta
+  306  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+  307  rm save/*.meta
+  308  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+  309  rm save/*.meta
+  310  CA
+  311  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+  312  ls
+  313  rm save/*.meta
+  314  cd save
+  315  ls
+  316  ll
+  317  cd ..
+  318  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+  319  cd save
+  320  ls
+  321  mv c3d_encoder c3d_encoder_back
+  322  cd ..
+  323  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+  324  ls
+  325  mv save save_bak
+  326  mkdir save
+  327  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+  328  rm save/*.meta
+  329  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+  330  z candy
+  331  ls
+  332  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+  333  source ~/pyenvs/tensorflow/bin/activate
+  334  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+  335  exit
+  336  source ~/pyenvs/tensorflow/bin/activate
+  337  z candy
+  338  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+  339  ls
+  340  vim persistence.py
+  341  gst
+  342  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+  343  exit
+  344  ll
+  345  cd projects/candy/
+  346  ll
+  347  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+  348  source ~/pyenvs/tensorflow/bin/activate
+  349  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+  350  cd
+  351  cd projects/candy/save
+  352  ll
+  353  htop
+  354  atop
+  355  htop
+  356  dfll
+  357  ll
+  358  su sdc
+  359  cd /data/software
+  360  ll
+  361  cd pycharm-community-2018.1.4
+  362  ll
+  363  cd bin
+  364  ll
+  365  ./pycharm.sh
+  366  cd
+  367  cd projects/candy/s
+  368  cd projects/candy/save
+  369  ll
+  370  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+  371  atop
+  372  ps -aux | grep python
+  373  kill 18160
+  374  rm save/*.meta
+  375  python main.py -m Town01 -l
+  376  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+  377  exit
+  378  ls
+  379  cd projects
+  380  ls
+  381  cd candy
+  382  ls
+  383  source ~/pyenvs/tensorflow/bin/activate
+  384  ls
+  385  z candy
+  386  ls
+  387  vim per
+  388  vim persistence.py
+  389  source ~/pyenvs/tensorflow/bin/activate
+  390  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+  391  cd save
+  392  ls
+  393  cd ..
+  394  ls
+  395  cd save
+  396  ls
+  397  cd ..
+  398  ls
+  399  rm save/*.meta
+  400  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+  401  rm save/*.meta
+  402  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+  403  cd cand
+  404  ls
+  405  z cand
+  406  ls
+  407  cd logs
+  408  ls
+  409  rm -r 2018-07-09_*
+  410  cd ..
+  411  ls
+  412  vim per
+  413  vim persistence.py
+  414  vim carla_wrapper.py
+  415  cd save
+  416  ls
+  417  cd ..
+  418  ls
+  419  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+  420  rm save/*.meta
+  421  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+  422  mv save/c3d_encoder save/c3d_encoder.bak
+  423  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+  424  exit
+  425  z candy
+  426  source ~/pyenvs/tensorflow/bin/activate
+  427  ls
+  428  htop
+  429  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+  430  tmux ls
+  431  tmux a -t candy
+  432  ls
+  433  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+  434  rm save/*.meta
+  435  rm -r logs/2018-07-11_*
+  436  cd logs
+  437  ls
+  438  cd ..
+  439  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+  440  rm -r logs/2018-07-11_*
+  441  rm save/*.meta
+  442  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+  443  rm save/*.meta
+  444  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+  445  rm save/*.meta
+  446  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+  447  rm save/policy.meta
+  448  CA
+  449  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+  450  rm save/*.meta
+  451  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+  452  rm save/policy.meta
+  453  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+  454  ps -aux | grep python
+  455  z candy
+  456  source ~/pyenvs/tensorflow/bin/activate
+  457  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+  458  ls
+  459  cd save
+  460  ls
+  461  cd ..
+  462  ls
+  463  rm save/*.meta
+  464  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+  465  pip install msgpack
+  466  pip install msgpack -i https://pypi.tuna.tsinghua.edu.cn/simple some-package
+  467  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+  468  rm save/*.meta
+  469  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+  470  ls
+  471  tmux ls
+  472  tmux a -t vandy
+  473  tmux a -t candy
+  474  exi
+  475  exit
+  476  z candy
+  477  source ~/pyenvs/tensorflow/bin/activate
+  478  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+  479  source ~/pyenvs/tensorflow/bin/activate
+  480  z candy
+  481  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+  482  mkdir obs
+  483  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+  484  rm save/*.meta
+  485  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+  486  rm save/*.meta
+  487  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+  488  ls
+  489  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+  490  rm save/*.meta
+  491  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+  492  rm obs/data
+  493  rm policy.meta
+  494  rm save/*.meta
+  495  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+  496  pip install msgpack_numpy -i https://pypi.tuna.tsinghua.edu.cn/simple some-package
+  497  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+  498  rm save/*.meta
+  499  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+  500  rm save/*.meta
+  501  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+  502  cd can
+  503  z candy
+  504  ls
+  505  du -ah --max-depth=1
+  506  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+  507  ls
+  508  cp obs obs_bak
+  509  cp -r obs obs_bak
+  510  cp -r save save_bak
+  511  ls
+  512  cd obs
+  513  ls
+  514  rm data
+  515  cd ..
+  516  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+  517  ls
+  518  z candy
+  519  source ~/pyenvs/tensorflow/bin/activate
+  520  ls
+  521  rm save/*.meta
+  522  ls
+  523  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+  524  ls
+  525  cd projects
+  526  ls
+  527  source ~/pyenvs/tensorflow/bin/activate
+  528  pip install ray
+  529  pip install ray -i https://pypi.tuna.tsinghua.edu.cn/simple some-package
+  530  ls
+  531  git clone https:/github.com/ray-project/ray
+  532  git clone https://github.com/ray-project/ray
+  533  proxychains git clone https://github.com/ray-project/ray
+  534  ls
+  535  cd ray
+  536  ls
+  537  cd examples
+  538  ls
+  539  mv carla ray_carla
+  540  mv ray_carla ../../
+  541  cd ..
+  542  ls
+  543  cd ..
+  544  ls
+  545  cd ray
+  546  ls
+  547  cd ..
+  548  ls
+  549  rm -r ray
+  550  rm -rf ray
+  551  ls
+  552  cd ray_carla
+  553  lsc
+  554  ls
+  555  cd ..
+  556  ls
+  557  cd candy
+  558  ls
+  559  rm clientexample.py
+  560  cd modules
+  561  ls
+  562  rm c3d_model.py
+  563  cd ..
+  564  ls
+  565  rm environment.py
+  566  rm imitation_learning.py
+  567  rm imitation_trainer.py
+  568  ls
+  569  rm manual.py
+  570  rm perceive.py
+  571  rm processes.py
+  572  ls
+  573  cd ..
+  574  ls
+  575  mv ray_carla ./candy
+  576  ls
+  577  cd candy
+  578  ls
+  579  cd ray_carla
+  580  ls
+  581  python env.py
+  582  pip install gym -i https://pypi.tuna.tsinghua.edu.cn/simple some-package
+  583  python env.py
+  584  ls
+  585  cd projects
+  586  lsc
+  587  ls
+  588  git clone https://github.com/ray-project/ray
+  589  proxychains git clone https://github.com/ray-project/ray
+  590  ls
+  591  cd ray
+  592  ls
+  593  pip list
+  594  sour
+  595  source ~/pyenvs/tensorflow/bin/activate
+  596  pip uninstall ray
+  597  pip install -e .
+  598  ls
+  599  cd python
+  600  ls
+  601  pip install -e .
+  602  ls
+  603  cd ..
+  604  ls
+  605  chmod a+x build.sh
+  606  ls
+  607  vim build.sh
+  608  ls
+  609  cd python
+  610  ls
+  611  pip install .
+  612  pip install -e .
+  613  pip install -e . --verbose
+  614  proxychains pip install -e . --verbose
+  615  pip install setuptools
+  616  pip install tokenize
+  617  sudo apt-get install bison
+  618  pip install tokenize
+  619  proxychains pip install -e . --verbose
+  620  sudo apt-get install flex
+  621  proxychains pip install -e . --verbose
+  622  pip install Cython
+  623  pip install Cython -i https://pypi.tuna.tsinghua.edu.cn/simple some-package
+  624  proxychains pip install -e . --verbose
+  625  z candy
+  626  source ~/pyenvs/tensorflow/bin/activate
+  627  python ppo.py
+  628  proxychains pip install -e . --verbose
+  629  ping www.baidu.com
+  630  proxychains pip install -e . --verbose
+  631  pip install -e . --verbose
+  632  proxychains pip install -e . --verbose
+  633  ping github.com
+  634  proxychains ping github.com
+  635  proxychains wget github.com
+  636  ls
+  637  rm index.html
+  638  ls
+  639  proxychains pip install -e . --verbose
+  640  ls
+  641  cd ..
+  642  python ppo.py
+  643  pip install scipy -i https://pypi.tuna.tsinghua.edu.cn/simple some-package
+  644  python ppo.py
+  645  pip install lz4 -i https://pypi.tuna.tsinghua.edu.cn/simple some-package
+  646  cccc
+  647  pip install lz4 -i https://pypi.tuna.tsinghua.edu.cn/simple some-package
+  648  pip install lz4
+  649  proxychains pip install lz4
+  650  pip install lz4
+  651  exit
+  652  source ~/pyenvs/tensorflow/bin/activate
+  653  pip install lz4 -i https://pypi.tuna.tsinghua.edu.cn/simple some-package
+  654  exit
+  655  pip install lz4 -i https://pypi.tuna.tsinghua.edu.cn/simple some-package
+  656  source ~/pyenvs/tensorflow/bin/activate
+  657  pip install lz4 -i https://pypi.tuna.tsinghua.edu.cn/simple some-package
+  658  pip install lz4 -i https://pypi.tuna.tsinghua.edu.cn/simple --no-cache-dir
+  659  wget 
+  660  wget ^[[200~https://pypi.tuna.tsinghua.edu.cn/packages/b8/fc/cc8a6a5685fe9989726b433703b622a4fa05ea101ade46018b38ee0dc86d/lz4-2.0.2.tar.gz
+  661  wget https://pypi.tuna.tsinghua.edu.cn/packages/b8/fc/cc8a6a5685fe9989726b433703b622a4fa05ea101ade46018b38ee0dc86d/lz4-2.0.2.tar.gz
+  662  ls
+  663  pip install lz4-2.0.2.tar.gz
+  664  pip install lz4-2.0.2.tar.gz --verbose
+  665  proxychains pip install lz4-2.0.2.tar.gz --verbose
+  666  proxychains pip install lz4
+  667  proxychains pip install lz4 -i https://pypi.tuna.tsinghua.edu.cn/simple
+  668  pip install pkg-config
+  669  sudo apt-get install pkg-config
+  670  pip install pkgconfig
+  671  sudo apt-get install pkgconfig
+  672  proxychains pip install pytest
+  673  proxychains pip install lz4
+  674  proxychains pip install lz4 --no-cache-dir
+  675  proxychains pip install lz4==2.0.1
+  676  z candy
+  677  python ppo.py
+  678  vim /home/kychen/ray_results/carla-ppo/PPO_carla_env_0_2018-07-13_20-08-13gyz9urkv/error_2018-07-13_20-08-19.txt
+  679  vim /home/kychen/ray_results/carla-ppo/PPO_carla_env_0_2018-07-13_20-08-13gyz9urkv
+  680  cd /home/kychen/ray_results/carla-ppo/PPO_carla_env_0_2018-07-13_20-08-13gyz9urkv
+  681  ls
+  682  vim error_2018-07-13_20-08-19.txt
+  683  z cnady
+  684  z candy
+  685  python ppo.py
+  686  tmux ls
+  687  tmux a -t carla-server
+  688  tmux new -s carla-server
+  689  python ppo.py
+  690  tmux new -s carla-server2
+  691  z carla-0
+  692  vexit
+  693  exit
+  694  python ppo.py
+  695  tmux ls
+  696  z carla-
+  697  z 0.8.2
+  698  ls
+  699  z carla-0.
+  700  cd ~/
+  701  cd projects
+  702  ls
+  703  cd carla
+  704  ls
+  705  vim Example.CarlaSettings.ini
+  706  python ppo.py
+  707  tmux ls
+  708  tmux a -t carla-server
+  709  python ppo.py
+  710  ls
+  711  vim port.txt
+  712  python ppo.py
+  713  ls
+  714  python ppo.py
+  715  tmux ls
+  716  tmux new -s carla-server
+  717  tmux new -s carla-server２
+  718  exit
+  719  tmux new -s carla-server2
+  720  z carla
+  721  ls
+  722  ./CarlaUE4.sh -windowed -ResX=800 -ResY=600 -carla-server -benchmark -fps=10 -carla-world-port=2001
+  723  exit
+  724  tmux a -t carla-server2
+  725  ./CarlaUE4.sh -windowed -ResX=800 -ResY=600 -carla-server -benchmark -fps=10 -carla-world-port=2001
+  726  tmux new -s carla-server３
+  727  z carla
+  728  ./CarlaUE4.sh -windowed -ResX=800 -ResY=600 -carla-server -benchmark -fps=10 -carla-world-port=2002
+  729  tmux new -s carla-server4
+  730  z carla
+  731  ./CarlaUE4.sh -windowed -ResX=800 -ResY=600 -carla-server -benchmark -fps=10 -carla-world-port=2003
+  732  exit
+  733  python ppo.py
+  734  tmux ls
+  735  tmux new -s carla-server5
+  736  z carla
+  737  ls
+  738  exit
+  739  tmux a -t carla-server4
+  740  rm port.txt
+  741  python ppo.py
+  742  tmux ls
+  743  tmux a -t carla-server2
+  744  exit
+  745  tmux a -t carla-server３
+  746  exit
+  747  ls
+  748  tmux ls
+  749  lsof
+  750  lsof | grep 2002
+  751  tmux a -t carla-server
+  752  ./CarlaUE4.sh -windowed -ResX=800 -ResY=600 -carla-server -benchmark -fps=10 -carla-world-port=7899
+  753  python ppo.py
+  754  python ppo.py'\n'
+  755  python ppo.py\n'
+  756  python ppo.py
+  757  vim /home/kychen/projects/ray/python/ray/rllib/env/vector_env.py
+  758  ls
+  759  cd ..
+  760  ls
+  761  cd ..
+  762  ls
+  763  cd projects
+  764  ls
+  765  cd candy
+  766  cd ..
+  767  cd carla
+  768  ls
+  769  cd ..
+  770  ls
+  771  cd carla
+  772  ls
+  773  tmux ls
+  774  tmux a -t carla-server
+  775  ./CarlaUE4.sh -windowed -ResX=800 -ResY=600 -carla-server -benchmark -fps=10
+  776  ls
+  777  cd .
+  778  ls
+  779  cd ..
+  780  ls
+  781  cd ray
+  782  ls
+  783  cd ..
+  784  ls
+  785  cd ray
+  786  ls
+  787  cd ..
+  788  ls
+  789  rm -r ray
+  790  chmod -R a+x candy
+  791  ls
+  792  cd ca
+  793  cd candy
+  794  ls
+  795  cd ..
+  796  ll
+  797  chmod -R a+x candy
+  798  chmod -R 755 candy
+  799  ls
+  800  cd ca
+  801  cd candy
+  802  ls
+  803  cd ..
+  804  ls
+  805  cd candy
+  806  ls
+  807  cd ..
+  808  ls
+  809  rm -r candy
+  810  mkdir candy
+  811  ls
+  812  cd candy
+  813  ls
+  814  cd ray_candy
+  815  ls
+  816  exit
+  817  z candy
+  818  ls
+  819  python main.py -m Town01 -l
+  820  source ~/pyenvs/tensorflow/bin/activate
+  821  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+  822  ls
+  823  cd logs
+  824  ls
+  825  tmux ls
+  826  tmux a -t tensorboard
+  827  source ~/pyenvs/tensorflow/bin/activate
+  828  tensorboard -logdir=./logs
+  829  ls
+  830  cd ..
+  831  ls
+  832  cd candy
+  833  ls
+  834  cd logs
+  835  ls
+  836  cd ..
+  837  tensorboard -logdir=./logs
+  838  cd ..
+  839  ls
+  840  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+  841  nvidia-smi
+  842  ls
+  843  rm -r obs_bak
+  844  rm -r save_bak
+  845  cp -r save save_bak
+  846  cp -r obs obs_bak
+  847  ls
+  848  cd obs
+  849  ll
+  850  ls
+  851  cd ..
+  852  ls
+  853  rm obs/data
+  854  rm save/vae.meta
+  855  ls
+  856  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+  857  ls
+  858  cd obs
+  859  ls
+  860  cd ..
+  861  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+  862  ls
+  863  cd obs
+  864  ls
+  865  cd ..
+  866  ls
+  867  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+  868  df -ah
+  869  z candy
+  870  ls
+  871  rm obs/data
+  872  ls
+  873  z candy
+  874  ls
+  875  cd obs
+  876  ls
+  877  ll
+  878  ls
+  879  cd ..
+  880  ls
+  881  cd save
+  882  ls
+  883  cd ..
+  884  ls
+  885  source ~/pyenvs/tensorflow/bin/activate
+  886  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+  887  rm obs/data
+  888  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+  889  ls
+  890  z candy
+  891  ls
+  892  vim z.tmp
+  893  CUDA_VISIBLE_DEVICES=0 python persistence_vae_vi.py
+  894  pip install matplotlib -i https://pypi.tuna.tsinghua.edu.cn/simple
+  895  CUDA_VISIBLE_DEVICES=0 python persistence_vae_vi.py
+  896  pip install matplotlib -i https://pypi.tuna.tsinghua.edu.cn/simple
+  897  CUDA_VISIBLE_DEVICES=0 python persistence_vae_vi.py
+  898  ls
+  899  CUDA_VISIBLE_DEVICES=0 python persistence_vae_vi.py
+  900  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+  901  vim z.tmp
+  902  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+  903  CUDA_VISIBLE_DEVICES=0 python persistence_vae_vi.py
+  904  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+  905  vim z.tmp
+  906  CUDA_VISIBLE_DEVICES=0 python persistence_vae_vi.py
+  907  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+  908  exit
+  909  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+  910  ls
+  911  cd save
+  912  ls
+  913  ll
+  914  cd ..
+  915  ls
+  916  cd obs
+  917  ll
+  918  cd ..
+  919  rm obs/data
+  920  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+  921  CUDA_VISIBLE_DEVICES=0 python persistence_vae_vi.py
+  922  rm save/vae.meta
+  923  CUDA_VISIBLE_DEVICES=0 python persistence_vae_vi.py
+  924  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+  925  ls
+  926  cd obs
+  927  ls
+  928  ll
+  929  mv data data2
+  930  ll
+  931  cd ..
+  932  ls
+  933  cd obs_bak
+  934  ls
+  935  ll
+  936  mv data ../obs/data3
+  937  ls
+  938  cd ..
+  939  ls
+  940  rm -r obs_bak
+  941  ls
+  942  cd obs
+  943  ll
+  944  mv data data1
+  945  ll
+  946  cd ..
+  947  ls
+  948  CUDA_VISIBLE_DEVICES=1 python persistence_vae_vi.py
+  949  source ~/pyenvs/tensorflow/bin/activate
+  950  CUDA_VISIBLE_DEVICES=1 python persistence_vae_vi.py
+  951  cd save
+  952  ls
+  953  cd ..
+  954  CUDA_VISIBLE_DEVICES=1 python persistence_vae_vi.py
+  955  rm save/vae.meta
+  956  ls
+  957  cd obs
+  958  ls
+  959  ll
+  960  mv data data4
+  961  mv data1 data
+  962  cd ..
+  963  CUDA_VISIBLE_DEVICES=1 python persistence_vae_vi.py
+  964  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+  965  ls
+  966  cd obs
+  967  ls
+  968  cd ll
+  969  ll
+  970  rm data
+  971  cd ..
+  972  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+  973  ls
+  974  cd obs
+  975  ls
+  976  ll
+  977  mv data data5
+  978  ls
+  979  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+  980  cd obs
+  981  ls
+  982  ll
+  983  mv data5 data
+  984  cd ..
+  985  ls
+  986  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+  987  rm save/vae.meta
+  988  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+  989  ls
+  990  ll
+  991  mv data data5
+  992  ls
+  993  ll
+  994  mv data data6
+  995  ll
+  996  mv data datahuman
+  997  ls
+  998  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+  999  ll
+ 1000  mv datahuman data
+ 1001  tmux ls
+ 1002  tmux new -s candy
+ 1003  source ~/pyenvs/tensorflow/bin/activate
+ 1004  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+ 1005  cd ..
+ 1006  ls
+ 1007  CUDA_VISIBLE_DEVICES=1 python persistence_vae_vi.py
+ 1008  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+ 1009  CUDA_VISIBLE_DEVICES=1 python persistence_vae_vi.py
+ 1010  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+ 1011  CUDA_VISIBLE_DEVICES=1 python persistence_vae_vi.py
+ 1012  rm save/vae.meta
+ 1013  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+ 1014  ls
+ 1015  cd data
+ 1016  ls
+ 1017  cd obs
+ 1018  ll
+ 1019  mv data datahuman
+ 1020  ls
+ 1021  ll
+ 1022  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+ 1023  ls
+ 1024  tmux ls
+ 1025  z candy
+ 1026  ls
+ 1027  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+ 1028  source ~/pyenvs/tensorflow/bin/activate
+ 1029  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+ 1030  cd ob
+ 1031  cd obs
+ 1032  ls
+ 1033  ll
+ 1034  cd ..
+ 1035  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+ 1036  pip install baselines
+ 1037  pip list
+ 1038  pip install baselines -i https://pypi.tuna.tsinghua.edu.cn/simple
+ 1039  pip list
+ 1040  pip uninstall tensorflow
+ 1041  pip list
+ 1042  ls
+ 1043  python main.py -m Town01 -l
+ 1044  pip uninstall tensorflow-gpu
+ 1045  pip install tensorflow-gpu -i https://pypi.tuna.tsinghua.edu.cn/simple
+ 1046  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+ 1047  ls
+ 1048  cd ..
+ 1049  ls
+ 1050  git clone https://github.com/openai/baselines.git
+ 1051  proxychians git clone https://github.com/openai/baselines.git
+ 1052  proxychains git clone https://github.com/openai/baselines.git
+ 1053  ls
+ 1054  cd baselines
+ 1055  ls
+ 1056  pip install -e .
+ 1057  vim setup.py
+ 1058  pip install -e .
+ 1059  ls
+ 1060  cd ..
+ 1061  ls
+ 1062  z candy
+ 1063  ls
+ 1064  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+ 1065  cd save
+ 1066  ls
+ 1067  rm *.meta
+ 1068  cd ..
+ 1069  ls
+ 1070  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+ 1071  pip uninstall tensorflow-gpu
+ 1072  pip install tensorflow -i https://pypi.tuna.tsinghua.edu.cn/simple
+ 1073  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+ 1074  nvidia-smi
+ 1075  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+ 1076  vvvv
+ 1077  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+ 1078  cd save
+ 1079  ll
+ 1080  cd ..
+ 1081  rm save/*.meta
+ 1082  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+ 1083  rm obs/data
+ 1084  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+ 1085  ls
+ 1086  cd obs
+ 1087  ls
+ 1088  ll
+ 1089  cd ..
+ 1090  rm data
+ 1091  ls
+ 1092  rm obs/dadta
+ 1093  rm obs/data
+ 1094  ls
+ 1095  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+ 1096  rm obs/data
+ 1097  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+ 1098  tmuxls
+ 1099  tmux ls
+ 1100  tmux a -t tensorboard
+ 1101  tensorboard -logdir=./logs
+ 1102  cd logs
+ 1103  ls
+ 1104  cd ..
+ 1105  ls
+ 1106  mv logs oldlogs
+ 1107  mkdir logs
+ 1108  pip uninstall tensorflow
+ 1109  pip install tensorflow-gpu -i https://pypi.tuna.tsinghua.edu.cn/simple
+ 1110  tensorboard -logdir=./logs
+ 1111  rm save/*.meta
+ 1112  ls
+ 1113  cd obs
+ 1114  ls
+ 1115  rm data
+ 1116  cd ..
+ 1117  s
+ 1118  ls
+ 1119  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+ 1120  ls
+ 1121  z candy
+ 1122  ls
+ 1123  cd obs
+ 1124  ls
+ 1125  ll
+ 1126  rm data
+ 1127  ls
+ 1128  ll
+ 1129  rm save/ppo.meta
+ 1130  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+ 1131  rm save/*.meta
+ 1132  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+ 1133  ls
+ 1134  cd ..
+ 1135  ls
+ 1136  cd save
+ 1137  ls
+ 1138  ll
+ 1139  ls
+ 1140  ll
+ 1141  rm *
+ 1142  ls
+ 1143  cd ..
+ 1144  ls
+ 1145  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+ 1146  cd save
+ 1147  ls
+ 1148  ll
+ 1149  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+ 1150  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+ 1151  ls
+ 1152  cd ..
+ 1153  ls
+ 1154  cd obs
+ 1155  ls
+ 1156  cd ..
+ 1157  ls
+ 1158  cd logs
+ 1159  ls
+ 1160  rm -r 2018-07-18_1*
+ 1161  ls
+ 1162  rm 2018-07-18_20-0*
+ 1163  rm 2018-07-18_20-0* -r
+ 1164  ls
+ 1165  rm 2018-07-18_20-11-50 -r
+ 1166  rm 2018-07-18_20-13-13 -r
+ 1167  ls
+ 1168  cd ..
+ 1169  ls
+ 1170  cd save
+ 1171  ll
+ 1172  ls
+ 1173  ll
+ 1174  cd ..
+ 1175  ls
+ 1176  rm save/ppo.data-00000-of-00001
+ 1177  cd ..
+ 1178  cd candy
+ 1179  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+ 1180  rm obs/data
+ 1181  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+ 1182  rm save/ppo.data-00000-of-00001
+ 1183  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+ 1184  tmux ls
+ 1185  tmux a -t carla-server
+ 1186  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+ 1187  tmux ls
+ 1188  tmux a -t candy
+ 1189  　C
+ 1190  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+ 1191  rm save/ppo.data-00000-of-00001
+ 1192  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+ 1193  rm save/vae.
+ 1194  rm save/vae.data-00000-of-00001
+ 1195  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+ 1196  ls
+ 1197  cd obs
+ 1198  ls
+ 1199  cd ..
+ 1200  ls
+ 1201  cd obs
+ 1202  ls
+ 1203  rm *
+ 1204  ls
+ 1205  cd ..
+ 1206  ls
+ 1207  cd logs
+ 1208  ls
+ 1209  rm 2018-07-18*
+ 1210  rm 2018-07-18* -r
+ 1211  ls
+ 1212  cd ..
+ 1213  ls
+ 1214  rm -r save_bak
+ 1215  cp -r save save_bak
+ 1216  cd save_bak
+ 1217  ls
+ 1218  cd ..
+ 1219  cd save_bak
+ 1220  ls
+ 1221  cd save
+ 1222  ls
+ 1223  cd ..
+ 1224  rm -r save
+ 1225  cd ..
+ 1226  ls
+ 1227  cd save
+ 1228  ls
+ 1229  cd ..
+ 1230  rm -r save_bak && cp -r save save_bak
+ 1231  ls
+ 1232  cd save_bak
+ 1233  ls
+ 1234  cd ..
+ 1235  rm -r save_bak && cp -r save save_bak
+ 1236  cd ~
+ 1237  ls
+ 1238  vim .tmux.conf
+ 1239  tmux source ~/.tmux.conf
+ 1240  tmux ls
+ 1241  tmux a -t candy
+ 1242  tmux ls
+ 1243  tmux a -t carla-server
+ 1244  ./CarlaUE4.sh -windowed -ResX=800 -ResY=600 -carla-server -benchmark -fps=2
+ 1245  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+ 1246  ./CarlaUE4.sh -windowed -ResX=800 -ResY=600 -carla-server -benchmark -fps=10
+ 1247  source ~/pyenvs/tensorflow/bin/activate
+ 1248  CUDA_VISIBLE_DEVICES=1 python persistence_vae_vi.py
+ 1249  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+ 1250  vim z.tmp
+ 1251  vim z.tmo
+ 1252  vim z.tmp
+ 1253  CUDA_VISIBLE_DEVICES=1 python persistence_vae_vi.py
+ 1254  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+ 1255  rm -r save_bak && cp -r save save_bak
+ 1256  cd save
+ 1257  ls
+ 1258  rm ppo.data-00000-of-00001
+ 1259  cd ..
+ 1260  ls
+ 1261  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+ 1262  rm -r save_bak && cp -r save save_bak
+ 1263  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+ 1264  rm -r save_bak && cp -r save save_bak
+ 1265  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+ 1266  rm save/ppo.data-00000-of-00001
+ 1267  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+ 1268  rm save/ppo.data-00000-of-00001
+ 1269  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+ 1270  rm save/ppo.data-00000-of-00001
+ 1271  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+ 1272  ls
+ 1273  cd save
+ 1274  ls
+ 1275  ll
+ 1276  cd ..
+ 1277  ls
+ 1278  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+ 1279  ls
+ 1280  rm -r save_bak && cp -r save save_bak
+ 1281  rm save/ppo.data-00000-of-00001
+ 1282  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+ 1283  tmux s
+ 1284  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+ 1285  ls
+ 1286  z candy
+ 1287  tmux ls
+ 1288  tmux a -t candy
+ 1289  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+ 1290  tmux a -t carla-server
+ 1291  tmux ls
+ 1292  tmux a -t candy
+ 1293  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+ 1294  z candy
+ 1295  cd save
+ 1296  ls
+ 1297  ll
+ 1298  tmux a -t carla-server
+ 1299  ls
+ 1300  z kychen
+ 1301  cd ..
+ 1302  ls
+ 1303  cd carla
+ 1304  ls
+ 1305  su sdc
+ 1306  tmux a -t candy
+ 1307  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+ 1308  rm -r save_bak && cp -r save save_bak
+ 1309  rm save/ppo.data-00000-of-00001
+ 1310  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+ 1311  rm save/ppo.data-00000-of-00001
+ 1312  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+ 1313  cd ..
+ 1314  ls
+ 1315  rm -r save_bak && cp -r save save_bak
+ 1316  mv save_bak canturn
+ 1317  rm -r canturn
+ 1318  cd candy
+ 1319  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+ 1320  tmux ls
+ 1321  tmux a -t carla-server
+ 1322  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+ 1323  ./CarlaUE4.sh -windowed -ResX=800 -ResY=600 -carla-server -benchmark -fps=10
+ 1324  exit
+ 1325  cp -r save save_bak/
+ 1326  ls
+ 1327  cd save_bak
+ 1328  ls
+ 1329  ccd ..
+ 1330  ls
+ 1331  ll
+ 1332  cd ..
+ 1333  ls
+ 1334  mv save save_bestimit
+ 1335  cp save_bestimit save
+ 1336  cp -r save_bestimit save
+ 1337  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+ 1338  exit
+ 1339  tmux a -t carla-server
+ 1340  tmux a -t candy
+ 1341  ls
+ 1342  cd save
+ 1343  ls
+ 1344  cd ..
+ 1345  ls
+ 1346  cp -r save_bak save
+ 1347  cd save
+ 1348  ll
+ 1349  cd ..
+ 1350  ls
+ 1351  rm -r save
+ 1352  cp -r save_bak save
+ 1353  ls
+ 1354  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+ 1355  tmux a -t carla-server
+ 1356  ./CarlaUE4.sh -windowed -ResX=800 -ResY=600 -carla-server -benchmark -fps=10
+ 1357  tmux ls
+ 1358  tmux a -t candy
+ 1359  ls
+ 1360  rm -r save
+ 1361  cp -r save_bestimit save
+ 1362  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+ 1363  tmux ls
+ 1364  tmux a -t carla-server
+ 1365  ps -ef | grep "python" | grep -v grep | sc -l
+ 1366  ps -ef | grep "python" | grep -v grep | wc -l
+ 1367  ps -ef | grep "python"
+ 1368  ps -ef | grep "python" | grep -v grep
+ 1369  ps -ef | grep "pythonawefaewf aefa ewf"
+ 1370  ps -ef | grep "python awefawe fawe a" | grep -v grep
+ 1371  ps -ef | grep "python awefawe fawe a" | grep -v grep | wc -l
+ 1372  ps -ef | grep "python main.py -m Town" | grep -v grep | wc -l
+ 1373  ps -ef | grep "./CarlaUE4.sh" | grep -v grep | wc -l
+ 1374  ls
+ 1375  cd ..
+ 1376  cd carla
+ 1377  pwd
+ 1378  ls
+ 1379  cd ..
+ 1380  ls
+ 1381  cd canly
+ 1382  cd candy
+ 1383  ls
+ 1384  zsh deamon.sh
+ 1385  ps -ef | grep deamon.sh
+ 1386  ps -ef | grep CarlaUE4
+ 1387  nohup zsh deamon.sh&
+ 1388  ls
+ 1389  vim nohup.out
+ 1390  ps -aux | grep deamon.sh
+ 1391  kill -9 23399
+ 1392  vim deamon.sh
+ 1393  cat deamon.sh
+ 1394  /home/kychen/projects/carla/CarlaUE4.sh -windowed -ResX=800 -ResY=600 -carla-server -benchmark -fps=10
+ 1395  cat deamon.sh
+ 1396  ps -ef|grep "CarlaUE4.sh"|grep -v grep|wc -l
+ 1397  ps -ef|grep "CarlaUE4.sh"|grep -v grep
+ 1398  ps -ef|grep "python main.py -m Town" | grep -v grep | wc -l
+ 1399  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+ 1400  source ~/pyenvs/tensorflow/bin/activate
+ 1401  chmod a+x deamon.sh
+ 1402  ./deamon.sh
+ 1403  nohup ./deamon.sh&
+ 1404  ps -ef | grep CarlaUE4
+ 1405  kill -9 15814
+ 1406  ps -aux | grep deamon.sh
+ 1407  kill -9 25156
+ 1408  vim nohup.out
+ 1409  exit
+ 1410  z candy
+ 1411  source ~/pyenvs/tensorflow/bin/activate
+ 1412  nohup ./deamon.sh&
+ 1413  ps -aux | grep CarlaUE4
+ 1414  ps -ef | grep CarlaUE4
+ 1415  tmux ls
+ 1416  tmux a -t candy
+ 1417  ps -ef | grep "python main.py -m Town" | grep -v grep | wc -l
+ 1418  ps -ef | grep "python main.py -m Town" | grep -v grep
+ 1419  kill -9 14343
+ 1420  ps -ef | grep "python main.py -m Town" | grep -v grep
+ 1421  vim nohup.out
+ 1422  ps -aux | grep deamon.sh
+ 1423  kill -9 26220
+ 1424  ls
+ 1425  vim deamon.sh
+ 1426  ps -ef | grep "python main.py -m Town" | grep -v grep | wc -l
+ 1427  ps -aux | grep CarlaUE4
+ 1428  kill -9 25787
+ 1429  ps -aux | grep CarlaUE4
+ 1430  kill -9 25825
+ 1431  kill -9 15825
+ 1432  kill -9 25798
+ 1433  kill -9 25842
+ 1434  ls
+ 1435  tmux ls
+ 1436  htop
+ 1437  df -ah
+ 1438  ls
+ 1439  ll
+ 1440  vim deamon.sh
+ 1441  cp ./deamon.sh ../carla
+ 1442  vim deamon.sh
+ 1443  cd ..
+ 1444  cd carla
+ 1445  ls
+ 1446  vim deamon.sh
+ 1447  nohup ./deamon.sh&
+ 1448  exit
+ 1449  source ~/pyenvs/tensorflow/bin/activate
+ 1450  z candy
+ 1451  ls
+ 1452  nohup ./deamon.sh&
+ 1453  ps -aux | grep CarlaUE4
+ 1454  ls
+ 1455  ps -ef | grep "python main.py -m Town" | grep -v grep
+ 1456  kill -9 31142
+ 1457  ls
+ 1458  ps -ef | grep CarlaUE4
+ 1459  kill -9 30780
+ 1460  ps -ef | grep CarlaUE4
+ 1461  kill -9 30790
+ 1462  tmux ls
+ 1463  tmux a -t candy
+ 1464  exit
+ 1465  tmux ls
+ 1466  tmux a -t carla-server
+ 1467  exit
+ 1468  ls
+ 1469  cd ..
+ 1470  tmux ls
+ 1471  z candy
+ 1472  ls
+ 1473  cd save
+ 1474  ls
+ 1475  mkdir 20_jul_01
+ 1476  ls
+ 1477  cp ppo* vae* ./20_jul_01
+ 1478  ls
+ 1479  cd 20_jul_01
+ 1480  ls
+ 1481  cd ..
+ 1482  ls
+ 1483  cd ..
+ 1484  ls
+ 1485  rm persistence.py
+ 1486  ls
+ 1487  vim .gitignore
+ 1488  rm .gitignore
+ 1489  ls
+ 1490  ls -h
+ 1491  ls -ah
+ 1492  ls
+ 1493  cd save
+ 1494  cd ..
+ 1495  ls
+ 1496  cd logs
+ 1497  ll
+ 1498  ll | wc -l
+ 1499  rm -r 2018-07-19_*
+ 1500  rm -r 2018-07-20_0*
+ 1501  ls
+ 1502  rm -r 2018-07-20_10*
+ 1503  rm -r 2018-07-20_11*
+ 1504  rm -r 2018-07-20_12*
+ 1505  rm -r 2018-07-20_13*
+ 1506  rm -r 2018-07-20_14*
+ 1507  rm -r 2018-07-20_15*
+ 1508  ls
+ 1509  htop
+ 1510  ps -ef | grep CarlaUE4
+ 1511  ps -ef | grep "python main.py -m Town" | grep -v grep
+ 1512  thop
+ 1513  htop
+ 1514  ps -aux | grep py
+ 1515  ps -aux | grep python main.py
+ 1516  ps -aux | grep "python main.py"
+ 1517  nvidia-smi
+ 1518  ps -ef | grep "python main.py -m Town" | grep -v grep
+ 1519  kill -9 30236
+ 1520  cd ..
+ 1521  ls
+ 1522  cd save
+ 1523  ls
+ 1524  mkdir 21_jul_morning_best_auto_imitation
+ 1525  cp ppo* vae* ./21_jul_morning_best_auto_imitation
+ 1526  cd 21_jul_morning_best_auto_imitation
+ 1527  ls
+ 1528  ps -ef | grep deamon.sh
+ 1529  kill -9 30766
+ 1530  kill -9 31125
+ 1531  ps -ef | grep deamon.sh
+ 1532  ps -ef | grep CarlaUE4
+ 1533  kill -9 10956
+ 1534  kill -9 10966
+ 1535  cd ..
+ 1536  ls
+ 1537  mkdir 21_jul_noon
+ 1538  cp ppo* vae* ./21_jul_noon
+ 1539  ls
+ 1540  cd ..
+ 1541  ls
+ 1542  ps -ef | grep "python main.py -m Town" | grep -v grep
+ 1543  kill -9 20101
+ 1544  tmux ls
+ 1545  tmux new -s carla-server
+ 1546  z carla
+ 1547  tmux ls
+ 1548  tmux new -s candy
+ 1549  source ~/pyenvs/tensorflow/bin/activate
+ 1550  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+ 1551  exit
+ 1552  ls
+ 1553  tmux a -t candy
+ 1554  tmux ls
+ 1555  tmux kill candy
+ 1556  tmux kill-session candy
+ 1557  tmux kill-session -t candy
+ 1558  tmux ls
+ 1559  tmux new -s candy
+ 1560  z candy\n: 1532144590:0;z candy
+ 1561  sour
+ 1562  source ~/pyenvs/tensorflow/bin/activate
+ 1563  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+ 1564  ls
+ 1565  cd save
+ 1566  ls
+ 1567  cp 21_jul_noon/* ./
+ 1568  ls
+ 1569  ll
+ 1570  cd 21_jul_noon
+ 1571  ls
+ 1572  ll
+ 1573  cd ..
+ 1574  ls
+ 1575  diff 21_jul_noon/ppo.data-00000-of-00001 ./ppo.data-00000-of-00001
+ 1576  cd ..
+ 1577  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+ 1578  cd save
+ 1579  ls
+ 1580  mkdir 21_jul_after
+ 1581  cp ppo* vae* ./21_jul_after
+ 1582  cd ..
+ 1583  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+ 1584  tmux ls
+ 1585  tmux a -t carla-server
+ 1586  ps -ef | grep "python main.py -m Town" | grep -v grep
+ 1587  ps -ef | grep CarlaUE4
+ 1588  kill -9 26496
+ 1589  sudo kill -9 26496
+ 1590  ps -ef | grep CarlaUE4
+ 1591  kill -9 26503
+ 1592  sudo kill -9 26503
+ 1593  ls
+ 1594  tmux ls
+ 1595  tmux a -t carla-server
+ 1596  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+ 1597  ./deamon.sh
+ 1598  ./CarlaUE4.sh -windowed -ResX=800 -ResY=600 -carla-server -benchmark -fps=10
+ 1599  tmux ls
+ 1600  tmux a -t candy
+ 1601  ls
+ 1602  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+ 1603  tmux ls
+ 1604  nvidia-smi
+ 1605  ls
+ 1606  tmux ls
+ 1607  tmux new -s tensorboard
+ 1608  source ~/pyenvs/tensorflow/bin/activate
+ 1609  z candy
+ 1610  ls
+ 1611  tensorboard -logdir=./logs
+ 1612  ls
+ 1613  cd ..
+ 1614  ls
+ 1615  cd candy
+ 1616  ls
+ 1617  tensorboard -logdir=./logs
+ 1618  esi
+ 1619  exit
+ 1620  z candy
+ 1621  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+ 1622  source ~/pyenvs/tensorflow/bin/activate
+ 1623  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+ 1624  z carla
+ 1625  ls
+ 1626  ./CarlaUE4.sh -windowed -ResX=800 -ResY=600 -carla-server -benchmark -fps=10
+ 1627  exit
+ 1628  tmux new -s carla
+ 1629  z carla
+ 1630  ./CarlaUE4.sh -windowed -ResX=800 -ResY=600 -carla-server -benchmark -fps=10
+ 1631  exit
+ 1632  tmux new -s carla
+ 1633  exit
+ 1634  tmux ls
+ 1635  exit
+ 1636  z carla
+ 1637  ./CarlaUE4.sh -windowed -ResX=800 -ResY=600 -carla-server -benchmark -fps=10
+ 1638  tmux new -s carla
+ 1639  ./CarlaUE4.sh -windowed -ResX=800 -ResY=600 -carla-server -benchmark -fps=10
+ 1640  ./CarlaUE4.sh -windowed -ResX=800 -ResY=600 -carla-server -benchmark -fps=10 -carla-no-hud
+ 1641  exit
+ 1642  ./CarlaUE4.sh -windowed -ResX=800 -ResY=600 -carla-server -benchmark -fps=10
+ 1643  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+ 1644  z carla
+ 1645  exit
+ 1646  /data
+ 1647  ls
+ 1648  cd car-docsuzhou
+ 1649  ls
+ 1650  cd agi解压版
+ 1651  ls
+ 1652  cd USBCAN分析仪
+ 1653  ls
+ 1654  cd ..
+ 1655  cd 摄像头
+ 1656  ｌｓ
+ 1657  ls
+ 1658  cd ..
+ 1659  ls
+ 1660  pw
+ 1661  pwd
+ 1662  exit
+ 1663  ls
+ 1664  tmux ls
+ 1665  exit
+ 1666  tmux new -s candy
+ 1667  z candy
+ 1668  source ~/pyenvs/tensorflow/bin/activate
+ 1669  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+ 1670  ls
+ 1671  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+ 1672  ls
+ 1673  cd save
+ 1674  ls
+ 1675  rm ppo.data-00000-of-00001
+ 1676  cd ..
+ 1677  ls
+ 1678  tmux new -s carla
+ 1679  z carla
+ 1680  cd ..
+ 1681  ls
+ 1682  cd carla
+ 1683  ./CarlaUE4.sh -windowed -ResX=800 -ResY=600 -carla-server -benchmark -fps=10
+ 1684  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+ 1685  tmux a -t candy
+ 1686  ls
+ 1687  tmux ls
+ 1688  tmux a -t candy
+ 1689  exit
+ 1690  ls
+ 1691  tmux ls
+ 1692  tmux a -t candy
+ 1693  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+ 1694  ls
+ 1695  rm z.tmp visualize.png 
+ 1696  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+ 1697  rm save/ppo.data-00000-of-00001
+ 1698  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+ 1699  rm save/ppo.data-00000-of-00001
+ 1700  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+ 1701  rm save/ppo.data-00000-of-00001
+ 1702  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+ 1703  tmux a -t candy
+ 1704  rm save/ppo.data-00000-of-00001
+ 1705  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+ 1706  tmux a -t candy
+ 1707  exit
+ 1708  exit
+ 1709  tmux ls
+ 1710  tmux new -s candy
+ 1711  z candy
+ 1712  source ~/pyenvs/tensorflow/bin/activate
+ 1713  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+ 1714  ssh -
+ 1715  ls
+ 1716  tmux ls
+ 1717  tmux a -t candy
+ 1718  exi
+ 1719  exit
+ 1720  ./CarlaUE4.sh -windowed -ResX=800 -ResY=600 -carla-server -benchmark -fps=10
+ 1721  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+ 1722  exit
+ 1723  tmux new -s candy
+ 1724  z candy
+ 1725  source ~/pyenvs/tensorflow/bin/activate
+ 1726  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+ 1727  tmux a -t candy
+ 1728  ls
+ 1729  cd projects
+ 1730  ls
+ 1731  mkdir candy_ros
+ 1732  rm -r candy_ros
+ 1733  mkdir ros_candy
+ 1734  cd ros_candy
+ 1735  ls
+ 1736  catkin_make
+ 1737  bash
+ 1738  ls
+ 1739  cd ..
+ 1740  ls
+ 1741  exit
+ 1742  tmux a -t candy
+ 1743  ls
+ 1744  hostname -I
+ 1745  rosrun
+ 1746  vim ~/.bashrc
+ 1747  export | grep ROS
+ 1748  vim ~/.bashrc
+ 1749  vim ~/.profile
+ 1750  bash
+ 1751  su sdc
+ 1752  ls
+ 1753  vim ~/.zshrc
+ 1754  source ~/.zshrc
+ 1755  exprt
+ 1756  export | grep ROS
+ 1757  hostname -I
+ 1758  export ROS_IP=192.168.100.51
+ 1759  export ROS_MASTER_URI=192.168.113.244
+ 1760  ls
+ 1761  cd projects/
+ 1762  ls
+ 1763  cd ros_candy
+ 1764  ls
+ 1765  cd ..
+ 1766  rm -r ros_candy
+ 1767  git clone https://github.com/createamind/ros_candy
+ 1768  proxychains git clone https://github.com/createamind/ros_candy
+ 1769  ls
+ 1770  cd ros
+ 1771  cd ros_candy
+ 1772  ls
+ 1773  catkin_make
+ 1774  cd ..
+ 1775  ls
+ 1776  mkdir catkin_ws
+ 1777  cd catkin_ws
+ 1778  ls
+ 1779  mkdir src
+ 1780  catkin_make
+ 1781  cd src
+ 1782  proxychains git clone https://github.com/SawYer-Robotics/roch.git
+ 1783  cd ..
+ 1784  rosdep install --from-paths src --ignore-src --rosdistro indigo -y
+ 1785  sudo rosdep init
+ 1786  proxychains sudo rosdep init
+ 1787  sudo proxychains rosdep init
+ 1788  proxychains rosdep update
+ 1789  rosdep update
+ 1790  proxychains rosdep update
+ 1791  rosdep install --from-paths src --ignore-src --rosdistro kinetic -y
+ 1792  proxychains rosdep install --from-paths src --ignore-src --rosdistro kinetic -y
+ 1793  ls
+ 1794  cd ..
+ 1795  ls
+ 1796  cd ros_candy/
+ 1797  ls
+ 1798  cd src
+ 1799  ls
+ 1800  rm -r roch_teleop
+ 1801  cd ..
+ 1802  ls
+ 1803  catkin_make
+ 1804  cd can
+ 1805  cd src/
+ 1806  ls
+ 1807  cd candy
+ 1808  ls
+ 1809  cd src
+ 1810  ls
+ 1811  pwd
+ 1812  ls
+ 1813  scp -r ros@192.168.113.244:~/ros_candy/src/candy/src/save ./save
+ 1814  ls
+ 1815  cd ..
+ 1816  source ../../devel/setup.zsh
+ 1817  cd src
+ 1818  ls
+ 1819  rosrun candy trainer_candy.py
+ 1820  cd ..
+ 1821  ls
+ 1822  rm -r roch_teleop
+ 1823  cd ..
+ 1824  catkin_make
+ 1825  source ./devel/setup.zsh
+ 1826  rosrun candy trainer_candy.py
+ 1827  cd src/candy/src
+ 1828  ls
+ 1829  chmod +x trainer_candy.py actor_candy.py wrapper_candy.py
+ 1830  rosrun candy trainer_candy.py
+ 1831  source ~/pyenvs/tensorflow/bin/activate
+ 1832  rosrun candy trainer_candy.py
+ 1833  cd pyenvs
+ 1834  ls
+ 1835  mkdir tensorflow2
+ 1836  rm -r tensorflow2
+ 1837  virtualenv tensorflow2 -p=python2.7
+ 1838  virtualenv tensorflow2 --python=python2.7
+ 1839  ls
+ 1840  vim modules/deconv.py
+ 1841  vim trainer_candy.py
+ 1842  rosrun candy trainer_candy.py
+ 1843  pip install rospkg catkin_pkg
+ 1844  pip install rospkg catkin_pkg -i https://pypi.tuna.tsinghua.edu.cn/simple some-package
+ 1845  vim ~/.config/pip/pip.conf
+ 1846  mkdir -p ~/.config/pip
+ 1847  vim ~/.config/pip/pip.conf
+ 1848  mkdir ~/.pip
+ 1849  vim ~/.pip/pip.conf
+ 1850  ls
+ 1851  rosrun candy trainer_candy.py
+ 1852  echo $ROS_MASTER_URI
+ 1853  export $ROS_MASTER_URI=http://192.168.113.244:11311
+ 1854  export $ROS_MASTER_URI="http://192.168.113.244:11311"
+ 1855  export ROS_MASTER_URI=http://192.168.113.244:11311
+ 1856  rosrun candy trainer_candy.py
+ 1857  CUDA_VISIBLE_DEVICES=0 rosrun candy trainer_candy.py
+ 1858  rqt_image_view
+ 1859  export $ROS_MASTER_URI="http://192.168.113.244:11311"
+ 1860  export ROS_MASTER_URI=http://192.168.113.244:11311
+ 1861  export ROS_IP=192.168.100.51
+ 1862  rqt_image_view
+ 1863  ls
+ 1864  source ~/pyenvs/tensorflow2/bin/activate
+ 1865  pip install numpy tensorflow-gpu msgpack msgpack-numpy pyyaml tqdm gym opencv-python scipy pygame pillow -i https://pypi.tuna.tsinghua.edu.cn/simple
+ 1866  ls
+ 1867  export ROS_IP=192.168.100.51
+ 1868  roscore
+ 1869  ps -ef | grep roscore
+ 1870  sudo kill -9 8819
+ 1871  ps -ef | grep roscore
+ 1872  export ROS_IP=192.168.100.51
+ 1873  roscore
+ 1874  ps -ef | grep roscore
+ 1875  lsof 11311
+ 1876  lsof -p 11311
+ 1877  lsof -i 11311
+ 1878  lsof -i:11311
+ 1879  roscore
+ 1880  export ROS_MASTER_URI=http://192.168.100.51:11311
+ 1881  roscore
+ 1882  ps -aux | grep roscore
+ 1883  ps -ef | grep rosmaster
+ 1884  sudo kill -9 8832
+ 1885  roscore
+ 1886  export ROS_MASTER_URI=http://192.168.100.51:11311
+ 1887  export ROS_IP=192.168.100.51
+ 1888  roscore
+ 1889  rqt_image_view
+ 1890  rqt_image_view 
+ 1891  ls
+ 1892  cd projects
+ 1893  ls
+ 1894  cd ros_candy
+ 1895  ls
+ 1896  catkin_build
+ 1897  catkin_make
+ 1898  cd projects/
+ 1899  cd ros_candy/
+ 1900  catkin_make
+ 1901  source devel/setup.zsh
+ 1902  z src
+ 1903  pwd
+ 1904  z src
+ 1905  pwd
+ 1906  ls
+ 1907  z src
+ 1908  source ~/projects/ros_candy/devel/setup.zsh
+ 1909  source ~/pyenvs/tensorflow2/bin/activate
+ 1910  CUDA_VISIBLE_DEVICES=0 rosrun candy wrapper_candy.py
+ 1911  pip install rospkg catkin_pkg
+ 1912  source ~/pyenvs/tensorflow2/bin/activate
+ 1913  pip install rospkg catkin_pkg -i https://pypi.tuna.tsinghua.edu.cn/simple
+ 1914  rosrun candy trainer_candy.py
+ 1915  rosrun candy wrapper_candy.py
+ 1916  CUDA_VISIBLE_DEVICES=0 rosrun candy actor_candy.py
+ 1917  CUDA_VISIBLE_DEVICES=1 rosrun candy wrapper_candy.py
+ 1918  CUDA_VISIBLE_DEVICES=1 rosrun candy trainer_candy.py
+ 1919  rqt_graph
+ 1920  rosrun candy wrapper_candy.py
+ 1921  tmux ls
+ 1922  tmux a -t tensorboard
+ 1923  cd ..
+ 1924  ls
+ 1925  source ~/pyenvs/tensorflow2/bin/activate
+ 1926  ls
+ 1927  cd ros_candy
+ 1928  z src
+ 1929  ls
+ 1930  tensorboard -logdir=./logs
+ 1931  vim actor_candy.py 
+ 1932  vim wrapper_candy.py
+ 1933  vim trainer_candy.py
+ 1934  vim args.yaml 
+ 1935  vim actor_candy.py
+ 1936  vim wrapper_candy.py
+ 1937  CUDA_VISIBLE_DEVICES=0 rosrun candy actor_candy.py
+ 1938  CUDA_VISIBLE_DEVICES=1 rosrun candy trainer_candy.py
+ 1939  rosrun candy wrapper_candy.py
+ 1940  rostopic list
+ 1941  rostopic echo /control
+ 1942  export ROS_IP=192.168.100.51
+ 1943  export ROS_HOSTNAME=192.168.100.51
+ 1944  echo $ROS_MASTER_URI
+ 1945  export ROS_MASTER_URI=http://192.168.100.51:11311
+ 1946  roscore
+ 1947  CUDA_VISIBLE_DEVICES=0 rosrun candy actor_candy.py
+ 1948  vim trainer_candy.py 
+ 1949  CUDA_VISIBLE_DEVICES=1 rosrun candy trainer_candy.py
+ 1950  rosrun candy wrapper_candy.py
+ 1951  rostopic echo /control
+ 1952  exit
+ 1953  export ROS_IP=192.168.100.51
+ 1954  export ROS_MASTER_URI=http://192.168.100.51:11311
+ 1955  rosrun candy wrapper_candy.py
+ 1956  CUDA_VISIBLE_DEVICES=1 rosrun candy trainer_candy.py
+ 1957  CUDA_VISIBLE_DEVICES=0 rosrun candy actor_candy.py
+ 1958  z ros
+ 1959  ls
+ 1960  cd src
+ 1961  ls
+ 1962  CUDA_VISIBLE_DEVICES=0 rosrun candy actor_candy.py
+ 1963  rostopic echo /control
+ 1964  ls
+ 1965  cd ..
+ 1966  ls
+ 1967  source ~/pyenvs/tensorflow2/bin/activate
+ 1968  ls
+ 1969  export ROS_MASTER_URI=http://192.168.112.230:11311
+ 1970  export ROS_IP=192.168.100.51
+ 1971  cd projects/ros_candy
+ 1972  catkin_make
+ 1973  source devel/setup.zsh
+ 1974  z src
+ 1975  pwd
+ 1976  l
+ 1977  CUDA_VISIBLE_DEVICES=0 rosrun candy trainer_candy.py
+ 1978  cd projects
+ 1979  ls
+ 1980  ll
+ 1981  rm my.tar.gz
+ 1982  ls
+ 1983  df -ah
+ 1984  cd /data
+ 1985  ls
+ 1986  mkdir forvae
+ 1987  ls
+ 1988  cd forvaee
+ 1989  cd forvae
+ 1990  mkdir aa1
+ 1991  mkdir aa2
+ 1992  cd aa1
+ 1993  ls
+ 1994  mkdir asdf
+ 1995  cd ..
+ 1996  cd aa2
+ 1997  mkdir aa
+ 1998  ls
+ 1999  cd ..
+ 2000  cd forvae
+ 2001  cd aa1/asdf
+ 2002  ls
+ 2003  touch 123.jpg
+ 2004  cd ..
+ 2005  touch 12222.jpg
+ 2006  cd ..
+ 2007  ls
+ 2008  cd aa2
+ 2009  ls
+ 2010  cd aa
+ 2011  touch r121.jpg
+ 2012  ls
+ 2013  cd ..
+ 2014  ls
+ 2015  cd ..
+ 2016  ls
+ 2017  z src
+ 2018  ls
+ 2019  rosrun candy wrapper_candy.py
+ 2020  cd ..
+ 2021  ls
+ 2022  cd ros_candy
+ 2023  catkin_make
+ 2024  roscore
+ 2025  ls
+ 2026  cd src/candy/sr
+ 2027  cd src/candy/src
+ 2028  source devel/setup.zsh
+ 2029  cd ..
+ 2030  source devel/setup.zsh
+ 2031  source ~/pyenvs/tensorflow2/bin/activate
+ 2032  z src
+ 2033  pwd
+ 2034  ls
+ 2035  CUDA_VISIBLE_DEVICES=0 rosrun candy wrapper_candy.py
+ 2036  tmux new -s roscore
+ 2037  roscore
+ 2038  tmux new -s wrapper
+ 2039  source ~/pyenvs/tensorflow2/bin/activate
+ 2040  souce ../../../devel/setup.zsh
+ 2041  source ../../../devel/setup.zsh
+ 2042  cd /data
+ 2043  ls
+ 2044  cd dataset
+ 2045  ls
+ 2046  cd mnist
+ 2047  ls
+ 2048  cd train
+ 2049  ls
+ 2050  cd 0
+ 2051  ls
+ 2052  cd ..
+ 2053  ls
+ 2054  cd ..
+ 2055  ls
+ 2056  cd ..
+ 2057  ls
+ 2058  cd celeba
+ 2059  ls
+ 2060  cd ima
+ 2061  cd img_align_celeba
+ 2062  ls
+ 2063  cd ..
+ 2064  cd /
+ 2065  cd data
+ 2066  ls
+ 2067  cd forvaae
+ 2068  cd forvae
+ 2069  ls
+ 2070  cd aa1
+ 2071  ls
+ 2072  rm 12222.jpg
+ 2073  cd asdf
+ 2074  cd /home/sdc/
+ 2075  sudo cd /home/sdc/
+ 2076  sudo -s
+ 2077  ls
+ 2078  cd /home/sdc
+ 2079  ls
+ 2080  cd Pictures
+ 2081  ls
+ 2082  cp qrcode_for_gh_13e8e6f50696_258.jpg /data/forvae/aa1/asdf
+ 2083  ls
+ 2084  rm 123.jpg
+ 2085  cp qrcode_for_gh_13e8e6f50696_258.jpg ../../aa2
+ 2086  cd ../../aa2
+ 2087  ls
+ 2088  cd aa
+ 2089  ls
+ 2090  cd ..
+ 2091  rm -r aa
+ 2092  ls
+ 2093  cd ..
+ 2094  rosrun candy wrapper_candy.py
+ 2095  z src
+ 2096  ls
+ 2097  source ../../../devel/setup.zsh
+ 2098  source ~/pyenvs/tensorflow2/bin/activate
+ 2099  tmux new -s actor
+ 2100  source ../../../devel/setup.zsh
+ 2101  source ~/pyenvs/tensorflow2/bin/activate
+ 2102  CUDA_VISIBLE_DEVICES=0 rosrun candy actor_candy.py
+ 2103  ls
+ 2104  cd save
+ 2105  ls
+ 2106  cd save
+ 2107  ls
+ 2108  cd ..
+ 2109  ls
+ 2110  mkdir bangongshi
+ 2111  cp vae.data-00000-of-00001 ./bangongshi
+ 2112  cp vae.index ./bangongshi
+ 2113  cd ..
+ 2114  ls
+ 2115  rosrun candy wrapper_candy.py
+ 2116  tmux new -s trainer
+ 2117  z src
+ 2118  source ../../../devel/setup.zsh
+ 2119  source ~/pyenvs/tensorflow2/bin/activate
+ 2120  cd /data
+ 2121  ls
+ 2122  rm -r forvae
+ 2123  extract forvae.tar.gz
+ 2124  rosrun candy wrapper_candy.py
+ 2125  ls
+ 2126  cd /data
+ 2127  ls
+ 2128  mkdir forvae
+ 2129  mv Record01* ./forvae
+ 2130  ls
+ 2131  rosrun candy wrapper_candy.py
+ 2132  CUDA_VISIBLE_DEVICES=1 rosrun candy trainer_candy.py
+ 2133  nvidia-smi
+ 2134  rosrun candy wrapper_candy.py
+ 2135  cd /data
+ 2136  ls
+ 2137  rosrun candy wrapper_candy.py
+ 2138  ls
+ 2139  rm forvae.tar.gz
+ 2140  ls
+ 2141  cd forvae
+ 2142  ls
+ 2143  cd ..
+ 2144  exit
+ 2145  ls
+ 2146  rostopic list
+ 2147  rostopic type /control
+ 2148  ls
+ 2149  mkdir f
+ 2150  mv my.tar.gz f
+ 2151  ls
+ 2152  cd f
+ 2153  ls
+ 2154  extract my.tar.gz
+ 2155  ls
+ 2156  cd /data
+ 2157  ls
+ 2158  du -ah --max-depth=1
+ 2159  cd f
+ 2160  ls
+ 2161  cd road01_ins
+ 2162  ll
+ 2163  cd Cor
+ 2164  cd ColorImage
+ 2165  ls
+ 2166  ll | wc
+ 2167  exit
+ 2168  ls
+ 2169  cd road01_ins
+ 2170  ls
+ 2171  cd ColorImage
+ 2172  ls
+ 2173  cd ..
+ 2174  mv ColorImage ../../forvae
+ 2175  ls
+ 2176  cd ..
+ 2177  ls
+ 2178  cd ..
+ 2179  ls
+ 2180  cd forvae
+ 2181  ls
+ 2182  rm -r Record01*
+ 2183  ls
+ 2184  CUDA_VISIBLE_DEVICES=1 rosrun candy trainer_candy.py
+ 2185  rosrun candy wrapper_candy.py
+ 2186  ls
+ 2187  cd projects
+ 2188  ls
+ 2189  CUDA_VISIBLE_DEVICES=0 rosrun candy actor_candy.py
+ 2190  tmux a -t candy
+ 2191  exit
+ 2192  tmux ls
+ 2193  tmux a -t candy
+ 2194  tmux new -s candy
+ 2195  ls
+ 2196  z candy
+ 2197  ls
+ 2198  CUDA_VISIBLE_DEVICES=2 python main.py -m Town01 -l
+ 2199  source ~/pyenvs/tensorflow/bin/activate
+ 2200  CUDA_VISIBLE_DEVICES=2 python main.py -m Town01 -l
+ 2201  cd pyenvs
+ 2202  ls
+ 2203  cd tensorflow
+ 2204  ls
+ 2205  cd bin
+ 2206  cd ..
+ 2207  cd lib
+ 2208  ls
+ 2209  cd python3.5
+ 2210  ls
+ 2211  cd site-packages
+ 2212  pwd
+ 2213  export PYTHONPATH=/home/kychen/pyenvs/tensorflow/lib/python3.5/site-packages:$PYTHONPATH
+ 2214  CUDA_VISIBLE_DEVICES=2 python main.py -m Town01 -l
+ 2215  ls
+ 2216  tmux sl
+ 2217  tmux ls
+ 2218  tmux a -t tensorboard
+ 2219  cd ~/projects/candy
+ 2220  tensorboard -logdir=./logs
+ 2221  tmux a -t candy
+ 2222  rosrun candy wrapper_candy.py
+ 2223  CUDA_VISIBLE_DEVICES=0 rosrun candy actor_candy.py
+ 2224  nvidia-smi
+ 2225  kill -9 1402
+ 2226  sudo kill -9 1402
+ 2227  nvidia-smi
+ 2228  tmux a -t wrapper
+ 2229  rosrun candy wrapper_candy.py
+ 2230  exit
+ 2231  exitt
+ 2232  exit
+ 2233  tmux ls
+ 2234  tmux new -s wrapper
+ 2235  z ros
+ 2236  catkin_make
+ 2237  source devel/setup.zsh
+ 2238  z src
+ 2239  pwd
+ 2240  source ~/pyenvs/tensorflow/bin/activate
+ 2241  source ~/pyenvs/tensorflow2/bin/activate
+ 2242  rosrun candy wrapper_candy.py
+ 2243  nvidia-smi
+ 2244  watch nvidia-smi
+ 2245  nvidia-smi -h
+ 2246  nvidia-smi -lms 200
+ 2247  htop
+ 2248  atop
+ 2249  htop
+ 2250  nvidia-smi
+ 2251  nvidia-smi -lms 1200
+ 2252  nvidia-smi
+ 2253  nvidia-smi -lms 10001000
+ 2254  nvidia-smi -lms 1200
+ 2255  cd
+ 2256  du -sh *
+ 2257  cd p
+ 2258  cd projects
+ 2259  du -sh *
+ 2260  cd candy
+ 2261  du -sh *
+ 2262  cd oldlogs
+ 2263  ls
+ 2264  cd 2018-07-18_17-56-46
+ 2265  ls
+ 2266  ll -h
+ 2267  cd ..
+ 2268  rm -rf *
+ 2269  ls
+ 2270  cd ..
+ 2271  cd logs
+ 2272  ls
+ 2273  rm -rf *
+ 2274  cd ..
+ 2275  ll
+ 2276  cd ros_candy
+ 2277  ls
+ 2278  du -sh *
+ 2279  cd src
+ 2280  ls
+ 2281  du -sh *
+ 2282  cd candy
+ 2283  ls
+ 2284  du -sh *
+ 2285  cd sr
+ 2286  cd src
+ 2287  du -sh *
+ 2288  cd logs
+ 2289  ls
+ 2290  du -sh *
+ 2291  cd 2018-07-28_10-07-51
+ 2292  ls
+ 2293  ll -h
+ 2294  pwd
+ 2295  cd ..
+ 2296  ls
+ 2297  rm -rf *
+ 2298  ls
+ 2299  cd ..
+ 2300  pwd
+ 2301  cd
+ 2302  du -sh 
+ 2303  nvidia-smi -lms 9001000
+ 2304  nvidia-smi -lms 6001000
+ 2305  df
+ 2306  su sdc
+ 2307  nvidia-smi -lms 6001000
+ 2308  nvidia-smi -lms 600
+ 2309  CUDA_VISIBLE_DEVICES=0 rosrun candy actor_candy.py
+ 2310  nvidia-smi
+ 2311  nvidia-smi -lms 9001000
+ 2312  rosrun candy wrapper_candy.py
+ 2313  nvidia-smi -lms 1001000
+ 2314  source ~/pyenvs/tensorflow2/bin/activate
+ 2315  CUDA_VISIBLE_DEVICES=0 rosrun candy actor_candy.py
+ 2316  ls
+ 2317  cd projects
+ 2318  ls
+ 2319  cd ros_candy
+ 2320  ls
+ 2321  CUDA_VISIBLE_DEVICES=0 rosrun candy actor_candy.py
+ 2322  source devel/setup.zsh
+ 2323  CUDA_VISIBLE_DEVICES=0 rosrun candy actor_candy.py
+ 2324  nvidia-smi -lms 9001000
+ 2325  cd
+ 2326  ll
+ 2327  cd projects
+ 2328  cd ros_candy
+ 2329  ll
+ 2330  cd sr
+ 2331  cd src
+ 2332  ls
+ 2333  cd candy
+ 2334  ls
+ 2335  cd src
+ 2336  ls
+ 2337  cd save
+ 2338  ll
+ 2339  ll -rt
+ 2340  ll save
+ 2341  ll bangongshi
+ 2342  ll -rt
+ 2343  pwd
+ 2344  cd ..
+ 2345  scp -r save jizhi@192.168.113.101:/tmp/
+ 2346  ll
+ 2347  cd save
+ 2348  ll
+ 2349  mv bangongshi /tmp
+ 2350  mv save /tmp
+ 2351  ll
+ 2352  mv *.temps* /tmp
+ 2353  ll
+ 2354  zip -r model.zip ./*
+ 2355  ll
+ 2356  cp -r ../save  /tmp/tt
+ 2357  sudo  cp -r ../save  /tmp/tt
+ 2358  exit
+ 2359  ls
+ 2360  cd projects/j
+ 2361  cd projects/
+ 2362  ;s
+ 2363  ls
+ 2364  mkdir can_control
+ 2365  ls
+ 2366  cd can_control
+ 2367  ls
+ 2368  catkin_make
+ 2369  gst
+ 2370  git init
+ 2371  ls
+ 2372  cd ..
+ 2373  ls
+ 2374  cd can_control
+ 2375  ls
+ 2376  rm -rf .git
+ 2377  z can
+ 2378  cd ..
+ 2379  ls
+ 2380  cd can_control
+ 2381  ls
+ 2382  catkin_make
+ 2383  ls
+ 2384  tmux ls
+ 2385  tmux a -t wrapper
+ 2386  rosrun candy wrapper_candy.py
+ 2387  tmux a -t actor
+ 2388  CUDA_VISIBLE_DEVICES=0 rosrun candy actor_candy.py
+ 2389  tmux ls
+ 2390  tmux a -t wrapper
+ 2391  tmux a -t trainer
+ 2392  CUDA_VISIBLE_DEVICES=0 rosrun candy actor_candy.py
+ 2393  tmux new -s trainer
+ 2394  tmux a -t  trainer
+ 2395  CUDA_VISIBLE_DEVICES=1 rosrun candy trainer_candy.py
+ 2396  ls
+ 2397  cd log
+ 2398  cd logs
+ 2399  ls
+ 2400  cd ..
+ 2401  CUDA_VISIBLE_DEVICES=1 rosrun candy trainer_candy.py
+ 2402  tmux a -t tensorboard
+ 2403  cd ../ros_candy
+ 2404  tensorboard -logdir=./logs
+ 2405  ls
+ 2406  cd src/candy/src
+ 2407  ls
+ 2408  tensorboard -logdir=./logs
+ 2409  cd /data
+ 2410  cd bgag
+ 2411  ls
+ 2412  rosbag info train_data32.bag
+ 2413  ls
+ 2414  mv train_data2.bag.active train_data2.bag
+ 2415  rosbag info train_data2.bag
+ 2416  rosbag info train_data32.bag
+ 2417  rosbag info train_data1.bag
+ 2418  rosbag info train_data.bag
+ 2419  tmux ls
+ 2420  tmux a -t wrapper
+ 2421  tmux a -t actor
+ 2422  tmux a -t trainer
+ 2423  CUDA_VISIBLE_DEVICES=1 rosrun candy trainer_candy.py
+ 2424  rosbag play
+ 2425  rosbag play -h
+ 2426  rosbag play train_data1.bag -r 0.1 
+ 2427  rosbag play train_data1.bag
+ 2428  rosbag play train_data32.bag
+ 2429  rosbag play train_data32.bag -r 0.1
+ 2430  rosbag play train_data32.bag -r 0.5
+ 2431  rosbag play train_data32.bag
+ 2432  rostopic list
+ 2433  rostopic echo /train_data
+ 2434  rosbag play train_data２
+ 2435  rosbag play train_data2.bag
+ 2436  rosbag play train_data.bag
+ 2437  CUDA_VISIBLE_DEVICES=1 rosrun candy trainer_candy.py
+ 2438  rosbag play train_data.bag
+ 2439  rosbag play -l train_data.bag
+ 2440  rostopic hz /train_data
+ 2441  rosbag play -l -r 0.5 train_data.bag
+ 2442  rostopic hz /train_data
+ 2443  rostopic info /train_data
+ 2444  tmux a -t actor
+ 2445  CUDA_VISIBLE_DEVICES=0 rosrun candy actor_candy.py
+ 2446  tmxu a -t trainer
+ 2447  tmux a -t trainer
+ 2448  CUDA_VISIBLE_DEVICES=1 rosrun candy trainer_candy.py
+ 2449  tmux a -t wrapper
+ 2450  rosrun candy wrapper_candy.py
+ 2451  tmux a -t actor
+ 2452  tmux a -t trainer
+ 2453  CUDA_VISIBLE_DEVICES=1 rosrun candy trainer_candy.py
+ 2454  cd logs
+ 2455  ls
+ 2456  rm -r *
+ 2457  cd ..
+ 2458  CUDA_VISIBLE_DEVICES=1 rosrun candy trainer_candy.py
+ 2459  rosbag play -l -r 0.5 train_data32.bag
+ 2460  tmux a -t actor
+ 2461  CUDA_VISIBLE_DEVICES=0 rosrun candy actor_candy.py
+ 2462  tmux a -t trainer
+ 2463  CUDA_VISIBLE_DEVICES=1 rosrun candy trainer_candy.py
+ 2464  rosbag play -l -r 0.5 train_data32.bag train_data1.bag train_data.bag
+ 2465  nvidia-smi
+ 2466  tmux a -t actor
+ 2467  CUDA_VISIBLE_DEVICES=0 rosrun candy actor_candy.py
+ 2468  nvidia-smi
+ 2469  tmux a -t trainer
+ 2470  CUDA_VISIBLE_DEVICES=1 rosrun candy trainer_candy.py
+ 2471  nvidia-smi
+ 2472  exit
+ 2473  nvidia-smi -lms 9001000
+ 2474  nvidia-smi
+ 2475  cd ..
+ 2476  ls
+ 2477  cd ..
+ 2478  ls
+ 2479  cd can
+ 2480  cd can_control
+ 2481  ls
+ 2482  catkin_makei
+ 2483  catkin_make
+ 2484  tmux ls
+ 2485  z bgag
+ 2486  ls
+ 2487  rosbag info train_data1.bag
+ 2488  rosbag info train_data32.bag
+ 2489  rosbag info train_data.bag
+ 2490  tmux a -t trainer
+ 2491  CUDA_VISIBLE_DEVICES=1 rosrun candy trainer_candy.py
+ 2492  exit
+ 2493  ls
+ 2494  cd ~
+ 2495  ls
+ 2496  ls
+ 2497  cd ..
+ 2498  ls
+ 2499  cd bag
+ 2500  cd bags
+ 2501  l
+ 2502  rosbag play -l -r 0.5 *.bag
+ 2503  rosbag play -l *.bag
+ 2504  ls
+ 2505  rosbag info *.bag
+ 2506  ls
+ 2507  rosbag play -l 2018-08-01-12-09-13.bag
+ 2508  rm 2018-08-01-12-09-13.bag
+ 2509  sudo rm 2018-08-01-12-09-13.bag
+ 2510  ls
+ 2511  rosbag play -l 2018-08-01-12-09-26.bag
+ 2512  rosbag play 2018-08-01-12-09-26.bag
+ 2513  ls
+ 2514  ll
+ 2515  rm 2018-08-01-12-09-26.bag
+ 2516  sudo rm 2018-08-01-12-09-26.bag
+ 2517  ls
+ 2518  ll
+ 2519  rosbag play 2018-08-01-12-11-27.bag
+ 2520  rosbag play 2018-08-01-12-21-01.bag
+ 2521  rosbag play 2018-08-01-12-32-38.bag
+ 2522  rosbag play 2018-08-01-12-32-48.bag
+ 2523  rosbag play train_data.bag
+ 2524  rosbag play -l *.bag
+ 2525  ls
+ 2526  rosbag play -l 2018-08-01-12-11-27.bag 2018-08-01-12-21-01.bag 2018-08-01-12-32-38.bag 2018-08-01-12-32-48.bag train_data.bag
+ 2527  rosinfo train_data.bag
+ 2528  rosbag info train_data.bag
+ 2529  rosbag play -l 2018-08-01-12-11-27.bag 2018-08-01-12-21-01.bag 2018-08-01-12-32-38.bag 2018-08-01-12-32-48.bag
+ 2530  exit
+ 2531  tmux new -s trainer
+ 2532  tmux a -t trainer
+ 2533  tmux a -t actor
+ 2534  CUDA_VISIBLE_DEVICES=0 rosrun candy actor_candy.py
+ 2535  tmux a -t wrapper
+ 2536  rosrun candy wrapper_candy4.py
+ 2537  chmod +x wrapper_candy4.py
+ 2538  tmux a -t tensorboard
+ 2539  cd /tmp
+ 2540  ls
+ 2541  cd logs
+ 2542  ls
+ 2543  cd ..
+ 2544  tensorboard --logdir=./logs
+ 2545  tmux a -t trainer
+ 2546  tmux new -s trainer
+ 2547  z src
+ 2548  z ros
+ 2549  ls
+ 2550  source devel/setup.zsh
+ 2551  z src
+ 2552  CUDA_VISIBLE_DEVICES=1 rosrun candy trainer_candy.py
+ 2553  source ~/pyenvs/tensorflow2/bin/activate
+ 2554  CUDA_VISIBLE_DEVICES=1 rosrun candy trainer_candy.py
+ 2555  nvidia-smi -lms 1000
+ 2556  CUDA_VISIBLE_DEVICES=2 rosrun candy trainer_candy.py
+ 2557  nvidia-smi -p
+ 2558  nvidia-smi -h
+ 2559  nvidia-smi 0 -pl=330
+ 2560  nvidia-smi -id=0 -pl=330
+ 2561  nvidia-smi -id 0 -pl 330
+ 2562  nvidia-smi -i 0 -pl 330
+ 2563  sudo nvidia-smi -i 0 -pl 330
+ 2564  sudo nvidia-smi -i 2 -pl 340
+ 2565  sudo nvidia-smi -i 2 -pl 330
+ 2566  nvidia-smi -lms 1000
+ 2567  exit
+ 2568  CUDA_VISIBLE_DEVICES=2 rosrun candy trainer_candy.py
+ 2569  rosbag play -l 2018-08-01-12-11-27.bag
+ 2570  ll
+ 2571  rosbag play -l 2018-08-01-12-32-38.bag
+ 2572  CUDA_VISIBLE_DEVICES=2 rosrun candy trainer_candy.py
+ 2573  rosbag play -l 2018-08-01-12-11-27.bag
+ 2574  tmux new -s trainer2
+ 2575  z ros
+ 2576  source devel/setup.zsh
+ 2577  z src
+ 2578  source ~/pyenvs/tensorflow2/bin/activate
+ 2579  ls
+ 2580  exit
+ 2581  tmux a -t trainer
+ 2582  ls
+ 2583  cd save
+ 2584  ls
+ 2585  mv vae.data-00000-of-00001 brokenvae.data-00000-of-00001
+ 2586  mv vae.index brokenvae.index
+ 2587  cd ..
+ 2588  CUDA_VISIBLE_DEVICES=2 rosrun candy trainer_candy.py
+ 2589  rosbag play -l 2018-08-01-12-11-27.bag
+ 2590  rosbag play -l -r 22018-08-01-12-11-27.bag
+ 2591  CUDA_VISIBLE_DEVICES=2 rosrun candy trainer_candy.py
+ 2592  rosbag play -l -r 3 2018-08-01-12-11-27.bag
+ 2593  ls
+ 2594  cd save
+ 2595  ls
+ 2596  cd ..
+ 2597  ls
+ 2598  cd save
+ 2599  ls
+ 2600  mv vae.data-00000-of-00001 newvae.data-00000-of-00001
+ 2601  mv vae.index newvae.index
+ 2602  ls
+ 2603  cd ..
+ 2604  CUDA_VISIBLE_DEVICES=2 rosrun candy trainer_candy.py
+ 2605  cd src
+ 2606  ls
+ 2607  CUDA_VISIBLE_DEVICES=2 rosrun candy trainer_candy.py
+ 2608  tmux ls
+ 2609  tmux a -t trainer
+ 2610  CUDA_VISIBLE_DEVICES=2 rosrun candy trainer_candy.py＇
+ 2611  CUDA_VISIBLE_DEVICES=2 rosrun candy trainer_candy.py
+ 2612  cp ~/projects/candy/save/vae.* ./save
+ 2613  cd save
+ 2614  ll
+ 2615  CUDA_VISIBLE_DEVICES=2 rosrun candy trainer_candy.py
+ 2616  cd ..
+ 2617  CUDA_VISIBLE_DEVICES=2 rosrun candy trainer_candy.py
+ 2618  tmux a -t tensorboard
+ 2619  z src
+ 2620  ls
+ 2621  tensorboard --logdir=./logs
+ 2622  cd /tmp
+ 2623  tensorboard --logdir=./logs
+ 2624  tmux a -t trainer
+ 2625  cd save
+ 2626  ls
+ 2627  mv newvae.data-00000-of-00001 vae.data-00000-of-00001
+ 2628  mv newvae.index vae.index
+ 2629  cd ..
+ 2630  CUDA_VISIBLE_DEVICES=2 rosrun candy trainer_candy.py
+ 2631  tmux a -t  tensorboard
+ 2632  z candy
+ 2633  ls
+ 2634  cd ~/projects/candy/
+ 2635  ls
+ 2636  tensorboard --logdir=./logs
+ 2637  tmux a -t candy
+ 2638  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+ 2639  exit
+ 2640  tmux a -t candy
+ 2641  exit
+ 2642  tmux new -s candy
+ 2643  z candy
+ 2644  ls
+ 2645  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+ 2646  source ~/pyenvs/tensorflow/bin/activate
+ 2647  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+ 2648  export PYTHONPATH=/home/kychen/pyenvs/tensorflow/lib/python3.5/site-packages:$PYTHONPATH
+ 2649  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+ 2650  tmux ls
+ 2651  tmxu a -t carla
+ 2652  tmux a -t candy
+ 2653  tmux ls
+ 2654  tmux a -t trainer
+ 2655  tmux a -t actor
+ 2656  tmux a -t candy
+ 2657  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+ 2658  tmux a -t roscore
+ 2659  tmux a -t candy
+ 2660  tmux a -t wrapper
+ 2661  tmux a -t trainer
+ 2662  tmux a -t candy
+ 2663  tmux a -t carla
+ 2664  ./CarlaUE4.sh -windowed -ResX=800 -ResY=600 -carla-server -benchmark -fps=10
+ 2665  exi
+ 2666  exit
+ 2667  tmux ls
+ 2668  tmux a -t carla
+ 2669  ./CarlaUE4.sh -windowed -ResX=800 -ResY=600 -carla-server -benchmark -fps=10
+ 2670  exit
+ 2671  tmux a -t candy
+ 2672  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+ 2673  nvidia-smi
+ 2674  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+ 2675  tmux ls
+ 2676  tmux a -t trainer
+ 2677  tmux a -t roscore
+ 2678  roscore
+ 2679  tmux a -t trainer
+ 2680  CUDA_VISIBLE_DEVICES=2 rosrun candy trainer_candy.py
+ 2681  rosbag play -l -r 3 2018-08-01-12-11-27.bag
+ 2682  tmux a -t trainer
+ 2683  tmux a -t tensorboard
+ 2684  cd /tmp
+ 2685  tensorboard --logdir=./logs
+ 2686  tmux ls
+ 2687  tmux a -t trainer
+ 2688  rosbag play -l -r 0.5 2018-08-01-12-11-27.bag
+ 2689  ls
+ 2690  scp root@120.25.196.138:~/frp_0.16.0_linux_amd64.tar.gz ./
+ 2691  ls
+ 2692  extract frp_0.16.0_linux_amd64.tar.gz
+ 2693  cd frp_0.16.0_linux_amd64
+ 2694  ls
+ 2695  vim frpc.ini
+ 2696  tmux new -s frp
+ 2697  ls
+ 2698  ./frpc -c frpc.ini
+ 2699  ls
+ 2700  exit
+ 2701  rosbag play -l 2018-08-01-12-11-27.bag 2018-08-01-12-21-01.bag 2018-08-01-12-32-38.bag 2018-08-01-12-32-48.bag
+ 2702  CUDA_VISIBLE_DEVICES=2 rosrun candy trainer_candy.py'\n'
+ 2703  CUDA_VISIBLE_DEVICES=2 rosrun candy trainer_candy.py\n'
+ 2704  CUDA_VISIBLE_DEVICES=2 rosrun candy trainer_candy.py
+ 2705  z src
+ 2706  ls
+ 2707  cd save
+ 2708  ls
+ 2709  cd ..
+ 2710  cd modules
+ 2711  ls
+ 2712  vim ppo.py
+ 2713  cd ..
+ 2714  ls
+ 2715  cd save
+ 2716  ls
+ 2717  mv ppo.data-00000-of-00001 ppo13.data
+ 2718  mv ppo.index ppo13.index
+ 2719  tmux a -t trainer
+ 2720  CUDA_VISIBLE_DEVICES=2 rosrun candy trainer_candy.py
+ 2721  cd save
+ 2722  ls
+ 2723  rm model.zip
+ 2724  rm broken*
+ 2725  ls
+ 2726  cd ..
+ 2727  CUDA_VISIBLE_DEVICES=2 rosrun candy trainer_candy.py
+ 2728  vim trainer_candy
+ 2729  vim trainer_candy.py
+ 2730  vim modules/ppo.py
+ 2731  CUDA_VISIBLE_DEVICES=2 rosrun candy trainer_candy.py
+ 2732  ls
+ 2733  rosbag play -l 2018-08-02-1*.bag
+ 2734  rosbag play -l 2018-08-02-11-45-46.bag
+ 2735  ls
+ 2736  rosbag play -h
+ 2737  rosbag play -l 2018-08-02-11-45-46.bag --skip-empty=60
+ 2738  ls
+ 2739  mv 2018-07-30.bag ../
+ 2740  sudo mv 2018-07-30.bag ../
+ 2741  rosbag play -l *.bag --skip-empty=60
+ 2742  rosbag play -l *.bag --skip-empty=40
+ 2743  rosbag play -l -r 0.5 *.bag --skip-empty=40
+ 2744  rosbag play -l -r 0.6 *.bag --skip-empty=40
+ 2745  cd /tmp
+ 2746  du -ah --max-depth＝１
+ 2747  du -ah --max-depth=1
+ 2748  cd logs
+ 2749  ls
+ 2750  rm -r 2018-08-01_*
+ 2751  ls
+ 2752  du -ah --max-depth=1
+ 2753  exit
+ 2754  ls
+ 2755  tmux ls
+ 2756  tmux a -t candy
+ 2757  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+ 2758  tmux a -t candy
+ 2759  python --version
+ 2760  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+ 2761  tmux a -t candy
+ 2762  tmux a -t trainer
+ 2763  tmux ls
+ 2764  tmux a -t candy
+ 2765  cd projects/
+ 2766  ls
+ 2767  cd du -ah --max-depth=1
+ 2768  cdu -ah --max-depth=1
+ 2769  du -ah --max-depth=1
+ 2770  cd ros_candy
+ 2771  ls
+ 2772  du -ah --max-depth=1
+ 2773  cd src
+ 2774  ls
+ 2775  cd candy
+ 2776  ls
+ 2777  cd src
+ 2778  du -ah --max-depth=1
+ 2779  cd logs
+ 2780  ls
+ 2781  rm -r *
+ 2782  cd /tmp
+ 2783  ls
+ 2784  cd logs
+ 2785  ls
+ 2786  du -ah --max-depth=1
+ 2787  ls
+ 2788  tmux sl
+ 2789  tmux ls
+ 2790  tmux a -t trainer
+ 2791  cd /tmp/logs
+ 2792  ls
+ 2793  rm -r *
+ 2794  ls
+ 2795  CUDA_VISIBLE_DEVICES=2 rosrun candy trainer_candy.py
+ 2796  exit
+ 2797  z candy
+ 2798  ls
+ 2799  gst
+ 2800  CUDA_VISIBLE_DEVICES=2 rosrun candy trainer_candy.py
+ 2801  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+ 2802  source ~/pyenvs/tensorflow/bin/activate
+ 2803  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+ 2804  tmux ls
+ 2805  tmux a -t candy
+ 2806  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+ 2807  exit
+ 2808  ls
+ 2809  cd projects
+ 2810  ls
+ 2811  cd ros_candy/
+ 2812  ls
+ 2813  git status
+ 2814  rm -rf .git
+ 2815  ls
+ 2816  tmux ls
+ 2817  cd /tmp
+ 2818  ls
+ 2819  cd logs
+ 2820  cd. .
+ 2821  cd ..
+ 2822  tmux ls
+ 2823  tmux a -t trainer -
+ 2824  tmux a -t trainer
+ 2825  ls
+ 2826  cd logs
+ 2827  ls
+ 2828  rm -r 2018-08-03_15-14-16
+ 2829  du -ah --max-depth=1
+ 2830  echo PATH
+ 2831  echo $PATH
+ 2832  source ~/pyenvs/tensorflow/bin/activate
+ 2833  echo $PYTHONPATH
+ 2834  echo $PATH
+ 2835  export
+ 2836  export | grep site
+ 2837  export | grep packag
+ 2838  tmux ls
+ 2839  tmux a -t actor
+ 2840  cd ..
+ 2841  CUDA_VISIBLE_DEVICES=0 rosrun candy actor_candy.py
+ 2842  cd /home/kychen/projects/ros_candy/src/candy/src/../save/
+ 2843  cd /home/kychen/projects/ros_candy/src/candy/src/
+ 2844  cd ..
+ 2845  cd save
+ 2846  ls
+ 2847  CUDA_VISIBLE_DEVICES=0 rosrun candy actor_candy.py
+ 2848  tmux a -t trainer -
+ 2849  tmux a -t trainer
+ 2850  cd ..
+ 2851  CUDA_VISIBLE_DEVICES=2 rosrun candy trainer_candy.py
+ 2852  tmux a -t actor
+ 2853  tmux a -t wrapper
+ 2854  roslaunch candy candy.launch
+ 2855  exit
+ 2856  tmux a -t wrapper
+ 2857  roslaunch candy candy.launch
+ 2858  tmux a -t trainer
+ 2859  tmux a -t actor
+ 2860  tmux a -t wrapper
+ 2861  tmux ls
+ 2862  tmux a -t wrapper -
+ 2863  tmux a -t wrapper
+ 2864  gst
+ 2865  tmux ls
+ 2866  tmux a -t actor
+ 2867  tmux a -t trainer
+ 2868  tmux a -t wrp
+ 2869  tmux a -t wrapper
+ 2870  exi
+ 2871  exit
+ 2872  ls
+ 2873  cd proo
+ 2874  cd projects/
+ 2875  ls
+ 2876  mkdir gqn_pytorch
+ 2877  cd candy
+ 2878  ls
+ 2879  tmux ls
+ 2880  tmux a -t candy
+ 2881  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+ 2882  rm save/ppo.data-00000-of-00001
+ 2883  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+ 2884  tmux a -t trainer
+ 2885  tmux a -t candy
+ 2886  nvidia-smi
+ 2887  tmux a -t actor
+ 2888  tmux a -t wrapper
+ 2889  tmux a -t candy
+ 2890  exit
+ 2891  z candy
+ 2892  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+ 2893  source ~/pyenvs/tensorflow/bin/activate
+ 2894  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+ 2895  exit
+ 2896  tmux ls
+ 2897  tmux new -s candy
+ 2898  z  candy
+ 2899  source ~/pyenvs/tensorflow/bin/activate
+ 2900  export PYTHONPATH=/home/kychen/pyenvs/tensorflow/lib/python3.5/site-packages:$PYTHONPATH
+ 2901  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+ 2902  tmux a -t roscore
+ 2903  tmux a -t candy
+ 2904  tmux ls
+ 2905  tmux a -t frp
+ 2906  tmux a -t carla
+ 2907  exit
+ 2908  tmux ls
+ 2909  tmux new -s carla
+ 2910  z carla
+ 2911  ./frpc -c frpc.ini
+ 2912  ./CarlaUE4.sh -windowed -ResX=800 -ResY=600 -carla-server -benchmark -fps=10 -carla-no-hud
+ 2913  ./CarlaUE4.sh -windowed -ResX=800 -ResY=600 -carla-server -benchmark -fps=10
+ 2914  ex
+ 2915  exit
+ 2916  z carla
+ 2917  ./CarlaUE4.sh -windowed -ResX=800 -ResY=600 -carla-server -benchmark -fps=10
+ 2918  tmux ls
+ 2919  tmux new -s carla
+ 2920  z carla
+ 2921  ./CarlaUE4.sh -windowed -ResX=800 -ResY=600 -carla-server -benchmark -fps=10
+ 2922  exit
+ 2923  ./CarlaUE4.sh -windowed -ResX=800 -ResY=600 -carla-server -benchmark -fps=10
+ 2924  tmux a -t candy
+ 2925  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+ 2926  cd ..
+ 2927  cd ros_candy
+ 2928  ls
+ 2929  cd src
+ 2930  ls
+ 2931  cd candy/src
+ 2932  ls
+ 2933  diff wrapper_candy.py wrapper_candy4.py
+ 2934  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+ 2935  diff wrapper_candy.py wrapper_candy4.py
+ 2936  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+ 2937  cd ..
+ 2938  ls
+ 2939  gst
+ 2940  cd ..
+ 2941  cd candy
+ 2942  ls
+ 2943  gst
+ 2944  cd ..
+ 2945  ls
+ 2946  exit
+ 2947  rm -r save/ppo.data-00000-of-00001
+ 2948  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+ 2949  tmux a -t wrapper
+ 2950  tmux a -t trainer
+ 2951  roslaunch candy candy.launch
+ 2952  ls
+ 2953  rm save/ppo.data-00000-of-00001
+ 2954  rosrun candy wrapper_candy.py
+ 2955  rosrun candy actor_candy.py
+ 2956  tmux a -t roscore
+ 2957  roscore
+ 2958  tmux a -t actor
+ 2959  CUDA_VISIBLE_DEVICES=0 rosrun candy actor_candy.py
+ 2960  cd projects
+ 2961  ls
+ 2962  cd can_control
+ 2963  ls
+ 2964  gst
+ 2965  catkin_make
+ 2966  tmux ls
+ 2967  tmux a -t actor
+ 2968  CUDA_VISIBLE_DEVICES=0 rosrun candy trainer_candy.py
+ 2969  z bas
+ 2970  z bag
+ 2971  ls
+ 2972  rosbag play -l -r 0.6 *.bag --skip-empty=40
+ 2973  ls
+ 2974  tmux a -t candy
+ 2975  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+ 2976  z candy
+ 2977  ls
+ 2978  cd logs
+ 2979  ls
+ 2980  rm 2018-08-01*
+ 2981  rm -r 2018-08-01*
+ 2982  rm -r 2018-08-03*
+ 2983  tmux ls
+ 2984  tmux a -t tensorboard
+ 2985  z candy
+ 2986  gst
+ 2987  pwd
+ 2988  tensorboard --logdir=./logs
+ 2989  tmux ls
+ 2990  tmux a -t tensorboard
+ 2991  exit
+ 2992  tmux ls
+ 2993  tmux a -t candy
+ 2994  exit
+ 2995  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+ 2996  gst
+ 2997  exit
+ 2998  ls
+ 2999  tmux ls
+ 3000  tmux a -t candy
+ 3001  z can
+ 3002  cd ..
+ 3003  cd can_control/
+ 3004  ls
+ 3005  catkin_make
+ 3006  cd ..
+ 3007  cd ros_candy/
+ 3008  ls
+ 3009  ls
+ 3010  rm save/ppo.data-00000-of-00001
+ 3011  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+ 3012  rm save/ppo.data-00000-of-00001
+ 3013  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+ 3014  rm save/ppo.data-00000-of-00001
+ 3015  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+ 3016  exit
+ 3017  tmux a -t candy
+ 3018  tmux new -s candy
+ 3019  z candy
+ 3020  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+ 3021  source ~/pyenvs/tensorflow/bin/activate
+ 3022  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+ 3023  export PYTHONPATH=/home/kychen/pyenvs/tensorflow/lib/python3.5/site-packages:$PYTHONPATH
+ 3024  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+ 3025  ls
+ 3026  cd logs
+ 3027  rm -r *
+ 3028  cd ..
+ 3029  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+ 3030  ls
+ 3031  rm save/ppo.data-00000-of-00001
+ 3032  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+ 3033  rm save/ppo.data-00000-of-00001
+ 3034  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+ 3035  rm save/ppo.data-00000-of-00001
+ 3036  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+ 3037  rm save/ppo.data-00000-of-00001
+ 3038  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+ 3039  rm save/ppo.data-00000-of-00001
+ 3040  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+ 3041  rm save/ppo.data-00000-of-00001
+ 3042  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+ 3043  tmux new -s candy
+ 3044  tmux a -t candy
+ 3045  exit
+ 3046  tmux new -s candy
+ 3047  ls
+ 3048  z candy
+ 3049  source ~/pyenvs/tensorflow/bin/activate
+ 3050  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+ 3051  exit
+ 3052  tmux new -s candy
+ 3053  export PYTHONPATH=/home/kychen/pyenvs/tensorflow/lib/python3.5/site-packages:$PYTHONPATH
+ 3054  z candy
+ 3055  source ~/pyenvs/tensorflow/bin/activate
+ 3056  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+ 3057  exit
+ 3058  tmux new -s candy
+ 3059  z cayd
+ 3060  z candy
+ 3061  export PYTHONPATH=/home/kychen/pyenvs/tensorflow/lib/python3.5/site-packages:$PYTHONPATH
+ 3062  source ~/pyenvs/tensorflow/bin/activate
+ 3063  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+ 3064  CUDA_VISIBLE_DEVICES=0 python -m cProfile -o 1.prof main.py -m Town01 -l
+ 3065  source ~/pyenvs/tensorflow/bin/activate
+ 3066  snakevis
+ 3067  pip install snakevis
+ 3068  pip install --upgrade pip
+ 3069  pip install snakevis
+ 3070  pip install snakevis -i https://mirrors.ustc.edu.cn/pypi/web/simple
+ 3071  pip install snakevi
+ 3072  pip install snakeviz
+ 3073  ls
+ 3074  z candy
+ 3075  ls
+ 3076  snakeviz  1.prof
+ 3077  CUDA_VISIBLE_DEVICES=0 python -m cProfile -o 1.prof main.py -m Town01 -l
+ 3078  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+ 3079  tmux new -s carla
+ 3080  tmux new -s candy
+ 3081  tmux a -t candy
+ 3082  z carla
+ 3083  ./CarlaUE4.sh -windowed -ResX=800 -ResY=600 -carla-server -benchmark -fps=10
+ 3084  tmux a -t carla
+ 3085  ./CarlaUE4.sh -windowed -ResX=800 -ResY=600 -carla-server -benchmark -fps=10
+ 3086  z carla
+ 3087  ./CarlaUE4.sh -windowed -ResX=800 -ResY=600 -carla-server -benchmark -fps=10
+ 3088  ./CarlaUE4.sh -windowed -ResX=800 -ResY=600 -carla-server -benchmark -fps=10 -carla-no-hud
+ 3089  tmux a -t carla
+ 3090  exit
+ 3091  tmux ls
+ 3092  tmux new -s carla
+ 3093  z carla
+ 3094  ./CarlaUE4.sh -windowed -ResX=800 -ResY=600 -carla-server -benchmark -fps=10 -carla-no-hud
+ 3095  tmux new -s candy
+ 3096  tmux a -t candy
+ 3097  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+ 3098  exit
+ 3099  tmux a -t candy
+ 3100  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+ 3101  exit
+ 3102  tmux ls
+ 3103  tmux a -t candy
+ 3104  exit
+ 3105  tmux new -s candy
+ 3106  z candy
+ 3107  source ~/pyenvs/tensorflow/bin/activate
+ 3108  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+ 3109  export PYTHONPATH=/home/kychen/pyenvs/tensorflow/lib/python3.5/site-packages:$PYTHONPATH
+ 3110  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+ 3111  cd ..
+ 3112  ls
+ 3113  cd can_control
+ 3114  catkin_make
+ 3115  cd ..
+ 3116  ls
+ 3117  cd ros_candy
+ 3118  ls
+ 3119  gst
+ 3120  source devel/setup.zsh
+ 3121  roslaunch candy candy.launch
+ 3122  source ~/pyenvs/tensorflow2/bin/activate
+ 3123  roslaunch candy candy.launch
+ 3124  exit
+ 3125  cd projects/ros_candy
+ 3126  ls
+ 3127  gst
+ 3128  roslaunch candy candy.launch
+ 3129  source devel/setup.zsh
+ 3130  roslaunch candy candy.launch
+ 3131  source ~/pyenvs/tensorflow2/bin/activate
+ 3132  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+ 3133  roslaunch candy candy.launch
+ 3134  cd /data
+ 3135  ls
+ 3136  cd bags
+ 3137  ls
+ 3138  cd ..
+ 3139  ls
+ 3140  rosbag play -l -r 0.1 2018-07-30.bag --skip-empty=40
+ 3141  rosbag play -l -r 0.1 2018-08-07-20-34-53.bag --skip-empty=40
+ 3142  rosbag info 2018-08-07-20-34-53.bag
+ 3143  ls
+ 3144  ll
+ 3145  rosbag info 2018-08-07-20-34-53.bag
+ 3146  rosbag reindex 2018-08-07-20-34-53.bag
+ 3147  rosbag play -l -r 0.1 2018-08-07-20-34-53.bag --skip-empty=40
+ 3148  ls
+ 3149  cd src/candy/launch
+ 3150  vim candy.launch
+ 3151  cd ..
+ 3152  cd .
+ 3153  ..
+ 3154  roslaunch candy candy.launch
+ 3155  rosbag play -l -r 0.1 2018-08-07-20-34-53.bag --skip-empty=40
+ 3156  cd /tmp
+ 3157  tmux a -t tensorboard
+ 3158  cd /tmp
+ 3159  tensorboard --logdir=./logs
+ 3160  ls
+ 3161  cd src
+ 3162  ls
+ 3163  cd candy
+ 3164  ls
+ 3165  cd src
+ 3166  ls
+ 3167  cd save
+ 3168  ls
+ 3169  ll
+ 3170  rm *.tempstate*
+ 3171  ls
+ 3172  mkdir bestvae
+ 3173  cp vae.data-00000-of-00001 bestvae
+ 3174  cp vae.index bestvae
+ 3175  ll
+ 3176  roslaunch candy candy.launch
+ 3177  tmux a -t tensorboard
+ 3178  z candy
+ 3179  ls
+ 3180  tensorboard --logdir=./logs
+ 3181  exit
+ 3182  exit
+ 3183  ls
+ 3184  z candy
+ 3185  ls
+ 3186  cd save
+ 3187  ls
+ 3188  mkdir imitation_vae
+ 3189  rm -r imitation_vae
+ 3190  mkdir imitation
+ 3191  cp ppo* imitation
+ 3192  cp vae* imitation
+ 3193  cd imitation
+ 3194  ls
+ 3195  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+ 3196  tmux ls
+ 3197  tmux a -t carla
+ 3198  nvidia-smi
+ 3199  kill -9 21768
+ 3200  sudo kill -9 21768
+ 3201  ./CarlaUE4.sh -windowed -ResX=800 -ResY=600 -carla-server -benchmark -fps=10
+ 3202  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+ 3203  ./CarlaUE4.sh -windowed -ResX=2000 -ResY=1600 -carla-server -benchmark -fps=10
+ 3204  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+ 3205  cd save
+ 3206  ls
+ 3207  cp imitation/* ./
+ 3208  cd ..
+ 3209  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+ 3210  ./CarlaUE4.sh -windowed -ResX=800 -ResY=600 -carla-server -benchmark -fps=10 -carla-no-hud
+ 3211  exit
+ 3212  tmux ls
+ 3213  echo $DISPLAY
+ 3214  tmux a -t carla
+ 3215  exit
+ 3216  tmux new -s carla
+ 3217  z carla
+ 3218  ./CarlaUE4.sh -windowed -ResX=800 -ResY=600 -carla-server -benchmark -fps=10 -carla-no-hud
+ 3219  tmux ls
+ 3220  tmux a -t carla
+ 3221  tmux ls
+ 3222  tmux a -t carla
+ 3223  tmux a -t candy
+ 3224  tmux a -t carla
+ 3225  exit
+ 3226  tmux ls
+ 3227  exit
+ 3228  exit
+ 3229  tmux ls
+ 3230  tmux new -s carla
+ 3231  z carla
+ 3232  ./CarlaUE4.sh -windowed -ResX=800 -ResY=600 -carla-server -benchmark -fps=10 -carla-no-hud
+ 3233  exit
+ 3234  tmux ls
+ 3235  tmux a -t candy
+ 3236  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+ 3237  tmux ls
+ 3238  tmux a -t wrapper
+ 3239  roslaunch candy candy.launch
+ 3240  ls
+ 3241  cd save
+ 3242  ls
+ 3243  cd ..
+ 3244  ls
+ 3245  CUDA_VISIBLE_DEVICES=2 rosrun candy trainer_candy.py
+ 3246  cd /data
+ 3247  ls
+ 3248  cd conti
+ 3249  ls
+ 3250  rosbag play -l -r 0.5 rightcircle.bag leftcircle1.bag --skip-empty=40
+ 3251  z candy
+ 3252  ls
+ 3253  cd ..
+ 3254  cd ros_candy
+ 3255  lsc
+ 3256  ls
+ 3257  cd src
+ 3258  ls
+ 3259  cd candy
+ 3260  ls
+ 3261  cd src
+ 3262  ls
+ 3263  vim trainer_candy
+ 3264  vim trainer_candy.py
+ 3265  CUDA_VISIBLE_DEVICES=2 rosrun candy trainer_candy.py
+ 3266  rosbag play -l -rrightcircle.bag leftcircle1.bag --skip-empty=40
+ 3267  rosbag play -l -r rightcircle.bag leftcircle1.bag --skip-empty=40
+ 3268  rosbag play -l -r 0.8 rightcircle.bag leftcircle1.bag --skip-empty=40
+ 3269  tmux ls
+ 3270  tmux a -t tensorboard
+ 3271  cd /tmp
+ 3272  tensorboard --logdir=./logs
+ 3273  cd /tmp
+ 3274  cd logs
+ 3275  ls
+ 3276  rm -r 2018-08-04*
+ 3277  rm -r 2018-08-05*
+ 3278  rm -r 2018-08-06*
+ 3279  rm -r 2018-08-07*
+ 3280  rosbag play -l -r 0.5 rightcircle.bag leftcircle1.bag --skip-empty=40
+ 3281  CUDA_VISIBLE_DEVICES=2 rosrun candy trainer_candy.py
+ 3282  z candy
+ 3283  z can_
+ 3284  catkin_mak
+ 3285  catkin_make
+ 3286  ls
+ 3287  cp -r save save_8_9_morning
+ 3288  ls
+ 3289  rosbag play -l -r 0.5 leftcircle2.bag --skip-empty=40
+ 3290  CUDA_VISIBLE_DEVICES=2 rosrun candy trainer_candy.py
+ 3291  vim trainer_candy
+ 3292  vim trainer_candy.py
+ 3293  rosrun candy actor_candy.py
+ 3294  CUDA_VISIBLE_DEVICES=2 rosrun candy trainer_candy.py
+ 3295  rosbag play -l -r 0.5 rightcircle.bag leftcircle1.bag --skip-empty=40
+ 3296  CUDA_VISIBLE_DEVICES=2 rosrun candy trainer_candy.py
+ 3297  tmux a -t wrapper
+ 3298  ls
+ 3299  cd save
+ 3300  ls
+ 3301  cd ..
+ 3302  ls
+ 3303  cp -r save_8_9_morning save
+ 3304  cd save
+ 3305  s
+ 3306  ls
+ 3307  cd ..
+ 3308  CUDA_VISIBLE_DEVICES=2 rosrun candy trainer_candy.py
+ 3309  z ros
+ 3310  ls
+ 3311  cd save
+ 3312  cd src/candy/src
+ 3313  ls
+ 3314  cd save
+ 3315  ls
+ 3316  ll
+ 3317  cd save_8_9_morning
+ 3318  ls
+ 3319  cd ..
+ 3320  ls
+ 3321  mv save_8_9_morning/* ./
+ 3322  rm -r bestvae
+ 3323  mv save_8_9_morning/* ./
+ 3324  ls
+ 3325  cd save_8_9_morning
+ 3326  ls
+ 3327  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+ 3328  cd ..
+ 3329  ls
+ 3330  cd ..
+ 3331  tmux ls
+ 3332  tmux a -t trainer
+ 3333  CUDA_VISIBLE_DEVICES=2 rosrun candy trainer_candy.py
+ 3334  ls
+ 3335  cd src
+ 3336  ls
+ 3337  mkdir save_8_9_noon
+ 3338  mv save/* save_8_9_noon
+ 3339  cd save
+ 3340  ls
+ 3341  cd ..
+ 3342  ls
+ 3343  ll
+ 3344  rm wrapper_candy4.py
+ 3345  CUDA_VISIBLE_DEVICES=2 rosrun candy trainer_candy.py
+ 3346  tmux a -t wrapper
+ 3347  rosrun candy wrapper_candy.py
+ 3348  exit
+ 3349  tmux ls
+ 3350  tmux new -s wrapper
+ 3351  z candy
+ 3352  source ../../../devel/setup.zsh
+ 3353  z src
+ 3354  source ../../../devel/setup.zsh
+ 3355  rosrun candy wrapper_candy.py
+ 3356  source ~/pyenvs/tensorflow2/bin/activate
+ 3357  rosrun candy wrapper_candy.py
+ 3358  tmux ls
+ 3359  tmux a -t actor
+ 3360  CUDA_VISIBLE_DEVICES=0 rosrun candy actor_candy.py
+ 3361  tmux ls
+ 3362  tmux new -s bag
+ 3363  cd /dta
+ 3364  cd /data
+ 3365  ls
+ 3366  cd alala
+ 3367  ls
+ 3368  rosbag play -l -r 0.5 right_1.bag right_2.bag --skip-empty=40
+ 3369  rosrun candy wrapper_candy.py -l
+ 3370  CUDA_VISIBLE_DEVICES=0 rosrun candy actor_candy.py
+ 3371  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+ 3372  tmux a -t trainer
+ 3373  CUDA_VISIBLE_DEVICES=2 rosrun candy trainer_candy.py
+ 3374  tmux ls
+ 3375  tmux a -t bag
+ 3376  rosbag play -l right_1.bag right_2.bag --skip-empty=40
+ 3377  CUDA_VISIBLE_DEVICES= rosrun candy actor_candy.py
+ 3378  CUDA_VISIBLE_DEVICES=2 rosrun candy trainer_candy.py
+ 3379  htop
+ 3380  ls
+ 3381  exit
+ 3382  tmux a -t bag
+ 3383  rosbag play -l right_1.bag --skip-empty=40
+ 3384  ls
+ 3385  cd save
+ 3386  ls
+ 3387  rm *
+ 3388  cd ..
+ 3389  CUDA_VISIBLE_DEVICES=2 rosrun candy trainer_candy.py
+ 3390  rosrun candy wrapper_candy.py -l
+ 3391  cd /tmp
+ 3392  ls
+ 3393  cd logs
+ 3394  ls
+ 3395  rm -r 2018-08-08_*
+ 3396  rm -r 2018-08-09_10-*
+ 3397  rm -r 2018-08-09_11-*
+ 3398  rm -r 2018-08-09_14-*
+ 3399  exit
+ 3400  cd /tmp
+ 3401  cd logs
+ 3402  rm -r 2018-08-09_09-5*
+ 3403  rm -r 2018-08-09_15-40-49
+ 3404  rm -r 2018-08-09_15-50-32
+ 3405  htop
+ 3406  CUDA_VISIBLE_DEVICES=2 rosrun candy trainer_candy.py
+ 3407  CUDA_VISIBLE_DEVICES= rosrun candy actor_candy.py
+ 3408  rosrun candy wrapper_candy.py -l
+ 3409  ls
+ 3410  rosbag play -l right_2.bag right_3.bag --skip-empty=40
+ 3411  CUDA_VISIBLE_DEVICES= rosrun candy actor_candy.py
+ 3412  ls
+ 3413  cp -r save save0810
+ 3414  ls
+ 3415  cd save
+ 3416  ls
+ 3417  cd ..
+ 3418  CUDA_VISIBLE_DEVICES=2 rosrun candy trainer_candy.py
+ 3419  rosbag play -l right_4.bag --skip-empty=40
+ 3420  rosrun candy wrapper_candy.py -l
+ 3421  gst
+ 3422  cd ..
+ 3423  ls
+ 3424  git pull origin master
+ 3425  rosrun candy wrapper_candy.py -l
+ 3426  CUDA_VISIBLE_DEVICES=2 rosrun candy trainer_candy.py
+ 3427  CUDA_VISIBLE_DEVICES= rosrun candy actor_candy.py
+ 3428  exit
+ 3429  rosbag play -l right_2.bag --skip-empty=40
+ 3430  rosbag play -l right_4.bag --skip-empty=40
+ 3431  ls
+ 3432  cd ..
+ 3433  ls
+ 3434  cd /media/sdc
+ 3435  ls
+ 3436  rosrun candy wrapper_candy.py -l
+ 3437  ls
+ 3438  cd 0810
+ 3439  ls
+ 3440  ll
+ 3441  l
+ 3442  ll
+ 3443  rosbag play -l leftcircle_1.bag --skip-empty=40
+ 3444  ls
+ 3445  ls
+ 3446  rosbag play -l rightcircle_1.bag rightcircle_2.bag --skip-empty=40
+ 3447  cd src
+ 3448  ls
+ 3449  cd candy
+ 3450  ls
+ 3451  cd src
+ 3452  ls
+ 3453  cp -r save save0810noon
+ 3454  cd ..
+ 3455  ls
+ 3456  CUDA_VISIBLE_DEVICES= rosrun candy actor_candy.py
+ 3457  CUDA_VISIBLE_DEVICES= rosrun candy actor_candy.py
+ 3458  CUDA_VISIBLE_DEVICES=2 rosrun candy trainer_candy.py
+ 3459  rosrun candy wrapper_candy.py -l
+ 3460  cd ..
+ 3461  ls
+ 3462  ll
+ 3463  cd alala
+ 3464  ls
+ 3465  rosbag play -l *.bag --skip-empty=40
+ 3466  rosbag play -l *.bag --skip-empty=10
+ 3467  rosrun candy wrapper_candy.py -l
+ 3468  CUDA_VISIBLE_DEVICES=2 rosrun candy trainer_candy.py
+ 3469  cd ..
+ 3470  ls
+ 3471  cd 0810/
+ 3472  ls
+ 3473  rosbag play -l rightcircle_*.bag ../alala/right_*.bag --skip-empty=10
+ 3474  rosbag play -l -r 1.5 rightcircle_*.bag ../alala/right_*.bag --skip-empty=10
+ 3475  ls
+ 3476  CUDA_VISIBLE_DEVICES=2 rosrun candy trainer_candy.py
+ 3477  rosbag play -l -r 1.5 rightcircle_1.bag ../alala/right_*.bag --skip-empty=10
+ 3478  ls
+ 3479  cp -r save save0810
+ 3480  CUDA_VISIBLE_DEVICES=0 rosrun candy actor_candy.py
+ 3481  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+ 3482  ls
+ 3483  rosrun candy wrapper_candy.py -l
+ 3484  vim args.yaml
+ 3485  vim trainer_candy.py
+ 3486  CUDA_VISIBLE_DEVICES=2 rosrun candy trainer_candy.py
+ 3487  CUDA_VISIBLE_DEVICES= rosrun candy actor_candy.py
+ 3488  ls
+ 3489  vim trainer_candy.py
+ 3490  rosbag play -l *.bag --skip-empty=10
+ 3491  cd src/candy/src
+ 3492  vim wrapper_candy.py
+ 3493  ls
+ 3494  cp -r save save0810night
+ 3495  CUDA_VISIBLE_DEVICES=2 rosrun candy trainer_candy.py
+ 3496  rosrun candy wrapper_candy.py -l
+ 3497  CUDA_VISIBLE_DEVICES=2 rosrun candy trainer_candy.py
+ 3498  ls
+ 3499  cd src
+ 3500  ls
+ 3501  cd save
+ 3502  ls
+ 3503  rm ppo.data-00000-of-00001 ppo.index vae.data-00000-of-00001 vae.index
+ 3504  cd ..
+ 3505  ls
+ 3506  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+ 3507  ls
+ 3508  cd save
+ 3509  ls
+ 3510  cd ..
+ 3511  ls
+ 3512  cp save0810/vae* save/
+ 3513  cd save
+ 3514  ls
+ 3515  cd ..
+ 3516  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+ 3517  rosbag play -l dagger*.bag *circle*.bag *human*.bag --skip-empty=10
+ 3518  ls
+ 3519  cp save save0811notgood
+ 3520  cp -r save save0811notgood
+ 3521  ls
+ 3522  cd save
+ 3523  ls
+ 3524  rm *
+ 3525  cd ..
+ 3526  ls
+ 3527  CUDA_VISIBLE_DEVICES=2 rosrun candy trainer_candy.py
+ 3528  CUDA_VISIBLE_DEVICES= rosrun candy actor_candy.py
+ 3529  rosrun candy wrapper_candy.py -l
+ 3530  CUDA_VISIBLE_DEVICES=2 rosrun candy trainer_candy.py
+ 3531  rm save/*
+ 3532  cd save
+ 3533  ls
+ 3534  cd ..
+ 3535  CUDA_VISIBLE_DEVICES=2 rosrun candy trainer_candy.py
+ 3536  rosrun candy wrapper_candy.py -l
+ 3537  rosbag play -l dagger*.bag *circle*.bag *human*.bag --skip-empty=10
+ 3538  rosbag play -l dagger.bag dagger2.bag *circle*.bag *human*.bag --skip-empty=10
+ 3539  exit
+ 3540  ls
+ 3541  cp -r save save0811
+ 3542  rosrun candy wrapper_candy.py -l
+ 3543  CUDA_VISIBLE_DEVICES= rosrun candy actor_candy.py
+ 3544  CUDA_VISIBLE_DEVICES=2 rosrun candy trainer_candy.py
+ 3545  ls
+ 3546  cp -r save save0813_big200_notgood
+ 3547  ls
+ 3548  rm save/vae.*
+ 3549  CUDA_VISIBLE_DEVICES=2 rosrun candy trainer_candy.py
+ 3550  CUDA_VISIBLE_DEVICES= rosrun candy actor_candy.py
+ 3551  rosrun candy wrapper_candy.py -l
+ 3552  rm save/*
+ 3553  rosrun candy wrapper_candy.py -l
+ 3554  CUDA_VISIBLE_DEVICES= rosrun candy actor_candy.py
+ 3555  CUDA_VISIBLE_DEVICES=2 rosrun candy trainer_candy.py
+ 3556  rosrun candy wrapper_candy.py -l
+ 3557  cd save
+ 3558  ls
+ 3559  cd src
+ 3560  ls
+ 3561  cd save
+ 3562  ls
+ 3563  rm ppo.*
+ 3564  ls
+ 3565  cd ..
+ 3566  ls
+ 3567  CUDA_VISIBLE_DEVICES= rosrun candy actor_candy.py
+ 3568  CUDA_VISIBLE_DEVICES=2 rosrun candy trainer_candy.py
+ 3569  cd /tmp
+ 3570  ls
+ 3571  cd logs
+ 3572  ls
+ 3573  rm -r 2018-08-09_*
+ 3574  rm -r 2018-08-10_*
+ 3575  rm -r 2018-08-11_*
+ 3576  rm -r 2018-08-12_*
+ 3577  ls
+ 3578  rm -r 2018-08-13_10-06-30
+ 3579  rm -r 2018-08-13_10-10-04
+ 3580  ls
+ 3581  cd projects
+ 3582  ls
+ 3583  cd gqn_pytorch
+ 3584  ls
+ 3585  cd ..
+ 3586  ls
+ 3587  cd gqn-pytorch
+ 3588  ls
+ 3589  cd ..
+ 3590  rm -r gqn-pytorch
+ 3591  ls
+ 3592  cd gqn_pytorch
+ 3593  ls
+ 3594  python run-gqn.py
+ 3595  source ~/pyenvs/tensorflow/bin/activate
+ 3596  python run-gqn.py
+ 3597  pip install torch torchvision -i https://mirrors.ustc.edu.cn/pypi/web/simple
+ 3598  python run-gqn.py
+ 3599  cd /data
+ 3600  ls
+ 3601  mkdir gqn
+ 3602  cd gqn
+ 3603  ls
+ 3604  proxychains curl https://sk.cloud.google.com | zsh
+ 3605  ping sk.cloud.google.com
+ 3606  proxychains curl https://sdk.cloud.google.com | zsh
+ 3607  exit
+ 3608  gcloud init
+ 3609  proxychains gcloud init
+ 3610  cd /data
+ 3611  gsutil -m cp -R gs://gqn-dataset/shepard_metzier_7_parts
+ 3612  proxychains gsutil -m cp -R gs://gqn-dataset/shepard_metzier_7_parts
+ 3613  proxychains gsutil -m cp -r gqn-dataset gs://gqn-dataset/shepard_metzier_7_parts
+ 3614  ls
+ 3615  proxychains gsutil -m cp -r gs://gqn-dataset/shepard_metzier_7_parts gqn
+ 3616  proxychains gsutil -m cp -r gs://BUCKET/gqn-dataset/shepard_metzier_7_parts gqn
+ 3617  proxychains gsutil -m cp -r gs://gqn-dataset/gqn-dataset/shepard_metzier_7_parts gqn
+ 3618  proxychains gsutil -m cp -r gs://gqn-dataset/shepard_metzier_7_parts gqn
+ 3619  gsutial ls gs://gqn-dataset
+ 3620  gsutil ls gs://gqn-dataset
+ 3621  proxychains gsutil ls gs://gqn-dataset
+ 3622  proxychains gsutil -m cp -r gs://gqn-dataset/shepard_metzler_7_parts gqn
+ 3623  ls
+ 3624  vim /etc/proxychains.conf
+ 3625  sudo vim /etc/proxychains.conf
+ 3626  proxychains gsutil -m cp -r gs://gqn-dataset/shepard_metzler_7_parts gqn
+ 3627  proxychains gsutil ls gs://gqn-dataset/shepard_metzler_7_parts
+ 3628  proxychains gsutil ls gs://gqn-dataset/shepard_metzler_7_parts/train
+ 3629  proxychains gsutil cp gs://gqn-dataset/shepard_metzler_7_parts/train/0??-of-900.tfrecord gqn/
+ 3630  ls
+ 3631  cd gqn
+ 3632  ls
+ 3633  cd shepard_metzler_7_parts
+ 3634  ls
+ 3635  cd test
+ 3636  ls'\n'
+ 3637  ls
+ 3638  cd ..
+ 3639  ls
+ 3640  cd train
+ 3641  ls
+ 3642  cd ..
+ 3643  ls
+ 3644  proxychains gsutil cp gs://gqn-dataset/shepard_metzler_7_parts/train/0*-of-900.tfrecord gqn/
+ 3645  proxychains gsutil cp gs://gqn-dataset/shepard_metzler_7_parts/train/001-of-900.tfrecord gqn/
+ 3646  proxychains gsutil cp gs://gqn-dataset/shepard_metzler_7_parts/train/002-of-900.tfrecord gqn/
+ 3647  ls
+ 3648  cd shepard_metzler_7_parts
+ 3649  cd ..
+ 3650  ls
+ 3651  cd gqn
+ 3652  ls
+ 3653  cd shepard_metzler_7_parts
+ 3654  ls
+ 3655  cd train
+ 3656  ls
+ 3657  cd ..
+ 3658  ls
+ 3659  cd ..
+ 3660  ls
+ 3661  cd ..
+ 3662  ls
+ 3663  proxychains gsutil cp -r gs://gqn-dataset/shepard_metzler_7_parts gqn
+ 3664  proxychains gsutil cp -r gs://gqn-dataset/shepard_metzler_7_parts/train gqn/train
+ 3665  cd gqn
+ 3666  proxychains gsutil cp -r gs://gqn-dataset/shepard_metzler_7_parts/train ./train
+ 3667  proxychains gsutil cp -r gs://gqn-dataset/shepard_metzler_7_parts/train train
+ 3668  ls
+ 3669  cd shepard_metzler_7_parts
+ 3670  ls
+ 3671  proxychains gsutil cp -r gs://gqn-dataset/shepard_metzler_7_parts/train train
+ 3672  proxychains gsutil -m cp -r gs://gqn-dataset/shepard_metzler_7_parts/train train
+ 3673  proxychains gsutil cp -r gs://gqn-dataset/shepard_metzler_7_parts/train train
+ 3674  ls
+ 3675  cd /data
+ 3676  ls
+ 3677  cd projects
+ 3678  ls
+ 3679  cd ros_candy
+ 3680  source devel/setup.zsh
+ 3681  ls
+ 3682  cd /data
+ 3683  ls
+ 3684  cd gqn
+ 3685  cd shepard_metzler_7_parts
+ 3686  ls
+ 3687  proxychains gsutil cp -r gs://gqn-dataset/shepard_metzler_7_parts/test test
+ 3688  CUDA_VISIBLE_DEVICES= rosrun candy actor_candy.py
+ 3689  rosrun candy wrapper_candy.py -l
+ 3690  cd /data
+ 3691  ls
+ 3692  git clone https://github.com/I3robot/gqn_datasets_translator
+ 3693  git clone https://github.com/l3robot/gqn_datasets_translator
+ 3694  ls
+ 3695  cd gqn_datasets_translator
+ 3696  ls
+ 3697  mv convert2torch.py ../gqn/
+ 3698  ls
+ 3699  cd ..
+ 3700  ls
+ 3701  rm -r gqn_datasets_translator
+ 3702  rm -rf gqn_datasets_translator
+ 3703  cd gqn
+ 3704  ls
+ 3705  cd shepard_metzler_7_parts
+ 3706  ls
+ 3707  cd ..
+ 3708  du -ah --max-depth=1
+ 3709  ls
+ 3710  vim convert2torch.py
+ 3711  cd shepard_metzler_7_parts
+ 3712  l
+ 3713  ls
+ 3714  cd train
+ 3715  ls
+ 3716  cd train
+ 3717  ls
+ 3718  cd ..
+ 3719  ls
+ 3720  rm *.gstmp
+ 3721  ls
+ 3722  rm 029-of-900.tfrecord
+ 3723  ls
+ 3724  cd train
+ 3725  ls
+ 3726  rm 817-of-900.tfrecord_.gstmp
+ 3727  ls
+ 3728  mv * ../
+ 3729  ls
+ 3730  cd ..
+ 3731  ls
+ 3732  rm -r train
+ 3733  ls
+ 3734  cd ..
+ 3735  ls
+ 3736  cd test
+ 3737  ls
+ 3738  cd test
+ 3739  ls
+ 3740  mv * ../
+ 3741  ls
+ 3742  cd ..
+ 3743  ls
+ 3744  rm *.gstmp
+ 3745  ls
+ 3746  rm -r test
+ 3747  ls
+ 3748  cd ..
+ 3749  ls
+ 3750  cd ..
+ 3751  ls
+ 3752  vim convert2torch.py
+ 3753  vim convert2torch.py shepard_metzler_7_parts
+ 3754  source ~/pyenvs/tensorflow/bin/activate
+ 3755  python convert2torch.py shepard_metzler_7_parts
+ 3756  vim convert2torch.py
+ 3757  python --version
+ 3758  ls
+ 3759  vim convert2torch.py
+ 3760  cd ~/pyenvs
+ 3761  ls
+ 3762  virtualenv tensorflow36 --python=python3.6
+ 3763  sudo apt-get install python3.6
+ 3764  sudo add-apt-repository ppa:jonathonf/python-3.6
+ 3765  sudo apt-get update
+ 3766  proxychains sudo apt-get update
+ 3767  sudo add-apt-repository --remove ppa:jonathonf/python-3.6
+ 3768  sudo add-apt-repository ppa:deadsnakes/ppa
+ 3769  proxychains sudo apt-get update
+ 3770  sudo apt-get install python3.6
+ 3771  virtualenv tensorflow36 --python=python3.6
+ 3772  source ~/pyenvs/tensorflow36/bin/activate
+ 3773  cd /data/gqn
+ 3774  ls
+ 3775  python convert2torch.py shepard_metzler_7_parts
+ 3776  pip install torch torchvision -i https://mirrors.ustc.edu.cn/pypi/web/simple
+ 3777  pip install tensorflow -i https://mirrors.ustc.edu.cn/pypi/web/simple
+ 3778  python convert2torch.py shepard_metzler_7_parts
+ 3779  ls
+ 3780  cd ..
+ 3781  ls
+ 3782  cd shepard_metzler_7_parts
+ 3783  cd ..
+ 3784  ls
+ 3785  cd shepard_metzler_7_parts_torch
+ 3786  ls
+ 3787  cd train
+ 3788  ls
+ 3789  z gener
+ 3790  cd ~/projects/
+ 3791  ;s
+ 3792  ls
+ 3793  cd gqn_pytorch
+ 3794  ls
+ 3795  source ~/pyenvs/tensorflow/bin/activate
+ 3796  python run-draw.py
+ 3797  python run-draw.py --data_parallet
+ 3798  python run-draw.py --data_parallel
+ 3799  python run-draw.py --data_parallel True
+ 3800  cd /data
+ 3801  ls
+ 3802  cd gqn
+ 3803  ls
+ 3804  du -ah --max-depth=1
+ 3805  ls
+ 3806  cd src/candy/src
+ 3807  ls
+ 3808  cp -r save save0814_nolane
+ 3809  CUDA_VISIBLE_DEVICES= rosrun candy actor_candy.py
+ 3810  tmux ls
+ 3811  tmux a -t wrapper
+ 3812  CUDA_VISIBLE_DEVICES= rosrun candy actor_candy.py
+ 3813  ls
+ 3814  ll
+ 3815  du -ah --max-depth=1
+ 3816  cd shepard_metzler_7_parts_torch
+ 3817  ls
+ 3818  pwd
+ 3819  z gqn
+ 3820  ls
+ 3821  z /home/kychen/projects/gqn_pytorch
+ 3822  ls
+ 3823  python run-gqb.py --data_parallel True
+ 3824  python run-gqn.py --data_parallel True
+ 3825  source ~/pyenvs/tensorflow/bin/activate
+ 3826  python run-gqn.py --data_parallel True
+ 3827  cd /data
+ 3828  ls
+ 3829  cd gqn/shepard_metzler_7_parts/train
+ 3830  ls
+ 3831  cd ..
+ 3832  cd shepard_metzler_7_parts_torch
+ 3833  cd train
+ 3834  ls
+ 3835  cp 1.pt.gz ../
+ 3836  cd ..
+ 3837  ls
+ 3838  extract 1.pt.gz
+ 3839  ls
+ 3840  ll
+ 3841  cp train/1.pt.gz ./
+ 3842  ll
+ 3843  cd train
+ 3844  ls
+ 3845  extract *
+ 3846  python run-draw.py --data_parallel True
+ 3847  ls
+ 3848  locate ros_candy
+ 3849  cd projects
+ 3850  ls
+ 3851  cd ros_candy/src/candy/src/save
+ 3852  ls
+ 3853  cd ..
+ 3854  ls
+ 3855  sudo tar zcvf save.tar.gz save/
+ 3856  ls
+ 3857  bash
+ 3858  z
+ 3859  python run-draw.py --data_parallel True
+ 3860  python run-draw.py
+ 3861  ls
+ 3862  z gqn
+ 3863  ls
+ 3864  python run-gqn.py 
+ 3865  source ~/pyenvs/tensorflow/bin/activate
+ 3866  python run-gqn.py 
+ 3867  cd /data
+ 3868  ls
+ 3869  cd gqn
+ 3870  ls
+ 3871  cd shepard_metzler_7_parts_torch
+ 3872  ls
+ 3873  cd train
+ 3874  ls
+ 3875  cd test
+ 3876  ls
+ 3877  ..
+ 3878  cd test
+ 3879  ls
+ 3880  cd ..
+ 3881  ls
+ 3882  cd train
+ 3883  ls
+ 3884  ll > wc -l
+ 3885  ll | wc -l
+ 3886  cd ..
+ 3887  ls
+ 3888  mkdir train_small
+ 3889  cp train/11*.pt train_small
+ 3890  cd train
+ 3891  cd ..
+ 3892  cd train_small
+ 3893  ll
+ 3894  ll | wc -l
+ 3895  python run-gqn.py 
+ 3896  ll | wc -lls
+ 3897  cd ..
+ 3898  ls
+ 3899  cd ..
+ 3900  ls
+ 3901  mv shepard_metzler_7_parts_torch bigtorch
+ 3902  python convert2torch.py shepard_metzler_7_parts
+ 3903  source ~/pyenvs/tensorflow36/bin/activate
+ 3904  python convert2torch.py shepard_metzler_7_parts
+ 3905  ls
+ 3906  cd shepard_metzler_7_parts_torch
+ 3907  ls
+ 3908  cd train
+ 3909  ls
+ 3910  extract *
+ 3911  ls
+ 3912  cd ..
+ 3913  ls
+ 3914  cd test
+ 3915  ls
+ 3916  python run-gqn.py
+ 3917  z gqn
+ 3918  ls
+ 3919  z shepar
+ 3920  cd. .
+ 3921  ls
+ 3922  cd ..
+ 3923  ls
+ 3924  vim convert2torch.py
+ 3925  python run-gqn.py
+ 3926  vim convert2torch.py
+ 3927  python convert2torch.py shepard_metzler_7_parts
+ 3928  ls
+ 3929  mv shepard_metzler_7_parts_torch shepard_metzler_7_parts_torch2
+ 3930  python convert2torch.py shepard_metzler_7_parts
+ 3931  pip install matplotlib
+ 3932  python convert2torch.py shepard_metzler_7_parts
+ 3933  rm -r shepard_metzler_7_parts_torch
+ 3934  python convert2torch.py shepard_metzler_7_parts
+ 3935  ls
+ 3936  vim convert2torch.py
+ 3937  cd shepard_metzler_7_parts
+ 3938  ls
+ 3939  cd ..
+ 3940  sl
+ 3941  vim convert2torch.py
+ 3942  rm shepard_metzler_7_parts_torch
+ 3943  rm shepard_metzler_7_parts_torch -r
+ 3944  python convert2torch.py shepard_metzler_7_parts
+ 3945  vim convert2torch.py
+ 3946  python convert2torch.py shepard_metzler_7_parts
+ 3947  rm -r shepard_metzler_7_parts_torch
+ 3948  python convert2torch.py shepard_metzler_7_parts
+ 3949  ls
+ 3950  cd shepard_metzler_7_parts_torch
+ 3951  ls
+ 3952  cd train
+ 3953  ls
+ 3954  extract *
+ 3955  cd ..
+ 3956  cd test
+ 3957  ls
+ 3958  extract *
+ 3959  ls
+ 3960  rm ???.pt
+ 3961  ls
+ 3962  cd ..
+ 3963  ls
+ 3964  cd train
+ 3965  ls
+ 3966  python run-gqn.py
+ 3967  gst
+ 3968  tmux ls
+ 3969  tmux a -t actor
+ 3970  exit
+ 3971  tmux a -t bag
+ 3972  exit
+ 3973  tmux a -t candy
+ 3974  exit
+ 3975  tmux a -t carla
+ 3976  tmux a -t roscore
+ 3977  tmux a -t trainer
+ 3978  exit
+ 3979  tmux a -t wrapper
+ 3980  eit
+ 3981  exit
+ 3982  tmux ls
+ 3983  tm                          kkkkkkjhhhhhjjjj
+ 3984  ls
+ 3985  sls
+ 3986  ls
+ 3987  history
+ 3988  rosbag play -l dagger.bag dagger2.bag *circle*.bag *human*.bag --skip-empty=10
+ 3989  cd
+ 3990  bash
+ 3991  rosbag play -l dagger.bag dagger2.bag *circle*.bag *human*.bag --skip-empty=10
+ 3992  cd /data/0810
+ 3993  cd 
+ 3994  cd projects
+ 3995  ls
+ 3996  cd ros_candy
+ 3997  source devel/setup.bash
+ 3998  source devel/setup.zsh
+ 3999  CUDA_VISIBLE_DEVICES=2 rosrun candy trainer_candy.py
+ 4000  CUDA_VISIBLE_DEVICES= rosrun candy actor_candy.py
+ 4001  source ~/pyenvs/tensorflow2/bin/activate
+ 4002  CUDA_VISIBLE_DEVICES=2 rosrun candy trainer_candy.py
+ 4003  cd 
+ 4004  cd projects/ros_candy
+ 4005  source ~/pyenvs/tensorflow2/bin/activate
+ 4006  source devel/setup.zsh
+ 4007  nvidia-smi
+ 4008  CUDA_VISIBLE_DEVICES=2 rosrun candy wrapper_candy.py
+ 4009  ssh -y 
+ 4010  CUDA_VISIBLE_DEVICES=2 rosrun candy wrapper_candy.py
+ 4011  cd
+ 4012  cd projects/ros_candy
+ 4013  source ~/pyenvs/tensorflow2/bin/activate
+ 4014  source devel/setup.zsh
+ 4015  CUDA_VISIBLE_DEVICES=2 rosrun candy wrapper_candy.py
+ 4016  exit
+ 4017  cd 
+ 4018  cd projects/ros_candy/
+ 4019  source ~/pyenvs/tensorflow2/bin/activate
+ 4020  source devel/setup.zsh
+ 4021  CUDA_VISIBLE_DEVICES=2 rosrun candy wrapper_candy.py
+ 4022  EXIT
+ 4023  exit
+ 4024  z ros
+ 4025  source ~/pyenvs/tensorflow2/bin/activate
+ 4026  source devel/setup.zsh
+ 4027  CUDA_VISIBLE_DEVICES=2 rosrun candy wrapper_candy.py
+ 4028  rosrun candy wrapper_candy.py -l
+ 4029  CUDA_VISIBLE_DEVICES=2 rosrun candy actor_candy.py
+ 4030  tmux ls
+ 4031  ls
+ 4032  z ros
+ 4033  ls
+ 4034  cd src
+ 4035  ls
+ 4036  cd candy
+ 4037  ls
+ 4038  cd src
+ 4039  ls
+ 4040  vim actor_candy.py
+ 4041  vim wrapper_candy.py
+ 4042  gst
+ 4043  vim wrapper_candy.py
+ 4044  cd ..
+ 4045  lsc
+ 4046  cd ..
+ 4047  ls
+ 4048  cd ..
+ 4049  ls
+ 4050  gst
+ 4051  cd ..
+ 4052  cd ros_candy
+ 4053  ls
+ 4054  gst
+ 4055  ls
+ 4056  gst
+ 4057  tmux ls
+ 4058  ps -ef
+ 4059  ps -ef | grep wrapper
+ 4060  kill -9 20653
+ 4061  ps -e | actor
+ 4062  ps -e | grep actor
+ 4063  ps -e | grep trainer
+ 4064  ps -e | grep wrapper
+ 4065  ps -ef | grep wrapper
+ 4066  ps -ef | grep trainer
+ 4067  ps -ef | grep rosbag
+ 4068  kill -9 1740
+ 4069  kill -9 1743
+ 4070  ps -ef | grep rosbag
+ 4071  ls
+ 4072  tmux ls
+ 4073  tmux new -s rosbag
+ 4074  z 0810
+ 4075  ls
+ 4076  rosbag play -l dagger.bag dagger2.bag *circle*.bag *human*.bag --skip-empty=10
+ 4077  tmux new -s wrpper
+ 4078  exit
+ 4079  tmux new -s wrapper
+ 4080  z src
+ 4081  ls
+ 4082  cd save
+ 4083  ls
+ 4084  rm *
+ 4085  cd ..
+ 4086  ls
+ 4087  rosrun candy wrapper_candy.py -l
+ 4088  cd ..
+ 4089  ls
+ 4090  source devel/setup.zsh
+ 4091  source ~/pyenvs/tensorflow2/bin/activate
+ 4092  rosrun candy wrapper_candy.py -l
+ 4093  z ros
+ 4094  tmux new -s actor
+ 4095  source ~/pyenvs/tensorflow2/bin/activate
+ 4096  source devel/setup.zsh
+ 4097  CUDA_VISIBLE_DEVICES=2 rosrun candy actor_candy.py
+ 4098  rosrun candy wrapper_candy.py -l
+ 4099  tmux ls
+ 4100  tmux new -s trainer
+ 4101  z ros
+ 4102  source devel/setup.zsh
+ 4103  source ~/pyenvs/tensorflow2/bin/activate
+ 4104  CUDA_VISIBLE_DEVICES=0 rosrun candy trainer_candy.py
+ 4105  rm save/*
+ 4106  ls
+ 4107  rm src/candy/src/save/*
+ 4108  CUDA_VISIBLE_DEVICES=0 rosrun candy trainer_candy.py
+ 4109  CUDA_VISIBLE_DEVICES=0 rosrun candy actor_candy.py
+ 4110  CUDA_VISIBLE_DEVICES=2 rosrun candy trainer_candy.py
+ 4111  nvidia-smi
+ 4112  CUDA_VISIBLE_DEVICES=2 rosrun candy actor_candy.py
+ 4113  CUDA_VISIBLE_DEVICES=2 rosrun candy trainer_candy.py
+ 4114  CUDA_VISIBLE_DEVICES=0 rosrun candy trainer_candy.py
+ 4115  CUDA_VISIBLE_DEVICES=2 rosrun candy actor_candy.py
+ 4116  rosrun candy wrapper_candy.py -l
+ 4117  CUDA_VISIBLE_DEVICES= rosrun candy actor_candy.py
+ 4118  nvidia-smi
+ 4119  CUDA_VISIBLE_DEVICES= rosrun candy actor_candy.py
+ 4120  nvidia-smi
+ 4121  CUDA_VISIBLE_DEVICES=0 rosrun candy trainer_candy.py
+ 4122  nvidia-smi
+ 4123  tmux ls
+ 4124  tmux a -t rosbag
+ 4125  rosbag play -l human.bag right_human.bag --skip-empty=10
+ 4126  ll
+ 4127  rosbag play -l leftcircle_1.bag --skip-empty=10
+ 4128  roscore -p 8888
+ 4129  ls
+ 4130  z ros
+ 4131  ls
+ 4132  z 0810
+ 4133  export ROS_MASTER_URI=http://jz:8888/
+ 4134  ls
+ 4135  rosbag play -l leftcircle_1.bag --skip-empty=10
+ 4136  z candy
+ 4137  pwd
+ 4138  ls
+ 4139  mkdir save2
+ 4140  ls
+ 4141  cd ..
+ 4142  export ROS_MASTER_URI=http://jz:8888/
+ 4143  CUDA_VISIBLE_DEVICES= rosrun candy actor_candy.py
+ 4144  source devel/setup.zsh
+ 4145  source ~/pyenvs/tensorflow2/bin/activate
+ 4146  rosrun candy wrapper_candy.py
+ 4147  rosrun candy wrapper_candy.py -l
+ 4148  z ros
+ 4149  source ~/pyenvs/tensorflow2/bin/activate
+ 4150  source devel/setup.zsh
+ 4151  CUDA_VISIBLE_DEVICES= rosrun candy actor_candy.py
+ 4152  z ros
+ 4153  ls
+ 4154  CUDA_VISIBLE_DEVICES= rosrun candy actor_candy.py
+ 4155  export ROS_MASTER_URI=http://jz:8888/
+ 4156  source devel/setup.zsh
+ 4157  source ~/pyenvs/tensorflow2/bin/activate
+ 4158  nvidia-smi
+ 4159  CUDA_VISIBLE_DEVICES=2 rosrun candy trainer_candy.py
+ 4160  CUDA_VISIBLE_DEVICES= rosrun candy actor_candy.py
+ 4161  ls
+ 4162  cd src
+ 4163  ls
+ 4164  cd candy
+ 4165  ls
+ 4166  cd src
+ 4167  ls
+ 4168  rm -r save2
+ 4169  cd ..
+ 4170  CUDA_VISIBLE_DEVICES=2 rosrun candy trainer_candy.py
+ 4171  rosbag play -l dagger.bag dagger2.bag *circle*.bag *human*.bag --skip-empty=10
+ 4172  nvidia-smi
+ 4173  CUDA_VISIBLE_DEVICES=2 rosrun candy trainer_candy.py
+ 4174  z ros
+ 4175  cd src/candy/src
+ 4176  ls
+ 4177  cd save
+ 4178  ll
+ 4179  cd ..
+ 4180  cd save2
+ 4181  ls
+ 4182  ll
+ 4183  nvidia-smi
+ 4184  cd 
+ 4185  cd /data/0810
+ 4186  rosbag play -l dagger.bag dagger2.bag *circle*.bag *human*.bag --skip-empty=10
+ 4187  cd 
+ 4188  cd projects/ros_candy
+ 4189  ls
+ 4190  source devel/setup.zsh
+ 4191  source ~/pyenvs/tensorflow2/bin/activate
+ 4192  rosrun candy wrapper_candy.py -l
+ 4193  export
+ 4194  export CUDA_VISIBALE_DEVICES=0
+ 4195  export
+ 4196  cd /data/0810
+ 4197  rosbag play -l dagger.bag dagger2.bag *circle*.bag *human*.bag --skip-empty=10
+ 4198  cd projects/ros_candy
+ 4199  source devel/setup.zsh
+ 4200  source ~/pyenvs/tensorflow2/bin/activate
+ 4201  rosrun candy wrapper_candy.py -l
+ 4202  cd projects/ros_candy
+ 4203  source devel/setup.zsh
+ 4204  source ~/pyenvs/tensorflow2/bin/activate
+ 4205  rosrun candy actor_candy.py
+ 4206  cd projects/ros_candy
+ 4207  source devel/setup.zsh
+ 4208  source ~/pyenvs/tensorflow2/bin/activate
+ 4209  rosrun candy trainer_candy.py
+ 4210  rosrun candy wrapper_candy.py 
+ 4211  rosrun candy wrapper_candy.py -l
+ 4212  cd projects/ros_candy
+ 4213  ls
+ 4214  git diff
+ 4215  git log
+ 4216  git remote -v
+ 4217  git checkout -b linpan
+ 4218  git init
+ 4219  git config --global user.name "createamind"
+ 4220  git config --global user.email "328760870@qq.com"
+ 4221  git remote -v
+ 4222  git remote add origin http://github.com/createamind/ros_candy.git
+ 4223  git remote -v
+ 4224  git pull origin 
+ 4225  git checkout -b linpan
+ 4226  git branch
+ 4227  git checkout master
+ 4228  git checkout master --hard
+ 4229  git add src/
+ 4230  git commit -m "linpan's git"
+ 4231  git checkout master
+ 4232  git add 
+ 4233  git add
+ 4234  git add argparse
+ 4235  git add cv2
+ 4236  git add devel/
+ 4237  git add rospy
+ 4238  git add README.md
+ 4239  git add .gitignore
+ 4240  git commit -m "linpan"
+ 4241  git checkout master
+ 4242  git branch linpan
+ 4243  git checkout linpan
+ 4244  git pull
+ 4245  git pull remote linpan
+ 4246  bash
+ 4247  cd projects/ros_candy
+ 4248  cd 
+ 4249  cd /data/0810
+ 4250  rosbag play -l dagger.bag dagger2.bag *circle*.bag *human*.bag --skip-empty=10
+ 4251  cd projects/ros_candy
+ 4252  source devel/setup.zsh
+ 4253  source ~/pyenvs/tensorflow2/bin/activate
+ 4254  rosrun candy actor_candy.py
+ 4255  cd projects/ros_candy
+ 4256  source devel/setup.zsh
+ 4257  source ~/pyenvs/tensorflow2/bin/activate
+ 4258  rosrun candy trainer_candy.py
+ 4259  cd projects/ros_candy
+ 4260  source devel/setup.zsh
+ 4261  source ~/pyenvs/tensorflow2/bin/activate
+ 4262  rosrun candy wrapper_candy.py
+ 4263  exit
+ 4264  cd projects/ros_candy
+ 4265  source devel/setup.zsh
+ 4266  source ~/pyenvs/tensorflow2/bin/activate
+ 4267  rosrun candy wrapper_candy.py
+ 4268  exit
+ 4269  cd projects/ros_candy
+ 4270  source devel/setup.zsh
+ 4271  source ~/pyenvs/tensorflow2/bin/activate
+ 4272  rosrun candy wrapper_candy.py
+ 4273  source ~/pyenvs/tensorflow2/bin/activate
+ 4274  CUDA_VISIBLE_DEVICES=2 rosrun candy wrapper_candy.py
+ 4275  CUDA_VISIBLE_DEVICES=2 rosrun candy trainer_candy.py
+ 4276  CUDA_VISIBLE_DEVICES=2 rosrun candy actor_candy.py
+ 4277  CUDA_VISIBLE_DEVICES=2 rosrun candy wrapper_candy.py
+ 4278  CUDA_VISIBLE_DEVICES= rosrun candy actor_candy.py
+ 4279  z ros
+ 4280  gst
+ 4281  rosrun candy wrapper_candy.py -l
+ 4282  CUDA_VISIBLE_DEVICES=2 rosrun candy trainer_candy.py
+ 4283  CUDA_VISIBLE_DEVICES= rosrun candy actor_candy.py
+ 4284  tmux ls
+ 4285  tmux a -t trainer
+ 4286  export | grep ROS
+ 4287  CUDA_VISIBLE_DEVICES=0 rosrun candy trainer_candy.py
+ 4288  cd src/candy/src/
+ 4289  ls
+ 4290  cd save
+ 4291  ls
+ 4292  rm *
+ 4293  cd ..
+ 4294  CUDA_VISIBLE_DEVICES=0 rosrun candy trainer_candy.py
+ 4295  tmux ls
+ 4296  a -t rosbag
+ 4297  tmux a -t rosbag
+ 4298  tmux ls
+ 4299  tmux a -t trainer
+ 4300  tmux a -t actor
+ 4301  tmux a -t wrapper
+ 4302  CUDA_VISIBLE_DEVICES=0 rosrun candy trainer_candy.py
+ 4303  rosrun candy wrapper_candy.py -l
+ 4304  tmux a -t actor or
+ 4305  tmux a -t actor
+ 4306  CUDA_VISIBLE_DEVICES= rosrun candy actor_candy.py
+ 4307  CUDA_VISIBLE_DEVICES=0 rosrun candy trainer_candy.py
+ 4308  rosrun candy wrapper_candy.py -l
+ 4309  tmux ls
+ 4310  tmux a -t tensorboard
+ 4311  CUDA_VISIBLE_DEVICES=0 rosrun candy trainer_candy.py
+ 4312  tensorboard --logdir=./logs
+ 4313  cd src/candy/src
+ 4314  CUDA_VISIBLE_DEVICES=0 python -m cProfile -o actor.prof actor_candy.py
+ 4315  cd src/candy/src
+ 4316  ls
+ 4317  python -m cProfile -o wrapper.prof wrapper_candy.py
+ 4318  exit
+ 4319  rosrun candy wrapper_candy.py -l
+ 4320  exit
+ 4321  ex
+ 4322  exit
+ 4323  tmux new -s wrapper
+ 4324  z ros
+ 4325  source ~/pyenvs/tensorflow2/bin/activate
+ 4326  source devel/setup.zsh
+ 4327  tmux new -s wrapper
+ 4328  rosrun candy wrapper_candy.py -l
+ 4329  CUDA_VISIBLE_DEVICES=0 rosrun candy trainer_candy.py
+ 4330  tmux kill -t wrapper
+ 4331  tmux a -t wrapper
+ 4332  ps -aux | grep wrapper
+ 4333  kill -9 13118
+ 4334  rosrun candy wrapper_candy.py -l
+ 4335  CUDA_VISIBLE_DEVICES=0 python -m cProfile -o actor.prof actor_candy.py
+ 4336  ls
+ 4337  snakeviz actor.prof
+ 4338  snakeviz
+ 4339  source ~/pyenvs/tensorflow/bin/activate
+ 4340  z ros
+ 4341  cd src/candy/src
+ 4342  snakeviz actor.prof
+ 4343  ls
+ 4344  vim actor.prof
+ 4345  source ~/pyenvs/tensorflow/bin/activate
+ 4346  CUDA_VISIBLE_DEVICES=0 python -m cProfile -o actor.prof actor_candy.py
+ 4347  export PYTHONPATH=/home/kychen/pyenvs/tensorflow/lib/python3.5/site-packages:$PYTHONPATH
+ 4348  CUDA_VISIBLE_DEVICES=0 python -m cProfile -o actor.prof actor_candy.py
+ 4349  CUDA_VISIBLE_DEVICES= python -m cProfile -o actor.prof actor_candy.py
+ 4350  source ~/pyenvs/tensorflow2/bin/activate
+ 4351  CUDA_VISIBLE_DEVICES= python -m cProfile -o actor.prof actor_candy.py
+ 4352  exit
+ 4353  tmux new -s actor
+ 4354  z ros
+ 4355  source ~/pyenvs/tensorflow2/bin/activate
+ 4356  source devel/setup.zsh
+ 4357  CUDA_VISIBLE_DEVICES= python -m cProfile -o actor.prof actor_candy.py
+ 4358  cd src/candy/src
+ 4359  CUDA_VISIBLE_DEVICES= python -m cProfile -o actor.prof actor_candy.py
+ 4360  rosrun candy wrapper_candy.py -l
+ 4361  vim actor
+ 4362  vim actor.prof
+ 4363  CUDA_VISIBLE_DEVICES= rosrun candy actor_candy.py
+ 4364  nvidia-smi
+ 4365  CUDA_VISIBLE_DEVICES=0 rosrun candy actor_candy.py
+ 4366  rosrun candy wrapper_candy.py -l
+ 4367  tmxu a -t actor
+ 4368  tmux a -t actor
+ 4369  CUDA_VISIBLE_DEVICES=0 rosrun candy actor_candy.py
+ 4370  rosrun candy wrapper_candy.py -l
+ 4371  tmx a -t actor
+ 4372  tmux a -t actor
+ 4373  tmux a -t trainer
+ 4374  tmux a -t wrapper
+ 4375  rosrun candy wrapper_candy.py -l
+ 4376  CUDA_VISIBLE_DEVICES=0 rosrun candy trainer_candy.py
+ 4377  nvidia-smi
+ 4378  CUDA_VISIBLE_DEVICES=0 rosrun candy trainer_candy.py
+ 4379  CUDA_VISIBLE_DEVICES=1 rosrun candy actor_candy.py
+ 4380  rosrun candy wrapper_candy.py -l
+ 4381  CUDA_VISIBLE_DEVICES=0 rosrun candy trainer_candy.py
+ 4382  tmux a -t trainer
+ 4383  CUDA_VISIBLE_DEVICES=0 rosrun candy trainer_candy.py
+ 4384  exit
+ 4385  CUDA_VISIBLE_DEVICES=1 rosrun candy actor_candy.py
+ 4386  cd /tmp
+ 4387  cd logs
+ 4388  ll
+ 4389  rm -r 2018-08-25*
+ 4390  rm -r 2018-08-26*
+ 4391  rm -r 2018-08-24*
+ 4392  rm -r 2018-08-23*
+ 4393  rm -r 2018-08-22*
+ 4394  ls
+ 4395  rm -r 2018-08-13*
+ 4396  ls
+ 4397  tmux ls
+ 4398  exit
+ 4399  z ros
+ 4400  rm -rf .git/
+ 4401  cd ..
+ 4402  ls
+ 4403  cd 0824
+ 4404  ls
+ 4405  ll
+ 4406  rosbag play -l 2018-08-24-17-09-16.bag
+ 4407  rosbag play -l 2018-08-24-17-09-16.bag --skip-empty=10
+ 4408  tmux ls
+ 4409  tmux a -t actor
+ 4410  rosrun candy wrapper_candy.py -l
+ 4411  exit
+ 4412  tmux a -t wrapper
+ 4413  tmux a -t actor
+ 4414  tmux new -s actor
+ 4415  z ros
+ 4416  ls
+ 4417  CUDA_VISIBLE_DEVICES=1 rosrun candy actor_candy.py
+ 4418  source devel/setup.zsh
+ 4419  source ~/pyenvs/tensorflow2/bin/activate
+ 4420  CUDA_VISIBLE_DEVICES=1 rosrun candy actor_candy.py
+ 4421  ps -aux | grep actor
+ 4422  ps -aux | grep candy
+ 4423  kill -9 21522
+ 4424  CUDA_VISIBLE_DEVICES= rosrun candy actor_candy.py
+ 4425  rosrun candy wrapper_candy.py -l
+ 4426  CUDA_VISIBLE_DEVICES= rosrun candy actor_candy.py
+ 4427  rosrun candy wrapper_candy.py -l
+ 4428  CUDA_VISIBLE_DEVICES= rosrun candy actor_candy.py
+ 4429  CUDA_VISIBLE_DEVICES=1 rosrun candy actor_candy.py
+ 4430  tmux ls
+ 4431  tmux a -t trainer
+ 4432  CUDA_VISIBLE_DEVICES=0 rosrun candy trainer_candy.py
+ 4433  rosrun candy wrapper_candy.py -l
+ 4434  CUDA_VISIBLE_DEVICES=0 rosrun candy trainer_candy.py
+ 4435  rosrun candy wrapper_candy.py -l
+ 4436  CUDA_VISIBLE_DEVICES=0 rosrun candy actor_candy.py
+ 4437  CUDA_VISIBLE_DEVICES= rosrun candy actor_candy.py
+ 4438  CUDA_VISIBLE_DEVICES=0 rosrun candy actor_candy.py
+ 4439  CUDA_VISIBLE_DEVICES=1 rosrun candy trainer_candy.py
+ 4440  rosrun candy wrapper_candy.py -l
+ 4441  rosbag play -l -r 3.0 2018-08-24-17-09-16.bag --skip-empty=10
+ 4442  rosrun candy wrapper_candy.py -l
+ 4443  rosbag play -l 2018-08-24-17-09-16.bag --skip-empty=10
+ 4444  CUDA_VISIBLE_DEVICES=1 rosrun candy trainer_candy.py
+ 4445  ps -aux | grep trainer
+ 4446  kill -9 15055
+ 4447  CUDA_VISIBLE_DEVICES=1 rosrun candy trainer_candy.py
+ 4448  ps -aux | grep trainer
+ 4449  kill -9 17762
+ 4450  CUDA_VISIBLE_DEVICES=1 rosrun candy trainer_candy.py
+ 4451  z ros
+ 4452  cd src/candy/src
+ 4453  ls
+ 4454  cd savenew
+ 4455  ll -h
+ 4456  tmux a -t actor
+ 4457  CUDA_VISIBLE_DEVICES=1 rosrun candy trainer_candy.py
+ 4458  CUDA_VISIBLE_DEVICES=0 rosrun candy actor_candy.py
+ 4459  rosrun candy wrapper_candy.py -l
+ 4460  rm savenew/*
+ 4461  CUDA_VISIBLE_DEVICES=0 rosrun candy actor_candy.py
+ 4462  CUDA_VISIBLE_DEVICES=1 rosrun candy trainer_candy.py
+ 4463  rosrun candy wrapper_candy.py -l -t
+ 4464  z ros
+ 4465  ls
+ 4466  cd src
+ 4467  cd candy
+ 4468  ls
+ 4469  cd src
+ 4470  ls
+ 4471  cd savenew
+ 4472  ll
+ 4473  ll -h
+ 4474  CUDA_VISIBLE_DEVICES=1 rosrun candy trainer_candy.py
+ 4475  rm savenew/*
+ 4476  CUDA_VISIBLE_DEVICES=1 rosrun candy trainer_candy.py
+ 4477  CUDA_VISIBLE_DEVICES=0 rosrun candy actor_candy.py
+ 4478  nvidia-smi
+ 4479  cd /tmp
+ 4480  ls
+ 4481  cd lgs
+ 4482  cd logs
+ 4483  ls
+ 4484  rm -r 2018-08-27*
+ 4485  rm -r 2018-08-28_0*
+ 4486  rm -r 2018-08-28_10*
+ 4487  rm -r 2018-08-28_11*
+ 4488  rm -r 2018-08-28_12*
+ 4489  rm -r 2018-08-28_13*
+ 4490  rm -r 2018-08-28_14-0*
+ 4491  rm -r 2018-08-28_14-1*
+ 4492  rm -r 2018-08-28_14-2*
+ 4493  rm -r 2018-08-28_14-3*
+ 4494  CUDA_VISIBLE_DEVICES=0 rosrun candy actor_candy.py
+ 4495  CUDA_VISIBLE_DEVICES=1 rosrun candy trainer_candy.py
+ 4496  CUDA_VISIBLE_DEVICES=0 rosrun candy actor_candy.py
+ 4497  rosrun candy wrapper_candy.py -l -t
+ 4498  CUDA_VISIBLE_DEVICES=1 rosrun candy trainer_candy.py
+ 4499  ll
+ 4500  exit
+ 4501  ls
+ 4502  rm -r 2018-08-28_14*
+ 4503  rm -r 2018-08-28_15-0*
+ 4504  rm -r 2018-08-28_15-1*
+ 4505  rosrun candy wrapper_candy.py -l -t
+ 4506  CUDA_VISIBLE_DEVICES=1 rosrun candy trainer_candy.py
+ 4507  rosrun candy wrapper_candy.py -l -t
+ 4508  CUDA_VISIBLE_DEVICES=1 rosrun candy trainer_candy.py
+ 4509  rosrun candy wrapper_candy.py -l -t
+ 4510  rm -r /tmp/logs/*
+ 4511  CUDA_VISIBLE_DEVICES=1 rosrun candy trainer_candy.py
+ 4512  rm savenew/*
+ 4513  CUDA_VISIBLE_DEVICES=1 rosrun candy trainer_candy.py
+ 4514  CUDA_VISIBLE_DEVICES=0 rosrun candy actor_candy.py
+ 4515  ps -aux | grep wrapper
+ 4516  kill -9 11940
+ 4517  exit
+ 4518  ls
+ 4519  rm -r 2018-08-28_15-*
+ 4520  ls
+ 4521  CUDA_VISIBLE_DEVICES=1 rosrun candy trainer_candy.py
+ 4522  nvidia-smi
+ 4523  exit
+ 4524  z ros
+ 4525  z src
+ 4526  pwd
+ 4527  ls
+ 4528  cd savenew
+ 4529  ls
+ 4530  ll
+ 4531  l
+ 4532  ll
+ 4533  ls
+ 4534  ls
+ 4535  cd ..
+ 4536  ls
+ 4537  cd 0828
+ 4538  ls
+ 4539  sudo chmod a+x 0824
+ 4540  cd 0824
+ 4541  ls
+ 4542  ll
+ 4543  cd ..
+ 4544  sudo chmod a+x 0828
+ 4545  cd 0828
+ 4546  ls
+ 4547  cd ..
+ 4548  sudo chmod -r 777 0828
+ 4549  sudo chmod -R 777 0828
+ 4550  cd 0828
+ 4551  ls
+ 4552  ll
+ 4553  mv 2018-08-28-17-53-06.bag right1.bag
+ 4554  mv 2018-08-28-17-57-16.bag right2.bag
+ 4555  mv 2018-08-28-18-01-50.bag left2.bag
+ 4556  ls
+ 4557  rosbag play -l left1.bag right1.bag --skip-empty=10
+ 4558  ll
+ 4559  rosbag play -l left1.bag --skip-empty=10
+ 4560  rosbag play -l right1.bag --skip-empty=10
+ 4561  rosbag play -l right2.bag --skip-empty=10
+ 4562  rosbag play -l left2.bag --skip-empty=10
+ 4563  rosbag play -l left2.bag right2.bag --skip-empty=10
+ 4564  CUDA_VISIBLE_DEVICES=0 rosrun candy actor_candy.py
+ 4565  rosrun candy wrapper_candy.py -l -t
+ 4566  CUDA_VISIBLE_DEVICES=1 rosrun candy trainer_candy.py
+ 4567  nvidia-smi
+ 4568  z ros
+ 4569  ls
+ 4570  cd src
+ 4571  ls
+ 4572  cd candy
+ 4573  ls
+ 4574  cd src
+ 4575  ls
+ 4576  cd savenew
+ 4577  ls
+ 4578  rm *
+ 4579  rosrun candy wrapper_candy.py -l -t
+ 4580  CUDA_VISIBLE_DEVICES=1 rosrun candy trainer_candy.py
+ 4581  nvidia-smi
+ 4582  CUDA_VISIBLE_DEVICES=１ rosrun candy actor_candy.py
+ 4583  CUDA_VISIBLE_DEVICES=1 rosrun candy actor_candy.py
+ 4584  CUDA_VISIBLE_DEVICES=0 rosrun candy trainer_candy.py
+ 4585  cd /tmp/logs
+ 4586  ls
+ 4587  CUDA_VISIBLE_DEVICES=1 rosrun candy actor_candy.py
+ 4588  CUDA_VISIBLE_DEVICES=0 rosrun candy trainer_candy.py
+ 4589  rosrun candy wrapper_candy.py -l -t
+ 4590  ls
+ 4591  z ros
+ 4592  ls
+ 4593  cd src
+ 4594  ls
+ 4595  cd candy
+ 4596  ls
+ 4597  cd ..
+ 4598  ls
+ 4599  cd ..
+ 4600  source ~/pyenvs/tensorflow2/bin/activate
+ 4601  source devel/setup.zsh
+ 4602  export ROS_MASTER_URI=http://jz:7777/
+ 4603  z 0828
+ 4604  ls
+ 4605  rosbag play -l left2.bag right2.bag --skip-empty=10
+ 4606  roscore -p 7777
+ 4607  z ros
+ 4608  export ROS_MASTER_URI=http://jz:7777/
+ 4609  CUDA_VISIBLE_DEVICES=1 rosrun candy trainer_candy.py
+ 4610  source devel/setup.zsh
+ 4611  nvidia-smi
+ 4612  source ~/pyenvs/tensorflow2/bin/activate
+ 4613  CUDA_VISIBLE_DEVICES=1 rosrun candy trainer_candy.py
+ 4614  CUDA_VISIBLE_DEVICES=2 rosrun candy actor_candy.py
+ 4615  rosrun candy wrapper_candy.py -l -t
+ 4616  source devel/setup.zsh
+ 4617  source ~/pyenvs/tensorflow2/bin/activate
+ 4618  rosrun candy wrapper_candy.py -l -t
+ 4619  CUDA_VISIBLE_DEVICES=1 rosrun candy trainer_candy.py
+ 4620  CUDA_VISIBLE_DEVICES=2 rosrun candy actor_candy.py
+ 4621  z tmp
+ 4622  cd logs
+ 4623  ls
+ 4624  rm -r 2018-08-28_15-52-09
+ 4625  rm -r 2018-08-28_18-4*
+ 4626  rm -r 2018-08-28_20-15-19
+ 4627  rm -r 2018-08-28_20-18-17/
+ 4628  rm -r 2018-08-29_09-2*
+ 4629  rm -r 2018-08-29_09-34-3*
+ 4630  rm -r 2018-08-29_09-38-15
+ 4631  rosrun candy wrapper_candy.py -l -t
+ 4632  CUDA_VISIBLE_DEVICES=0 rosrun candy trainer_candy.py
+ 4633  CUDA_VISIBLE_DEVICES=1 rosrun candy actor_candy.py
+ 4634  CUDA_VISIBLE_DEVICES=1 rosrun candy trainer_candy.py
+ 4635  rm -r 2018-08-29_09-39-02
+ 4636  rm -r 2018-08-29_09-57-14
+ 4637  exit
+ 4638  roscore
+ 4639  z ros
+ 4640  source ~/pyenvs/tensorflow2/bin/activate
+ 4641  source devel/setup.zsh
+ 4642  CUDA_VISIBLE_DEVICES=1 rosrun candy trainer_candy.py
+ 4643  z ros
+ 4644  source ~/pyenvs/tensorflow2/bin/activate
+ 4645  source devel/setup.zsh
+ 4646  CUDA_VISIBLE_DEVICES=2 rosrun candy actor_candy.py
+ 4647  z ros
+ 4648  rosrun candy wrapper_candy.py -l -t
+ 4649  source devel/setup.zsh
+ 4650  source ~/pyenvs/tensorflow2/bin/activate
+ 4651  CUDA_VISIBLE_DEVICES=２ rosrun candy trainer_candy.py
+ 4652  CUDA_VISIBLE_DEVICES=2 rosrun candy trainer_candy.py
+ 4653  CUDA_VISIBLE_DEVICES=1 rosrun candy actor_candy.py
+ 4654  rosrun candy wrapper_candy.py -l -t
+ 4655  z 0828
+ 4656  rosbag play -l left2.bag right2.bag --skip-empty=10
+ 4657  tmux ls
+ 4658  tmux new -s tensorboard
+ 4659  z /tmp
+ 4660  tensorboard -logdir=./logs
+ 4661  source ~/pyenvs/tensorflow/bin/activate
+ 4662  tensorboard -logdir=./logs
+ 4663  roscore -p 7777
+ 4664  export ROS_MASTER_URI=http://jz:7777/
+ 4665  z ros
+ 4666  source ~/pyenvs/tensorflow/bin/activate
+ 4667  source devel/setup.zsh
+ 4668  CUDA_VISIBLE_DEVICES=1 rosrun candy actor_candy.py
+ 4669  z ros
+ 4670  source ~/pyenvs/tensorflow/bin/activate
+ 4671  ps -aux | grep actor
+ 4672  kill -9 15669
+ 4673  source devel/setup.zsh
+ 4674  CUDA_VISIBLE_DEVICES=0 rosrun candy trainer_candy.py
+ 4675  z ros
+ 4676  rosrun candy wrapper_candy.py -l -t
+ 4677  source devel/setup.zsh
+ 4678  rosrun candy wrapper_candy.py -l -t
+ 4679  source ~/pyenvs/tensorflow/bin/activate
+ 4680  rosrun candy wrapper_candy.py -l -t
+ 4681  source ~/pyenvs/tensorflow2/bin/activate
+ 4682  rosrun candy wrapper_candy.py -l -t
+ 4683  source ~/pyenvs/tensorflow2/bin/activate
+ 4684  CUDA_VISIBLE_DEVICES=1 rosrun candy actor_candy.py
+ 4685  source ~/pyenvs/tensorflow2/bin/activate
+ 4686  CUDA_VISIBLE_DEVICES=1 rosrun candy actor_candy.py
+ 4687  CUDA_VISIBLE_DEVICES=0 rosrun candy trainer_candy.py
+ 4688  ps -aux | grep actor
+ 4689  kill -9 21679
+ 4690  CUDA_VISIBLE_DEVICES=1 rosrun candy actor_candy.py
+ 4691  z 0828
+ 4692  rosbag play -l left2.bag right2.bag --skip-empty=10
+ 4693  z src
+ 4694  ls
+ 4695  cd modules
+ 4696  ls
+ 4697  vim ppo.py
+ 4698  exit
+ 4699  ls
+ 4700  z tmp
+ 4701  ls
+ 4702  cd logs
+ 4703  ls
+ 4704  rm -r 2018-08-29_10*
+ 4705  ls
+ 4706  rm -r 2018-08-29_11-15-38
+ 4707  rm -r 2018-08-29_13-44-41
+ 4708  rosbag play -l left1.bag right1.bag --skip-empty=10
+ 4709  rosbag play -l left1.bag --skip-empty=10
+ 4710  rosrun candy wrapper_candy.py -l
+ 4711  rosbag play -l left1.bag right1.bag --skip-empty=10
+ 4712  rosbag play -l left2.bag right2.bag --skip-empty=10
+ 4713  rosrun candy wrapper_candy.py -l -t
+ 4714  CUDA_VISIBLE_DEVICES=1 rosrun candy actor_candy.py
+ 4715  CUDA_VISIBLE_DEVICES=0 rosrun candy trainer_candy.py
+ 4716  rosrun candy wrapper_candy.py -l -t
+ 4717  nvidia-smi
+ 4718  CUDA_VISIBLE_DEVICES=0 rosrun candy trainer_candy.py
+ 4719  nvidia-smi
+ 4720  CUDA_VISIBLE_DEVICES=2 rosrun candy trainer_candy.py
+ 4721  nvidia-smi
+ 4722  cd src/candy/src
+ 4723  ls
+ 4724  rm saveimage/*
+ 4725  CUDA_VISIBLE_DEVICES=2 rosrun candy trainer_candy.py
+ 4726  rm saveimage/*
+ 4727  CUDA_VISIBLE_DEVICES=2 rosrun candy trainer_candy.py
+ 4728  CUDA_VISIBLE_DEVICES=1 rosrun candy actor_candy.py
+ 4729  CUDA_VISIBLE_DEVICES=2 rosrun candy trainer_candy.py
+ 4730  CUDA_VISIBLE_DEVICES=1 rosrun candy actor_candy.py
+ 4731  CUDA_VISIBLE_DEVICES=2 rosrun candy trainer_candy.py
+ 4732  z data
+ 4733  ls
+ 4734  cd /media/sdc
+ 4735  ls
+ 4736  sudo -s
+ 4737  cd /media/sdc
+ 4738  ls
+ 4739  cd 06D8-B798
+ 4740  ls
+ 4741  cp -r 0829 /data
+ 4742  cd /data
+ 4743  exit
+ 4744  ls
+ 4745  cd 0829
+ 4746  ls
+ 4747  rosbag play -l left2.bag right2.bag ../0829/*.bag --skip-empty=10
+ 4748  rosbag play -l left2.bag right2.bag ../*.bag --skip-empty=10
+ 4749  rosbag play -l left2.bag right2.bag ../0829/*.bag --skip-empty=10
+ 4750  CUDA_VISIBLE_DEVICES=2 rosrun candy trainer_candy.py
+ 4751  rosbag play -l left1.bag --skip-empty=10
+ 4752  rosrun candy wrapper_candy.py -l
+ 4753  rosbag play -l left2.bag right2.bag ../0829/*.bag --skip-empty=10
+ 4754  rosrun candy wrapper_candy.py -l -t
+ 4755  rm src/candy/src/saveimage/multimodal.data-00000-of-00001 src/candy/src/saveimage/multimodal.index src/candy/src/saveimage/ppo.data-00000-of-00001 src/candy/src/saveimage/ppo.index 
+ 4756  CUDA_VISIBLE_DEVICES=1 rosrun candy actor_candy.py
+ 4757  ls
+ 4758  rm saveimage/*
+ 4759  CUDA_VISIBLE_DEVICES=2 rosrun candy trainer_candy.py
+ 4760  CUDA_VISIBLE_DEVICES=1 rosrun candy actor_candy.py
+ 4761  z src
+ 4762  cd saveimage
+ 4763  ls
+ 4764  ll
+ 4765  CUDA_VISIBLE_DEVICES=2 rosrun candy trainer_candy.py
+ 4766  rm saveimage/*
+ 4767  CUDA_VISIBLE_DEVICES=2 rosrun candy trainer_candy.py
+ 4768  CUDA_VISIBLE_DEVICES=1 rosrun candy actor_candy.py
+ 4769  rosbag play -l left2.bag right2.bag --skip-empty=10
+ 4770  CUDA_VISIBLE_DEVICES=2 rosrun candy trainer_candy.py
+ 4771  rosbag play -l right2.bag --skip-empty=10
+ 4772  ls
+ 4773  mv saveimage saveimage2
+ 4774  mkdir saveimage
+ 4775  CUDA_VISIBLE_DEVICES=2 rosrun candy trainer_candy.py
+ 4776  CUDA_VISIBLE_DEVICES=1 rosrun candy actor_candy.py
+ 4777  ls
+ 4778  gst
+ 4779  ssh -y 
+ 4780  cd /media/sdc
+ 4781  ls
+ 4782  sudo -s
+ 4783  cd /media/sdc/06D8-B798/
+ 4784  ls
+ 4785  cp -r 0830 /data
+ 4786  cd /data
+ 4787  ls
+ 4788  cd 0830
+ 4789  ls
+ 4790  rosbag reindex *.bag.active
+ 4791  ls
+ 4792  ll
+ 4793  rosbag play -l 2018-08-30-10-53-29.bag.active --skip-empty=10
+ 4794  cd ..
+ 4795  ls
+ 4796  cd 0830
+ 4797  ls
+ 4798  rosbag play 2018-08-30-10-53-29.bag.active -l
+ 4799  cd 0830
+ 4800  ls
+ 4801  cd ..
+ 4802  cd 0830
+ 4803  rosbag play -l  --skip-empty=10 
+ 4804  ls
+ 4805  rosbag play -l 2018-08-30-10-53-29.bag.active --skip-empty=10 
+ 4806  z ros
+ 4807  cd ..
+ 4808  ls
+ 4809  mkdir old
+ 4810  cd old
+ 4811  ls
+ 4812  catkin_make
+ 4813  ls
+ 4814  fls
+ 4815  ls
+ 4816  exit
+ 4817  z ros
+ 4818  cd ..
+ 4819  cd old
+ 4820  ls
+ 4821  catkin_make
+ 4822  source ~/pyenvs/tensorflow2/bin/activate
+ 4823  source devel/setup.zsh
+ 4824  cd ..
+ 4825  ls
+ 4826  cd candy
+ 4827  ls
+ 4828  cd ..
+ 4829  ls
+ 4830  cd old
+ 4831  ls
+ 4832  cd ../../../
+ 4833  ls
+ 4834  cd ..
+ 4835  ls
+ 4836  cd old
+ 4837  l
+ 4838  ls
+ 4839  cd ..
+ 4840  ls
+ 4841  cd 0810
+ 4842  ls
+ 4843  rosbag play -l rightcircle_1.bag rightcircle_2.bag --skip-empty=40
+ 4844  rosrun candy wrapper_candy.py -l
+ 4845  source devel/setup.zsh
+ 4846  CUDA_VISIBLE_DEVICES=1 rosrun candy actor_candy.py
+ 4847  ls
+ 4848  cd src/candy/src
+ 4849  ls
+ 4850  chmod a+x actor_candy.py wrapper_candy.py trainer_candy.py
+ 4851  rosrun candy wrapper_candy.py -l
+ 4852  source devel/setup.zsh
+ 4853  CUDA_VISIBLE_DEVICES=1 rosrun candy actor_candy.py
+ 4854  CUDA_VISIBLE_DEVICES=2 rosrun candy trainer_candy.py
+ 4855  export ROS_MASTER_URI=http://jz:7777/
+ 4856  export ROS_MASTER_URI=http://jz:7777/
+ 4857  export ROS_MASTER_URI=http://jz:7777/
+ 4858  CUDA_VISIBLE_DEVICES=2 rosrun candy trainer_candy.py
+ 4859  CUDA_VISIBLE_DEVICES=1 rosrun candy actor_candy.py
+ 4860  rosrun candy wrapper_candy.py -l
+ 4861  rosbag play -l rightcircle_1.bag rightcircle_2.bag --skip-empty=40
+ 4862  nvidia-smi
+ 4863  CUDA_VISIBLE_DEVICES=2 rosrun candy trainer_candy.py
+ 4864  z old
+ 4865  ls
+ 4866  cd ..
+ 4867  ls
+ 4868  cd ros_candy
+ 4869  ls
+ 4870  cd src
+ 4871  ls
+ 4872  cd candy
+ 4873  ls
+ 4874  cd src
+ 4875  ls
+ 4876  cp save0810noon ~/projects/old/src/candy/src
+ 4877  ls
+ 4878  cd src/candy/src
+ 4879  ls
+ 4880  cp -r save0810noon ~/projects/old/src/candy/src
+ 4881  ls
+ 4882  mv save savetmp
+ 4883  mv save0810noon save
+ 4884  CUDA_VISIBLE_DEVICES=1 rosrun candy actor_candy.py
+ 4885  CUDA_VISIBLE_DEVICES=2 rosrun candy trainer_candy.py
+ 4886  rosrun candy wrapper_candy.py -l
+ 4887  rosrun candy wrapper_candy.py -l -t
+ 4888  rosrun candy wrapper_candy.py -l
+ 4889  ls
+ 4890  cd src
+ 4891  ls
+ 4892  cd candy
+ 4893  ls
+ 4894  cd src
+ 4895  ls
+ 4896  cd save
+ 4897  ls
+ 4898  cd ..
+ 4899  ls
+ 4900  cp -r save save0810
+ 4901  cd save
+ 4902  ls
+ 4903  rm ppo*
+ 4904  rosrun candy wrapper_candy.py -l
+ 4905  cd ..
+ 4906  CUDA_VISIBLE_DEVICES=1 rosrun candy actor_candy.py
+ 4907  CUDA_VISIBLE_DEVICES=2 rosrun candy trainer_candy.py
+ 4908  rosrun candy wrapper_candy.py -l -t
+ 4909  cd ..
+ 4910  ls
+ 4911  cd ..
+ 4912  ls
+ 4913  cd ..
+ 4914  ls
+ 4915  cd ..
+ 4916  ls
+ 4917  git clone https://github.com/chenkaiyu1997/roomzero
+ 4918  ls
+ 4919  cd roomzero
+ 4920  ls
+ 4921  cd ..
+ 4922  exit
+ 4923  ls
+ 4924  ll
+ 4925  cd ..
+ 4926  ls
+ 4927  cd 0810
+ 4928  ls
+ 4929  rosbag play -l dagger*.bag human*.bag left*.bag right*.bag --skip-empty=40
+ 4930  CUDA_VISIBLE_DEVICES=1 rosrun candy actor_candy.py
+ 4931  rosrun candy wrapper_candy.py -l -t
+ 4932  ls
+ 4933  cd src
+ 4934  ls
+ 4935  cd candy
+ 4936  lss
+ 4937  ls
+ 4938  cd src
+ 4939  ls
+ 4940  cd saveimage
+ 4941  ls
+ 4942  mv saveimage saveimage2
+ 4943  cd ..
+ 4944  cd saveimage
+ 4945  ls
+ 4946  rm *
+ 4947  cd ..
+ 4948  CUDA_VISIBLE_DEVICES=0 rosrun candy trainer_candy.py
+ 4949  CUDA_VISIBLE_DEVICES=1 rosrun candy actor_candy.py
+ 4950  CUDA_VISIBLE_DEVICES=0 rosrun candy trainer_candy.py
+ 4951  CUDA_VISIBLE_DEVICES=1 rosrun candy actor_candy.py
+ 4952  rosrun candy wrapper_candy.py -l -t
+ 4953  rm saveimage/*
+ 4954  rm src/candy/src/saveimage/*
+ 4955  CUDA_VISIBLE_DEVICES=1 rosrun candy actor_candy.py
+ 4956  rosrun candy wrapper_candy.py -l -t
+ 4957  CUDA_VISIBLE_DEVICES=1 rosrun candy actor_candy.py
+ 4958  CUDA_VISIBLE_DEVICES=0 rosrun candy trainer_candy.py
+ 4959  rosrun candy wrapper_candy.py -l -t
+ 4960  CUDA_VISIBLE_DEVICES=0 rosrun candy trainer_candy.py
+ 4961  rm src/candy/src/saveimage/*
+ 4962  CUDA_VISIBLE_DEVICES=1 rosrun candy actor_candy.py
+ 4963  rosrun candy wrapper_candy.py -l -t
+ 4964  CUDA_VISIBLE_DEVICES=0 rosrun candy trainer_candy.py
+ 4965  CUDA_VISIBLE_DEVICES=1 rosrun candy actor_candy.py
+ 4966  rosrun candy wrapper_candy.py -l -t
+ 4967  rm src/candy/src/saveimage/*
+ 4968  CUDA_VISIBLE_DEVICES=1 rosrun candy actor_candy.py
+ 4969  CUDA_VISIBLE_DEVICES=0 rosrun candy trainer_candy.py
+ 4970  ls
+ 4971  ll
+ 4972  rosrun candy wrapper_candy.py -l -t
+ 4973  rosbag play 2018-08-30-10-53-29.bag.active -l
+ 4974  rm src/candy/src/saveimage/*
+ 4975  CUDA_VISIBLE_DEVICES=0 rosrun candy trainer_candy.py
+ 4976  CUDA_VISIBLE_DEVICES=1 rosrun candy actor_candy.py
+ 4977  rm src/candy/src/saveimage/*
+ 4978  CUDA_VISIBLE_DEVICES=1 rosrun candy actor_candy.py
+ 4979  CUDA_VISIBLE_DEVICES=0 rosrun candy trainer_candy.py
+ 4980  rosrun candy wrapper_candy.py -l -t
+ 4981  ls
+ 4982  z ros
+ 4983  pwd
+ 4984  cd /tmp
+ 4985  ls
+ 4986  ll
+ 4987  cd logs
+ 4988  ls
+ 4989  ll
+ 4990  rm *
+ 4991  rm -r *
+ 4992  ls
+ 4993  z ros
+ 4994  z 0830
+ 4995  ls
+ 4996  rm *.orig.*
+ 4997  sudo rm *.orig.*
+ 4998  ls
+ 4999  cd ..
+ 5000  ls
+ 5001  cd 0905
+ 5002  ls
+ 5003  ll
+ 5004  mv 2018-09-05-20-44-33.bag wayback.bag
+ 5005  ls
+ 5006  cd ..
+ 5007  ls
+ 5008  cd 0829
+ 5009  ls
+ 5010  ll
+ 5011  cd ..
+ 5012  ls
+ 5013  cd 0828
+ 5014  ls
+ 5015  cd ..
+ 5016  ls
+ 5017  cd 0829
+ 5018  ls
+ 5019  rosbag play betterdagger.bag -l
+ 5020  roscore
+ 5021  rosbag play betterdagger.bag -l
+ 5022  rostopic list
+ 5023  rosbag play betterdagger.bag -l -r 10
+ 5024  pwd
+ 5025  ls
+ 5026  cd ..
+ 5027  ls
+ 5028  cd 0820
+ 5029  cd 0830
+ 5030  ls
+ 5031  cd ..
+ 5032  ls
+ 5033  cd 0905
+ 5034  ls
+ 5035  ll
+ 5036  mkdir test
+ 5037  mv wayback.bag test/
+ 5038  cd ..
+ 5039  ls
+ 5040  cd 0828
+ 5041  ll
+ 5042  rm *.orig.*
+ 5043  ls
+ 5044  cd ..
+ 5045  ls
+ 5046  cd 0824
+ 5047  ls
+ 5048  ll
+ 5049  cd ..
+ 5050  ls
+ 5051  cd 0824
+ 5052  ls
+ 5053  ll
+ 5054  cd ..
+ 5055  ls
+ 5056  cd 0828
+ 5057  ls
+ 5058  rosbag play left1.bag -l -r 10
+ 5059  ls
+ 5060  rostopic list
+ 5061  ls
+ 5062  ll
+ 5063  cd ..
+ 5064  ls
+ 5065  cd 0824
+ 5066  ls
+ 5067  cd ..
+ 5068  cd 0828
+ 5069  ls
+ 5070  ll
+ 5071  roscore -p 7777&
+ 5072  ls
+ 5073  z ros
+ 5074  ls
+ 5075  cd src
+ 5076  ls
+ 5077  cd candy
+ 5078  ls
+ 5079  cd src
+ 5080  ls
+ 5081  zsh run.sh
+ 5082  fg
+ 5083  job
+ 5084  jobs
+ 5085  rosbag play /data/0824/left1.bag -l -r 10
+ 5086  roscore&
+ 5087  /data/0824/left1.bag
+ 5088  rosbag play /data/0824/left1.bag -l -r 10
+ 5089  cd /data
+ 5090  cd 0824
+ 5091  ls
+ 5092  cd ..
+ 5093  cd 0828
+ 5094  ls
+ 5095  cd ..
+ 5096  ls
+ 5097  jobs
+ 5098  fg
+ 5099  exit
+ 5100  z ros
+ 5101  ls
+ 5102  cd src/candy/src
+ 5103  ls
+ 5104  zsh run.sh
+ 5105  fg
+ 5106  jobs -p | xargs kill
+ 5107  jobs
+ 5108  z ros
+ 5109  ls
+ 5110  rm src/candy/src/run.sh
+ 5111  ls
+ 5112  zsh run.sh
+ 5113  z ros
+ 5114  zsh run.sh
+ 5115  ls
+ 5116  gst
+ 5117  ssh -y 
+ 5118  nvidia-smi
+ 5119  ps -aux | grep 13208
+ 5120  ps -aux | grep 7258
+ 5121  ps -aux | grep 18456
+ 5122  ps -aux | grep rosbag
+ 5123  kill -9 13923
+ 5124  kill -9 13982
+ 5125  kill -9 17679
+ 5126  kill -9 17739
+ 5127  kill -9 18454
+ 5128  kill -9 18515
+ 5129  kill -9 19330
+ 5130  ps -aux | grep rosbag
+ 5131  ps -aux | grep wrapper
+ 5132  ps -aux | grep trainer
+ 5133  kill -9 18456
+ 5134  roscore&
+ 5135  ps -aux | grep trainer
+ 5136  ps -aux | grep roscore
+ 5137  kill -9 12359
+ 5138  kill -9 12350
+ 5139  ls
+ 5140  z ros
+ 5141  ls
+ 5142  zsh run.sh
+ 5143  fg
+ 5144  jobs
+ 5145  jobs -p | xargs kill
+ 5146  kill $(jobs -p)
+ 5147  kill -9 $(jobs -p)
+ 5148  ls
+ 5149  ps -aux | grep trainer
+ 5150  kill -9 21319
+ 5151  ps -aux | grep wrapper
+ 5152  kill -9 21318
+ 5153  ps -aux | grep roscore
+ 5154  ps -aux | grep rosbag
+ 5155  fg
+ 5156  fg %1
+ 5157  %1
+ 5158  %!
+ 5159  5%1
+ 5160  jobs
+ 5161  %%
+ 5162  %+
+ 5163  %-
+ 5164  bg
+ 5165  exit
+ 5166  kill -9 21317
+ 5167  ps -aux | grep rosbag
+ 5168  kill -9 213７９
+ 5169  kill -9 21379
+ 5170  ps -aux | grep rosbag
+ 5171  rosbag&
+ 5172  jobs
+ 5173  roscore -p 12312&
+ 5174  sdaf
+ 5175  jobs
+ 5176  ls
+ 5177  jobs
+ 5178  kill %1
+ 5179  z ros
+ 5180  ls
+ 5181  source run.sh
+ 5182  jobs
+ 5183  kill %3
+ 5184  kill %4
+ 5185  kill %5
+ 5186  jobs
+ 5187  kill %3
+ 5188  jobs
+ 5189  ps -aux | grep roscore
+ 5190  roscore -p 8989
+ 5191  ps -aux | grep core
+ 5192  kill -9 12448
+ 5193  roscore -p 8989
+ 5194  source run.sh
+ 5195  jobs
+ 5196  kill %1
+ 5197  kill %2
+ 5198  kill %3
+ 5199  kill %4
+ 5200  kill %5
+ 5201  kill $(jobs -p)
+ 5202  source run.sh
+ 5203  kill $(jobs -p)
+ 5204  jobs
+ 5205  for i in {1..5}; do kill %$i; done
+ 5206  jobs
+ 5207  source run.sh
+ 5208  jobs
+ 5209  kill %2
+ 5210  source run.sh
+ 5211  jobs
+ 5212  %3
+ 5213  jobs
+ 5214  for i in {1..5}; do kill %$i; done
+ 5215  jobs
+ 5216  source run.sh
+ 5217  jobs
+ 5218  stty -tostop
+ 5219  jobs
+ 5220  %3
+ 5221  for i in {1..5}; do kill %$i; done
+ 5222  ls
+ 5223  rm -r /tmp/logs/*
+ 5224  source run.sh
+ 5225  %3
+ 5226  for i in {1..5}; do kill %$i; done
+ 5227  source run.sh
+ 5228  %3
+ 5229  for i in {1..5}; do kill %$i; done
+ 5230  source run.sh
+ 5231  %3
+ 5232  for i in {1..5}; do kill %$i; done
+ 5233  source run.sh
+ 5234  for i in {1..5}; do kill %$i; done
+ 5235  source run.sh
+ 5236  for i in {1..5}; do kill %$i; done
+ 5237  jobs
+ 5238  source run.sh
+ 5239  for i in {1..5}; do kill %$i; done
+ 5240  source run.sh
+ 5241  for i in {1..5}; do kill %$i; done
+ 5242  rm -r /tmp/logs/*
+ 5243  source run.sh
+ 5244  for i in {1..5}; do kill %$i; done
+ 5245  rm -r /tmp/logs/*
+ 5246  source run.sh
+ 5247  z ros
+ 5248  ls
+ 5249  source run.sh
+ 5250  nvidia-smi
+ 5251  for i in {1..5}; do kill %$i; done
+ 5252  source run.sh
+ 5253  rm -r /tmp/logs/2018-09-07_16-25-54320tian
+ 5254  nvidia-smi
+ 5255  for i in {1..5}; do kill %$i; done
+ 5256  for i in {1..5}; do kill %$i; done
+ 5257  exit
+ 5258  source run.sh
+ 5259  z ros
+ 5260  ls
+ 5261  cd src
+ 5262  ls
+ 5263  cd candy
+ 5264  ls
+ 5265  cd src
+ 5266  ls
+ 5267  cd savenobn
+ 5268  cd savenobn_biglr_di
+ 5269  ls
+ 5270  ll
+ 5271  ｆｏｒfor
+ 5272  for i in {1..5}; do kill %$i; done
+ 5273  source run.sh
+ 5274  nvidia-smi
+ 5275  nvidia-smi -i 0 -pl 330
+ 5276  nvidia-smi
+ 5277  z ros
+ 5278  ls
+ 5279  source run.sh
+ 5280  nvidia-smi
+ 5281  z ros
+ 5282  source run.sh
+ 5283  for i in {1..5}; do kill %$i; done
+ 5284  source run.sh
+ 5285  for i in {1..5}; do kill %$i; done
+ 5286  source run.sh
+ 5287  nvidia-smi
+ 5288  z ros
+ 5289  source run.sh
+ 5290  for i in {1..5}; do kill %$i; done
+ 5291  for i in {1..5}; do kill %$i; done
+ 5292  vim run.sh
+ 5293  cd /home/imin/ros_candy/src/candy/src/
+ 5294  ls
+ 5295  git diff
+ 5296  cp ./*_candy.py ~/projects/ros_candy/src/candy/src
+ 5297  cp modules/*.py ~/projects/ros_candy/src/candy/src/modules
+ 5298  cp args.yaml ~/projects/ros_candy/src/candy/src
+ 5299  z ros
+ 5300  nvidia-smi
+ 5301  source run.sh
+ 5302  for i in {1..5}; do kill %$i; done
+ 5303  source run.sh
+ 5304  for i in {1..5}; do kill %$i; done
+ 5305  source run.sh
+ 5306  for i in {1..5}; do kill %$i; done
+ 5307  ls
+ 5308  cd src
+ 5309  ls
+ 5310  cd candy
+ 5311  ls
+ 5312  cd src
+ 5313  ls
+ 5314  cd modules
+ 5315  ls
+ 5316  vim module.py
+ 5317  vim multimodal.py
+ 5318  vim module.py
+ 5319  vim ppo.py
+ 5320  cd ..
+ 5321  source run.sh
+ 5322  rm src/candy/src/saveimage/*
+ 5323  nvidia-smi
+ 5324  ls
+ 5325  source run.sh
+ 5326  for i in {1..5}; do kill %$i; done
+ 5327  source run.sh
+ 5328  nvidia-smi
+ 5329  source run.sh
+ 5330  for i in {1..5}; do kill %$i; done
+ 5331  source run.sh
+ 5332  nvidia-smi
+ 5333  for i in {1..5}; do kill %$i; done
+ 5334  nvidia-smi
+ 5335  source run.sh
+ 5336  nvidia-smi
+ 5337  ps -aux | grep 4106
+ 5338  ps -aux | grep 29038
+ 5339  kill -9 29038
+ 5340  for i in {1..5}; do kill %$i; done
+ 5341  source run.sh
+ 5342  nvidia-smi
+ 5343  for i in {1..5}; do kill %$i; done
+ 5344  source run.sh
+ 5345  for i in {1..5}; do kill %$i; done
+ 5346  gst
+ 5347  nvidia-smi
+ 5348  source run.sh
+ 5349  for i in {1..5}; do kill %$i; done
+ 5350  nvidia-smi
+ 5351  source run.sh
+ 5352  for i in {1..5}; do kill %$i; done
+ 5353  nvidia-smi
+ 5354  source run.sh
+ 5355  for i in {1..5}; do kill %$i; done
+ 5356  nvidia-smi
+ 5357  source run.sh
+ 5358  for i in {1..5}; do kill %$i; done
+ 5359  for i in {1..5}; do kill %$i; done
+ 5360  for i in {1..5}; do kill %$i; done
+ 5361  source run.sh
+ 5362  nvidia-smi
+ 5363  source run.sh
+ 5364  for i in {1..5}; do kill %$i; done
+ 5365  for i in {1..5}; do kill %$i; done
+ 5366  source run.sh
+ 5367  for i in {1..5}; do kill %$i; done
+ 5368  source run.sh
+ 5369  for i in {1..5}; do kill %$i; done
+ 5370  source run.sh
+ 5371  jobs
+ 5372  for i in {1..5}; do kill %$i; done
+ 5373  source run.sh
+ 5374  for i in {1..5}; do kill %$i; done
+ 5375  source run.sh
+ 5376  for i in {1..5}; do kill %$i; done
+ 5377  z data
+ 5378  ls
+ 5379  cd 0830
+ 5380  ls
+ 5381  ll
+ 5382  cd ..
+ 5383  ls
+ 5384  cd 0830
+ 5385  ls
+ 5386  mv 2018-08-30-10-53-29.bag.active l1.bag
+ 5387  sudo mv 2018-08-30-10-53-29.bag.active l1.bag
+ 5388  ls
+ 5389  mv 2018-08-30-10-57-37.bag.active l2.bag
+ 5390  sudo mv 2018-08-30-10-57-37.bag.active l2.bag
+ 5391  mv 2018-08-30-11-24-05.bag.active l3.bag
+ 5392  sudo mv 2018-08-30-11-24-05.bag.active l3.bag
+ 5393  ls
+ 5394  z ros
+ 5395  source run.sh
+ 5396  for i in {1..5}; do kill %$i; done
+ 5397  source run.sh
+ 5398  for i in {1..5}; do kill %$i; done
+ 5399  z data
+ 5400  ls
+ 5401  for i in {1..5}; do kill %$i; done
+ 5402  z data
+ 5403  ls
+ 5404  nvidia-smi
+ 5405  z data
+ 5406  ls
+ 5407  cd 0905
+ 5408  ls
+ 5409  rosbag play *.bag -l
+ 5410  roscore -p 10000&
+ 5411  rosbag play *.bag -l
+ 5412  ls
+ 5413  rosbag reindex 2018-09-05-20-27-15.bag
+ 5414  ls
+ 5415  cd ..
+ 5416  ls
+ 5417  sudo chmod 777 -R 0905
+ 5418  cd 0905
+ 5419  rosbag play *.bag -l
+ 5420  rosbag play *.bag -l -r 10
+ 5421  z ros
+ 5422  source run.sh
+ 5423  for i in {1..5}; do kill %$i; done
+ 5424  source run.sh
+ 5425  for i in {1..5}; do kill %$i; done
+ 5426  z 0828
+ 5427  ls
+ 5428  rosbag reindex right1.bag
+ 5429  ls
+ 5430  ll
+ 5431  rm right1.orig.bag
+ 5432  ls
+ 5433  ll
+ 5434  rosbag reindex 20
+ 5435  ls
+ 5436  rm *.active
+ 5437  ls
+ 5438  z ros
+ 5439  source run.sh
+ 5440  for i in {1..5}; do kill %$i; done
+ 5441  source run.sh
+ 5442  for i in {1..5}; do kill %$i; done
+ 5443  source run.sh
+ 5444  nvidia-smi
+ 5445  source run.sh
+ 5446  for i in {1..5}; do kill %$i; done
+ 5447  source run.sh
+ 5448  nvidia-smi
+ 5449  source run.sh
+ 5450  for i in {1..5}; do kill %$i; done
+ 5451  for i in {1..９}; do kill %$i; done
+ 5452  for i in {1..9}; do kill %$i; done
+ 5453  ls
+ 5454  for i in {1..5}; do kill %$i; done
+ 5455  source run.sh
+ 5456  for i in {1..5}; do kill %$i; done
+ 5457  source run.sh
+ 5458  for i in {1..5}; do kill %$i; done
+ 5459  for i in {1..5}; do kill %$i; done
+ 5460  for i in {1..5}; do kill %$i; done
+ 5461  nvidia-smi
+ 5462  source run.sh
+ 5463  cd /tmp/logs
+ 5464  rm 2018-09-08_14-23-06imitationppo5ppo_15hidden
+ 5465  rm 2018-09-08_14-23-06imitationppo5ppo_15hidden -r
+ 5466  rm 2018-09-08_14-22-08imitationppo5ppo_15hidden_in4ppo
+ 5467  rm 2018-09-08_14-22-08imitationppo5ppo_15hidden_in4ppo -r 
+ 5468  z ros
+ 5469  source run.sh
+ 5470  for i in {1..5}; do kill %$i; done
+ 5471  CUDA_VISIBLE_DEVICES=0 rosrun candy trainer_candy.py
+ 5472  source run.sh
+ 5473  for i in {1..5}; do kill %$i; done
+ 5474  source run.sh
+ 5475  for i in {1..5}; do kill %$i; done
+ 5476  source run.sh
+ 5477  for i in {1..5}; do kill %$i; done
+ 5478  source run.sh
+ 5479  for i in {1..5}; do kill %$i; done
+ 5480  source run.sh
+ 5481  for i in {1..5}; do kill %$i; done
+ 5482  source run.sh
+ 5483  for i in {1..5}; do kill %$i; done
+ 5484  source run.sh
+ 5485  for i in {1..5}; do kill %$i; done
+ 5486  source run.sh
+ 5487  for i in {1..5}; do kill %$i; done
+ 5488  source run.sh
+ 5489  for i in {1..5}; do kill %$i; done
+ 5490  source run.sh
+ 5491  for i in {1..5}; do kill %$i; done
+ 5492  source run.sh
+ 5493  for i in {1..5}; do kill %$i; done
+ 5494  source run.sh
+ 5495  for i in {1..5}; do kill %$i; done
+ 5496  source run.sh
+ 5497  for i in {1..5}; do kill %$i; done
+ 5498  source run.sh
+ 5499  for i in {1..5}; do kill %$i; done
+ 5500  source run.sh
+ 5501  for i in {1..5}; do kill %$i; done
+ 5502  source run.sh
+ 5503  for i in {1..5}; do kill %$i; done
+ 5504  source run.sh
+ 5505  for i in {1..5}; do kill %$i; done
+ 5506  source run.sh
+ 5507  for i in {1..5}; do kill %$i; done
+ 5508  cd src
+ 5509  ls
+ 5510  cd candy
+ 5511  ls
+ 5512  cd src
+ 5513  ls
+ 5514  cp -r saveimitationppo5ppobigdata somegood1
+ 5515  cp -r savefinalbigdata somegood2
+ 5516  for
+ 5517  for i in {1..5}; do kill %$i; done
+ 5518  for i in {1..5}; do kill %$i; done
+ 5519  ls
+ 5520  cp -r saveimitationppo5ppobigdata somegood3
+ 5521  ls
+ 5522  source run.sh
+ 5523  for i in {1..5}; do kill %$i; done
+ 5524  source run.sh
+ 5525  for i in {1..5}; do kill %$i; done
+ 5526  source run.sh
+ 5527  for i in {1..5}; do kill %$i; done
+ 5528  cd /data
+ 5529  ls
+ 5530  cd 0905
+ 5531  ls
+ 5532  cd ..
+ 5533  ls
+ 5534  cd 0830
+ 5535  ls
+ 5536  cd ..
+ 5537  ls
+ 5538  cd 0829
+ 5539  l
+ 5540  ls
+ 5541  cd ..
+ 5542  ls
+ 5543  cd 0828
+ 5544  ls
+ 5545  cd ..
+ 5546  ls
+ 5547  cd 0905
+ 5548  ls
+ 5549  cd test
+ 5550  ls
+ 5551  z ros
+ 5552  source run.sh
+ 5553  for i in {1..5}; do kill %$i; done
+ 5554  source run.sh
+ 5555  for i in {1..5}; do kill %$i; done
+ 5556  source run.sh
+ 5557  for i in {1..5}; do kill %$i; done
+ 5558  source run.sh
+ 5559  for i in {1..5}; do kill %$i; done
+ 5560  z data
+ 5561  ls
+ 5562  cd 0910
+ 5563  chmod 777 0910
+ 5564  sudo chmod 777 0910
+ 5565  cd 0910
+ 5566  ls
+ 5567  mkdir test
+ 5568  mv 2018-09-10-16* test/
+ 5569  ls
+ 5570  nvidia-smi
+ 5571  ls
+ 5572  nvidia-smi
+ 5573  ls
+ 5574  source run.sh
+ 5575  for i in {1..5}; do kill %$i; done
+ 5576  rosbag play *.bg
+ 5577  rosbag play *.bag
+ 5578  roscore&
+ 5579  rosbag play *.bag
+ 5580  ls
+ 5581  rosbag reindex 2018-09-10-15-35-39.bag
+ 5582  sudo chmod 777 -R .
+ 5583  source run.sh
+ 5584  for i in {1..5}; do kill %$i; done
+ 5585  source run.sh
+ 5586  for i in {1..5}; do kill %$i; done
+ 5587  source run.sh
+ 5588  for i in {1..5}; do kill %$i; done
+ 5589  source run.sh
+ 5590  for i in {1..5}; do kill %$i; done
+ 5591  source run.sh
+ 5592  for i in {1..5}; do kill %$i; done
+ 5593  nvidia-smi
+ 5594  z candy
+ 5595  ls
+ 5596  tmux ls
+ 5597  ls
+ 5598  cd ..
+ 5599  ls
+ 5600  cd candy
+ 5601  ls
+ 5602  CUDA_VISIBLE_DEVICES=0 python main.py
+ 5603  source ~/pyenvs/tensorflow/bin/activate
+ 5604  export PYTHONPATH=/home/kychen/pyenvs/tensorflow/lib/python3.5/site-packages:$PYTHONPATH
+ 5605  CUDA_VISIBLE_DEVICES=0 python main.py
+ 5606  nvidia-smi
+ 5607  CUDA_VISIBLE_DEVICES=1 python main.py
+ 5608  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+ 5609  ls
+ 5610  cd projects
+ 5611  ls
+ 5612  cd carla
+ 5613  ls
+ 5614  ./CarlaUE4.sh -windowed -ResX=800 -ResY=600 -carla-server -benchmark -fps=10 -carla-no-hud
+ 5615  ls
+ 5616  ll
+ 5617  cp carla.npz /data/dataset/
+ 5618  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+ 5619  cp carla.npz /data/dataset/
+ 5620  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+ 5621  rm carla.npz
+ 5622  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+ 5623  rm carla.npz
+ 5624  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+ 5625  rm carla.npz
+ 5626  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+ 5627  cp carla.npz /data/dataset/
+ 5628  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+ 5629  cp carla.npz /data/dataset/
+ 5630  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+ 5631  ./CarlaUE4.sh -windowed -ResX=800 -ResY=600 -carla-server -benchmark -fps=30 -carla-no-hud
+ 5632  ./CarlaUE4.sh -windowed -ResX=800 -ResY=600 -carla-server -benchmark -fps=１0 -carla-no-hud
+ 5633  ./CarlaUE4.sh -windowed -ResX=800 -ResY=600 -carla-server -benchmark -fps=10 -carla-no-hud
+ 5634  cp carla.npz /data/dataset/carla2.npz
+ 5635  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+ 5636  rm carla.npz
+ 5637  vim main.py
+ 5638  vim carla_wrapper.py
+ 5639  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+ 5640  ll
+ 5641  cp carla.npz /data/dataset/carlabig.npz
+ 5642  vim main.py
+ 5643  vim carla_wrapper.py
+ 5644  mv carla.npz carlabig.npz
+ 5645  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+ 5646  rm carla.npz
+ 5647  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+ 5648  ls
+ 5649  ll
+ 5650  mv carla.npz carla_fu.npz
+ 5651  cp carla_fu.npz carla.npz
+ 5652  cp carla_fu.npz /data/dataset/
+ 5653  cd /data/dataset
+ 5654  ls
+ 5655  ll
+ 5656  z candy
+ 5657  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+ 5658  ls
+ 5659  rm carla_fu.npz
+ 5660  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+ 5661  ls
+ 5662  rm carla.npz
+ 5663  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+ 5664  z candy
+ 5665  ls
+ 5666  cp carla.npz /data/dataset/carla_fu.npz
+ 5667  ssh ubuntu@192.168.100.46
+ 5668  exit
+ 5669  cd /home/sdc
+ 5670  ls
+ 5671  exit
+ 5672  tmux ls
+ 5673  z candy
+ 5674  ls
+ 5675  cd ..
+ 5676  cd candy
+ 5677  ls
+ 5678  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+ 5679  source ~/pyenvs/tensorflow3/bin/activate
+ 5680  source ~/pyenvs/tensorflow/bin/activate
+ 5681  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+ 5682  pip install tensorboardX -i https://mirrors.ustc.edu.cn/pypi/web/simple
+ 5683  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01 -l
+ 5684  CUDA_VISIBLE_DEVICES=0 python main.py -m Town01
+ 5685  CUDA_VISIBLE_DEVICES=0 python main.py
+ 5686  z carla
+ 5687  cd ..
+ 5688  ls
+ 5689  cd carla
+ 5690  ls
+ 5691  ./CarlaUE4.sh -windowed -ResX=800 -ResY=600 -carla-server -benchmark -fps=10 -carla-no-hud
+ 5692  CUDA_VISIBLE_DEVICES=0 python main.py
+ 5693  ｌｓ
+ 5694  LS
+ 5695  ls
+ 5696  rm -r save
+ 5697  CUDA_VISIBLE_DEVICES=0 python main.py
+ 5698  z candy
+ 5699  ls
+ 5700  source ~/pyenvs/tensorflow/bin/activate
+ 5701  tmux new -s tensorboard2
+ 5702  ls
+ 5703  tensorboard -logdir=./logs --port=6007
+ 5704  tensorboard -logdir=./runs --port=6007
+ 5705  CUDA_VISIBLE_DEVICES=0 python main.py
+ 5706  tmux a -t tensorboard
+ 5707  ls
+ 5708  cd logs
+ 5709  rm *
+ 5710  rm * -r
+ 5711  cd ..
+ 5712  CUDA_VISIBLE_DEVICES=0 python main.py
+ 5713  tensorboard -logdir=./logs
+ 5714  CUDA_VISIBLE_DEVICES=0 python main.py --vae
+ 5715  CUDA_VISIBLE_DEVICES=0 python main.py --name=vae
+ 5716  z carla
+ 5717  ls
+ 5718  ./CarlaUE4.sh -windowed -ResX=800 -ResY=600 -carla-server -benchmark -fps=10 -carla-no-hud -port=2001
+ 5719  z candy
+ 5720  ls
+ 5721  CUDA_VISIBLE_DEVICES=1 python main.py --name=novae
+ 5722  source ~/pyenvs/tensorflow/bin/activate
+ 5723  CUDA_VISIBLE_DEVICES=1 python main.py --name=novae --port2001
+ 5724  CUDA_VISIBLE_DEVICES=1 python main.py --name=novae --port=2001
+ 5725  ./CarlaUE4.sh -windowed -ResX=800 -ResY=600 -carla-server -benchmark -fps=10 -carla-no-hud -port=3000
+ 5726  CUDA_VISIBLE_DEVICES=1 python main.py --name=novae --port=3000
+ 5727  ./CarlaUE4.sh -windowed -ResX=800 -ResY=600 -carla-server -benchmark -fps=10 -carla-no-hud -carla-port=3000
+ 5728  ./CarlaUE4.sh -windowed -ResX=800 -ResY=600 -carla-server -benchmark -fps=10 -carla-no-hud -carla-port=2100
+ 5729  CUDA_VISIBLE_DEVICES=1 python main.py --name=novae --port=2100
+ 5730  lsof -i:2100
+ 5731  lsof -i :21200
+ 5732  lsof -i :2100
+ 5733  lsof | grep 2002
+ 5734  lsof | grep 2100
+ 5735  ps -ef| grep carla
+ 5736  ./CarlaUE4.sh -windowed -ResX=800 -ResY=600 -carla-server -benchmark -fps=10 -carla-no-hud -carla-port=2050
+ 5737  CUDA_VISIBLE_DEVICES=0 python main.py --name=vae --port=2050
+ 5738  ./CarlaUE4.sh -windowed -ResX=800 -ResY=600 -carla-server -benchmark -fps=10 -carla-no-hud -carla-port=2100
+ 5739  CUDA_VISIBLE_DEVICES=1 python main.py --name=novae --port=2100
+ 5740  ./CarlaUE4.sh -windowed -ResX=800 -ResY=600 -carla-server -benchmark -fps=10 -carla-no-hud -carla-world-port=2050
+ 5741  ./CarlaUE4.sh -windowed -ResX=800 -ResY=600 -carla-server -benchmark -fps=10 -carla-no-hud -carla-world-port=2100
+ 5742  z candy
+ 5743  ls
+ 5744  cd runs
+ 5745  ls
+ 5746  rm *
+ 5747  rm -r *
+ 5748  rm /tmp/logs/*
+ 5749  rm /tmp/logs/* -r
+ 5750  exit
+ 5751  CUDA_VISIBLE_DEVICES=1 python main.py --name=novae --port=2100
+ 5752  CUDA_VISIBLE_DEVICES=0 python main.py --name=vae --port=2050
+ 5753  z carla
+ 5754  z candy
+ 5755  source ~/pyenvs/tensorflow/bin/activate
+ 5756  ./CarlaUE4.sh -windowed -ResX=800 -ResY=600 -carla-server -benchmark -fps=10 -carla-no-hud -carla-world-port=2150
+ 5757  CUDA_VISIBLE_DEVICES=2 python main.py --name=beta50vae --port=2150
+ 5758  ls
+ 5759  rm -r savenovae
+ 5760  rm -r savevea
+ 5761  rm -r savevae
+ 5762  rm -r savebeta50vae
+ 5763  CUDA_VISIBLE_DEVICES=0 python main.py --name=vae --port=2050 --beta=1 --vaealpha=1
+ 5764  CUDA_VISIBLE_DEVICES=1 python main.py --name=novae --port=2100 --beta=1 --vaealpha=0
+ 5765  CUDA_VISIBLE_DEVICES=2 python main.py --name=beta50vae --port=2150 --beta=50 --vaealpha=1
+ 5766  CUDA_VISIBLE_DEVICES=1 python main.py --name=novae --port=2100 --beta=1 --vaealpha=0
+ 5767  CUDA_VISIBLE_DEVICES=2 python main.py --name=beta50vae --port=2150 --beta=50 --vaealpha=1
+ 5768  CUDA_VISIBLE_DEVICES=0 python main.py --name=vae --port=2050 --beta=1 --vaealpha=1
+ 5769  rm -r savevae/
+ 5770  rm -r runs/*
+ 5771  rm runs/*
+ 5772  rm -r runs/*
+ 5773  rm -r /tmp/logs
+ 5774  mkdir -p /tmp/logs
+ 5775  CUDA_VISIBLE_DEVICES=0 python main.py --name=vae --port=2050 --beta=1 --vaealpha=1
+ 5776  CUDA_VISIBLE_DEVICES=1 python main.py --name=novae --port=2100 --beta=1 --vaealpha=0
+ 5777  CUDA_VISIBLE_DEVICES=2 python main.py --name=beta50vae --port=2150 --beta=50 --vaealpha=1
+ 5778  CUDA_VISIBLE_DEVICES=1 python main.py --name=novae --port=2100 --beta=1 --vaealpha=0
+ 5779  CUDA_VISIBLE_DEVICES=0 python main.py --name=vae --port=2050 --beta=1 --vaealpha=1
+ 5780  z ros
+ 5781  ls
+ 5782  vim run.sh
+ 5783  source run.sh
+ 5784  for i in {1..5}; do kill %$i; done
+ 5785  source run.sh
+ 5786  for i in {1..5}; do kill %$i; done
+ 5787  source run.sh
+ 5788  nvidia-smi
+ 5789  source run.sh
+ 5790  nvidia-smi
+ 5791  ps -aux | grep 11598
+ 5792  kill -9 11598
+ 5793  z carla
+ 5794  ./CarlaUE4.sh -windowed -ResX=800 -ResY=600 -carla-server -benchmark -fps=10 -carla-no-hud -carla-world-port=2200
+ 5795  z candy
+ 5796  cd ..
+ 5797  cd candy
+ 5798  ls
+ 5799  nvidia-smi
+ 5800  CUDA_VISIBLE_DEVICES=1 python main.py --name=throttle --port=2200 --beta=1 --vaealpha=0 --include-throttle
+ 5801  source ~/pyenvs/tensorflow/bin/activate
+ 5802  CUDA_VISIBLE_DEVICES=1 python main.py --name=throttle --port=2200 --beta=1 --vaealpha=0 --include-throttle
+ 5803  htop
+ 5804  CUDA_VISIBLE_DEVICES=1 python main.py --name=throttle --port=2200 --beta=1 --vaealpha=0 --include-throttle
+ 5805  CUDA_VISIBLE_DEVICES=1 python main.py --name=novae --port=2100 --beta=1 --vaealpha=0
+ 5806  ls
+ 5807  rm save*
+ 5808  rm save* -r
+ 5809  rm runs/*
+ 5810  rm runs/* -r
+ 5811  CUDA_VISIBLE_DEVICES=0 python main.py --name=vae --port=2050 --beta=1 --vaealpha=1
+ 5812  CUDA_VISIBLE_DEVICES=1 python main.py --name=novae --port=2100 --beta=1 --vaealpha=0
+ 5813  CUDA_VISIBLE_DEVICES=1 python main.py --name=throttle --port=2200 --beta=1 --vaealpha=0 --include-throttle
+ 5814  CUDA_VISIBLE_DEVICES=2 python main.py --name=beta50vae --port=2150 --beta=50 --vaealpha=1
+ 5815  CUDA_VISIBLE_DEVICES=1 python main.py --name=throttle --port=2200 --beta=1 --vaealpha=0 --include-throttle
+ 5816  rm savethrottle -r
+ 5817  CUDA_VISIBLE_DEVICES=1 python main.py --name=throttle --port=2200 --beta=1 --vaealpha=0 --include-throttle
+ 5818  CUDA_VISIBLE_DEVICES=1 python main.py --name=th_novae --port=2200 --beta=1 --vaealpha=0 --include-throttle
+ 5819  CUDA_VISIBLE_DEVICES=0 python main.py --name=th_vae --port=2050 --beta=1 --vaealpha=1
+ 5820  CUDA_VISIBLE_DEVICES=0 python main.py --name=th_vae --port=2050 --beta=1 --vaealpha=1 --include-throttle
+ 5821  CUDA_VISIBLE_DEVICES=1 python main.py --name=th_novae --port=2200 --beta=1 --vaealpha=0 --include-throttle
+ 5822  CUDA_VISIBLE_DEVICES=2 python main.py --name=th_beta50vae --port=2150 --beta=50 --vaealpha=1 --include-throttle
+ 5823  CUDA_VISIBLE_DEVICES=1 python main.py --name=th_beta500vae --port=2100 --beta=500 --vaealpha=1 --include-throttle
+ 5824  for i in {1..5}; do kill %$i; done
+ 5825  ls
+ 5826  cd src
+ 5827  ls
+ 5828  cd candy
+ 5829  ls
+ 5830  cd src
+ 5831  ls
+ 5832  ll
+ 5833  CUDA_VISIBLE_DEVICES=2 python main.py --name=th_beta50vae --port=2150 --beta=50 --vaealpha=1 --include-throttle --step-limit=512
+ 5834  CUDA_VISIBLE_DEVICES=1 python main.py --name=th_novae --port=2200 --beta=1 --vaealpha=0 --include-throttle --step-limit=512
+ 5835  CUDA_VISIBLE_DEVICES=0 python main.py --name=th_vae --port=2050 --beta=1 --vaealpha=1 --include-throttle --step-limit=512
+ 5836  CUDA_VISIBLE_DEVICES=1 python main.py --name=th_beta500vae --port=2100 --beta=500 --vaealpha=1 --include-throttle --step-limit=512
+ 5837  exit
+ 5838  CUDA_VISIBLE_DEVICES=1 python main.py --name=small_novae --port=2200 --beta=1 --vaealpha=0 --step-limit=512
+ 5839  vim main.py
+ 5840  CUDA_VISIBLE_DEVICES=1 python main.py --name=small_novae --port=2200 --beta=1 --vaealpha=0 --step-limit=512
+ 5841  CUDA_VISIBLE_DEVICES=0 python main.py --name=small_vae --port=2050 --beta=1 --vaealpha=1 --step-limit=512
+ 5842  CUDA_VISIBLE_DEVICES=1 python main.py --name=small_beta500vae --port=2100 --beta=500 --vaealpha=1 --step-limit=512
+ 5843  CUDA_VISIBLE_DEVICES=2 python main.py --name=small_beta50vae --port=2150 --beta=50 --vaealpha=1 --step-limit=512
+ 5844  vim main.py
+ 5845  ls
+ 5846  CUDA_VISIBLE_DEVICES=1 python main.py --name=small_novae --port=2200 --beta=1 --vaealpha=0
+ 5847  rm savesmall_* -r
+ 5848  rm runs/*small
+ 5849  rm runs/*small*
+ 5850  rm runs/*small* -r
+ 5851  CUDA_VISIBLE_DEVICES=1 python main.py --name=small_novae --port=2200 --beta=1 --vaealpha=0
+ 5852  CUDA_VISIBLE_DEVICES=0 python main.py --name=small_vae --port=2050 --beta=1 --vaealpha=1
+ 5853  CUDA_VISIBLE_DEVICES=1 python main.py --name=small_beta500vae --port=2100 --beta=500 --vaealpha=1
+ 5854  CUDA_VISIBLE_DEVICES=2 python main.py --name=small_beta50vae --port=2150 --beta=50 --vaealpha=1
+ 5855  exit
+ 5856  z ros
+ 5857  vim run.sh
+ 5858  cd src/candy/src
+ 5859  ls
+ 5860  vim wrapper_candy.py
+ 5861  cd ..
+ 5862  ls
+ 5863  cd ..
+ 5864  ls
+ 5865  source run
+ 5866  source run.sh
+ 5867  for i in {1..5}; do kill %$i; done
+ 5868  vim run.sh
+ 5869  source run.sh
+ 5870  for i in {1..5}; do kill %$i; done
+ 5871  cd src
+ 5872  ls
+ 5873  cd candy
+ 5874  ls
+ 5875  cd src
+ 5876  ls
+ 5877  vim machine.py
+ 5878  vim actor.prof
+ 5879  vim actor_candy.py
+ 5880  vim wrapper_candy.py
+ 5881  cd ..
+ 5882  ls
+ 5883  vim run.sh
+ 5884  source run.sh
+ 5885  for i in {1..5}; do kill %$i; done
+ 5886  vim run.sh
+ 5887  source run.sh
+ 5888  for i in {1..5}; do kill %$i; done
+ 5889  vim run.sh
+ 5890  nvidia-smi
+ 5891  source run.sh
+ 5892  vim main.py
+ 5893  CUDA_VISIBLE_DEVICES=2 python main.py --name=self_beta50vae --port=2150 --beta=50 --vaealpha=1
+ 5894  CUDA_VISIBLE_DEVICES=0 python main.py --name=self_novae --port=2050 --beta=1 --vaealpha=0
+ 5895  for i in {1..5}; do kill %$i; done
+ 5896  vim run.sh
+ 5897  vim src/candy/src/trainer_candy.py
+ 5898  vim src/candy/src/actor_candy.py
+ 5899  source run.sh
+ 5900  for i in {1..5}; do kill %$i; done
+ 5901  source run.sh
+ 5902  for i in {1..5}; do kill %$i; done
+ 5903  source run.sh
+ 5904  for i in {1..5}; do kill %$i; done
+ 5905  exit
+ 5906  CUDA_VISIBLE_DEVICES=0 python main.py --name=big_self_novae --port=2050 --beta=1 --vaealpha=0
+ 5907  CUDA_VISIBLE_DEVICES=1 python main.py --name=big_self_beta500vae --port=2100 --beta=500 --vaealpha=1
+ 5908  CUDA_VISIBLE_DEVICES=1 python main.py --name=big_self_novae --port=2200 --beta=1 --vaealpha=0
+ 5909  CUDA_VISIBLE_DEVICES=2 python main.py --name=big_self_beta50vae --port=2150 --beta=50 --vaealpha=1
+ 5910  CUDA_VISIBLE_DEVICES=0 python main.py --name=big_self_vae --port=2050 --beta=1 --vaealpha=1
+ 5911  ls
+ 5912  nvidia-smi
+ 5913  ps -aux | 11598
+ 5914  ps -aux | grep 11598
+ 5915  nvidia-smi
+ 5916  exit
+ 5917  history | grep tensorboard
+ 5918  ex
+ 5919  exit
+ 5920  nvidia-smi
+ 5921  exit
+ 5922  cd data
+ 5923  cd /data
+ 5924  ls
+ 5925  cd dataset
+ 5926  ls
+ 5927  cd UCF
+ 5928  ls
+ 5929  ll
+ 5930  cd ..
+ 5931  ls
+ 5932  du -ah --max-depth=1
+ 5933  cd UCF
+ 5934  ll | wc -l
+ 5935  ls
+ 5936  cd ..
+ 5937  ls
+ 5938  cd ucf-npy
+ 5939  ls
+ 5940  cd ..
+ 5941  ls
+ 5942  scp -r UCF ucf-npy kychen@192.168.100.37:~/
+ 5943  ls
+ 5944  zip -r UCF.zip ./UCF
+ 5945  ls
+ 5946  zip -r UCF.zip ./UCF
+ 5947  l
+ 5948  ls
+ 5949  cd UCF
+ 5950  ls
+ 5951  ls | grep rar
+ 5952  scp UCF101.rar kychen@192.168.100.37:~/
+ 5953  ls
+ 5954  cd ..
+ 5955  exit
+ 5956  ls
+ 5957  python --version
+ 5958  source ~/pyenvs/tensorflow3/bin/activate
+ 5959  ls
+ 5960  cd pyenvs
+ 5961  ls
+ 5962  source ~/pyenvs/tensorflow36/bin/activate
+ 5963  ls
+ 5964  cd ..
+ 5965  ls
+ 5966  cd projects
+ 5967  ls
+ 5968  git clone https://github.com/rail-berkeley/softlearning.git
+ 5969  ls
+ 5970  cd softlearning
+ 5971  ls
+ 5972  conda env create -f environment.yml
+ 5973  ls
+ 5974  cd softlearning
+ 5975  ls
+ 5976  cd environments
+ 5977  ls
+ 5978  cd gym
+ 5979  ls
+ 5980  cd carla
+ 5981  ls
+ 5982  cd ..
+ 5983  ls
+ 5984  python -m examples.development.main \\n    --mode=local \\n    --universe=gym \\n    --domain=HalfCheetah \\n    --task=v2 \\n    --exp-name=my-sac-experiment-1 \\n    --checkpoint-frequency=1000
+ 5985  cd ..
+ 5986  python -m examples.development.main \\n    --mode=local \\n    --universe=gym \\n    --domain=HalfCheetah \\n    --task=v2 \\n    --exp-name=my-sac-experiment-1 \\n    --checkpoint-frequency=1000
+ 5987  ls
+ 5988  cd ..
+ 5989  ls
+ 5990  python -m examples.development.main \\n    --mode=local \\n    --universe=gym \\n    --domain=HalfCheetah \\n    --task=v2 \\n    --exp-name=my-sac-experiment-1 \\n    --checkpoint-frequency=1000
+ 5991  ls
+ 5992  cd ~/pyenvs
+ 5993  ls
+ 5994  mkdir softlearning
+ 5995  rm -r softlearning
+ 5996  virtualenv softlearning --python=python3.6
+ 5997  ls
+ 5998  source ~/pyenvs/softlearning/bin/activate
+ 5999  cd ~/projects/softlearning
+ 6000  ls
+ 6001  pip install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
+ 6002  pip list
+ 6003  pip install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
+ 6004  python -m examples.development.main \\n    --mode=local \\n    --universe=gym \\n    --domain=HalfCheetah \\n    --task=v2 \\n    --exp-name=my-sac-experiment-1 \\n    --checkpoint-frequency=1000
+ 6005  pip install tensorflow-gpu
+ 6006  python -m examples.development.main \\n    --mode=local \\n    --universe=gym \\n    --domain=HalfCheetah \\n    --task=v2 \\n    --exp-name=my-sac-experiment-1 \\n    --checkpoint-frequency=1000
+ 6007  pip install ray
+ 6008  python -m examples.development.main \\n    --mode=local \\n    --universe=gym \\n    --domain=HalfCheetah \\n    --task=v2 \\n    --exp-name=my-sac-experiment-1 \\n    --checkpoint-frequency=1000
+ 6009  pip install gym -i https://pypi.tuna.tsinghua.edu.cn/simple some-package
+ 6010  pip install 'gym[all]' -i https://pypi.tuna.tsinghua.edu.cn/simple some-package
+ 6011  python -m examples.development.main \\n    --mode=local \\n    --universe=gym \\n    --domain=InvertedPendulum \\n    --task=v2 \\n    --exp-name=my-sac-experiment-1 \\n    --checkpoint-frequency=1000
+ 6012  python -m examples.development.main \\n    --mode=local \\n    --universe=gym \\n    --domain=InvertedPendulum \\n    --task=Default \\n    --exp-name=my-sac-experiment-1 \\n    --checkpoint-frequency=1000
+ 6013  pip install serializable -i https://pypi.tuna.tsinghua.edu.cn/simple
+ 6014  python -m examples.development.main \\n    --mode=local \\n    --universe=gym \\n    --domain=InvertedPendulum \\n    --task=Default \\n    --exp-name=my-sac-experiment-1 \\n    --checkpoint-frequency=1000
+ 6015  pip install opencv-python -i https://pypi.tuna.tsinghua.edu.cn/simple
+ 6016  python -m examples.development.main \\n    --mode=local \\n    --universe=gym \\n    --domain=InvertedPendulum \\n    --task=Default \\n    --exp-name=my-sac-experiment-1 \\n    --checkpoint-frequency=1000
+ 6017  echo $PSTH
+ 6018  echo $PYTHONPATH
+ 6019  export $PYTHONPATH=
+ 6020  export $PYTHONPATH= 
+ 6021  echo $PYTHONPATH
+ 6022  python
+ 6023  export PYTHONPATH= 
+ 6024  python -m examples.development.main \\n    --mode=local \\n    --universe=gym \\n    --domain=InvertedPendulum \\n    --task=Default \\n    --exp-name=my-sac-experiment-1 \\n    --checkpoint-frequency=1000
+ 6025  cd ..
+ 6026  ls
+ 6027  cd carla
+ 6028  ls
+ 6029  cd ..
+ 6030  ls
+ 6031  cd /home/sdc
+ 6032  ls
+ 6033  find j
+ 6034  find /home/kychen -name 'CARLA_0.7.0'
+ 6035  find / -name 'CARLA_0.7.0'
+ 6036  sudo find / -name 'CARLA_0.7.0'
+ 6037  sudo find /home/sdc -name 'CARLA_0.7.0'
+ 6038  ls
+ 6039  cd softlearning
+ 6040  ls
+ 6041  python -m examples.development.main \\n    --mode=local \\n    --universe=gym \\n    --domain=InvertedPendulum \\n    --task=Default \\n    --exp-name=my-sac-experiment-1 \\n    --checkpoint-frequency=1000
+ 6042  pip install psutil
+ 6043  python -m examples.development.main \\n    --mode=local \\n    --universe=gym \\n    --domain=InvertedPendulum \\n    --task=Default \\n    --exp-name=my-sac-experiment-1 \\n    --checkpoint-frequency=1000
+ 6044  ls
+ 6045  pip install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
+ 6046  pip uninstall serializable
+ 6047  pip install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
+ 6048  python -m examples.development.main \\n    --mode=local \\n    --universe=gym \\n    --domain=InvertedPendulum \\n    --task=Default \\n    --exp-name=my-sac-experiment-1 \\n    --checkpoint-frequency=1000
+ 6049  ls
+ 6050  sudo -s
+ 6051  cp /home/sdc/.mujoco ~/
+ 6052  cp /home/sdc/.mujoco ~/ -r
+ 6053  pip install 'mujoco-py==1.50.1.68'
+ 6054  source ~/pyenvs/softlearning/bin/activate
+ 6055  pip install mujoco-py==1.50.1.68
+ 6056  export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/kychen/.mujoco/mjpro150/bin
+ 6057  pip install mujoco-py==1.50.1.68
+ 6058  export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/lib/nvidia-384
+ 6059  pip install mujoco-py==1.50.1.68
+ 6060  sudo apt-get install patchelf
+ 6061  pip install mujoco-py==1.50.1.68
+ 6062  python -m examples.development.main \\n    --mode=local \\n    --universe=gym \\n    --domain=InvertedPendulum \\n    --task=Default \\n    --exp-name=my-sac-experiment-1 \\n    --checkpoint-frequency=1000
+ 6063  export PYTHONPATH= 
+ 6064  python -m examples.development.main \\n    --mode=local \\n    --universe=gym \\n    --domain=InvertedPendulum \\n    --task=Default \\n    --exp-name=my-sac-experiment-1 \\n    --checkpoint-frequency=1000
+ 6065  pip install python3-tk
+ 6066  sudo apt-get install python3-tk
+ 6067  sudo apt-get install python-tk
+ 6068  sudo apt-get install python3-tk
+ 6069  python -m examples.development.main \\n    --mode=local \\n    --universe=gym \\n    --domain=InvertedPendulum \\n    --task=Default \\n    --exp-name=my-sac-experiment-1 \\n    --checkpoint-frequency=1000
+ 6070  sudo apt-get install python3.6-tk
+ 6071  python -m examples.development.main \\n    --mode=local \\n    --universe=gym \\n    --domain=InvertedPendulum \\n    --task=Default \\n    --exp-name=my-sac-experiment-1 \\n    --checkpoint-frequency=1000
+ 6072  cd /home/kychen/ray_results/local/gym/InvertedPendulum/Default/2019-01-22T10-43-21-my-sac-experiment-1-0
+ 6073  ls
+ 6074  cd mujoco-runner_0_seed=9713_2019-01-22_10-43-214xwj4v30
+ 6075  ls
+ 6076  cd ~/projects/softlearning/
+ 6077  ls
+ 6078  python -m examples.development.main \\n    --mode=local \\n    --universe=gym \\n    --domain=InvertedPendulum \\n    --task=Default \\n    --exp-name=my-sac-experiment-1 \\n    --checkpoint-frequency=1
+ 6079  /home/kychen/ray_results/local/gym/InvertedPendulum/Default/2019-01-22T10-46-39-my-sac-experiment-1-0/mujoco-runner_0_seed=3623_2019-01-22_10-46-39hyyl76tf/checkpoint_1asdfadf
+ 6080  python -m examples.development.simulate_policy \\n    /home/kychen/ray_results/local/gym/InvertedPendulum/Default/2019-01-22T10-46-39-my-sac-experiment-1-0/mujoco-runner_0_seed=3623_2019-01-22_10-46-39hyyl76tf/checkpoint_1 \\n    --max-path-length=1000 \\n    --num-rollouts=1 \\n    --render-mode=human
+ 6081  exit
+ 6082  source ~/pyenvs/softlearning/bin/activate
+ 6083  python -m examples.development.simulate_policy \\n    /home/kychen/ray_results/local/gym/InvertedPendulum/Default/2019-01-22T10-46-39-my-sac-experiment-1-0/mujoco-runner_0_seed=3623_2019-01-22_10-46-39hyyl76tf/checkpoint_1 \\n    --max-path-length=1000 \\n    --num-rollouts=1 \\n    --render-mode=human
+ 6084  cd projects/softlearning
+ 6085  python -m examples.development.simulate_policy \\n    /home/kychen/ray_results/local/gym/InvertedPendulum/Default/2019-01-22T10-46-39-my-sac-experiment-1-0/mujoco-runner_0_seed=3623_2019-01-22_10-46-39hyyl76tf/checkpoint_1 \\n    --max-path-length=1000 \\n    --num-rollouts=1 \\n    --render-mode=human
+ 6086  sudo chmod 777 /home/kychen/ray_results/local/gym
+ 6087  sudo chmod 777 /home/kychen/ray_results/local/gym -R
+ 6088  python -m examples.development.simulate_policy \\n    /home/kychen/ray_results/local/gym/InvertedPendulum/Default/2019-01-22T10-46-39-my-sac-experiment-1-0/mujoco-runner_0_seed=3623_2019-01-22_10-46-39hyyl76tf/checkpoint_1 \\n    --max-path-length=1000 \\n    --num-rollouts=1 \\n    --render-mode=human
+ 6089  export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/kychen/.mujoco/mjpro150/bin
+ 6090  python -m examples.development.simulate_policy \\n    /home/kychen/ray_results/local/gym/InvertedPendulum/Default/2019-01-22T10-46-39-my-sac-experiment-1-0/mujoco-runner_0_seed=3623_2019-01-22_10-46-39hyyl76tf/checkpoint_1 \\n    --max-path-length=1000 \\n    --num-rollouts=1 \\n    --render-mode=human
+ 6091  vim ~/.zshrc
+ 6092  source ~
+ 6093  python -m examples.development.simulate_policy \\n    /home/kychen/ray_results/local/gym/InvertedPendulum/Default/2019-01-22T10-46-39-my-sac-experiment-1-0/mujoco-runner_0_seed=3623_2019-01-22_10-46-39hyyl76tf/checkpoint_1 \\n    --max-path-length=1000 \\n    --num-rollouts=1 \\n    --render-mode=human
+ 6094  source ~/.zshrc
+ 6095  source ~/pyenvs/softlearning/bin/activate
+ 6096  python -m examples.development.simulate_policy \\n    /home/kychen/ray_results/local/gym/InvertedPendulum/Default/2019-01-22T10-46-39-my-sac-experiment-1-0/mujoco-runner_0_seed=3623_2019-01-22_10-46-39hyyl76tf/checkpoint_1 \\n    --max-path-length=1000 \\n    --num-rollouts=1 \\n    --render-mode=human
+ 6097  exit
+ 6098  source ~/pyenvs/softlearning/bin/activate
+ 6099  cd projects/softlearning
+ 6100  python -m examples.development.simulate_policy \\n    /home/kychen/ray_results/local/gym/InvertedPendulum/Default/2019-01-22T10-46-39-my-sac-experiment-1-0/mujoco-runner_0_seed=3623_2019-01-22_10-46-39hyyl76tf/checkpoint_1 \\n    --max-path-length=1000 \\n    --num-rollouts=1 \\n    --render-mode=human
+ 6101  python -m examples.development.main \\n    --mode=local \\n    --universe=gym \\n    --domain=InvertedPendulum \\n    --task=Default \\n    --exp-name=my-sac-experiment-1 \\n    --checkpoint-frequency=1
+ 6102  vim ~/.zsh
+ 6103  vim ~/.zshrc
+ 6104  exit
+ 6105  ls
+ 6106  source ~/pyenvs/softlearning/bin/activate
+ 6107  ls
+ 6108  cd ~
+ 6109  ls
+ 6110  cd projects/softlearning
+ 6111  python -m examples.development.main \\n    --mode=local \\n    --universe=gym \\n    --domain=InvertedPendulum \\n    --task=Default \\n    --exp-name=my-sac-experiment-1 \\n    --checkpoint-frequency=1
+ 6112  exit
+ 6113  source ~/pyenvs/softlearning/bin/activate
+ 6114  ls
+ 6115  cd projects/softlearning
+ 6116  python -m examples.development.main \\n    --mode=local \\n    --universe=gym \\n    --domain=InvertedPendulum \\n    --task=Default \\n    --exp-name=my-sac-experiment-1 \\n    --checkpoint-frequency=1
+ 6117  pwd
+ 6118  which pip
+ 6119  pip install mujoco-py==1.50.1.68
+ 6120  pip install mujoco-py==1.50.1.68 --reinstall
+ 6121  pip uninstall mujoco-py
+ 6122* sudo -s
+ 6123* python -m examples.development.main \\n    --mode=local \\n    --universe=gym \\n    --domain=InvertedPendulum \\n    --task=Default \\n    --exp-name=my-sac-experiment-1 \\n    --checkpoint-frequency=1
+ 6124* source ~/pyenvs/softlearning/bin/activate
+ 6125* python -m examples.development.main \\n    --mode=local \\n    --universe=gym \\n    --domain=InvertedPendulum \\n    --task=Default \\n    --exp-name=my-sac-experiment-1 \\n    --checkpoint-frequency=1
+ 6126* export PYTHONPATH=\n: 1548125930:0;export PYTHONPATH=
+ 6127* python -m examples.development.main \\n    --mode=local \\n    --universe=gym \\n    --domain=InvertedPendulum \\n    --task=Default \\n    --exp-name=my-sac-experiment-1 \\n    --checkpoint-frequency=1
+ 6128* python -m examples.development.simulate_policy \\n    /home/kychen/ray_results/local/gym/InvertedPendulum/Default/2019-01-22T10-46-39-my-sac-experiment-1-0/mujoco-runner_0_seed=3623_2019-01-22_10-46-39hyyl76tf/checkpoint_1 \\n    --max-path-length=1000 \\n    --num-rollouts=1 \\n    --render-mode=human
+ 6129* cd ~
+ 6130* ls
+ 6131* cd /home/sdc
+ 6132* ls
+ 6133* cd ..
+ 6134* cd ~
+ 6135* ls
+ 6136* python -m examples.development.simulate_policy \\n    /home/kychen/ray_results/local/gym/InvertedPendulum/Default/2019-01-22T10-46-39-my-sac-experiment-1-0/mujoco-runner_0_seed=3623_2019-01-22_10-46-39hyyl76tf/checkpoint_1 \\n    --max-path-length=1000 \\n    --num-rollouts=1 \\n    --render-mode=human
+ 6137* cd projects
+ 6138* ls
+ 6139* cd softlearning
+ 6140* ls
+ 6141* python -m examples.development.simulate_policy \\n    /home/kychen/ray_results/local/gym/InvertedPendulum/Default/2019-01-22T10-46-39-my-sac-experiment-1-0/mujoco-runner_0_seed=3623_2019-01-22_10-46-39hyyl76tf/checkpoint_1 \\n    --max-path-length=1000 \\n    --num-rollouts=1 \\n    --render-mode=human
+ 6142* python -m examples.development.simulate_policy \\n    /home/kychen/ray_results/local/gym/InvertedPendulum/Default/2019-01-22T10-46-39-my-sac-experiment-1-0/mujoco-runner_0_seed=3623_2019-01-22_10-46-39hyyl76tf/checkpoint_4 \\n    --max-path-length=1000 \\n    --num-rollouts=1 \\n    --render-mode=human
+ 6143* echo $LD_LIBRARY_PATH
+ 6144* export LD_PRELOAD=/usr/lib/x86_64-linux-gnu/libGLEW.so:/usr/lib/nvidia-384/libGL.so
+ 6145* python -m examples.development.simulate_policy \\n    /home/kychen/ray_results/local/gym/InvertedPendulum/Default/2019-01-22T10-46-39-my-sac-experiment-1-0/mujoco-runner_0_seed=3623_2019-01-22_10-46-39hyyl76tf/checkpoint_4 \\n    --max-path-length=1000 \\n    --num-rollouts=1 \\n    --render-mode=human
+ 6146* python -m examples.development.main \\n    --mode=local \\n    --universe=gym \\n    --domain=Carla \\n    --task=Default \\n    --exp-name=my-sac-experiment-1 \\n    --checkpoint-frequency=1
+ 6147* python -m examples.development.main \\n    --mode=local \\n    --universe=gym \\n    --domain=MultiGoal \\n    --task=Default \\n    --exp-name=my-sac-experiment-1 \\n    --checkpoint-frequency=1
+ 6148* python -m examples.development.main \\n    --mode=local \\n    --universe=gym \\n    --domain=Carla \\n    --task=Default \\n    --exp-name=my-sac-experiment-1 \\n    --checkpoint-frequency=1
+ 6149* python -m examples.development.main \\n    --mode=local \\n    --universe=gym \\n    --domain=MultiGoal \\n    --task=Default \\n    --exp-name=my-sac-experiment-1 \\n    --checkpoint-frequency=1
+ 6150* python -m examples.development.main \\n    --mode=local \\n    --universe=gym \\n    --domain=Carla \\n    --task=Default \\n    --exp-name=my-sac-experiment-1 \\n    --checkpoint-frequency=1
+ 6151* python -m examples.development.main \\\n    --mode=local \\n    --universe=gym \\n    --domain=MultiGoal \\n    --task=Default \\n    --exp-name=my-sac-experiment-1 \\n    --checkpoint-frequency=1
+ 6152* python -m examples.development.main \\n    --mode=local \\n    --universe=gym \\n    --domain=MultiGoal \\n    --task=Default \\n    --exp-name=my-sac-experiment-1 \\n    --checkpoint-frequency=1
+ 6153* python -m examples.development.main \\n    --mode=local \\n    --universe=gym \\n    --domain=Carla \\n    --task=Default \\n    --exp-name=my-sac-experiment-1 \\n    --checkpoint-frequency=1
+ 6154* exit
+ 6155* ls
+ 6156* python -m examples.development.main \\n    --mode=local \\n    --universe=gym \\n    --domain=Carla \\n    --task=Default \\n    --exp-name=my-sac-experiment-1 \\n    --checkpoint-frequency=1
+ 6157* /home/kychen/pyenvs/softlearning/lib/python3.6/
+ 6158* ls
+ 6159* cd ..
+ 6160* ls
+ 6161* cd ..
+ 6162* ls
+ 6163* cd ..
+ 6164* ls
+ 6165* sudo chmod 777 softlearning -R
+ 6166* z softlearning
+ 6167* pwd
+ 6168* ls
+ 6169* python -m examples.development.main \\n    --mode=local \\n    --universe=gym \\n    --domain=Carla \\n    --task=Default \\n    --exp-name=my-sac-experiment-1 \\n    --checkpoint-frequency=1
+ 6170* export PYTHONPATH=
+ 6171* python -m examples.development.main \\n    --mode=local \\n    --universe=gym \\n    --domain=Carla \\n    --task=Default \\n    --exp-name=my-sac-experiment-1 \\n    --checkpoint-frequency=1
+ 6172* sudo chmod 777 /home/kychen/ray_results -R
+ 6173* python -m examples.development.main \\n    --mode=local \\n    --universe=gym \\n    --domain=Carla \\n    --task=Default \\n    --exp-name=my-sac-experiment-1 \\n    --checkpoint-frequency=1
+ 6174* pip install jupyer
+ 6175* pip install jupyter
+ 6176* python -m examples.development.main \\n    --mode=local \\n    --universe=gym \\n    --domain=Carla \\n    --task=Default \\n    --exp-name=my-sac-experiment-1 \\n    --checkpoint-frequency=1
+ 6177* cd carla_out
+ 6178* ls
+ 6179* cd Car
+ 6180* cd CameraRGB
+ 6181* ls
+ 6182* ll
+ 6183* python -m examples.development.main \\n    --mode=local \\n    --universe=gym \\n    --domain=Carla \\n    --task=Default \\n    --exp-name=my-sac-experiment-1 \\n    --checkpoint-frequency=1
+ 6184* python -m examples.development.main --help
+ 6185* python -m examples.development.main \\n    --mode=local \\n    --universe=gym \\n    --domain=Carla \\n    --task=Default \\n    --exp-name=my-sac-experiment-1 \\n    --checkpoint-frequency=1
+ 6186* nvidia-smi
+ 6187* htop
+ 6188* nvidia-smi
+ 6189  gst
+ 6190  git remote -v
+ 6191  git remote remove origin
+ 6192  git remote add origin https://github.com/createamind/softlearning.git
+ 6193  git push -u origin master
+ 6194  gst
+ 6195  vim MUJOCO_LOG.TXT
+ 6196  rm MUJOCO_LOG.TXT
+ 6197  git diff
+ 6198  gst
+ 6199  rm MUJOCO_LOG.TXT
+ 6200  ls
+ 6201  rm -f MUJOCO_LOG.TXT
+ 6202  ls
+ 6203  gst
+ 6204  cd softlearning/environments/gym/carla
+ 6205  ls
+ 6206  gst
+ 6207  ls
+ 6208  cd ..
+ 6209  ls
+ 6210  cd ..
+ 6211  gst
+ 6212  vim .gitignore
+ 6213  gst
+ 6214  git add .
+ 6215  gst
+ 6216  gc
+ 6217  ggp
+ 6218  gst
