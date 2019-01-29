@@ -157,6 +157,30 @@ infobot -goal --recall trace---SIL 高reward；也可以是好奇心的rnd的高
 
 meta-irl --intent paper; subgoal skill subgoal ::: stat action stat ;;
 
+
+
+探索 利用的互相hierarchical；探索的时候最大利用。利用的时候最大探索。
+rnd 探索好后利用时候sac动作最大探索；
+
+
+动作学习：单动作预测学习。---------------是model base 模型；极简单模型学习。单变量模型； 一维模型学习。简单到复杂
+加速动作的相关变化学习，刹车动作的影响变化学习；拐弯动作的效果学习,
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 9multimodel: cycle(video audio language )  cycle-sensor-motor     gan-qp 苏剑林
 Multimodal Densenet  https://arxiv.org/pdf/1811.07407.pdf    3d unet的一半
 cnn的特征使用的改进！

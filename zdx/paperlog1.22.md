@@ -218,3 +218,12 @@ This paper demonstrated the robust and easily accessible representations of IT p
 end
 
 
+https://spinningup.openai.com/en/latest/spinningup/rl_intro3.html
+To actually use this algorithm, we need an expression for the policy gradient which we can numerically compute. This involves two steps: 1) deriving the analytical gradient of policy performance, which turns out to have the form of an expected value, and then 2) forming a sample estimate of that expected value, which can be computed with data from a finite number of agent-environment interaction steps.
+where the data must be sampled on the most recent policy.
+Taking a step with this gradient pushes up the log-probabilities of each action in proportion to R(\tau), the sum of all rewards ever obtained. But this doesn’t make much sense.
+reward-to-go policy gradient,
+The most common choice of baseline is the on-policy value function V^{\pi}(s_t). Recall that this is the average return an agent gets if it starts in state s_t and then acts according to policy \pi for the rest of its life.
+
+Empirically, the choice b(s_t) = V^{\pi}(s_t) has the desirable effect of reducing variance in the sample estimate for the policy gradient.
+This results in faster and more stable policy learning. It is also appealing from a conceptual angle: it encodes the intuition that if an agent gets what it expected, it should “feel” neutral about it.
