@@ -8,6 +8,68 @@ irl  from  demo
 
 
 
+Visual Reinforcement Learning with Imagined Goals
+Ashvin Nair⇤
+, Vitchyr Pong⇤, Murtaza Dalal, Shikhar Bahl, Steven Lin, Sergey Levine
+University of California, Berkeley
+{anair17,vitchyr,mdalal,shikharbahl,stevenlin598,svlevine}@berkeley.edu
+Abstract
+For an autonomous agent to fulfill a wide range of user-specified goals at test time,
+it must be able to learn broadly applicable and general-purpose skill repertoires.
+Furthermore, to provide the requisite level of generality, these skills must handle
+raw sensory input such as images. In this paper, we propose an algorithm that
+acquires such general-purpose skills by combining unsupervised representation
+learning and reinforcement learning of goal-conditioned policies. Since the particular goals that might be required at test-time are not known in advance, the agent
+performs a self-supervised “practice” phase where it imagines goals and attempts
+to achieve them. We learn a visual representation with three distinct purposes: sampling goals for self-supervised practice, providing a structured transformation of
+raw sensory inputs, and computing a reward signal for goal reaching. We also propose a retroactive goal relabeling scheme to further improve the sample-efficiency
+of our method. Our off-policy algorithm is efficient enough to learn policies that
+operate on raw image observations and goals for a real-world robotic system, and
+substantially outperforms prior techniques.
+
+
+Visual reinforcement learning with imagined goals
+[PDF] arxiv.org
+Catastrophic Importance of Catastrophic Forgetting
+A Ierusalem - arXiv preprint arXiv:1808.07049, 2018 - arxiv.org
+This paper describes some of the possibilities of artificial neural networks that open up after 
+solving the problem of catastrophic forgetting. A simple model and reinforcement learning 
+applications of existing methods are also proposed. Subjects: Machine Learning (cs. LG); …
+  All 3 versions 
+[PDF] openreview.net
+The Implicit Preference Information in an Initial State
+R Shah, D Krasheninnikov, J Alexander, P Abbeel… - 2018 - openreview.net
+Reinforcement learning (RL) agents optimize only the features specified in a reward function 
+and are indifferent to anything left out inadvertently. This means that we must not only 
+specify what to do, but also the much larger space of what not to do. It is easy to forget these …
+  
+[PDF] arxiv.org
+Learning Actionable Representations with Goal-Conditioned Policies
+D Ghosh, A Gupta, S Levine - arXiv preprint arXiv:1811.07819, 2018 - arxiv.org
+Representation learning is a central challenge across a range of machine learning areas. In 
+reinforcement learning, effective and functional representations have the potential to 
+tremendously accelerate learning progress and solve more challenging problems. Most …
+  All 4 versions 
+[PDF] arxiv.org
+Unsupervised Control Through Non-Parametric Discriminative Rewards
+D Warde-Farley, T Van de Wiele, T Kulkarni… - arXiv preprint arXiv …, 2018 - arxiv.org
+Learning to control an environment without hand-crafted rewards or expert data remains 
+challenging and is at the frontier of reinforcement learning research. We present an 
+unsupervised learning algorithm to train agents to achieve perceptually-specified goals …
+  All 3 versions 
+[PDF] arxiv.org
+Self-supervised Learning of Image Embedding for Continuous Control
+C Florensa, J Degrave, N Heess… - arXiv preprint arXiv …, 2019 - arxiv.org
+Operating directly from raw high dimensional sensory inputs like images is still a challenge 
+for robotic control. Recently, Reinforcement Learning methods have been proposed to solve 
+specific tasks end-to-end, from pixels to torques. However, these approaches assume the …
+  All 2 versions 
+[PDF] arxiv.org
+Variational Autoencoders Pursue PCA Directions (by Accident)
+
+
+
+
 
 
 
@@ -227,3 +289,14 @@ The most common choice of baseline is the on-policy value function V^{\pi}(s_t).
 
 Empirically, the choice b(s_t) = V^{\pi}(s_t) has the desirable effect of reducing variance in the sample estimate for the policy gradient.
 This results in faster and more stable policy learning. It is also appealing from a conceptual angle: it encodes the intuition that if an agent gets what it expected, it should “feel” neutral about it.
+
+Don’t Let the Past Distract You
+It turns out that this intuition shows up in the math, and we can show that the policy gradient can also be expressed by
+We’ll call this form the “reward-to-go policy gradient,” because the sum of rewards after a point in a trajectory
+Implementing Reward-to-Go Policy Gradient
+
+VPG
+Exploration vs. Exploitation
+VPG trains a stochastic policy in an on-policy way. This means that it explores by sampling actions according to the latest version of its stochastic policy. The amount of randomness in action selection depends on both initial conditions and the training procedure. Over the course of training, the policy typically becomes progressively less random, as the update rule encourages it to exploit rewards that it has already found. This may cause the policy to get trapped in local optima.
+https://spinningup.openai.com/en/latest/algorithms/trpo.html
+RPO updates policies by taking the largest step possible to improve performance, while satisfying a special constraint on how close the new and old policies are allowed to be. The constraint is expressed in terms of KL-Divergence, a measure of (something like, but not exactly) distance between probability distributions.
