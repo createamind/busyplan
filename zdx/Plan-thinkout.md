@@ -98,6 +98,24 @@ Plan Online, Learn Offline: Efficient Learning and Exploration via Model-Based C
 https://bair.berkeley.edu/blog/2018/11/30/visual-rl/
 
 
+
+
+----------------------------------------------------
+
+okr:
+
+model-base； planet；self-aware; EMI; infobot; mb-mpo;
+model-base ; 视觉压缩-- densenet--；Motion Selective Prediction for Video；4dvae；
+
+
+
+
+
+----------------------------------------------------
+
+
+
+
 智能 framework and key paper  code;
 --------------------------
 0 slow  deeper; go most deeper;
@@ -164,13 +182,16 @@ rnd 探索好后利用时候sac动作最大探索；
 
 
 动作学习：单动作预测学习。---------------是model base 模型；极简单模型学习。单变量模型； 一维模型学习。简单到复杂
+carla如何先学习不撞东西。深度传感器，
+
+
 加速动作的相关变化学习，刹车动作的影响变化学习；拐弯动作的效果学习,
 
 diversity is all your need ; 单个动作的dynamic学习；diversity分层类似cnn的特征组合，不同层次的动作进行组合使用及训练。
 
 
 
-
+视觉感知位置---分割等网络方法值得学习。
 
 
 
