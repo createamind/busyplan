@@ -113,7 +113,11 @@ https://bair.berkeley.edu/blog/2018/11/30/visual-rl/
 
 
 
+checklist：
 
+drl train：
+    input： 图像的归一化处理
+    
 
 
 
@@ -127,7 +131,7 @@ todo:
 
 run  planet; 相关点深入：srnn  densenet，
 run  stcn； 相关点深入
-
+模仿学习。
 
 ----------------------------------------------------
 
@@ -136,27 +140,21 @@ okr:
 
 
 1 一个技术框架：
-1.1训练框架：ray；
+1.1训练框架：ray；apex priority 等 
 
-1.2model 框架：model-base； planet；self-aware; EMI; infobot; mb-mpo;
+1.2model 框架：model-base； planet；self-aware; 
 1.3   transfer learning  与多任务 meta learning 的关系。 sim to real
 
 
 
-
-
-
-
-
 state space:
-2.1抽象框架：互信息-信息瓶颈；
-EMI ：  互信息的embedding  forward model; backwordk model; model-base in mutual information;  code？好奇心代码？？改造？？
-empower 的 code；  https://github.com/navneet-nmk/pytorch-rl  and tf version    动作跟stat的互信息；  https://navneet-nmk.github.io/2018-08-26-empowerment/
 
+2.1抽象框架：互信息-信息瓶颈；熵-互信息； 信息熵 最大 or 最小
+EMI; infobot; mb-mpo;
+EMI ：  互信息的embedding  forward model; backwordk model; model-base in mutual information;  
+empower 的 code；  https://github.com/navneet-nmk/pytorch-rl  and tf version    动作跟stat的互信息；  https://navneet-nmk.github.io/2018-08-26-empowerment/
 vdb
 互信息用在编码控制上面，有编码的都可以进行控制？？应用vdb的bottleneck进行信息控制 编码控制？+  EMI ？
-
-2.7熵-互信息； 信息熵 最大 or 最小
 互信息最大   empower EMI  动作控制影响 互信息最大。   ++ vdb？？
 互信息最小  vdb   信息瓶颈？？  y z; x z  决策信息最小最关键，信息瓶颈 最大动作相关信息？？
 
@@ -170,7 +168,7 @@ goal 是车道线  是红绿灯  是 其他异常情况，其他行人 其他的
 
 
 2.2视觉框架：Motion Selective Prediction for Video，densenet；
-; 视觉压缩-- densenet--；Motion Selective Prediction for Video；4dvae；
+; 视觉压缩-- densenet--；Motion Selective Prediction for Video；4dvae；stcn
 
 
 表示学习：视觉：先半个unet训练视觉；vae 然后半个vae 用densenet的方式给RL；selfmodel;worldmodel; 视觉功能提取出来，不是强化学习每次都训练，计算资源耗费严重。gan的图像生成能力已经非常强。
@@ -188,19 +186,12 @@ cnn的特征使用的改进！
 densenet的vae！！   
 unet的vae；
 unet的video prediction；
-
-
-
 2.4 4d space time   densenet-tc A SIMPLE NEURAL ATTENTIVE META-LEARNER         ； BI
 
 
 
 
-
-
-
 3.1 模仿学习，逆强化学习等，看别人红绿灯的规则自己学规则，视频学习；离散规则学习。
-
 
 3.11  学习方式；自己学  学别人
 手把手教---有动作的直接学习动作的模仿学习
@@ -222,13 +213,12 @@ Automata Guided Reinforcement Learning With Demonstrations， HER
 
 A Simple Neural Attentive Meta-Learner
 
-
 Model-Based Reinforcement Learning via Meta-Policy Optimization+ 实时反馈 -- mpc？？
 
 mb-mpo +. sac 是不是会很厉害？mode base+free；
 
 
-3.2     meta learning; ：  rnd、sac、infobot、diversity、--modelbase ;planet;  her apex priority 等 
+3.2     meta learning; ：  rnd、sac、、diversity、 her 
 or  模仿学习； inverse rl  不学习概念，示范来做。后面升级到概念的语言沟通来做。
 最后开个脑洞：人脑对于少样本训练的范化误差是远比机器学习模型的效果要好的，那么对于任何一个新概念 Y，其在各层抽象级的表述分别为，人脑必然有非常高效的计算机制，对于所有之前已经学习到的概念，最大程度利用已有的知识。同时对于同一抽象级的不同概念，尽量让它们描述不同的信息，即减小，很可能频繁用到离散化的技巧来实现互信息压缩。
 腾讯模仿学习 证明
@@ -270,6 +260,9 @@ diversity is all your need ; 单个动作的dynamic学习；diversity分层类�
 
 
 
+
+
+
 4 progressive grow；  pg
 环境的reward 需要动态变化，不同阶段学习不同的重点能力，比如先站，再跑，在目标跑，再避障，再。。。。。
 
@@ -287,7 +280,7 @@ exploration  curiosity  paper:polo 三个应用说明背后的方法是一样的
 7
 语言： 交流沟通 通信编码
 动作描述---动作的语言之前的模型语言模型文章语言论文互信息 IB；Efficient human-like semantic representations via the Information Bottleneck principle
-语言和压缩和强化学习的paper；
+最近 18年底的语言和压缩和强化学习的paper；
 
 Unsupervised perceptual rewards for imitation learning .   gan .  vae .  自动学习视频的分割--------苏剑林 自动的vae 聚类   3dvae聚类，
 
