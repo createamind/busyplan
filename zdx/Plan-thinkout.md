@@ -175,7 +175,7 @@ goal 是车道线  是红绿灯  是 其他异常情况，其他行人 其他的
 STCN  conv seq2seq  seqvae; 
 
 
- 概念学习  gan-qp   概念学习 能量函数。Concept Learning with Energy-Based Models 概念学习------------  概念是一个conditon的goal key；
+ 概念学习  gan-qp   概念学习 能量函数。Concept Learning with Energy-Based Models 概念学习------------  概念是一个conditon的goal key；  作为整体运动或存在的物体概念的学习。作为整体运动的segmentation；个体 整体的概念。
  生成模型做分类，先能生成再进行分类。
 
 2.3 多感知认识世界：驾驶只是视觉的test；  正常世界和异常世界的比较区分。多传感器的modelbase。
