@@ -1,6 +1,6 @@
  人
 -----------------------------
-Plan   正式的：  日记 反思； 最重要！  明确的！具体！！！具体！！！
+Plan   正式的：  日记 反思； 最重要！  明确的！具体！！！具体！！！  smarter 
 
 梳理一个实现AGI的简单框架
 
@@ -70,7 +70,7 @@ densenet！！入职培训提到的densenet多层连接。  3d unet的一半
 
 
 下面是相对重复的一些关键点。
-7极低的特征空间维度  beta-vae distangle:bayesgan   https://github.com/ermongroup/Variational-Ladder-Autoencoder； 这些都是图像。
+7极低的特征空间维度  beta-vae distangle:bayesgan   https://github.com/ermongroup/Variational-Ladder-Autoencoder--Learning Hierarchical Features from Generative Models； 这些都是图像。
 动作也可以很低，上下左右，前后远近，   ref 2.1
 
 8  cnn filter  reinforcement learning 选择特定filter进行处理。  or densenet？ 3d unet的一半
@@ -86,12 +86,10 @@ imitation carla； Curiosity-driven
 
 ----------------------------------------------------------------------
 
-EMI ：  互信息的embedding  forward model; backwordk model; model-base in mutual information;  替换之前的vae 模型 扩展到 mode base；and chap5 reward ；  code？好奇心代码？？改造？？
-empower 的 code；  https://github.com/navneet-nmk/pytorch-rl  and tf version    动作跟stat的互信息；  https://navneet-nmk.github.io/2018-08-26-empowerment/
 
 UNSUPERVISED CONTROL THROUGH NON-PARAMETRIC DISCRIMINATIVE REWARDS
 
-概念学习 能量函数。Concept Learning with Energy-Based Models
+
 
 SAC-----
 Plan Online, Learn Offline: Efficient Learning and Exploration via Model-Based Control   
@@ -100,48 +98,34 @@ https://bair.berkeley.edu/blog/2018/11/30/visual-rl/
 
 
 
+
+--------------------------------------------------------------------------------------
+todo:
+
+run  planet; 相关点深入：srnn  densenet，
+run  stcn； 相关点深入
+
+
 ----------------------------------------------------
 
 okr:
 
-model-base； planet；self-aware; EMI; infobot; mb-mpo;
-model-base ; 视觉压缩-- densenet--；Motion Selective Prediction for Video；4dvae；
 
 
+1 一个技术框架：
+1.1训练框架：ray；
 
+1.2model 框架：model-base； planet；self-aware; EMI; infobot; mb-mpo;
 
+state space:
+2.1抽象框架：互信息-信息瓶颈；
+EMI ：  互信息的embedding  forward model; backwordk model; model-base in mutual information;  替换之前的vae 模型 扩展到 mode base；and chap5 reward ；  code？好奇心代码？？改造？？
+empower 的 code；  https://github.com/navneet-nmk/pytorch-rl  and tf version    动作跟stat的互信息；  https://navneet-nmk.github.io/2018-08-26-empowerment/
 
-----------------------------------------------------
-
-
-
-
-智能 framework and key paper  code;
---------------------------
-0 slow  deeper; go most deeper;
-
-1
-bayes；certain uncertain；   polo探索部分引用了prior ref by rnd and rnd have openai code。好奇心：；RND code
-exploration  curiosity  paper:polo 三个应用说明背后的方法是一样的通用的。 mpc，global value； explorer
-
-反馈，信息的确认？bayes uncertain减少？互信息？
-
-2表示学习； 概念学习  gan-qp
-2.1 生成模型做分类，先能生成再进行分类。
 vdb
 互信息用在编码控制上面，有编码的都可以进行控制？？应用vdb的bottleneck进行信息控制 编码控制？+  EMI ？
 
-3progressive grow；  pg
-环境的reward 需要动态变化，不同阶段学习不同的重点能力，比如先站，再跑，在目标跑，再避障，再。。。。。
-
-4 4d space time   densenet-tc A SIMPLE NEURAL ATTENTIVE META-LEARNER         ； BI
-
-5memory： data reuse；  her
-
-6control；   
-
-
-7熵-互信息； 信息熵 最大 or 最小
+2.7熵-互信息； 信息熵 最大 or 最小
 互信息最大   empower EMI  动作控制影响 互信息最大。   ++ vdb？？
 互信息最小  vdb   信息瓶颈？？  y z; x z  决策信息最小最关键，信息瓶颈 最大动作相关信息？？
 
@@ -151,12 +135,59 @@ stat 决定的action；   stat + goal的  conditon 动作；
 goal conditon 的  model base ； 
 goal 是车道线  是红绿灯  是 其他异常情况，其他行人 其他的 车 其他的自行车灯
 需要对车道线  红绿灯进行概念的学习；
-概念学习------------  概念是一个conditon的goal key；
 
+
+
+
+
+2.2视觉框架：Motion Selective Prediction for Video，densenet；
+; 视觉压缩-- densenet--；Motion Selective Prediction for Video；4dvae；
+
+
+表示学习：视觉：先半个unet训练视觉；vae 然后半个vae 用densenet的方式给RL；selfmodel;worldmodel; 视觉功能提取出来，不是强化学习每次都训练，计算资源耗费严重。gan的图像生成能力已经非常强。
+STCN  conv seq2seq ; 
+
+
+ 概念学习  gan-qp   概念学习 能量函数。Concept Learning with Energy-Based Models 概念学习------------  概念是一个conditon的goal key；
+ 生成模型做分类，先能生成再进行分类。
+
+2.3 多感知认识世界：驾驶只是视觉的test；  正常世界和异常世界的比较区分。多传感器的modelbase。
+
+2.4 4d space time   densenet-tc A SIMPLE NEURAL ATTENTIVE META-LEARNER         ； BI
+
+
+
+
+
+
+3.1 模仿学习，逆强化学习等，看别人红绿灯的规则自己学规则，视频学习；离散规则学习。
+
+3.2     meta learning; ：  rnd、sac、infobot、diversity、--modelbase ;planet;  her apex priority 等 
 or  模仿学习； inverse rl  不学习概念，示范来做。后面升级到概念的语言沟通来做。
+最后开个脑洞：人脑对于少样本训练的范化误差是远比机器学习模型的效果要好的，那么对于任何一个新概念 Y，其在各层抽象级的表述分别为，人脑必然有非常高效的计算机制，对于所有之前已经学习到的概念，最大程度利用已有的知识。同时对于同一抽象级的不同概念，尽量让它们描述不同的信息，即减小，很可能频繁用到离散化的技巧来实现互信息压缩。
 
 
-最后开个脑洞：人脑对于少样本训练的范化误差是远比机器学习模型的效果要好的，那么对于任何一个新概念 Y，其在各层抽象级的表述分别为，人脑必然有非常高效的计算机制，对于所有之前已经学习到的概念，最大程度利用已有的知识。同时对于同一抽象级的不同概念，尽量让它们描述不同的信息，即减小，很可能频繁用到离散化的技巧来实现互信息压缩。 
+
+4 progressive grow；  pg
+环境的reward 需要动态变化，不同阶段学习不同的重点能力，比如先站，再跑，在目标跑，再避障，再。。。。。
+
+
+5 
+bayes；certain uncertain；   polo探索部分引用了prior ref by rnd and rnd have openai code。好奇心：；RND code
+exploration  curiosity  paper:polo 三个应用说明背后的方法是一样的通用的。 mpc，global value； explorer
+
+反馈，信息的确认？bayes uncertain减少？互信息？
+
+
+
+6  memory： data reuse；  her  priority apex ampala in ray；
+
+ 
+
+
+
+
+ 
 
 
 
@@ -174,7 +205,6 @@ infobot -goal --recall trace---SIL 高reward；也可以是好奇心的rnd的高
 
 
 meta-irl --intent paper; subgoal skill subgoal ::: stat action stat ;;
-
 
 
 探索 利用的互相hierarchical；探索的时候最大利用。利用的时候最大探索。
@@ -326,12 +356,36 @@ norl near 最优表示的强化学习
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 欢迎大家批评留言交流，提出不同的智能点的各种方法的实现思路想法，
 
 持续完善阅读原文  https://github.com/createamind/busyplan/blob/master/zdx/Plan-thinkout.md
 
 
-
+2.4 实车：ros；
 
 code: 
 cGAN https://github.com/pfnet-research/sngan_projection,
