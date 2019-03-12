@@ -99,6 +99,29 @@ https://bair.berkeley.edu/blog/2018/11/30/visual-rl/
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 --------------------------------------------------------------------------------------
 todo:
 
@@ -116,10 +139,18 @@ okr:
 1.1训练框架：ray；
 
 1.2model 框架：model-base； planet；self-aware; EMI; infobot; mb-mpo;
+1.3   transfer learning  与多任务 meta learning 的关系。 sim to real
+
+
+
+
+
+
+
 
 state space:
 2.1抽象框架：互信息-信息瓶颈；
-EMI ：  互信息的embedding  forward model; backwordk model; model-base in mutual information;  替换之前的vae 模型 扩展到 mode base；and chap5 reward ；  code？好奇心代码？？改造？？
+EMI ：  互信息的embedding  forward model; backwordk model; model-base in mutual information;  code？好奇心代码？？改造？？
 empower 的 code；  https://github.com/navneet-nmk/pytorch-rl  and tf version    动作跟stat的互信息；  https://navneet-nmk.github.io/2018-08-26-empowerment/
 
 vdb
@@ -138,20 +169,27 @@ goal 是车道线  是红绿灯  是 其他异常情况，其他行人 其他的
 
 
 
-
-
 2.2视觉框架：Motion Selective Prediction for Video，densenet；
 ; 视觉压缩-- densenet--；Motion Selective Prediction for Video；4dvae；
 
 
 表示学习：视觉：先半个unet训练视觉；vae 然后半个vae 用densenet的方式给RL；selfmodel;worldmodel; 视觉功能提取出来，不是强化学习每次都训练，计算资源耗费严重。gan的图像生成能力已经非常强。
-STCN  conv seq2seq ; 
+STCN  conv seq2seq  seqvae; 
 
 
  概念学习  gan-qp   概念学习 能量函数。Concept Learning with Energy-Based Models 概念学习------------  概念是一个conditon的goal key；
  生成模型做分类，先能生成再进行分类。
 
 2.3 多感知认识世界：驾驶只是视觉的test；  正常世界和异常世界的比较区分。多传感器的modelbase。
+2.9multimodel: cycle(video audio language )  cycle-sensor-motor     gan-qp 苏剑林
+Multimodal Densenet  https://arxiv.org/pdf/1811.07407.pdf    3d unet的一半
+cnn的特征使用的改进！
+9.1 2.1 darla model base ; world model; darla vae densenet;
+densenet的vae！！   
+unet的vae；
+unet的video prediction；
+
+
 
 2.4 4d space time   densenet-tc A SIMPLE NEURAL ATTENTIVE META-LEARNER         ； BI
 
@@ -160,39 +198,43 @@ STCN  conv seq2seq ;
 
 
 
+
 3.1 模仿学习，逆强化学习等，看别人红绿灯的规则自己学规则，视频学习；离散规则学习。
+
+
+3.11  学习方式；自己学  学别人
+手把手教---有动作的直接学习动作的模仿学习
+只看就学 ---  无动作的模仿学习或     强化学习：
+vdb 互信息
+ imitation  meta-learning。 https://zhuanlan.zhihu.com/p/33789604
+模仿学习是从视觉推断动作的学习，而好奇心探索就是动作产生的环境变化的互动开始学习，好奇心是可以作为模仿学习的预训练的。
+
+oneshot--学习通用的架构结构-可以快速泛化。
+
+https://sites.google.com/view/one-shot-imitation  code https://github.com/tianheyu927/mil    SFV: Reinforcement Learning of Physical Skills from Videos
+
+Deep Meta-Learning: Learning to Learn in the Concept Space
+
+Inverse reinforcement learning for video games   https://github.com/HumanCompatibleAI/atari-irl   加上vdb互信息的约束试试  +EMI + empower
+
+Automata Guided Reinforcement Learning With Demonstrations， HER
+
+
+A Simple Neural Attentive Meta-Learner
+
+
+Model-Based Reinforcement Learning via Meta-Policy Optimization+ 实时反馈 -- mpc？？
+
+mb-mpo +. sac 是不是会很厉害？mode base+free；
+
 
 3.2     meta learning; ：  rnd、sac、infobot、diversity、--modelbase ;planet;  her apex priority 等 
 or  模仿学习； inverse rl  不学习概念，示范来做。后面升级到概念的语言沟通来做。
 最后开个脑洞：人脑对于少样本训练的范化误差是远比机器学习模型的效果要好的，那么对于任何一个新概念 Y，其在各层抽象级的表述分别为，人脑必然有非常高效的计算机制，对于所有之前已经学习到的概念，最大程度利用已有的知识。同时对于同一抽象级的不同概念，尽量让它们描述不同的信息，即减小，很可能频繁用到离散化的技巧来实现互信息压缩。
+腾讯模仿学习 证明
 
 
-
-4 progressive grow；  pg
-环境的reward 需要动态变化，不同阶段学习不同的重点能力，比如先站，再跑，在目标跑，再避障，再。。。。。
-
-
-5 
-bayes；certain uncertain；   polo探索部分引用了prior ref by rnd and rnd have openai code。好奇心：；RND code
-exploration  curiosity  paper:polo 三个应用说明背后的方法是一样的通用的。 mpc，global value； explorer
-
-反馈，信息的确认？bayes uncertain减少？互信息？
-
-
-
-6  memory： data reuse；  her  priority apex ampala in ray；
-
- 
-
-
-
-
- 
-
-
-
-
-8model base planning-- pred  predictonve ，mpc
+model base planning-- pred  predictonve ，mpc
 
 novelty dynamic predction exploration --（valor option； infobot； decision state ; rnd; rpf）
 dynamic predction ok then novelty small; exploration 需求就小。
@@ -221,7 +263,6 @@ diversity is all your need ; 单个动作的dynamic学习；diversity分层类�
 
 
 
-视觉感知位置---分割等网络方法值得学习。
 
 
 
@@ -229,20 +270,24 @@ diversity is all your need ; 单个动作的dynamic学习；diversity分层类�
 
 
 
+4 progressive grow；  pg
+环境的reward 需要动态变化，不同阶段学习不同的重点能力，比如先站，再跑，在目标跑，再避障，再。。。。。
 
 
+5 
+bayes；certain uncertain；   polo探索部分引用了prior ref by rnd and rnd have openai code。好奇心：；RND code
+exploration  curiosity  paper:polo 三个应用说明背后的方法是一样的通用的。 mpc，global value； explorer
 
-9multimodel: cycle(video audio language )  cycle-sensor-motor     gan-qp 苏剑林
-Multimodal Densenet  https://arxiv.org/pdf/1811.07407.pdf    3d unet的一半
-cnn的特征使用的改进！
-9.1 2.1 darla model base ; world model; darla vae densenet;
-densenet的vae！！   
-unet的vae；
-unet的video prediction；
+反馈，信息的确认？bayes uncertain减少？互信息？
 
-10 
+
+6  memory： data reuse；  her  priority apex ampala in ray
+
+
+7
 语言： 交流沟通 通信编码
 动作描述---动作的语言之前的模型语言模型文章语言论文互信息 IB；Efficient human-like semantic representations via the Information Bottleneck principle
+语言和压缩和强化学习的paper；
 
 Unsupervised perceptual rewards for imitation learning .   gan .  vae .  自动学习视频的分割--------苏剑林 自动的vae 聚类   3dvae聚类，
 
@@ -251,43 +296,14 @@ Mutual alignment transfer learning， and ref it paper；  自动分段  ； Ddc
 TACO: Learning Task Decomposition via Temporal Alignment for Control
 
 Variational Option Discovery Algorithms -- real hierarchial --- 非常重要的预训练
-每个skill的完整性；skill的完整确认。  diversity is all you need .
+每个skill的完整性；skill的完整确认。  diversity is all you need .   动作词和sikll的关联
 
 novel uncertain  ----- bayes prior function。
 模仿的基础是自己会，自己有基础，类似这样先学习基础后 再 demo imitation；
 
 
 
-11  学习方式；自己学  学别人
-手把手教---有动作的直接学习动作的模仿学习
-只看就学 ---  无动作的模仿学习或     强化学习：
-vdb 互信息
- imitation  meta-learning。 https://zhuanlan.zhihu.com/p/33789604
-模仿学习是从视觉推断动作的学习，而好奇心探索就是动作产生的环境变化的互动开始学习，好奇心是可以作为模仿学习的预训练的。
-
-oneshot--学习通用的架构结构-可以快速泛化。
-
-https://sites.google.com/view/one-shot-imitation  code https://github.com/tianheyu927/mil    SFV: Reinforcement Learning of Physical Skills from Videos
-
-Deep Meta-Learning: Learning to Learn in the Concept Space
-
-Inverse reinforcement learning for video games   https://github.com/HumanCompatibleAI/atari-irl   加上vdb互信息的约束试试  +EMI + empower
-
-Automata Guided Reinforcement Learning With Demonstrations， HER
-
-
-A Simple Neural Attentive Meta-Learner
-
-
-Model-Based Reinforcement Learning via Meta-Policy Optimization+ 实时反馈 -- mpc？？
-
-mb-mpo +. sac 是不是会很厉害？mode base+free；
-
-
-12 env： carla ； real world
-
-
-13   小数据  大任务； 多任务；   meta learning 是不是就是多loss，的确是，不过是一类loss； 人 ，跟基础的原则道理是跨类的任务loss。
+8  多算法，多方法方法训练。 小数据  大任务； 多任务；   meta learning 是不是就是多loss，的确是，不过是一类loss； 人 ，跟基础的原则道理是跨类的任务loss。
 maml meta learning 跟表示学习的联系。  meta learning 多任务跟多任务互信息压缩到一个网络的关系？ tc softattention ref bottleneck mutual info;
 ：：：：：多任务 多loss ？？ what loss：  
 
@@ -309,7 +325,7 @@ uncertain vae loss
 
 4D空间 关系  重建关系位置 
 
-双目视察 loss
+双目视察 loss; 视觉感知位置---分割等网络方法值得学习。
 3d conv 运动信息 loss
 
 
@@ -319,14 +335,11 @@ https://sites.google.com/view/actionablerepresentations
 actionable2 paper  LEARNING ACTIONABLE REPRESENTATIONS WITH GOAL-CONDITIONED POLICIES
 
 
-13.0 多算法，多方法方法训练。
+
+9  模型的容量足够大。
 
 
-14
 
-15 transfer learning  与多任务 meta learning 的关系。 sim to real
-
-16 模型的容量最够大。
 
 
 
@@ -385,7 +398,7 @@ norl near 最优表示的强化学习
 持续完善阅读原文  https://github.com/createamind/busyplan/blob/master/zdx/Plan-thinkout.md
 
 
-2.4 实车：ros；
+2.4 实车：ros；12 env： carla ； real world
 
 code: 
 cGAN https://github.com/pfnet-research/sngan_projection,
