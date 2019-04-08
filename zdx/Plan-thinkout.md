@@ -103,35 +103,64 @@ https://bair.berkeley.edu/blog/2018/11/30/visual-rl/
 
 
 
-
-
-
-
-
-
-
-
-
-
-checklist：
-
-drl train：
-    input： 图像的归一化处理
-    
-
-
-
-
-
-
-
-
 --------------------------------------------------------------------------------------
 todo:
 
-run  planet; 相关点深入：srnn  densenet，
-run  stcn； 相关点深入
-模仿学习。
+
+planet 代码熟悉，博士跟进我就不跟进了，代码能力不够。
+
+parser.add_argument(
+      '--num_runs', type=int, default=1)
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+
+算法改进点梳理
+
+
+-5 reach goal  继续 争取训练一个能跑1000步的agent；
+-4 调参   ：  各种超参数的整理分析（zdx）隐变量维度，repeat动作数，rnn cell 大小，batchsize 步长 50 ，50；
+-3 attention 噪音 互信息如何加？ 
+-2 高层wrong command 如何加？？
+-1 
+0 
+1 双目摄像头输入。 输入的改进。
+2 根据reward 数据保留情况的训练侧重在异常情况。
+memory；priority buffer：reward预测，极端reward；   对输入的改进； tderror-惊奇度（我估计和实际Q值区别）来决定数据的优先级大小（惊奇度越大优先级越高，具体取法看上连接），另外加个e常数保证在开始训练时数据间差距不大时有近似均等的优先级，之后才逐渐产生优先级。
+3 densenet； attention； 互信息。 对学习过程的改进。脑容量的改进。
+
+4 stcn； 学习过程改进；vlae，https://github.com/favae/favae_ijcai2019 
+5 https://ray.readthedocs.io/en/latest/rllib-algorithms.html#advantage-re-weighted-imitation-learning-marwil  模仿学习
+
+----------------------------------------------
+6预测：Motion Selective Prediction for Video Frame Synthesis
+7 EMI mine DIM
+
+
+
+
 
 ----------------------------------------------------
 
