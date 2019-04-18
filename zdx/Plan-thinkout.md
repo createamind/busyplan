@@ -134,26 +134,42 @@ parser.add_argument(
       
       
       
+1.确定输入 waypoint command camera position
+2.更改reward看看是否有效
+3.确定segmentation 效果
+seg+rgb对比rgb提升多少
+4.扩大densenet
+5.加入attention机制
+6.加入priority replay机制
+7.加入value function
+8.接入carla规范的autoagent
       
-      
+
 
 算法改进点梳理
 
--6 动作抽象 skill；（ 环境抽象（像素序列2的图片3d视频的集合） latent space；动作集合序列抽象 action space；  vae Variational Option Discovery Algorithms, Achiam et al, 2018. Algorithm: VALOR.   https://arxiv.org/pdf/1807.10299.pdf  所以动作和stat 都可以用vae 抽象   ）
+-13 polo改进planning
+-12 纤维丛
+-11 无监督  深度视觉 segmentation（独立物体的概念？？） 代码有:https://scholar.google.com/scholar?um=1&ie=UTF-8&lr&cites=1767619852461733300
+-10 
+-9 her 算法
+-8  imagenet 预训练模型的使用   不佳--------------------------
+-7 从错误的地方开始训练
+-6 动作repeat   动作抽象 skill；（ 环境抽象（像素序列2的图片3d视频的集合） latent space；动作集合序列抽象 action space；  vae Variational Option Discovery Algorithms, Achiam et al, 2018. Algorithm: VALOR.   https://arxiv.org/pdf/1807.10299.pdf  所以动作和stat 都可以用vae 抽象   ）
 -5 reach goal  继续 争取训练一个能跑1000步的agent；
 -4 调参   ：  各种超参数的整理分析（zdx）隐变量维度，repeat动作数，rnn cell 大小，batchsize 步长 50 ，50；
--3 attention 噪音 互信息如何加？ 
--2 高层wrong command 如何加？？
--1 更多的人和车及各种场景。
-0 模仿学习 -- 跑一圈收集数据进行视觉预训练。
+-3 
+-2 高层wrong command 如何加？？   -10 高层指令，实时反馈
+-1 更多的人和车及各种场景。 scenario 添加
+0 
 1 双目摄像头输入。 输入的改进。
 2 根据reward 数据保留情况的训练侧重在异常情况。https://github.com/Kaixhin/Rainbow
 memory；priority buffer：reward预测，极端reward；   对输入的改进； tderror-惊奇度（我估计和实际Q值区别）来决定数据的优先级大小（惊奇度越大优先级越高，具体取法看上连接），另外加个e常数保证在开始训练时数据间差距不大时有近似均等的优先级，之后才逐渐产生优先级。
-3 densenet； attention； 互信息。 对学习过程的改进。脑容量的改进。
+3 densenet； attention； 互信息。 对学习过程的改进。脑容量的改进。   attention 噪音 互信息如何加？ 
 
 4 stcn； 学习过程改进；vlae，https://github.com/favae/favae_ijcai2019 
 5 https://ray.readthedocs.io/en/latest/rllib-algorithms.html#advantage-re-weighted-imitation-learning-marwil  模仿学习
-
+ 模仿学习 -- 跑一圈收集数据进行视觉预训练。
 ----------------------------------------------
 6预测：Motion Selective Prediction for Video Frame Synthesis
 7 EMI mine DIM
