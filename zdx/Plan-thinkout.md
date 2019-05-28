@@ -16,11 +16,22 @@ Curiosity-driven Exploration by Self-supervised Prediction http://mp.weixin.qq.c
 1更多的维度-空间(2d到3d)加时间监督 videogan；
 1我们生活在四维的时空中，真正的智能必须感知这四个维度，3维空间和时间，所有接受的信息应该是视频形式，视频是非常好的输入素材。只通过图片训练的智能有其先天缺陷。
 基于四维时空的预测学习或记忆学习。所以我们依据做了基于视频的预测。
-单张图片歧义-通过视频进行歧义消除：slam14讲2.1图片 小人是否是模型 是否远近； 图片是一个拖把-视频看其实是一个多毛的小狗。 飞行的鸟（单张图片就是混乱的线条，视频就是一个运动的鸟。）
+单张图片歧义-通过视频进行歧义消除：slam14讲2.1图片 小人是否是模型 是否远近； 第一张图片看是一个拖把-后续的视频看其实是一个多毛的小狗。 飞行的鸟（单张图片就是混乱的线条，视频就是一个运动的鸟。）
 
-视觉的运动感知在视觉的认知发展是很早起就开始发育的-公众号菜单生物智能相关文章。
+视觉的运动感知在视觉的认知发展是很早起就开始发育的-公众号菜单生物智能相关文章。 怎么更好的学习运动感知，运动和深度和光流和分割等的关系关联？ 个人认为运动感知是智能的基础基础。  why so pff？？ pff？ 
 
-+BI ?
+
+
+Competitive Collaboration这个对场景的分解我认为很不错：agent观察场景 需要对场景的理解：场景的静态 及其他运动物体 及自身运动 及对场景观察的深度距离理解、光流，还缺少什么考虑因素？  @所有人  
+
+
+hebb学习，多传感器融合，不同属性的关联学习。水果的颜色和功能reward的直接关联学习，
+hebb学习视觉memory论文，hebb对提高多传感器融合学习我认为非常关键，
+pff的filter flow 光流  冲出的人和负reward结合起来形成memory再从特征通过之前的memory提取出此事件的reward，不需要vae大量的训练。
+
+多传感器融合--不同传感器互相监督高效训练，
+多人车训练模型思考及多传感器融合
+
 
 
 2更多传感器，视听触等, 压力的感知和 reward 动作的感知学习。   宽泛讲就是多维度的信息，比如虚拟环境各种指标信息--DFP，不同传感器互相监督即cGAN；
@@ -64,6 +75,8 @@ cGAN 各种不同的条件就是标签，条件监督可以用在传感器监督
 densenet！！入职培训提到的densenet多层连接。  3d unet的一半
 
 容量
+
+
 
 6capsnet 胶囊 (Capsule) 是一个包含多个神经元的载体，每个神经元表示了图像中出现的特定实体的各种属性 多属性表示。 
 
@@ -225,8 +238,8 @@ STCN  conv seq2seq  seqvae;
  概念学习  gan-qp   概念学习 能量函数。Concept Learning with Energy-Based Models 概念学习------------  概念是一个conditon的goal key；  作为整体运动或存在的物体概念的学习。作为整体运动的segmentation；个体 整体的概念。
  生成模型做分类，先能生成再进行分类。
 
-2.3 多感知认识世界：驾驶只是视觉的test；  正常世界和异常世界的比较区分。多传感器的modelbase。
-2.9multimodel: cycle(video audio language )  cycle-sensor-motor     gan-qp 苏剑林
+2.3 多感知认识世界：驾驶只是视觉的test；  正常世界和异常世界的比较区分。多传感器的modelbase。轮胎压力传感器，发动机传感器。 l
+2.9multimodel: cycle(video audio language )  cycle-sensor-motor     gan-qp 
 Multimodal Densenet  https://arxiv.org/pdf/1811.07407.pdf    3d unet的一半
 cnn的特征使用的改进！
 9.1 2.1 darla model base ; world model; darla vae densenet;
