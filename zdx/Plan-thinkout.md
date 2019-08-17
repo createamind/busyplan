@@ -13,55 +13,125 @@ Plan   正式的：  日记 反思； 最重要！  明确的！具体！！！�
 Curiosity-driven Exploration by Self-supervised Prediction http://mp.weixin.qq.com/s/A3pYqzakPCYn68wcQfDtCQ AGI:我与世界的互动是不是如我所愿。动作条件CycleGAN好奇心探索，
 熟悉环境的预训练。https://github.com/pathak22/noreward-rl
 
-1更多的维度-空间(2d到3d)加时间监督 videogan；
+1 更多的维度-空间(2d到3d)加时间监督 videogan；
 1我们生活在四维的时空中，真正的智能必须感知这四个维度，3维空间和时间，所有接受的信息应该是视频形式，视频是非常好的输入素材。只通过图片训练的智能有其先天缺陷。
 基于四维时空的预测学习或记忆学习。所以我们依据做了基于视频的预测。
 单张图片歧义-通过视频进行歧义消除：slam14讲2.1图片 小人是否是模型 是否远近； 第一张图片看是一个拖把-后续的视频看其实是一个多毛的小狗。 飞行的鸟（单张图片就是混乱的线条，视频就是一个运动的鸟。）
 
 
-视觉的运动感知在视觉的认知发展是很早起就开始发育的-公众号菜单生物智能相关文章。 怎么更好的学习运动感知，运动和深度和光流和分割等的关系关联？ 个人认为运动感知是智能的基础基础。  why so pff？？ pff？ 
-
-Competitive Collaboration这个对场景的分解我认为很不错：agent观察场景 需要对场景的理解：场景的静态 及其他运动物体 及自身运动 及对场景观察的深度距离理解、光流，还缺少什么考虑因素？  @所有人  
-
-
-hebb学习，多传感器融合，不同属性的关联学习。水果的颜色和功能reward的直接关联学习，
-hebb学习视觉memory论文，hebb对提高多传感器融合学习我认为非常关键，
-pff的filter flow 光流  冲出的人和负reward结合起来形成memory再从特征通过之前的memory提取出此事件的reward，不需要vae大量的训练。
-视频的pff 光流预测 ；突出的光流跟注意力的关系，
+视觉的运动感知在视觉的认知发展是很早起就开始发育的-公众号菜单生物智能相关文章。 怎么更好的学习运动感知，运动和深度和光流和分割等的关系关联？ 个人认为运动感知是智能的基础基础。 
+Competitive Collaboration这个对场景的分解我认为很不错：agent观察场景 需要对场景的理解：场景的静态 及其他运动物体 及自身运动 及对场景观察的深度距离理解、光流，还缺少什么考虑因素？   
+光流  冲出的人和负reward结合起来形成memory再从特征通过之前的memory提取出此事件的reward，不需要vae大量的训练。
+突出的光流跟注意力的关系，
 
 
+
+1.5
+  episodic memory！from wiki！公众号整理的     g
+  
+http://mp.weixin.qq.com/s?__biz=MzA5MDMwMTIyNQ==&mid=2649294516&idx=1&sn=6af04535f777a96a1e5d9c7c44d2a234&chksm=881010f2bf6799e4ca15cf0b463ed8369a7fbe905d4ebb00e28d5bd3d597cfd8c8804dc4a2bd&token=1328120923&lang=zh_CN#rd
 
 AGIv0.01
-多人车训练模型思考及多传感器融合
-冲出的人或车的突出光流的危险性预测：方法hebb memory，
-hebb memory 将当时场景中同时发生的多种不同信息一起记忆下来，以后场景中特点突出的特征都能提取到此记忆，从此记忆推断出其他相关reward等需要的信息，依据reward进行决策（cem）
-场景中同时发生的信息包括（obs，stat，optical flow，pff，reward，声音，距离depth，压力等；可以加注意力1筛选，注意力1机制可以是突出的运动信息，pff突出的光流信息（相对的人车特征））对突出的光流运动区域的关注就限制了学习特征的范围，对此特征进行跟踪预测都会更容易，不用整张图像都重建。 （多帧pff光流特征只预测注意力关注的最突出区域）
-对场景的认识可以是（Competitive Collaboration场景的静态 及其他运动物体 及自身运动 及对场景观察的深度距离理解、光流，seg（物体作为一个整体的基础概念，人对一个物体各种属性的综合记忆是一个hebb memory 记忆综合的多种属性事件信息，比如特定场景对怀旧的记忆，就是某个特征触发了之前记忆的某次事件记忆。认知书例子：特定杯子重复触发相同的记忆。））
-多传感器融合优点：1不同传感器互相监督高效训练，
-hebb学习的优点：听见声音就留口水，看到水果的颜色就饿；水果的颜色和食物的reward绑定了。hebb学习是真正的多传感器融合。
-hebb memoy可以one shot learnning；memory可以反复训练；一次事件记忆就可以迷信特定的事件及reward结果。
-一次撞车 撞人就可以通过memory学会避免撞人车的情况。不用vae大量视频的训练。
+多人车训练模型思考，冲出的人或车的突出光流的危险性预测方法：
+ 
+association memory；
+hebb memory及多传感器融合模型
+ 
+hebb memory 将当时场景中同时发生的多种不同信息一起记忆下来，以后场景中特点突出的特征都能提取到此记忆，从此记忆推断出其他相关当时情景中的reward等需要的信息，次场景依据记忆的reward进行决策（cem）
+hebb学习，多传感器融合，不同属性的关联学习。水果的颜色和功能reward的直接关联学习，
+hebb学习视觉memory论文，hebb对提高多传感器融合学习我认为非常关键，
 
-通过hebb memory，训练的时候是多种信息一起训练，但是test的时候只需要视觉就可以提取其他相关信息，就像现在有人说人开车只需要眼睛，但其实人是通过多感知（5感 触（理解力，重力，移动等等）听（喇叭 发动机声音判断问题，敲西瓜）视 嗅 味 ）从小训练学习对世界的认识才达到只用眼睛开车的。
+场景中同时发生的信息包括（obs，stat，optical flow，pff，reward，声音，距离depth，压力等；可以加注意力1筛选，注意力1机制可以是突出的运动信息。
+（pff突出的光流信息（相对的人车特征））对突出的光流运动区域的关注就限制了学习特征的范围，对此特征进行跟踪预测都会更容易，不用整张图像都重建。 （多帧pff光流特征只预测注意力关注的最突出区域） ）
+
+对场景的认识可以是（Competitive Collaboration场景的静态 及其他运动物体 及自身运动 及对场景观察的深度距离理解、光流，seg（物体作为一个整体的基础概念，人对一个物体各种属性的综合记忆是一个hebb memory 记忆综合的多种属性事件信息，比如特定场景对怀旧的记忆，就是某个特征触发了之前记忆的某次事件记忆。认知书例子：特定杯子重复触发相同的记忆。））
+
+
+hebb学习的优点：听见声音就留口水，看到水果的颜色就饿；水果的颜色和食物的reward绑定了。hebb学习是真正的多传感器融合。
+hebb memoy可以one shot learnning；memory可以反复训练达到一次事件记忆就可以迷信特定的事件及reward结果：守株待兔，吉祥物
+一次撞车 撞人就可以通过memory学会避免撞人车的情况。不用vae大量视频的训练。
+ 
+通过hebb memory，训练的时候是多种信息一起训练，但是test的时候只需要视觉就可以提取其他相关信息，就像现在有人说人开车只需要眼睛，但其实人是通过多感知（5感 触（理解力，重力，移动等等）听（喇叭 发动机声音判断问题，敲西瓜）视 嗅 味 ）从小训练学习对世界的认识才达到一定年龄（大于4岁）只用眼睛开车的。
+
 生成模型的人脸生成需要大量的训练，但是比如头发的密度温柔属性和脸的肉体属性温度是很不同的，从不同属性区分是很容易的。
 区分视频中的不同物体应该不仅仅是从视觉区分（使用的时候是从视觉来区分，但是训练的时候是不同传感器直接区分的）
 视频中不同物体的本质是物体的不同属性的区分，通过视觉联想（hebb memory提取）其他感知信息的内容来区分。从视觉中区分出不同远近，不同软硬的物体，不同用途的物体，不同冷热危险的物体。
  
 多传感器多属性和注意力2的关系：注意力2就是从有明显特点属性的物体快速从hebb memory提取其他相关特征信息比如突出的正负reward，比如路中间的人，人在特定位置跟巨大的reward后果的快速推断。
+ 模型提升：互信息、bayes把hebb memoy进行压缩，去除相关小的内容。
+ 
+相关论文：
+        https://www.mitpressjournals.org/doi/full/10.1162/neco_a_01143
+        http://papers.nips.cc/paper/6121-dense-associative-memory-for-pattern-recognition
+        https://www.sciencedirect.com/science/article/pii/S0893608019300152?via%3Dihub
+        http://www.mit.edu/~9.54/fall14/Classes/class07/Palm.pdf    Neural associative memories and sparse coding
+        http://news.mit.edu/2019/improved-deep-neural-network-vision-systems-just-provide-feedback-loops-0429
 
-互信息、bayes把hebb memoy进行压缩，去除相关小的内容。
+2.5 记忆的memory，记忆规律disentangling的z；记忆某个强化学习的技能，记忆。。。。  强化学习的经验如何自动选择记忆，记忆提取，小范围的自动disentangling的规律自动选择记忆，记忆提取机制？  这个临时记忆通过反复重复播放训练形成长期记忆。
+  memory： data reuse；  her  priority 
 
 
-极度不完善，尽力批评。
+and smallplando.md
+
+1.7 对环境的抽象或信息的抽取 information bottelneck 
+state and  action abstract  skill options  语言 
 
 
+state space:
+
+2.1抽象框架：互信息-信息瓶颈；熵-互信息； 信息熵 最大 or 最小
+EMI; infobot; mb-mpo;
+EMI ：  互信息的embedding  forward model; backwordk model; model-base in mutual information;  
+empower 的 code；  https://github.com/navneet-nmk/pytorch-rl  and tf version    动作跟stat的互信息；  https://navneet-nmk.github.io/2018-08-26-empowerment/
+vdb
+互信息用在编码控制上面，有编码的都可以进行控制？？应用vdb的bottleneck进行信息控制 编码控制？+  EMI ？
+互信息最大   empower EMI  动作控制影响 互信息最大。   ++ vdb？？
+互信息最小  vdb   信息瓶颈？？  y z; x z  决策信息最小最关键，信息瓶颈 最大动作相关信息？？
+
+红绿灯时一种conditon的的动作，比如  论文 deepmind 互信息压缩很多技能在一个网络里面。
+stat 决定的action；   stat + goal的  conditon 动作；   
+
+goal conditon 的  model base ； 
+goal 是车道线  是红绿灯  是 其他异常情况，其他行人 其他的 车 其他的自行车灯
+需要对车道线  红绿灯进行概念的学习；
+
+
+
+2.2视觉框架：Motion Selective Prediction for Video，densenet；
+; 视觉压缩-- densenet--；Motion Selective Prediction for Video；4dvae；stcn
+
+
+表示学习：视觉：先半个unet训练视觉；vae 然后半个vae 用densenet的方式给RL；selfmodel;worldmodel; 视觉功能提取出来，不是强化学习每次都训练，计算资源耗费严重。gan的图像生成能力已经非常强。
+STCN  conv seq2seq  seqvae; 
+
+
+ 概念学习  gan-qp   概念学习 能量函数。Concept Learning with Energy-Based Models 概念学习------------  概念是一个conditon的goal key；  作为整体运动或存在的物体概念的学习。作为整体运动的segmentation；个体 整体的概念。
+ 生成模型做分类，先能生成再进行分类。
+
+
+
+                          
 
 
 2更多传感器，视听触等, 压力的感知和 reward 动作的感知学习。   宽泛讲就是多维度的信息，比如虚拟环境各种指标信息--DFP，不同传感器互相监督即cGAN；   进行更细致的认识，有一个粗略的网络进行比如危险属性的识别，然后有专门网络进行特定属性的特定处理，比如跟踪，准确的识别认识，或逃跑。
 小数据-大任务--人工智能的架构与统一。大任务---多感知不同属性的多任务关联映射。
 
-2.1 强化学习学习disentangeling factor，通过动作互动，动作也是感知方式之一， 二维平面学习图片中的disentangleing feature先天缺陷，深度学习，及不同触觉信息都进行了多维度的属性拆解。
+2.1 强化学习学习disentangeling factor，通过动作互动，动作也是感知方式之一，二维平面学习图片中的disentangleing feature先天缺陷，深度学习，及不同触觉信息都进行了多维度的属性拆解。
 betavae等仅仅通过视觉已经非常厉害了，扩展方式应该是多属性及动作对属性的探测。
+
+
+2.3 多感知认识世界：驾驶只是视觉的test；  正常世界和异常世界的比较区分。多传感器的modelbase。轮胎压力传感器，发动机传感器。 l
+2.9multimodel: cycle(video audio language )  cycle-sensor-motor     gan-qp 
+Multimodal Densenet   3d unet的一半
+cnn的特征使用的改进！
+9.1 2.1 darla model base ; world model; darla vae densenet;
+densenet的vae！！   
+unet的vae；
+unet的video prediction；
+2.4 4d space time   densenet-tc A SIMPLE NEURAL ATTENTIVE META-LEARNER         ； BI
+
+
+
 
 2.2 动态跟踪物体的移动；深度学习跟踪已经有不错的项目。
 
@@ -71,7 +141,7 @@ betavae等仅仅通过视觉已经非常厉害了，扩展方式应该是多属�
 2.4 disentangling 学到的z的变化规律记忆下来，z在训练时候也会被覆盖掉的。  学习要适可而止，
 2.4.1  加动作或位置信息等一起多传感器进行disentangling的学习。   道路先学习转换到俯视图，然后学习俯视图的disentangling。
 
-2.5 记忆的memory，记忆规律disentangling的z；记忆某个强化学习的技能，记忆。。。。  强化学习的经验如何自动选择记忆，记忆提取，小范围的自动disentangling的规律自动选择记忆，记忆提取机制？  这个临时记忆通过反复重复播放训练形成长期记忆。
+
 
 
 
@@ -79,6 +149,77 @@ betavae等仅仅通过视觉已经非常厉害了，扩展方式应该是多属�
 3 Progressive Growing of GANs 智力的成长发展，2分类或3分类进行简单功能的精准实现  --7-- 上下左右，前后远近 先离散后回归。
 3学习开始可以从简单开始，就像progressive growing gans 图像越来越清晰，分类或其他功能的准确度也可以越来越精确，先从2分类或3分类开始训练即可。
 将特征空间压缩到非常低的维度，比如高低，胖瘦，大小，快慢，前后，左右，上下，
+
+
+4 progressive grow；  pg
+环境的reward 需要动态变化，不同阶段学习不同的重点能力，比如先站，再跑，在目标跑，再避障，再。。。。。
+
+
+5 
+bayes；certain uncertain；   polo探索部分引用了prior ref by rnd and rnd have openai code。好奇心：；RND code
+exploration  curiosity  paper:polo 三个应用说明背后的方法是一样的通用的。 mpc，global value； explorer
+
+反馈，信息的确认？bayes uncertain减少？互信息？
+
+7
+语言： 交流沟通 通信编码
+动作描述---动作的语言之前的模型语言模型文章语言论文互信息 IB；Efficient human-like semantic representations via the Information Bottleneck principle
+最近 18年底的语言和压缩和强化学习的paper；
+
+Unsupervised perceptual rewards for imitation learning .   gan .  vae .  自动学习视频的分割--------苏剑林 自动的vae 聚类   3dvae聚类，
+
+Mutual alignment transfer learning， and ref it paper；  自动分段  ； Ddco: Discovery of deep continuous options for robot learning from demonstrations
+
+TACO: Learning Task Decomposition via Temporal Alignment for Control
+
+Variational Option Discovery Algorithms -- real hierarchial --- 非常重要的预训练
+每个skill的完整性；skill的完整确认。  diversity is all you need .   动作词和sikll的关联
+
+novel uncertain  ----- bayes prior function。
+模仿的基础是自己会，自己有基础，类似这样先学习基础后 再 demo imitation；
+
+
+
+8  多算法，多方法方法训练。 小数据  大任务； 多任务；   meta learning 是不是就是多loss，的确是，不过是一类loss； 人 ，跟基础的原则道理是跨类的任务loss。
+maml meta learning 跟表示学习的联系。  meta learning 多任务跟多任务互信息压缩到一个网络的关系？ tc softattention ref bottleneck mutual info;
+：：：：：多任务 多loss ？？ what loss：  
+
+
+各种loss 列举出来！！！！ 数据需要什么样的？？？？          SRLFC paper many loss； loss 与任务的相关性，自动选择loss？？？
+
+多任务loss：meta learning；
+
+多传感器loss：
+
+空间loss：
+
+https://github.com/tensorflow/models/tree/master/research/vid2depth depth loss
+https://github.com/tensorflow/models/tree/master/research/struct2depth
+
+uncertain vae loss
+角度 位置  gqn loss
+4d segmentation  loss
+
+4D空间 关系  重建关系位置 
+
+双目视察 loss; 视觉感知位置---分割等网络方法值得学习。
+3d conv 运动信息 loss
+
+信息论相关loss kl约束loss；   互信息相关公式的有道笔记
+
+tcn2  actionable loss？
+https://sites.google.com/view/actionablerepresentations
+actionable2 paper  LEARNING ACTIONABLE REPRESENTATIONS WITH GOAL-CONDITIONED POLICIES
+
+
+
+9  模型的容量足够大。
+
+
+10 自主意识，自我驱动，内部reward 注意力 好奇心 之上而下 经验，自己组装各种目标 reward， objective；等等
+
+
+
 
 
 
@@ -89,14 +230,11 @@ cGAN 各种不同的条件就是标签，条件监督可以用在传感器监督
 生物各种不同情况的反应就是各种condition GAN的 动作输出。语言的很多限定词都是conditon，无人驾驶的红绿灯，各种异常情况都是各种conditonGAN。
 因果推理和cGAN的预测也是相关的。
 
+
 5 人脑发育到一定阶段神经元增长不多，增加的是神经元的链接，通过不同区域神经网络的链接的增加，实现了不同的关系属性及概念的互相链接。这个可以对应进行神经网络的highway的不断增加。
 5 more and more highway for 概念关联。 
 
 densenet！！入职培训提到的densenet多层连接。  3d unet的一半
-
-容量
-
-
 
 6capsnet 胶囊 (Capsule) 是一个包含多个神经元的载体，每个神经元表示了图像中出现的特定实体的各种属性 多属性表示。 
 
@@ -109,7 +247,6 @@ densenet！！入职培训提到的densenet多层连接。  3d unet的一半
 8  cnn filter  reinforcement learning 选择特定filter进行处理。  or densenet？ 3d unet的一半
 9 DFP   Human certainly possess the innate ability to switch goals based on different circumstances  -----联系 4 
 imitation carla； Curiosity-driven
-
 10 vid2vid prediction  https://github.com/createamind/vid2vid  ;   Curiosity-driven
 序列预测是智能非常重要的能力，对于AI非常重要，完全符合公司目标通用智能，做出了能增强现有神经网络的智能。
 具体场景：大家一起想！避障，其他车辆意图的预测，torcs游戏验证？机器人自己动作的预测，常识学习。条件反射，躲避飞来的石头，场景记忆，右转注意行人等，
@@ -117,30 +254,55 @@ imitation carla； Curiosity-driven
 无人驾驶决策是快决策、条件反射的决策，不是高层推理的决策，所以是感知和决策和执行几乎是一体的。保守的异常情况刹车处理。
 
 
-----------------------------------------------------------------------
-
-
-UNSUPERVISED CONTROL THROUGH NON-PARAMETRIC DISCRIMINATIVE REWARDS
 
 
 
-SAC-----
-Plan Online, Learn Offline: Efficient Learning and Exploration via Model-Based Control   
-https://bair.berkeley.edu/blog/2018/11/30/visual-rl/
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+---------------------------------------------------------------------
 --------------------------------------------------------------------------------------
-todo:
 
 
-planet 代码熟悉，博士跟进我就不跟进了，代码能力不够。
 
-parser.add_argument(
-      '--num_runs', type=int, default=1)
-      
-      
-  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 算法改进点梳理
@@ -179,16 +341,8 @@ densenet；
 6预测：Motion Selective Prediction for Video Frame Synthesis
 7 EMI mine DIM
 
-
-
-
-
 ------------------------------8  imagenet 预训练模型的使用   不佳--------------------------
------------------------12 纤维丛
-
-
 ----------------------------------------------------
-
 okr:
 
 
@@ -198,50 +352,6 @@ okr:
 
 1.2model 框架：model-base； planet；self-aware; 
 1.3   transfer learning  与多任务 meta learning 的关系。 sim to real
-
-
-
-state space:
-
-2.1抽象框架：互信息-信息瓶颈；熵-互信息； 信息熵 最大 or 最小
-EMI; infobot; mb-mpo;
-EMI ：  互信息的embedding  forward model; backwordk model; model-base in mutual information;  
-empower 的 code；  https://github.com/navneet-nmk/pytorch-rl  and tf version    动作跟stat的互信息；  https://navneet-nmk.github.io/2018-08-26-empowerment/
-vdb
-互信息用在编码控制上面，有编码的都可以进行控制？？应用vdb的bottleneck进行信息控制 编码控制？+  EMI ？
-互信息最大   empower EMI  动作控制影响 互信息最大。   ++ vdb？？
-互信息最小  vdb   信息瓶颈？？  y z; x z  决策信息最小最关键，信息瓶颈 最大动作相关信息？？
-
-红绿灯时一种cnoditon的的动作，比如  论文 deepmind 互信息压缩很多技能在一个网络里面。
-stat 决定的action；   stat + goal的  conditon 动作；   
-
-goal conditon 的  model base ； 
-goal 是车道线  是红绿灯  是 其他异常情况，其他行人 其他的 车 其他的自行车灯
-需要对车道线  红绿灯进行概念的学习；
-
-
-
-2.2视觉框架：Motion Selective Prediction for Video，densenet；
-; 视觉压缩-- densenet--；Motion Selective Prediction for Video；4dvae；stcn
-
-
-表示学习：视觉：先半个unet训练视觉；vae 然后半个vae 用densenet的方式给RL；selfmodel;worldmodel; 视觉功能提取出来，不是强化学习每次都训练，计算资源耗费严重。gan的图像生成能力已经非常强。
-STCN  conv seq2seq  seqvae; 
-
-
- 概念学习  gan-qp   概念学习 能量函数。Concept Learning with Energy-Based Models 概念学习------------  概念是一个conditon的goal key；  作为整体运动或存在的物体概念的学习。作为整体运动的segmentation；个体 整体的概念。
- 生成模型做分类，先能生成再进行分类。
-
-2.3 多感知认识世界：驾驶只是视觉的test；  正常世界和异常世界的比较区分。多传感器的modelbase。轮胎压力传感器，发动机传感器。 l
-2.9multimodel: cycle(video audio language )  cycle-sensor-motor     gan-qp 
-Multimodal Densenet  https://arxiv.org/pdf/1811.07407.pdf    3d unet的一半
-cnn的特征使用的改进！
-9.1 2.1 darla model base ; world model; darla vae densenet;
-densenet的vae！！   
-unet的vae；
-unet的video prediction；
-2.4 4d space time   densenet-tc A SIMPLE NEURAL ATTENTIVE META-LEARNER         ； BI
-
 
 
 
@@ -309,88 +419,6 @@ diversity is all your need ; 单个动作的dynamic学习；diversity分层类�
 
 
 
-
-
-
-
-
-
-
-
-4 progressive grow；  pg
-环境的reward 需要动态变化，不同阶段学习不同的重点能力，比如先站，再跑，在目标跑，再避障，再。。。。。
-
-
-5 
-bayes；certain uncertain；   polo探索部分引用了prior ref by rnd and rnd have openai code。好奇心：；RND code
-exploration  curiosity  paper:polo 三个应用说明背后的方法是一样的通用的。 mpc，global value； explorer
-
-反馈，信息的确认？bayes uncertain减少？互信息？
-
-
-6  memory： data reuse；  her  priority apex ampala in ray
-
-
-7
-语言： 交流沟通 通信编码
-动作描述---动作的语言之前的模型语言模型文章语言论文互信息 IB；Efficient human-like semantic representations via the Information Bottleneck principle
-最近 18年底的语言和压缩和强化学习的paper；
-
-Unsupervised perceptual rewards for imitation learning .   gan .  vae .  自动学习视频的分割--------苏剑林 自动的vae 聚类   3dvae聚类，
-
-Mutual alignment transfer learning， and ref it paper；  自动分段  ； Ddco: Discovery of deep continuous options for robot learning from demonstrations
-
-TACO: Learning Task Decomposition via Temporal Alignment for Control
-
-Variational Option Discovery Algorithms -- real hierarchial --- 非常重要的预训练
-每个skill的完整性；skill的完整确认。  diversity is all you need .   动作词和sikll的关联
-
-novel uncertain  ----- bayes prior function。
-模仿的基础是自己会，自己有基础，类似这样先学习基础后 再 demo imitation；
-
-
-
-8  多算法，多方法方法训练。 小数据  大任务； 多任务；   meta learning 是不是就是多loss，的确是，不过是一类loss； 人 ，跟基础的原则道理是跨类的任务loss。
-maml meta learning 跟表示学习的联系。  meta learning 多任务跟多任务互信息压缩到一个网络的关系？ tc softattention ref bottleneck mutual info;
-：：：：：多任务 多loss ？？ what loss：  
-
-
-各种loss 列举出来！！！！ 数据需要什么样的？？？？          SRLFC paper many loss； loss 与任务的相关性，自动选择loss？？？
-
-多任务loss：meta learning；
-
-多传感器loss：
-
-空间loss：
-
-https://github.com/tensorflow/models/tree/master/research/vid2depth depth loss
-https://github.com/tensorflow/models/tree/master/research/struct2depth
-
-uncertain vae loss
-角度 位置  gqn loss
-4d segmentation  loss
-
-4D空间 关系  重建关系位置 
-
-双目视察 loss; 视觉感知位置---分割等网络方法值得学习。
-3d conv 运动信息 loss
-
-
-
-tcn2  actionable loss？
-https://sites.google.com/view/actionablerepresentations
-actionable2 paper  LEARNING ACTIONABLE REPRESENTATIONS WITH GOAL-CONDITIONED POLICIES
-
-
-
-9  模型的容量足够大。
-
-
-
-
-
-
-
 model-base:  1 只看，视觉的2d 隐变量空间上的3d 隐变量空间 再上的 4d time 隐变量空间。 比如 vae 或不需要重建，只有encoder  互信息模型？？(vae 对场景记忆也需要。) ； 2 +action 强化学习的 inverse forward model；
 抽象--IB
 4d:depth;position
@@ -410,7 +438,9 @@ DIM
 cpc
 cpc-action
 norl near 最优表示的强化学习
-
+    
+UNSUPERVISED CONTROL THROUGH NON-PARAMETRIC DISCRIMINATIVE REWARDS 
+https://bair.berkeley.edu/blog/2018/11/30/visual-rl/
 
 
 
@@ -445,6 +475,48 @@ norl near 最优表示的强化学习
 持续完善阅读原文  https://github.com/createamind/busyplan/blob/master/zdx/Plan-thinkout.md
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------
+太旧的内容了
 2.4 实车：ros；12 env： carla ； real world
 
 code: 
